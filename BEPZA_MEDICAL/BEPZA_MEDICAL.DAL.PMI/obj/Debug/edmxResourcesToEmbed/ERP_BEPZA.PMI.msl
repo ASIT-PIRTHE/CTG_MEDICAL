@@ -1,0 +1,1316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERP_BEPZAModelStoreContainer" CdmEntityContainer="ERP_BEPZAPMIEntities">
+    <FunctionImportMapping FunctionImportName="sp_PMI_RptFinancialBudget" FunctionName="ERP_BEPZAModel.Store.sp_PMI_RptFinancialBudget">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_RptFinancialBudget_Result">
+          <ScalarProperty Name="FinancialYearName" ColumnName="FinancialYearName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="BudgetType" ColumnName="BudgetType" />
+          <ScalarProperty Name="Head" ColumnName="Head" />
+          <ScalarProperty Name="SubHead" ColumnName="SubHead" />
+          <ScalarProperty Name="EstematedCost" ColumnName="EstematedCost" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PMI_ProjectZone">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProjectZone">
+        <MappingFragment StoreEntitySet="PMI_ProjectZone">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+          <ScalarProperty Name="ProjectMasterId" ColumnName="ProjectMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_Agency">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_Agency">
+        <MappingFragment StoreEntitySet="PMI_Agency">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ApprovalAuthority">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ApprovalAuthority">
+        <MappingFragment StoreEntitySet="PMI_ApprovalAuthority">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_BudgetHead">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_BudgetHead">
+        <MappingFragment StoreEntitySet="PMI_BudgetHead">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="BudgetHeadName" ColumnName="BudgetHeadName" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_BudgetType">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_BudgetType">
+        <MappingFragment StoreEntitySet="PMI_BudgetType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ConstructionCategory">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ConstructionCategory">
+        <MappingFragment StoreEntitySet="PMI_ConstructionCategory">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ConstructionType">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ConstructionType">
+        <MappingFragment StoreEntitySet="PMI_ConstructionType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_EstimationUnit">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_EstimationUnit">
+        <MappingFragment StoreEntitySet="PMI_EstimationUnit">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_Ministry">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_Ministry">
+        <MappingFragment StoreEntitySet="PMI_Ministry">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_PaymentStatus">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_PaymentStatus">
+        <MappingFragment StoreEntitySet="PMI_PaymentStatus">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ProcurementType">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProcurementType">
+        <MappingFragment StoreEntitySet="PMI_ProcurementType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ProjectStatus">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProjectStatus">
+        <MappingFragment StoreEntitySet="PMI_ProjectStatus">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_SourceOfFund">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_SourceOfFund">
+        <MappingFragment StoreEntitySet="PMI_SourceOfFund">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPMIProcurementPlanFundRpt">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.vwPMIProcurementPlanFundRpt">
+        <MappingFragment StoreEntitySet="vwPMIProcurementPlanFundRpt">
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="SourceOfFund" ColumnName="SourceOfFund" />
+          <ScalarProperty Name="ProjectMasterId" ColumnName="ProjectMasterId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPMIStatusInformation">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.vwPMIStatusInformation">
+        <MappingFragment StoreEntitySet="vwPMIStatusInformation">
+          <ScalarProperty Name="ApplicableFor" ColumnName="ApplicableFor" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommonConfigType">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.CommonConfigType">
+        <MappingFragment StoreEntitySet="CommonConfigType">
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_RptTenderNoticeDetails" FunctionName="ERP_BEPZAModel.Store.sp_PMI_RptTenderNoticeDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_RptTenderNoticeDetails_Result">
+          <ScalarProperty Name="ProjectMasterId" ColumnName="ProjectMasterId" />
+          <ScalarProperty Name="LotNumber" ColumnName="LotNumber" />
+          <ScalarProperty Name="Identification" ColumnName="Identification" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="SecurityMoney" ColumnName="SecurityMoney" />
+          <ScalarProperty Name="ContractSignDate" ColumnName="ContractSignDate" />
+          <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_RptTenderNotice" FunctionName="ERP_BEPZAModel.Store.sp_PMI_RptTenderNotice">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_RptTenderNotice_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FinancialYearName" ColumnName="FinancialYearName" />
+          <ScalarProperty Name="Ministry" ColumnName="Ministry" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="ProcuringEntryName" ColumnName="ProcuringEntryName" />
+          <ScalarProperty Name="ProcuringEntryCode" ColumnName="ProcuringEntryCode" />
+          <ScalarProperty Name="ProcuringEntryDistrict" ColumnName="ProcuringEntryDistrict" />
+          <ScalarProperty Name="InvitationFor" ColumnName="InvitationFor" />
+          <ScalarProperty Name="InvitationRefNo" ColumnName="InvitationRefNo" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ProcurementMethod" ColumnName="ProcurementMethod" />
+          <ScalarProperty Name="ProcurementType" ColumnName="ProcurementType" />
+          <ScalarProperty Name="SourceOfFund" ColumnName="SourceOfFund" />
+          <ScalarProperty Name="Developmentpartner" ColumnName="Developmentpartner" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="PackageNo" ColumnName="PackageNo" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="TenderPubDate" ColumnName="TenderPubDate" />
+          <ScalarProperty Name="TenderLastSellingDate" ColumnName="TenderLastSellingDate" />
+          <ScalarProperty Name="TenderClosingDateTime" ColumnName="TenderClosingDateTime" />
+          <ScalarProperty Name="TenderOpeningDateTime" ColumnName="TenderOpeningDateTime" />
+          <ScalarProperty Name="SellingTenderDescription" ColumnName="SellingTenderDescription" />
+          <ScalarProperty Name="ReceivingTenderDescription" ColumnName="ReceivingTenderDescription" />
+          <ScalarProperty Name="OpeningTenderDescription" ColumnName="OpeningTenderDescription" />
+          <ScalarProperty Name="PreTenderMeetingPlace" ColumnName="PreTenderMeetingPlace" />
+          <ScalarProperty Name="ContractSignDate" ColumnName="ContractSignDate" />
+          <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+          <ScalarProperty Name="EligibilityOfTenderer" ColumnName="EligibilityOfTenderer" />
+          <ScalarProperty Name="BriefDescription" ColumnName="BriefDescription" />
+          <ScalarProperty Name="BriefDescriptionOfRelated" ColumnName="BriefDescriptionOfRelated" />
+          <ScalarProperty Name="TenderDocPrice" ColumnName="TenderDocPrice" />
+          <ScalarProperty Name="NameOfInvitingTender" ColumnName="NameOfInvitingTender" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ProcureAddress" ColumnName="ProcureAddress" />
+          <ScalarProperty Name="ContactDetails" ColumnName="ContactDetails" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PMI_BudgetZoneOrProject">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_BudgetZoneOrProject">
+        <MappingFragment StoreEntitySet="PMI_BudgetZoneOrProject">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ZoneOrProjectId" ColumnName="ZoneOrProjectId" />
+          <ScalarProperty Name="BudgetMasterId" ColumnName="BudgetMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_EstimationSetup">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_EstimationSetup">
+        <MappingFragment StoreEntitySet="PMI_EstimationSetup">
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="EstimationHeadId" ColumnName="EstimationHeadId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_EstimationZone">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_EstimationZone">
+        <MappingFragment StoreEntitySet="PMI_EstimationZone">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+          <ScalarProperty Name="EstimationMasterId" ColumnName="EstimationMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ProcurementMethod">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProcurementMethod">
+        <MappingFragment StoreEntitySet="PMI_ProcurementMethod">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ProjectDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProjectDetails">
+        <MappingFragment StoreEntitySet="PMI_ProjectDetails">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="EstimatedCost" ColumnName="EstimatedCost" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="PackageNo" ColumnName="PackageNo" />
+          <ScalarProperty Name="ApprovalAuthorityId" ColumnName="ApprovalAuthorityId" />
+          <ScalarProperty Name="SourceOfFundId" ColumnName="SourceOfFundId" />
+          <ScalarProperty Name="ProcurementMethodId" ColumnName="ProcurementMethodId" />
+          <ScalarProperty Name="ProcurementTypeId" ColumnName="ProcurementTypeId" />
+          <ScalarProperty Name="ProjectMasterId" ColumnName="ProjectMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_ChartBudgetVariance" FunctionName="ERP_BEPZAModel.Store.sp_PMI_ChartBudgetVariance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_ChartBudgetVariance_Result">
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="BudgetAmount" ColumnName="BudgetAmount" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_BudgetStatus" FunctionName="ERP_BEPZAModel.Store.sp_PMI_BudgetStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_BudgetStatus_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+          <ScalarProperty Name="BudgetAmount" ColumnName="BudgetAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_ProjectStatus" FunctionName="ERP_BEPZAModel.Store.sp_PMI_ProjectStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_ProjectStatus_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="ProjectType" ColumnName="ProjectType" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SiteHandoverDate" ColumnName="SiteHandoverDate" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PMI_ProjectTimeExtension">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProjectTimeExtension">
+        <MappingFragment StoreEntitySet="PMI_ProjectTimeExtension">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ExpectedCompletionDate" ColumnName="ExpectedCompletionDate" />
+          <ScalarProperty Name="ExtendedDays" ColumnName="ExtendedDays" />
+          <ScalarProperty Name="ExtendedDate" ColumnName="ExtendedDate" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_RptProcurementPlan" FunctionName="ERP_BEPZAModel.Store.sp_PMI_RptProcurementPlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_RptProcurementPlan_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ministry" ColumnName="Ministry" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="ProcuringEntryName" ColumnName="ProcuringEntryName" />
+          <ScalarProperty Name="ProcuringEntryCode" ColumnName="ProcuringEntryCode" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_RptProcurementPlanDetails" FunctionName="ERP_BEPZAModel.Store.sp_PMI_RptProcurementPlanDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_RptProcurementPlanDetails_Result">
+          <ScalarProperty Name="ProjectMasterId" ColumnName="ProjectMasterId" />
+          <ScalarProperty Name="PackageNo" ColumnName="PackageNo" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ProcurementMethod" ColumnName="ProcurementMethod" />
+          <ScalarProperty Name="ApprovalAuthority" ColumnName="ApprovalAuthority" />
+          <ScalarProperty Name="SourceOfFund" ColumnName="SourceOfFund" />
+          <ScalarProperty Name="EstimatedCost" ColumnName="EstimatedCost" />
+          <ScalarProperty Name="InvitationForTenderDate" ColumnName="InvitationForTenderDate" />
+          <ScalarProperty Name="ContractSignDate" ColumnName="ContractSignDate" />
+          <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_RptProjectEstimation" FunctionName="ERP_BEPZAModel.Store.sp_PMI_RptProjectEstimation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_RptProjectEstimation_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HeadName" ColumnName="HeadName" />
+          <ScalarProperty Name="HeadCode" ColumnName="HeadCode" />
+          <ScalarProperty Name="HeadDescription" ColumnName="HeadDescription" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_RptZoneWiseBudget" FunctionName="ERP_BEPZAModel.Store.sp_PMI_RptZoneWiseBudget">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_RptZoneWiseBudget_Result">
+          <ScalarProperty Name="BudgetHead" ColumnName="BudgetHead" />
+          <ScalarProperty Name="BudgetSubHead" ColumnName="BudgetSubHead" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="FinancialYearName" ColumnName="FinancialYearName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EstematedCost" ColumnName="EstematedCost" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="ZoneCode" ColumnName="ZoneCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_RptWorkWiseBudget" FunctionName="ERP_BEPZAModel.Store.sp_PMI_RptWorkWiseBudget">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_RptWorkWiseBudget_Result">
+          <ScalarProperty Name="BudgetHead" ColumnName="BudgetHead" />
+          <ScalarProperty Name="BudgetSubHead" ColumnName="BudgetSubHead" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="BudgetAmount" ColumnName="BudgetAmount" />
+          <ScalarProperty Name="HeadTotalBudgetAmount" ColumnName="HeadTotalBudgetAmount" />
+          <ScalarProperty Name="SubHeadTotalBudgetAmount" ColumnName="SubHeadTotalBudgetAmount" />
+          <ScalarProperty Name="GrandTotalBudgetAmount" ColumnName="GrandTotalBudgetAmount" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="FinancialYearName" ColumnName="FinancialYearName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EstematedCost" ColumnName="EstematedCost" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="vwPMIEstimation">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.vwPMIEstimation">
+        <MappingFragment StoreEntitySet="vwPMIEstimation">
+          <ScalarProperty Name="EstimationDate" ColumnName="EstimationDate" />
+          <ScalarProperty Name="EstimatedCost" ColumnName="EstimatedCost" />
+          <ScalarProperty Name="ZoneCode" ColumnName="ZoneCode" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="EstimationItemId" ColumnName="EstimationItemId" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="EstimationDetailId" ColumnName="EstimationDetailId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_BudgetDetailsYearlyCost">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_BudgetDetailsYearlyCost">
+        <MappingFragment StoreEntitySet="PMI_BudgetDetailsYearlyCost">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="EstematedCost" ColumnName="EstematedCost" />
+          <ScalarProperty Name="BudgetStatusId" ColumnName="BudgetStatusId" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="BudgetDetailsId" ColumnName="BudgetDetailsId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_BudgetMaster">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_BudgetMaster">
+        <MappingFragment StoreEntitySet="PMI_BudgetMaster">
+          <ScalarProperty Name="IsConfirm" ColumnName="IsConfirm" />
+          <ScalarProperty Name="ProjectForId" ColumnName="ProjectForId" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ApprovalStatusId" ColumnName="ApprovalStatusId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ProcurementTypeId" ColumnName="ProcurementTypeId" />
+          <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+          <ScalarProperty Name="ApprovalAuthorityId" ColumnName="ApprovalAuthorityId" />
+          <ScalarProperty Name="SourceOfFundId" ColumnName="SourceOfFundId" />
+          <ScalarProperty Name="MinistryOrDivisionId" ColumnName="MinistryOrDivisionId" />
+          <ScalarProperty Name="BudgetType" ColumnName="BudgetType" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="acc_Accounting_Period_Information">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.acc_Accounting_Period_Information">
+        <MappingFragment StoreEntitySet="acc_Accounting_Period_Information">
+          <ScalarProperty Name="fundControlInformation_id" ColumnName="fundControlInformation_id" />
+          <ScalarProperty Name="yearName" ColumnName="yearName" />
+          <ScalarProperty Name="periodStartDate" ColumnName="periodStartDate" />
+          <ScalarProperty Name="periodEndDate" ColumnName="periodEndDate" />
+          <ScalarProperty Name="isClosed" ColumnName="isClosed" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="updatedUserId" ColumnName="updatedUserId" />
+          <ScalarProperty Name="updatedUserDate" ColumnName="updatedUserDate" />
+          <ScalarProperty Name="createdUserId" ColumnName="createdUserId" />
+          <ScalarProperty Name="createdUserDate" ColumnName="createdUserDate" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Pmi_GetAccountingPeriod" FunctionName="ERP_BEPZAModel.Store.sp_Pmi_GetAccountingPeriod">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_Pmi_GetAccountingPeriod_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="YearName" ColumnName="YearName" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsClosed" ColumnName="IsClosed" />
+          <ScalarProperty Name="FundControlId" ColumnName="FundControlId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PMI_EstimationHead">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_EstimationHead">
+        <MappingFragment StoreEntitySet="PMI_EstimationHead">
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HeadName" ColumnName="HeadName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_EstimationHeadDescription">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_EstimationHeadDescription">
+        <MappingFragment StoreEntitySet="PMI_EstimationHeadDescription">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="HeadDescription" ColumnName="HeadDescription" />
+          <ScalarProperty Name="EstimationHeadId" ColumnName="EstimationHeadId" />
+          <ScalarProperty Name="MasterId" ColumnName="MasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_EstimationMaster">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_EstimationMaster">
+        <MappingFragment StoreEntitySet="PMI_EstimationMaster">
+          <ScalarProperty Name="ApprovalStatusId" ColumnName="ApprovalStatusId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="EstimationStatusId" ColumnName="EstimationStatusId" />
+          <ScalarProperty Name="EstimationDate" ColumnName="EstimationDate" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPMIBudgetInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.vwPMIBudgetInfo">
+        <MappingFragment StoreEntitySet="vwPMIBudgetInfo">
+          <ScalarProperty Name="ProjectForId" ColumnName="ProjectForId" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+          <ScalarProperty Name="BudgetType" ColumnName="BudgetType" />
+          <ScalarProperty Name="BudgetStatusName" ColumnName="BudgetStatusName" />
+          <ScalarProperty Name="BudgetStatusId" ColumnName="BudgetStatusId" />
+          <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+          <ScalarProperty Name="AprovedAmount" ColumnName="AprovedAmount" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="BudgetAmount" ColumnName="BudgetAmount" />
+          <ScalarProperty Name="ProcurementType" ColumnName="ProcurementType" />
+          <ScalarProperty Name="ProcurementTypeId" ColumnName="ProcurementTypeId" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="IsActiveFy" ColumnName="IsActiveFy" />
+          <ScalarProperty Name="FinancialYearName" ColumnName="FinancialYearName" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="YearlyCostId" ColumnName="YearlyCostId" />
+          <ScalarProperty Name="BudgetDetailsId" ColumnName="BudgetDetailsId" />
+          <ScalarProperty Name="BudgetId" ColumnName="BudgetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_EstimationDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_EstimationDetails">
+        <MappingFragment StoreEntitySet="PMI_EstimationDetails">
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="EstimationItemId" ColumnName="EstimationItemId" />
+          <ScalarProperty Name="EstimationHeadId" ColumnName="EstimationHeadId" />
+          <ScalarProperty Name="MasterId" ColumnName="MasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_TenderDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_TenderDetails">
+        <MappingFragment StoreEntitySet="PMI_TenderDetails">
+          <ScalarProperty Name="CompletionDays" ColumnName="CompletionDays" />
+          <ScalarProperty Name="TenderPrice" ColumnName="TenderPrice" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+          <ScalarProperty Name="SecurityMoney" ColumnName="SecurityMoney" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Identification" ColumnName="Identification" />
+          <ScalarProperty Name="LotNumber" ColumnName="LotNumber" />
+          <ScalarProperty Name="ProjectMasterId" ColumnName="ProjectMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Pmi_GetBudgetHeadInformation" FunctionName="ERP_BEPZAModel.Store.sp_Pmi_GetBudgetHeadInformation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_Pmi_GetBudgetHeadInformation_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BudgetHead" ColumnName="BudgetHead" />
+          <ScalarProperty Name="BudgetSubHead" ColumnName="BudgetSubHead" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PMI_ApprovalFlowDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ApprovalFlowDetails">
+        <MappingFragment StoreEntitySet="PMI_ApprovalFlowDetails">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="ApprovalFlowMasterId" ColumnName="ApprovalFlowMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ApprovalFlowMaster">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ApprovalFlowMaster">
+        <MappingFragment StoreEntitySet="PMI_ApprovalFlowMaster">
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ApprovalSectionId" ColumnName="ApprovalSectionId" />
+          <ScalarProperty Name="BudgetProjectAPPId" ColumnName="BudgetProjectAPPId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ApprovalSection">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ApprovalSection">
+        <MappingFragment StoreEntitySet="PMI_ApprovalSection">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Enum" ColumnName="Enum" />
+          <ScalarProperty Name="ApprovalSectionName" ColumnName="ApprovalSectionName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ProjectApproverStatus">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProjectApproverStatus">
+        <MappingFragment StoreEntitySet="PMI_ProjectApproverStatus">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_AnnualProcurementPlanMaster">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_AnnualProcurementPlanMaster">
+        <MappingFragment StoreEntitySet="PMI_AnnualProcurementPlanMaster">
+          <ScalarProperty Name="IsConfirm" ColumnName="IsConfirm" />
+          <ScalarProperty Name="BudgetStatusId" ColumnName="BudgetStatusId" />
+          <ScalarProperty Name="ProjectForId" ColumnName="ProjectForId" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ApprovalStatusId" ColumnName="ApprovalStatusId" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="APPStatusId" ColumnName="APPStatusId" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="ProcuringEntityCode" ColumnName="ProcuringEntityCode" />
+          <ScalarProperty Name="ProcuringEntityName" ColumnName="ProcuringEntityName" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="MinistryOrDivisionId" ColumnName="MinistryOrDivisionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPMIProjectSummary">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.vwPMIProjectSummary">
+        <MappingFragment StoreEntitySet="vwPMIProjectSummary">
+          <ScalarProperty Name="ZoneCode" ColumnName="ZoneCode" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+          <ScalarProperty Name="ProjectStatusName" ColumnName="ProjectStatusName" />
+          <ScalarProperty Name="ProjectStatusId" ColumnName="ProjectStatusId" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="FinancialYearName" ColumnName="FinancialYearName" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="MinistryName" ColumnName="MinistryName" />
+          <ScalarProperty Name="MinistryId" ColumnName="MinistryId" />
+          <ScalarProperty Name="TenderPubDate" ColumnName="TenderPubDate" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="DescritionOfAPP" ColumnName="DescritionOfAPP" />
+          <ScalarProperty Name="AnnualProcurementPlanDetailsId" ColumnName="AnnualProcurementPlanDetailsId" />
+          <ScalarProperty Name="AnnualProcurementPlanMasterId" ColumnName="AnnualProcurementPlanMasterId" />
+          <ScalarProperty Name="ProjectMasterId" ColumnName="ProjectMasterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ProjectMaster">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProjectMaster">
+        <MappingFragment StoreEntitySet="PMI_ProjectMaster">
+          <ScalarProperty Name="ApprovalStatusId" ColumnName="ApprovalStatusId" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="PhysicalProgress" ColumnName="PhysicalProgress" />
+          <ScalarProperty Name="DateOfCommencement" ColumnName="DateOfCommencement" />
+          <ScalarProperty Name="DateOfPGExpire" ColumnName="DateOfPGExpire" />
+          <ScalarProperty Name="DateOfPGSubmission" ColumnName="DateOfPGSubmission" />
+          <ScalarProperty Name="DateOfIssuingNOA" ColumnName="DateOfIssuingNOA" />
+          <ScalarProperty Name="ContractorName" ColumnName="ContractorName" />
+          <ScalarProperty Name="APPMasterId" ColumnName="APPMasterId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="DrawingApprovalDate" ColumnName="DrawingApprovalDate" />
+          <ScalarProperty Name="DrawingAttachment" ColumnName="DrawingAttachment" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FinalPaymentDate" ColumnName="FinalPaymentDate" />
+          <ScalarProperty Name="LastPaymentDate" ColumnName="LastPaymentDate" />
+          <ScalarProperty Name="PaymentStatusId" ColumnName="PaymentStatusId" />
+          <ScalarProperty Name="LiquidatedDamage" ColumnName="LiquidatedDamage" />
+          <ScalarProperty Name="SecurityMoneyReefingDate" ColumnName="SecurityMoneyReefingDate" />
+          <ScalarProperty Name="Notice" ColumnName="Notice" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="ProcureAddress" ColumnName="ProcureAddress" />
+          <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+          <ScalarProperty Name="NameOfInvitingTender" ColumnName="NameOfInvitingTender" />
+          <ScalarProperty Name="Services" ColumnName="Services" />
+          <ScalarProperty Name="BriefDescriptionOfRelated" ColumnName="BriefDescriptionOfRelated" />
+          <ScalarProperty Name="BriefDescription" ColumnName="BriefDescription" />
+          <ScalarProperty Name="EligibilityOfTenderer" ColumnName="EligibilityOfTenderer" />
+          <ScalarProperty Name="PreTenderMeetingPlace" ColumnName="PreTenderMeetingPlace" />
+          <ScalarProperty Name="OpeningTenderDescription" ColumnName="OpeningTenderDescription" />
+          <ScalarProperty Name="ReceivingTenderDescription" ColumnName="ReceivingTenderDescription" />
+          <ScalarProperty Name="SellingTenderDescription" ColumnName="SellingTenderDescription" />
+          <ScalarProperty Name="ProjectStatusId" ColumnName="ProjectStatusId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="AwardIssueDate" ColumnName="AwardIssueDate" />
+          <ScalarProperty Name="TimeExtensionInDays" ColumnName="TimeExtensionInDays" />
+          <ScalarProperty Name="SiteHandoverDate" ColumnName="SiteHandoverDate" />
+          <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+          <ScalarProperty Name="ContractSignDate" ColumnName="ContractSignDate" />
+          <ScalarProperty Name="TenderOpeningDateTime" ColumnName="TenderOpeningDateTime" />
+          <ScalarProperty Name="TenderClosingDateTime" ColumnName="TenderClosingDateTime" />
+          <ScalarProperty Name="TenderLastSellingDate" ColumnName="TenderLastSellingDate" />
+          <ScalarProperty Name="TenderPubDate" ColumnName="TenderPubDate" />
+          <ScalarProperty Name="TenderIssueDate" ColumnName="TenderIssueDate" />
+          <ScalarProperty Name="TenderEvalDate" ColumnName="TenderEvalDate" />
+          <ScalarProperty Name="AdministrativeApprovalDate" ColumnName="AdministrativeApprovalDate" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="DevelopmentPartner" ColumnName="DevelopmentPartner" />
+          <ScalarProperty Name="ConstructionCategoryId" ColumnName="ConstructionCategoryId" />
+          <ScalarProperty Name="ConstructionTypeId" ColumnName="ConstructionTypeId" />
+          <ScalarProperty Name="InvitationRefNo" ColumnName="InvitationRefNo" />
+          <ScalarProperty Name="ProcuringEntryCode" ColumnName="ProcuringEntryCode" />
+          <ScalarProperty Name="ProcuringEntryName" ColumnName="ProcuringEntryName" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="BudgetApprovalDate" ColumnName="BudgetApprovalDate" />
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+          <ScalarProperty Name="MinistryId" ColumnName="MinistryId" />
+          <ScalarProperty Name="APPDetailsId" ColumnName="APPDetailsId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_AppZones">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_AppZones">
+        <MappingFragment StoreEntitySet="PMI_AppZones">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ZoneOrProjectId" ColumnName="ZoneOrProjectId" />
+          <ScalarProperty Name="APPMasterId" ColumnName="APPMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="acc_Cost_Centre_or_Institute_Information">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.acc_Cost_Centre_or_Institute_Information">
+        <MappingFragment StoreEntitySet="acc_Cost_Centre_or_Institute_Information">
+          <ScalarProperty Name="BudgetCode" ColumnName="BudgetCode" />
+          <ScalarProperty Name="updatedUserId" ColumnName="updatedUserId" />
+          <ScalarProperty Name="updatedUserDate" ColumnName="updatedUserDate" />
+          <ScalarProperty Name="createdUserId" ColumnName="createdUserId" />
+          <ScalarProperty Name="createdUserDate" ColumnName="createdUserDate" />
+          <ScalarProperty Name="DepreciationRate" ColumnName="DepreciationRate" />
+          <ScalarProperty Name="IsFixedAssetNonDevWork" ColumnName="IsFixedAssetNonDevWork" />
+          <ScalarProperty Name="IsFixedAssetDevWork" ColumnName="IsFixedAssetDevWork" />
+          <ScalarProperty Name="IsFixedAssetHead" ColumnName="IsFixedAssetHead" />
+          <ScalarProperty Name="BudgetGroupId" ColumnName="BudgetGroupId" />
+          <ScalarProperty Name="isBudgetHead" ColumnName="isBudgetHead" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="entityId" ColumnName="entityId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="empId" ColumnName="empId" />
+          <ScalarProperty Name="CostCenterTypeId" ColumnName="CostCenterTypeId" />
+          <ScalarProperty Name="parentId" ColumnName="parentId" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="paAmmount" ColumnName="paAmmount" />
+          <ScalarProperty Name="NameForBankAdviceLetter" ColumnName="NameForBankAdviceLetter" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="isInstitute" ColumnName="isInstitute" />
+          <ScalarProperty Name="userCode" ColumnName="userCode" />
+          <ScalarProperty Name="codeCount" ColumnName="codeCount" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_WorkStatus">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_WorkStatus">
+        <MappingFragment StoreEntitySet="PMI_WorkStatus">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_BudgetDetailsYearlyBilled">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_BudgetDetailsYearlyBilled">
+        <MappingFragment StoreEntitySet="PMI_BudgetDetailsYearlyBilled">
+          <ScalarProperty Name="BilledAmount" ColumnName="BilledAmount" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="BudgetDetailsId" ColumnName="BudgetDetailsId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_BudgetDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_BudgetDetails">
+        <MappingFragment StoreEntitySet="PMI_BudgetDetails">
+          <ScalarProperty Name="HiddenSlNo" ColumnName="HiddenSlNo" />
+          <ScalarProperty Name="WorkIdentificationNumber" ColumnName="WorkIdentificationNumber" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="WorkStatusId" ColumnName="WorkStatusId" />
+          <ScalarProperty Name="ContractAmount" ColumnName="ContractAmount" />
+          <ScalarProperty Name="EstimatCost" ColumnName="EstimatCost" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="SubledgerId" ColumnName="SubledgerId" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="BudgetAmount" ColumnName="BudgetAmount" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="ConstructionTypeId" ColumnName="ConstructionTypeId" />
+          <ScalarProperty Name="BudgetSubHeadId" ColumnName="BudgetSubHeadId" />
+          <ScalarProperty Name="BudgetHeadId" ColumnName="BudgetHeadId" />
+          <ScalarProperty Name="BudgetMasterId" ColumnName="BudgetMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_PrintBudget" FunctionName="ERP_BEPZAModel.Store.sp_PMI_PrintBudget">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_PrintBudget_Result">
+          <ScalarProperty Name="BudgetId" ColumnName="BudgetId" />
+          <ScalarProperty Name="BudgetHeadId" ColumnName="BudgetHeadId" />
+          <ScalarProperty Name="BudgetDetailId" ColumnName="BudgetDetailId" />
+          <ScalarProperty Name="BudgetHeadName" ColumnName="BudgetHeadName" />
+          <ScalarProperty Name="BudgetSubHead" ColumnName="BudgetSubHead" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="BudgetAmount" ColumnName="BudgetAmount" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="FinancialYearName" ColumnName="FinancialYearName" />
+          <ScalarProperty Name="BudgetStatus" ColumnName="BudgetStatus" />
+          <ScalarProperty Name="EstematedCost" ColumnName="EstematedCost" />
+          <ScalarProperty Name="TotalEstimatedBudget" ColumnName="TotalEstimatedBudget" />
+          <ScalarProperty Name="BudgetType" ColumnName="BudgetType" />
+          <ScalarProperty Name="SubheadTotal" ColumnName="SubheadTotal" />
+          <ScalarProperty Name="GrandTotal" ColumnName="GrandTotal" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_ProgressReport" FunctionName="ERP_BEPZAModel.Store.sp_PMI_ProgressReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_ProgressReport_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BudgetHead" ColumnName="BudgetHead" />
+          <ScalarProperty Name="BudgetSubHead" ColumnName="BudgetSubHead" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="NameOfContractor" ColumnName="NameOfContractor" />
+          <ScalarProperty Name="EstimatedAmount" ColumnName="EstimatedAmount" />
+          <ScalarProperty Name="AcceptedAmount" ColumnName="AcceptedAmount" />
+          <ScalarProperty Name="DateOfIssuingNOA" ColumnName="DateOfIssuingNOA" />
+          <ScalarProperty Name="DateOfPGSubmitted" ColumnName="DateOfPGSubmitted" />
+          <ScalarProperty Name="ExpiryDateOfPG" ColumnName="ExpiryDateOfPG" />
+          <ScalarProperty Name="ContractSignDate" ColumnName="ContractSignDate" />
+          <ScalarProperty Name="SiteHandoverDate" ColumnName="SiteHandoverDate" />
+          <ScalarProperty Name="DateOfCommencement" ColumnName="DateOfCommencement" />
+          <ScalarProperty Name="CompletionTimeInDays" ColumnName="CompletionTimeInDays" />
+          <ScalarProperty Name="DateOfCompletionExtended" ColumnName="DateOfCompletionExtended" />
+          <ScalarProperty Name="TimeElapsDays" ColumnName="TimeElapsDays" />
+          <ScalarProperty Name="PhysicalProgress" ColumnName="PhysicalProgress" />
+          <ScalarProperty Name="BillPaid" ColumnName="BillPaid" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AsOnDate" ColumnName="AsOnDate" />
+          <ScalarProperty Name="FinancialYear" ColumnName="FinancialYear" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PMI_AnnualProcurementPlanDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_AnnualProcurementPlanDetails">
+        <MappingFragment StoreEntitySet="PMI_AnnualProcurementPlanDetails">
+          <ScalarProperty Name="CompletionofContractActualDates" ColumnName="CompletionofContractActualDates" />
+          <ScalarProperty Name="CompletionofContractDays" ColumnName="CompletionofContractDays" />
+          <ScalarProperty Name="TimeToContractActualDates" ColumnName="TimeToContractActualDates" />
+          <ScalarProperty Name="TimeToContractDays" ColumnName="TimeToContractDays" />
+          <ScalarProperty Name="TimeToContract" ColumnName="TimeToContract" />
+          <ScalarProperty Name="SigningofContractActualDates" ColumnName="SigningofContractActualDates" />
+          <ScalarProperty Name="SigningofContractDays" ColumnName="SigningofContractDays" />
+          <ScalarProperty Name="NotificationOfAwardActualDates" ColumnName="NotificationOfAwardActualDates" />
+          <ScalarProperty Name="NotificationOfAwardDays" ColumnName="NotificationOfAwardDays" />
+          <ScalarProperty Name="NotificationOfAward" ColumnName="NotificationOfAward" />
+          <ScalarProperty Name="ApprovalToAwardActualDates" ColumnName="ApprovalToAwardActualDates" />
+          <ScalarProperty Name="ApprovalToAwardDays" ColumnName="ApprovalToAwardDays" />
+          <ScalarProperty Name="ApprovalToAward" ColumnName="ApprovalToAward" />
+          <ScalarProperty Name="TenderElavuationActualDates" ColumnName="TenderElavuationActualDates" />
+          <ScalarProperty Name="TenderElavuationDays" ColumnName="TenderElavuationDays" />
+          <ScalarProperty Name="TenderElavuation" ColumnName="TenderElavuation" />
+          <ScalarProperty Name="TenderOpeningActualDates" ColumnName="TenderOpeningActualDates" />
+          <ScalarProperty Name="TenderOpeningDays" ColumnName="TenderOpeningDays" />
+          <ScalarProperty Name="TenderOpening" ColumnName="TenderOpening" />
+          <ScalarProperty Name="InvitationforTenderActualDates" ColumnName="InvitationforTenderActualDates" />
+          <ScalarProperty Name="InvitationforTenderDays" ColumnName="InvitationforTenderDays" />
+          <ScalarProperty Name="BudgetDetailsId" ColumnName="BudgetDetailsId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="CompletionofContract" ColumnName="CompletionofContract" />
+          <ScalarProperty Name="SigningofContract" ColumnName="SigningofContract" />
+          <ScalarProperty Name="InvitationforTender" ColumnName="InvitationforTender" />
+          <ScalarProperty Name="ContractValue" ColumnName="ContractValue" />
+          <ScalarProperty Name="EstdCost" ColumnName="EstdCost" />
+          <ScalarProperty Name="ApprovingAuthorityId" ColumnName="ApprovingAuthorityId" />
+          <ScalarProperty Name="SourceOfFundId" ColumnName="SourceOfFundId" />
+          <ScalarProperty Name="ProcurementTypeId" ColumnName="ProcurementTypeId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="PackageNo" ColumnName="PackageNo" />
+          <ScalarProperty Name="LotNo" ColumnName="LotNo" />
+          <ScalarProperty Name="DescritionOfAPP" ColumnName="DescritionOfAPP" />
+          <ScalarProperty Name="ConstructionTypeId" ColumnName="ConstructionTypeId" />
+          <ScalarProperty Name="APPHeadId" ColumnName="APPHeadId" />
+          <ScalarProperty Name="AnnualProcurementPlanMasterId" ColumnName="AnnualProcurementPlanMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ProgressReportDetailsYearlyBilled">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProgressReportDetailsYearlyBilled">
+        <MappingFragment StoreEntitySet="PMI_ProgressReportDetailsYearlyBilled">
+          <ScalarProperty Name="BilledAmount" ColumnName="BilledAmount" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="ProgressReportDetailsId" ColumnName="ProgressReportDetailsId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ProgressReportDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProgressReportDetails">
+        <MappingFragment StoreEntitySet="PMI_ProgressReportDetails">
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="WrokStatusId" ColumnName="WrokStatusId" />
+          <ScalarProperty Name="PhysicalProgress" ColumnName="PhysicalProgress" />
+          <ScalarProperty Name="TimeElapsed" ColumnName="TimeElapsed" />
+          <ScalarProperty Name="DateOfCompletion" ColumnName="DateOfCompletion" />
+          <ScalarProperty Name="CompletionTime" ColumnName="CompletionTime" />
+          <ScalarProperty Name="DateOfCommencement" ColumnName="DateOfCommencement" />
+          <ScalarProperty Name="DateOfSiteHandingOver" ColumnName="DateOfSiteHandingOver" />
+          <ScalarProperty Name="DateOfContractAgreement" ColumnName="DateOfContractAgreement" />
+          <ScalarProperty Name="ExpireDateOfBG" ColumnName="ExpireDateOfBG" />
+          <ScalarProperty Name="DateOfNOA" ColumnName="DateOfNOA" />
+          <ScalarProperty Name="AcceptedAmount" ColumnName="AcceptedAmount" />
+          <ScalarProperty Name="EstimatedAmount" ColumnName="EstimatedAmount" />
+          <ScalarProperty Name="NameOfContractor" ColumnName="NameOfContractor" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="ProgressReportMasterId" ColumnName="ProgressReportMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ProgressReportMaster">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProgressReportMaster">
+        <MappingFragment StoreEntitySet="PMI_ProgressReportMaster">
+          <ScalarProperty Name="IsConfirm" ColumnName="IsConfirm" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="ProjectForId" ColumnName="ProjectForId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ReportDate" ColumnName="ReportDate" />
+          <ScalarProperty Name="AnnualProcurementPlanMasterId" ColumnName="AnnualProcurementPlanMasterId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_RptAnnualProcurementPlan" FunctionName="ERP_BEPZAModel.Store.sp_PMI_RptAnnualProcurementPlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_RptAnnualProcurementPlan_Result">
+          <ScalarProperty Name="Ministry" ColumnName="Ministry" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="MasterId" ColumnName="MasterId" />
+          <ScalarProperty Name="ProcuringEntityName" ColumnName="ProcuringEntityName" />
+          <ScalarProperty Name="ProcuringEntityCode" ColumnName="ProcuringEntityCode" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="yearName" ColumnName="yearName" />
+          <ScalarProperty Name="APPStatus" ColumnName="APPStatus" />
+          <ScalarProperty Name="APPHeadName" ColumnName="APPHeadName" />
+          <ScalarProperty Name="LotNo" ColumnName="LotNo" />
+          <ScalarProperty Name="PackageNo" ColumnName="PackageNo" />
+          <ScalarProperty Name="DescritionOfAPP" ColumnName="DescritionOfAPP" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProcurementType" ColumnName="ProcurementType" />
+          <ScalarProperty Name="SourceOfFund" ColumnName="SourceOfFund" />
+          <ScalarProperty Name="ApprovingAuthority" ColumnName="ApprovingAuthority" />
+          <ScalarProperty Name="EstdCost" ColumnName="EstdCost" />
+          <ScalarProperty Name="ContractValue" ColumnName="ContractValue" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="InvitationforTender" ColumnName="InvitationforTender" />
+          <ScalarProperty Name="InvitationforTenderDays" ColumnName="InvitationforTenderDays" />
+          <ScalarProperty Name="InvitationforTenderActualDates" ColumnName="InvitationforTenderActualDates" />
+          <ScalarProperty Name="TenderOpening" ColumnName="TenderOpening" />
+          <ScalarProperty Name="TenderOpeningDays" ColumnName="TenderOpeningDays" />
+          <ScalarProperty Name="TenderOpeningActualDates" ColumnName="TenderOpeningActualDates" />
+          <ScalarProperty Name="TenderElavuation" ColumnName="TenderElavuation" />
+          <ScalarProperty Name="TenderElavuationDays" ColumnName="TenderElavuationDays" />
+          <ScalarProperty Name="TenderElavuationActualDates" ColumnName="TenderElavuationActualDates" />
+          <ScalarProperty Name="ApprovalToAward" ColumnName="ApprovalToAward" />
+          <ScalarProperty Name="ApprovalToAwardDays" ColumnName="ApprovalToAwardDays" />
+          <ScalarProperty Name="ApprovalToAwardActualDates" ColumnName="ApprovalToAwardActualDates" />
+          <ScalarProperty Name="NotificationOfAward" ColumnName="NotificationOfAward" />
+          <ScalarProperty Name="NotificationOfAwardDays" ColumnName="NotificationOfAwardDays" />
+          <ScalarProperty Name="NotificationOfAwardActualDates" ColumnName="NotificationOfAwardActualDates" />
+          <ScalarProperty Name="SigningofContract" ColumnName="SigningofContract" />
+          <ScalarProperty Name="SigningofContractDays" ColumnName="SigningofContractDays" />
+          <ScalarProperty Name="SigningofContractActualDates" ColumnName="SigningofContractActualDates" />
+          <ScalarProperty Name="TimeToContract" ColumnName="TimeToContract" />
+          <ScalarProperty Name="TimeToContractDays" ColumnName="TimeToContractDays" />
+          <ScalarProperty Name="TimeToContractActualDates" ColumnName="TimeToContractActualDates" />
+          <ScalarProperty Name="CompletionofContract" ColumnName="CompletionofContract" />
+          <ScalarProperty Name="CompletionofContractDays" ColumnName="CompletionofContractDays" />
+          <ScalarProperty Name="CompletionofContractActualDates" ColumnName="CompletionofContractActualDates" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_ProgressReport_M1" FunctionName="ERP_BEPZAModel.Store.sp_PMI_ProgressReport_M1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_ProgressReport_M1_Result">
+          <ScalarProperty Name="ReportDate" ColumnName="ReportDate" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="NameOfWorks" ColumnName="NameOfWorks" />
+          <ScalarProperty Name="NameOfContractor" ColumnName="NameOfContractor" />
+          <ScalarProperty Name="EstimatedAmount" ColumnName="EstimatedAmount" />
+          <ScalarProperty Name="AcceptedAmount" ColumnName="AcceptedAmount" />
+          <ScalarProperty Name="DateOfNOA" ColumnName="DateOfNOA" />
+          <ScalarProperty Name="ExpireDateOfBG" ColumnName="ExpireDateOfBG" />
+          <ScalarProperty Name="DateOfContractAgreement" ColumnName="DateOfContractAgreement" />
+          <ScalarProperty Name="DateOfSiteHandingOver" ColumnName="DateOfSiteHandingOver" />
+          <ScalarProperty Name="DateOfCommencement" ColumnName="DateOfCommencement" />
+          <ScalarProperty Name="CompletionTime" ColumnName="CompletionTime" />
+          <ScalarProperty Name="DateOfCompletion" ColumnName="DateOfCompletion" />
+          <ScalarProperty Name="TimeElapsed" ColumnName="TimeElapsed" />
+          <ScalarProperty Name="PhysicalProgress" ColumnName="PhysicalProgress" />
+          <ScalarProperty Name="WorkStatus" ColumnName="WorkStatus" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="FinancialYear" ColumnName="FinancialYear" />
+          <ScalarProperty Name="BilledAmount" ColumnName="BilledAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PMI_ProjectFor">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProjectFor">
+        <MappingFragment StoreEntitySet="PMI_ProjectFor">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_Head">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_Head">
+        <MappingFragment StoreEntitySet="PMI_Head">
+          <ScalarProperty Name="SortingOrder" ColumnName="SortingOrder" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IsSubledger" ColumnName="IsSubledger" />
+          <ScalarProperty Name="IsParentHead" ColumnName="IsParentHead" />
+          <ScalarProperty Name="HeadName" ColumnName="HeadName" />
+          <ScalarProperty Name="ParentHeadId" ColumnName="ParentHeadId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPMIBudgetHead">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.vwPMIBudgetHead">
+        <MappingFragment StoreEntitySet="vwPMIBudgetHead">
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="BudgetSubHead" ColumnName="BudgetSubHead" />
+          <ScalarProperty Name="BudgetHead" ColumnName="BudgetHead" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PMI_ProgressReportAttachment">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProgressReportAttachment">
+        <MappingFragment StoreEntitySet="PMI_ProgressReportAttachment">
+          <ScalarProperty Name="NameofWork" ColumnName="NameofWork" />
+          <ScalarProperty Name="CurrentAttachment" ColumnName="CurrentAttachment" />
+          <ScalarProperty Name="PreviousAttachment" ColumnName="PreviousAttachment" />
+          <ScalarProperty Name="CurrentFileName" ColumnName="CurrentFileName" />
+          <ScalarProperty Name="PreviousFileName" ColumnName="PreviousFileName" />
+          <ScalarProperty Name="CurrentDate" ColumnName="CurrentDate" />
+          <ScalarProperty Name="PreviousDate" ColumnName="PreviousDate" />
+          <ScalarProperty Name="ProgressReportId" ColumnName="ProgressReportId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_ProgressReport_Attachment" FunctionName="ERP_BEPZAModel.Store.sp_PMI_ProgressReport_Attachment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.sp_PMI_ProgressReport_Attachment_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProgressReportId" ColumnName="ProgressReportId" />
+          <ScalarProperty Name="NameofWork" ColumnName="NameofWork" />
+          <ScalarProperty Name="PreviousDate" ColumnName="PreviousDate" />
+          <ScalarProperty Name="CurrentDate" ColumnName="CurrentDate" />
+          <ScalarProperty Name="PreviousFileName" ColumnName="PreviousFileName" />
+          <ScalarProperty Name="CurrentFileName" ColumnName="CurrentFileName" />
+          <ScalarProperty Name="PreviousAttachment" ColumnName="PreviousAttachment" />
+          <ScalarProperty Name="CurrentAttachment" ColumnName="CurrentAttachment" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_PRM_RptServiceVistory" FunctionName="ERP_BEPZAModel.Store.SP_PRM_RptServiceVistory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.SP_PRM_RptServiceVistory_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="FromZone" ColumnName="FromZone" />
+          <ScalarProperty Name="ToZone" ColumnName="ToZone" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="SortingOrder" ColumnName="SortingOrder" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="vwPMINewBudgetInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.vwPMINewBudgetInfo">
+        <MappingFragment StoreEntitySet="vwPMINewBudgetInfo">
+          <ScalarProperty Name="ProjectForId" ColumnName="ProjectForId" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+          <ScalarProperty Name="BudgetType" ColumnName="BudgetType" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="yearName" ColumnName="yearName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_PMI_RptBudgetSummary" FunctionName="ERP_BEPZAModel.Store.sp_PMI_RptBudgetSummary" />
+    <EntitySetMapping Name="PMI_ProgressReportSignature">
+      <EntityTypeMapping TypeName="ERP_BEPZAModel.PMI_ProgressReportSignature">
+        <MappingFragment StoreEntitySet="PMI_ProgressReportSignature">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="ProgressReportId" ColumnName="ProgressReportId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_PMI_Signature" FunctionName="ERP_BEPZAModel.Store.SP_PMI_Signature">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAModel.SP_PMI_Signature_Result">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Signature" ColumnName="Signature" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

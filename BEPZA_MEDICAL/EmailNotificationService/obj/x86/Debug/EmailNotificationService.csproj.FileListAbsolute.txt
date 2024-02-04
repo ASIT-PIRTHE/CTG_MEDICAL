@@ -1,0 +1,160 @@
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Helpers.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.Data.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.WebData.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Helpers.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.Data.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.WebData.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Helpers.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.Data.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.WebData.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Helpers.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.Data.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.WebData.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\Microsoft.Web.Helpers.dll
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Helpers.dll
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.dll
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.Data.dll
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.WebData.dll
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Helpers.xml
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.xml
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.Data.xml
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.WebData.xml
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+E:\BEPZA\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\Microsoft.Web.Helpers.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Helpers.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Razor.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.Data.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.WebData.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Helpers.xml
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.Razor.xml
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.xml
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.xml
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.Data.xml
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\bin\Debug\WebMatrix.WebData.xml
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csprojResolveAssemblyReference.cache
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\Microsoft.Web.Helpers.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Helpers.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Razor.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.Data.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.WebData.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Helpers.xml
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Razor.xml
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.xml
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.xml
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.Data.xml
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.WebData.xml
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csprojAssemblyReference.cache
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csproj.CoreCompileInputs.cache
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csproj.CopyComplete
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+E:\2021\bepza\Test4\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\Microsoft.Web.Helpers.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Helpers.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Razor.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.Data.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.WebData.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Helpers.xml
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Razor.xml
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.xml
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.xml
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.Data.xml
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.WebData.xml
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csprojAssemblyReference.cache
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csproj.CoreCompileInputs.cache
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csproj.CopyComplete
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Helpers.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Razor.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.Data.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.WebData.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Helpers.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.Razor.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.Data.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\bin\Debug\WebMatrix.WebData.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csproj.AssemblyReference.cache
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csproj.CoreCompileInputs.cache
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csproj.CopyComplete
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\BEPZA_MEDICAL\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb

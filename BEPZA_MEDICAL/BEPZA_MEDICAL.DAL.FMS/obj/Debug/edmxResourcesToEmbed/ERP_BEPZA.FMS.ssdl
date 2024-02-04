@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BEPZA_MEDICAL.DAL.FMS.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="acc_Cost_Centre_or_Institute_Information">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="codeCount" Type="int" Nullable="false" />
+    <Property Name="userCode" Type="nvarchar" MaxLength="150" />
+    <Property Name="isInstitute" Type="bit" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NameForBankAdviceLetter" Type="nvarchar(max)" />
+    <Property Name="paAmmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="remarks" Type="nvarchar(max)" />
+    <Property Name="parentId" Type="int" />
+    <Property Name="CostCenterTypeId" Type="int" Nullable="false" />
+    <Property Name="empId" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="entityId" Type="int" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" />
+    <Property Name="isBudgetHead" Type="bit" />
+    <Property Name="BudgetGroupId" Type="int" />
+    <Property Name="IsFixedAssetHead" Type="bit" />
+    <Property Name="IsFixedAssetDevWork" Type="bit" />
+    <Property Name="IsFixedAssetNonDevWork" Type="bit" />
+    <Property Name="DepreciationRate" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="createdUserDate" Type="datetime" />
+    <Property Name="createdUserId" Type="nvarchar" MaxLength="255" />
+    <Property Name="updatedUserDate" Type="datetime" />
+    <Property Name="updatedUserId" Type="nvarchar" MaxLength="255" />
+    <Property Name="BudgetCode" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="FMS_BankInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankName" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="BankCode" Type="varchar" MaxLength="150" />
+    <Property Name="BankType" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FMS_BankInfoBranchDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankInfoId" Type="int" Nullable="false" />
+    <Property Name="BranchName" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="BranchAddress" Type="varchar" MaxLength="250" />
+    <Property Name="SWIFTCode" Type="varchar" MaxLength="250" />
+    <Property Name="BranchContactNo" Type="varchar" MaxLength="50" />
+    <Property Name="BranchEmail" Type="varchar" MaxLength="100" />
+    <Property Name="CountryId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FMS_BankWiseOfferRate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankId" Type="int" Nullable="false" />
+    <Property Name="BranchId" Type="int" />
+    <Property Name="OfferRate" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Duration" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="FDRTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FMS_CPFInterestReceivable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FixedDepositInfoId" Type="int" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="DistributedAmount" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="ApplicableMonth" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="OtherExciseDuty" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="ApproxInterestDuring" Type="decimal" Precision="18" Scale="5" />
+  </EntityType>
+  <EntityType Name="FMS_FDRClosingInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FixedDepositInfoId" Type="int" Nullable="false" />
+    <Property Name="ClosingDate" Type="datetime" Nullable="false" />
+    <Property Name="FDRAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="InterestRate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TaxRate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Duration" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProfitRecvId" Type="int" />
+    <Property Name="InterestAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TaxAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BankCharge" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProfitAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TotalReceivableAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ClosingAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="LossAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ChequeId" Type="int" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="IsRenew" Type="bit" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="WithdrawalAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IsFDRSaved" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FMS_FDRInstallmentInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="FixedDepositInfoId" Type="int" Nullable="false" />
+    <Property Name="FDRAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="InterestRate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProfitRecvId" Type="int" Nullable="false" />
+    <Property Name="InstallmentAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TAXAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BankCharge" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Profit" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ChequeId" Type="int" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="InterestReceiveAmount" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="FMS_FDRType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FMS_FixedDepositInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="FDRNumber" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="FDRDate" Type="datetime" Nullable="false" />
+    <Property Name="RenewalNo" Type="nvarchar" MaxLength="150" />
+    <Property Name="FDRName" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="FixedDepositTypeInfoId" Type="int" Nullable="false" />
+    <Property Name="BankInfoId" Type="int" Nullable="false" />
+    <Property Name="BankInfoBranchDetailId" Type="int" Nullable="false" />
+    <Property Name="BankAccountId" Type="int" />
+    <Property Name="ProfitRecvId" Type="int" />
+    <Property Name="FDRDescription" Type="varchar" MaxLength="250" />
+    <Property Name="InitialDeposit" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="FDRAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ChequeId" Type="int" Nullable="false" />
+    <Property Name="FDRDuration" Type="int" Nullable="false" />
+    <Property Name="FDRDurationType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FDRDurationInMonth" Type="int" Nullable="false" />
+    <Property Name="InterestRate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="InterestAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="InstallmentDuration" Type="int" Nullable="false" />
+    <Property Name="InstallmentDurationType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TAXRate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TAXAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BankCharge" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TotalBankCharge" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="MaturityDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalReceivableAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TotalInterestAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TotalTAXAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TotalProfit" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="FDRTypeId" Type="int" Nullable="false" />
+    <Property Name="SourceofFundId" Type="int" />
+    <Property Name="AccBankId" Type="int" />
+    <Property Name="AccBranchId" Type="int" />
+    <Property Name="NetReceivableAmount" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="FMS_FixedDepositInfoInstallmentSchedule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FixedDepositInfoId" Type="int" Nullable="false" />
+    <Property Name="InsDate" Type="datetime" Nullable="false" />
+    <Property Name="InsAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Tax" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BankCharge" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Profit" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FMS_FixedDepositTypeInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FixedDepositType" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Duration" Type="int" Nullable="false" />
+    <Property Name="DurationType" Type="varchar" MaxLength="10" />
+    <Property Name="InterestRate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="InstallmentIn" Type="int" Nullable="false" />
+    <Property Name="InstallmentType" Type="varchar" MaxLength="10" />
+    <Property Name="Tax" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BankChargeFix" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="BankChargePerc" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FMS_SourceofFund">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_FMS_BankInfoBranchDetail_FMS_BankInfo">
+    <End Role="FMS_BankInfo" Type="Self.FMS_BankInfo" Multiplicity="1" />
+    <End Role="FMS_BankInfoBranchDetail" Type="Self.FMS_BankInfoBranchDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_BankInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_BankInfoBranchDetail">
+        <PropertyRef Name="BankInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FMS_BankWiseOfferRate_FMS_BankInfo">
+    <End Role="FMS_BankInfo" Type="Self.FMS_BankInfo" Multiplicity="1" />
+    <End Role="FMS_BankWiseOfferRate" Type="Self.FMS_BankWiseOfferRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_BankInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_BankWiseOfferRate">
+        <PropertyRef Name="BankId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FMS_BankWiseOfferRate_FMS_BankInfoBranchDetail">
+    <End Role="FMS_BankInfoBranchDetail" Type="Self.FMS_BankInfoBranchDetail" Multiplicity="0..1" />
+    <End Role="FMS_BankWiseOfferRate" Type="Self.FMS_BankWiseOfferRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_BankInfoBranchDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_BankWiseOfferRate">
+        <PropertyRef Name="BranchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FMS_BankWiseOfferRate_FMS_FDRType">
+    <End Role="FMS_FDRType" Type="Self.FMS_FDRType" Multiplicity="1" />
+    <End Role="FMS_BankWiseOfferRate" Type="Self.FMS_BankWiseOfferRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_FDRType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_BankWiseOfferRate">
+        <PropertyRef Name="FDRTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FMS_CPFInterestReceivable_FMS_FixedDepositInfo">
+    <End Role="FMS_FixedDepositInfo" Type="Self.FMS_FixedDepositInfo" Multiplicity="1" />
+    <End Role="FMS_CPFInterestReceivable" Type="Self.FMS_CPFInterestReceivable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_FixedDepositInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_CPFInterestReceivable">
+        <PropertyRef Name="FixedDepositInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FMS_FDRClosingInfo_FMS_FixedDepositInfo">
+    <End Role="FMS_FixedDepositInfo" Type="Self.FMS_FixedDepositInfo" Multiplicity="1" />
+    <End Role="FMS_FDRClosingInfo" Type="Self.FMS_FDRClosingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_FixedDepositInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_FDRClosingInfo">
+        <PropertyRef Name="FixedDepositInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FMS_FDRInstallmentInfoViewModel_FMS_FixedDepositInfo">
+    <End Role="FMS_FixedDepositInfo" Type="Self.FMS_FixedDepositInfo" Multiplicity="1" />
+    <End Role="FMS_FDRInstallmentInfo" Type="Self.FMS_FDRInstallmentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_FixedDepositInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_FDRInstallmentInfo">
+        <PropertyRef Name="FixedDepositInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FMS_FixedDepositInfo_FMS_BankInfo">
+    <End Role="FMS_BankInfo" Type="Self.FMS_BankInfo" Multiplicity="1" />
+    <End Role="FMS_FixedDepositInfo" Type="Self.FMS_FixedDepositInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_BankInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_FixedDepositInfo">
+        <PropertyRef Name="BankInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FMS_FixedDepositInfo_FMS_BankInfoBranchDetail">
+    <End Role="FMS_BankInfoBranchDetail" Type="Self.FMS_BankInfoBranchDetail" Multiplicity="1" />
+    <End Role="FMS_FixedDepositInfo" Type="Self.FMS_FixedDepositInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_BankInfoBranchDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_FixedDepositInfo">
+        <PropertyRef Name="BankInfoBranchDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FMS_FixedDepositInfo_FMS_FixedDepositTypeInfo">
+    <End Role="FMS_FixedDepositTypeInfo" Type="Self.FMS_FixedDepositTypeInfo" Multiplicity="1" />
+    <End Role="FMS_FixedDepositInfo" Type="Self.FMS_FixedDepositInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_FixedDepositTypeInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_FixedDepositInfo">
+        <PropertyRef Name="FixedDepositTypeInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FMS_FixedDepositInfoInstallmentSchedule_FMS_FixedDepositInfo">
+    <End Role="FMS_FixedDepositInfo" Type="Self.FMS_FixedDepositInfo" Multiplicity="1" />
+    <End Role="FMS_FixedDepositInfoInstallmentSchedule" Type="Self.FMS_FixedDepositInfoInstallmentSchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_FixedDepositInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_FixedDepositInfoInstallmentSchedule">
+        <PropertyRef Name="FixedDepositInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKE18F415067F93324">
+    <End Role="acc_Cost_Centre_or_Institute_Information" Type="Self.acc_Cost_Centre_or_Institute_Information" Multiplicity="0..1" />
+    <End Role="acc_Cost_Centre_or_Institute_Information1" Type="Self.acc_Cost_Centre_or_Institute_Information" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="acc_Cost_Centre_or_Institute_Information">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="acc_Cost_Centre_or_Institute_Information1">
+        <PropertyRef Name="parentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FMS_FixedDepositInfo_FMS_FDRType">
+    <End Role="FMS_FDRType" Type="Self.FMS_FDRType" Multiplicity="1" />
+    <End Role="FMS_FixedDepositInfo" Type="Self.FMS_FixedDepositInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_FDRType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_FixedDepositInfo">
+        <PropertyRef Name="FDRTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FMS_FixedDepositInfo_FMS_SourceofFund">
+    <End Role="FMS_SourceofFund" Type="Self.FMS_SourceofFund" Multiplicity="0..1" />
+    <End Role="FMS_FixedDepositInfo" Type="Self.FMS_FixedDepositInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FMS_SourceofFund">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FMS_FixedDepositInfo">
+        <PropertyRef Name="SourceofFundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="ACC_getApproverListByZoneId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZoneId" Type="int" Mode="In" />
+    <Parameter Name="ApprovalProcess" Type="varchar" Mode="In" />
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="ApprovalStepTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FMS_AutoRVforFDRCls" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZoneInfoId" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="ApproverId" Type="int" Mode="In" />
+    <Parameter Name="SVoucherDate" Type="varchar" Mode="In" />
+    <Parameter Name="Narration" Type="varchar" Mode="In" />
+    <Parameter Name="SubledgerId" Type="int" Mode="In" />
+    <Parameter Name="FDRAmount" Type="decimal" Mode="In" />
+    <Parameter Name="Profit" Type="decimal" Mode="In" />
+    <Parameter Name="EmpId" Type="varchar" Mode="In" />
+    <Parameter Name="TaxAmount" Type="decimal" Mode="In" />
+    <Parameter Name="BankCharge" Type="decimal" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="FMS_uspVoucherPosting" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FMS_uspVoucherPostingForClosingRN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FMS_uspVoucherPostingForInterestReceive" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_BankBranchInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_CPFInserestReceivable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="PeriodId" Type="int" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_EncashedFDRinCurrentYear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+    <Parameter Name="BankType" Type="varchar" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="FDRDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="FDRDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+    <Parameter Name="BankType" Type="varchar" Mode="In" />
+    <Parameter Name="BalanceDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRClosingHistory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="FDRDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="FDRDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+    <Parameter Name="BankType" Type="varchar" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRClosingInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="FDRDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="FDRDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+    <Parameter Name="MaturityDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="MaturityDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="ClosingDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="ClosingDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+    <Parameter Name="BankType" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRDailyreport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="year" Type="varchar" Mode="In" />
+    <Parameter Name="month" Type="varchar" Mode="In" />
+    <Parameter Name="FDRDate" Type="datetime" Mode="In" />
+    <Parameter Name="duration" Type="decimal" Mode="In" />
+    <Parameter Name="type" Type="varchar" Mode="In" />
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+    <Parameter Name="BankType" Type="varchar" Mode="In" />
+    <Parameter Name="FDRTypeId" Type="int" Mode="In" />
+    <Parameter Name="IsFDRDate" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="FDRDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="FDRDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+    <Parameter Name="BankType" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRInfoInstallmentSchedule" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FixedDepositInfo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRInstallment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="FDRDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="FDRDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="InstallmentDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="InstallmentDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+    <Parameter Name="BankType" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRinterestRateinformation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+    <Parameter Name="BankType" Type="varchar" Mode="In" />
+    <Parameter Name="Duration" Type="decimal" Mode="In" />
+    <Parameter Name="Type" Type="varchar" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRInterestReceivable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="FDRDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="FDRDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRPercentage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fdrTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRRegister" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRSchedule" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="FDRDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+    <Parameter Name="BankType" Type="varchar" Mode="In" />
+    <Parameter Name="IsFDRDate" Type="bit" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_FDRSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="amountType" Type="varchar" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+    <Parameter Name="date" Type="datetime" Mode="In" />
+    <Parameter Name="IsFDRDate" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_getBankAccount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="param_ZoneInfoId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_getBankChequeNo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="param_zoneInfoId" Type="int" Mode="In" />
+    <Parameter Name="coaId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_InvestmentOnFDR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+    <Parameter Name="IsFDRDate" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_InvestmentOnFDREncashment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+    <Parameter Name="IsFDRDate" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_MonthlyFDRInstallmentReceivable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FromDate" Type="datetime" Mode="In" />
+    <Parameter Name="ToDate" Type="datetime" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_NewFDRforCurrentYear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FDRNo" Type="varchar" Mode="In" />
+    <Parameter Name="financialYearId" Type="int" Mode="In" />
+    <Parameter Name="InterestRateFrom" Type="decimal" Mode="In" />
+    <Parameter Name="InterestRateTo" Type="decimal" Mode="In" />
+    <Parameter Name="BankId" Type="int" Mode="In" />
+    <Parameter Name="BranchId" Type="int" Mode="In" />
+    <Parameter Name="BankType" Type="varchar" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_RptAllInvestmentonFDR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="date" Type="datetime" Mode="In" />
+    <Parameter Name="IsFDRDate" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_SimulateFDRRegister" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="param_FDRId" Type="int" Mode="In" />
+    <Parameter Name="param_InterestRate" Type="decimal" Mode="In" />
+    <Parameter Name="param_InterestRateDuration" Type="decimal" Mode="In" />
+    <Parameter Name="param_TaxRate" Type="decimal" Mode="In" />
+    <Parameter Name="param_BankCharge" Type="decimal" Mode="In" />
+    <Parameter Name="param_IsCommitChange" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_StatementOfFRDInserestEncashmentMonthly" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FromYear" Type="varchar" Mode="In" />
+    <Parameter Name="FromMonth" Type="varchar" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_StatementOfFRDInserestEncashmentYearly" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="PeriodId" Type="int" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_StatementOfFRDInserestReceivable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="PeriodId" Type="int" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FMS_StatementOfFRDInserestReceivableMonthly" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FromYear" Type="varchar" Mode="In" />
+    <Parameter Name="FromMonth" Type="varchar" Mode="In" />
+    <Parameter Name="FundTypeId" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="ERP_BEPZADALFMSStoreContainer">
+    <EntitySet Name="acc_Cost_Centre_or_Institute_Information" EntityType="Self.acc_Cost_Centre_or_Institute_Information" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_BankInfo" EntityType="Self.FMS_BankInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_BankInfoBranchDetail" EntityType="Self.FMS_BankInfoBranchDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_BankWiseOfferRate" EntityType="Self.FMS_BankWiseOfferRate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_CPFInterestReceivable" EntityType="Self.FMS_CPFInterestReceivable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_FDRClosingInfo" EntityType="Self.FMS_FDRClosingInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_FDRInstallmentInfo" EntityType="Self.FMS_FDRInstallmentInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_FDRType" EntityType="Self.FMS_FDRType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_FixedDepositInfo" EntityType="Self.FMS_FixedDepositInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_FixedDepositInfoInstallmentSchedule" EntityType="Self.FMS_FixedDepositInfoInstallmentSchedule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_FixedDepositTypeInfo" EntityType="Self.FMS_FixedDepositTypeInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FMS_SourceofFund" EntityType="Self.FMS_SourceofFund" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_FMS_BankInfoBranchDetail_FMS_BankInfo" Association="Self.FK_FMS_BankInfoBranchDetail_FMS_BankInfo">
+      <End Role="FMS_BankInfo" EntitySet="FMS_BankInfo" />
+      <End Role="FMS_BankInfoBranchDetail" EntitySet="FMS_BankInfoBranchDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FMS_BankWiseOfferRate_FMS_BankInfo" Association="Self.FK_FMS_BankWiseOfferRate_FMS_BankInfo">
+      <End Role="FMS_BankInfo" EntitySet="FMS_BankInfo" />
+      <End Role="FMS_BankWiseOfferRate" EntitySet="FMS_BankWiseOfferRate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FMS_BankWiseOfferRate_FMS_BankInfoBranchDetail" Association="Self.FK_FMS_BankWiseOfferRate_FMS_BankInfoBranchDetail">
+      <End Role="FMS_BankInfoBranchDetail" EntitySet="FMS_BankInfoBranchDetail" />
+      <End Role="FMS_BankWiseOfferRate" EntitySet="FMS_BankWiseOfferRate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FMS_BankWiseOfferRate_FMS_FDRType" Association="Self.FK_FMS_BankWiseOfferRate_FMS_FDRType">
+      <End Role="FMS_FDRType" EntitySet="FMS_FDRType" />
+      <End Role="FMS_BankWiseOfferRate" EntitySet="FMS_BankWiseOfferRate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FMS_CPFInterestReceivable_FMS_FixedDepositInfo" Association="Self.FK_FMS_CPFInterestReceivable_FMS_FixedDepositInfo">
+      <End Role="FMS_FixedDepositInfo" EntitySet="FMS_FixedDepositInfo" />
+      <End Role="FMS_CPFInterestReceivable" EntitySet="FMS_CPFInterestReceivable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FMS_FDRClosingInfo_FMS_FixedDepositInfo" Association="Self.FK_FMS_FDRClosingInfo_FMS_FixedDepositInfo">
+      <End Role="FMS_FixedDepositInfo" EntitySet="FMS_FixedDepositInfo" />
+      <End Role="FMS_FDRClosingInfo" EntitySet="FMS_FDRClosingInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FMS_FDRInstallmentInfoViewModel_FMS_FixedDepositInfo" Association="Self.FK_FMS_FDRInstallmentInfoViewModel_FMS_FixedDepositInfo">
+      <End Role="FMS_FixedDepositInfo" EntitySet="FMS_FixedDepositInfo" />
+      <End Role="FMS_FDRInstallmentInfo" EntitySet="FMS_FDRInstallmentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FMS_FixedDepositInfo_FMS_BankInfo" Association="Self.FK_FMS_FixedDepositInfo_FMS_BankInfo">
+      <End Role="FMS_BankInfo" EntitySet="FMS_BankInfo" />
+      <End Role="FMS_FixedDepositInfo" EntitySet="FMS_FixedDepositInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FMS_FixedDepositInfo_FMS_BankInfoBranchDetail" Association="Self.FK_FMS_FixedDepositInfo_FMS_BankInfoBranchDetail">
+      <End Role="FMS_BankInfoBranchDetail" EntitySet="FMS_BankInfoBranchDetail" />
+      <End Role="FMS_FixedDepositInfo" EntitySet="FMS_FixedDepositInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FMS_FixedDepositInfo_FMS_FixedDepositTypeInfo" Association="Self.FK_FMS_FixedDepositInfo_FMS_FixedDepositTypeInfo">
+      <End Role="FMS_FixedDepositTypeInfo" EntitySet="FMS_FixedDepositTypeInfo" />
+      <End Role="FMS_FixedDepositInfo" EntitySet="FMS_FixedDepositInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FMS_FixedDepositInfoInstallmentSchedule_FMS_FixedDepositInfo" Association="Self.FK_FMS_FixedDepositInfoInstallmentSchedule_FMS_FixedDepositInfo">
+      <End Role="FMS_FixedDepositInfo" EntitySet="FMS_FixedDepositInfo" />
+      <End Role="FMS_FixedDepositInfoInstallmentSchedule" EntitySet="FMS_FixedDepositInfoInstallmentSchedule" />
+    </AssociationSet>
+    <AssociationSet Name="FKE18F415067F93324" Association="Self.FKE18F415067F93324">
+      <End Role="acc_Cost_Centre_or_Institute_Information" EntitySet="acc_Cost_Centre_or_Institute_Information" />
+      <End Role="acc_Cost_Centre_or_Institute_Information1" EntitySet="acc_Cost_Centre_or_Institute_Information" />
+    </AssociationSet>
+    <AssociationSet Name="FMS_FixedDepositInfo_FMS_FDRType" Association="Self.FMS_FixedDepositInfo_FMS_FDRType">
+      <End Role="FMS_FDRType" EntitySet="FMS_FDRType" />
+      <End Role="FMS_FixedDepositInfo" EntitySet="FMS_FixedDepositInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FMS_FixedDepositInfo_FMS_SourceofFund" Association="Self.FMS_FixedDepositInfo_FMS_SourceofFund">
+      <End Role="FMS_SourceofFund" EntitySet="FMS_SourceofFund" />
+      <End Role="FMS_FixedDepositInfo" EntitySet="FMS_FixedDepositInfo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

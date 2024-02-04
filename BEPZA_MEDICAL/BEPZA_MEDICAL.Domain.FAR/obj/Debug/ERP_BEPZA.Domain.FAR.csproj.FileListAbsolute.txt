@@ -1,0 +1,90 @@
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\LinqKit.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\LinqKit.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\LinqKit.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csprojResolveAssemblyReference.cache
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\LinqKit.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\LinqKit.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.xml
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csprojResolveAssemblyReference.cache
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.pdb
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.pdb
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\LinqKit.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.pdb
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.dll.config
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.pdb
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.xml
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csprojAssemblyReference.cache
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csproj.CoreCompileInputs.cache
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csproj.CopyComplete
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.pdb
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.Domain.FAR.pdb
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\LinqKit.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.pdb
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.DAL.FAR.dll.config
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\ERP_BEPZA.infrastructure.pdb
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\bin\Debug\EntityFramework.xml
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csprojAssemblyReference.cache
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csproj.CoreCompileInputs.cache
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.csproj.CopyComplete
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.Domain.FAR\obj\Debug\ERP_BEPZA.Domain.FAR.pdb

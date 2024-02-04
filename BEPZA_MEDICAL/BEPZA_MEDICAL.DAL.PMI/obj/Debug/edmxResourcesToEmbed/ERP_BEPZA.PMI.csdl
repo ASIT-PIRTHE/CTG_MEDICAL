@@ -1,0 +1,2319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ERP_BEPZAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ERP_BEPZAPMIEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_PMI_RptFinancialBudget" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_RptFinancialBudget_Result)">
+      <Parameter Name="FinancialYearId" Mode="In" Type="Int32" />
+      <Parameter Name="StatusId" Mode="In" Type="Int32" />
+      <Parameter Name="BudgetType" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PMI_ProjectZone" EntityType="ERP_BEPZAModel.PMI_ProjectZone" />
+    <EntitySet Name="PMI_Agency" EntityType="ERP_BEPZAModel.PMI_Agency" />
+    <EntitySet Name="PMI_ApprovalAuthority" EntityType="ERP_BEPZAModel.PMI_ApprovalAuthority" />
+    <EntitySet Name="PMI_BudgetHead" EntityType="ERP_BEPZAModel.PMI_BudgetHead" />
+    <EntitySet Name="PMI_BudgetType" EntityType="ERP_BEPZAModel.PMI_BudgetType" />
+    <EntitySet Name="PMI_ConstructionCategory" EntityType="ERP_BEPZAModel.PMI_ConstructionCategory" />
+    <EntitySet Name="PMI_ConstructionType" EntityType="ERP_BEPZAModel.PMI_ConstructionType" />
+    <EntitySet Name="PMI_EstimationUnit" EntityType="ERP_BEPZAModel.PMI_EstimationUnit" />
+    <EntitySet Name="PMI_Ministry" EntityType="ERP_BEPZAModel.PMI_Ministry" />
+    <EntitySet Name="PMI_PaymentStatus" EntityType="ERP_BEPZAModel.PMI_PaymentStatus" />
+    <EntitySet Name="PMI_ProcurementType" EntityType="ERP_BEPZAModel.PMI_ProcurementType" />
+    <EntitySet Name="PMI_ProjectStatus" EntityType="ERP_BEPZAModel.PMI_ProjectStatus" />
+    <EntitySet Name="PMI_SourceOfFund" EntityType="ERP_BEPZAModel.PMI_SourceOfFund" />
+    <EntitySet Name="vwPMIProcurementPlanFundRpt" EntityType="ERP_BEPZAModel.vwPMIProcurementPlanFundRpt" />
+    <EntitySet Name="vwPMIStatusInformation" EntityType="ERP_BEPZAModel.vwPMIStatusInformation" />
+    <EntitySet Name="CommonConfigType" EntityType="ERP_BEPZAModel.CommonConfigType" />
+    <FunctionImport Name="sp_PMI_RptTenderNoticeDetails" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_RptTenderNoticeDetails_Result)">
+      <Parameter Name="FinancialYearId" Mode="In" Type="Int32" />
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="NameOfWorksId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_PMI_RptTenderNotice" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_RptTenderNotice_Result)">
+      <Parameter Name="FinancialYearId" Mode="In" Type="Int32" />
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="NameOfWorksId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PMI_BudgetZoneOrProject" EntityType="ERP_BEPZAModel.PMI_BudgetZoneOrProject" />
+    <EntitySet Name="PMI_EstimationSetup" EntityType="ERP_BEPZAModel.PMI_EstimationSetup" />
+    <AssociationSet Name="FK_PMI_EstimationSetup_PMI_EstimationUnit" Association="ERP_BEPZAModel.FK_PMI_EstimationSetup_PMI_EstimationUnit">
+      <End Role="PMI_EstimationUnit" EntitySet="PMI_EstimationUnit" />
+      <End Role="PMI_EstimationSetup" EntitySet="PMI_EstimationSetup" />
+    </AssociationSet>
+    <EntitySet Name="PMI_EstimationZone" EntityType="ERP_BEPZAModel.PMI_EstimationZone" />
+    <EntitySet Name="PMI_ProcurementMethod" EntityType="ERP_BEPZAModel.PMI_ProcurementMethod" />
+    <EntitySet Name="PMI_ProjectDetails" EntityType="ERP_BEPZAModel.PMI_ProjectDetails" />
+    <AssociationSet Name="FK_PMI_ProjectDetails_PMI_ApprovalAuthority" Association="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ApprovalAuthority">
+      <End Role="PMI_ApprovalAuthority" EntitySet="PMI_ApprovalAuthority" />
+      <End Role="PMI_ProjectDetails" EntitySet="PMI_ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectDetails_PMI_ProcurementMethod" Association="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ProcurementMethod">
+      <End Role="PMI_ProcurementMethod" EntitySet="PMI_ProcurementMethod" />
+      <End Role="PMI_ProjectDetails" EntitySet="PMI_ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectDetails_PMI_ProcurementType" Association="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ProcurementType">
+      <End Role="PMI_ProcurementType" EntitySet="PMI_ProcurementType" />
+      <End Role="PMI_ProjectDetails" EntitySet="PMI_ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectDetails_PMI_SourceOfFund" Association="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_SourceOfFund">
+      <End Role="PMI_SourceOfFund" EntitySet="PMI_SourceOfFund" />
+      <End Role="PMI_ProjectDetails" EntitySet="PMI_ProjectDetails" />
+    </AssociationSet>
+    <FunctionImport Name="sp_PMI_ChartBudgetVariance" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_ChartBudgetVariance_Result)">
+      <Parameter Name="FinancialYearId" Mode="In" Type="Int32" />
+      <Parameter Name="BudgetStatusId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_PMI_BudgetStatus" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_BudgetStatus_Result)">
+      <Parameter Name="FinancialYearId" Mode="In" Type="Int32" />
+      <Parameter Name="BudgetStatusId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_PMI_ProjectStatus" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_ProjectStatus_Result)">
+      <Parameter Name="FinancialYearId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PMI_ProjectTimeExtension" EntityType="ERP_BEPZAModel.PMI_ProjectTimeExtension" />
+    <FunctionImport Name="sp_PMI_RptProcurementPlan" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_RptProcurementPlan_Result)">
+      <Parameter Name="FinancialYearId" Mode="In" Type="Int32" />
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="NameOfWorksId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="StatusId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_PMI_RptProcurementPlanDetails" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_RptProcurementPlanDetails_Result)">
+      <Parameter Name="FinancialYearId" Mode="In" Type="Int32" />
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="NameOfWorksId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="StatusId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_PMI_RptProjectEstimation" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_RptProjectEstimation_Result)">
+      <Parameter Name="NameOfWorksId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_PMI_RptZoneWiseBudget" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_RptZoneWiseBudget_Result)">
+      <Parameter Name="FinancialYearId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="StatusId" Mode="In" Type="Int32" />
+      <Parameter Name="ProjectForId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_PMI_RptWorkWiseBudget" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_RptWorkWiseBudget_Result)">
+      <Parameter Name="ZoneId" Mode="In" Type="Int32" />
+      <Parameter Name="BudgetHeadId" Mode="In" Type="String" />
+      <Parameter Name="BudgetSubHeadId" Mode="In" Type="String" />
+      <Parameter Name="FinancialYearId" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="vwPMIEstimation" EntityType="ERP_BEPZAModel.vwPMIEstimation" />
+    <EntitySet Name="PMI_BudgetDetailsYearlyCost" EntityType="ERP_BEPZAModel.PMI_BudgetDetailsYearlyCost" />
+    <EntitySet Name="PMI_BudgetMaster" EntityType="ERP_BEPZAModel.PMI_BudgetMaster" />
+    <AssociationSet Name="FK_PMI_BudgetMaster_PMI_ApprovalAuthority" Association="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_ApprovalAuthority">
+      <End Role="PMI_ApprovalAuthority" EntitySet="PMI_ApprovalAuthority" />
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetDetailsYearlyCost_PMI_ProjectStatus" Association="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyCost_PMI_ProjectStatus">
+      <End Role="PMI_ProjectStatus" EntitySet="PMI_ProjectStatus" />
+      <End Role="PMI_BudgetDetailsYearlyCost" EntitySet="PMI_BudgetDetailsYearlyCost" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetMaster_PMI_Ministry" Association="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_Ministry">
+      <End Role="PMI_Ministry" EntitySet="PMI_Ministry" />
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetMaster_PMI_ProcurementType" Association="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_ProcurementType">
+      <End Role="PMI_ProcurementType" EntitySet="PMI_ProcurementType" />
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetMaster_PMI_SourceOfFund" Association="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_SourceOfFund">
+      <End Role="PMI_SourceOfFund" EntitySet="PMI_SourceOfFund" />
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetZoneOrProject_PMI_BudgetMaster" Association="ERP_BEPZAModel.FK_PMI_BudgetZoneOrProject_PMI_BudgetMaster">
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+      <End Role="PMI_BudgetZoneOrProject" EntitySet="PMI_BudgetZoneOrProject" />
+    </AssociationSet>
+    <EntitySet Name="acc_Accounting_Period_Information" EntityType="ERP_BEPZAModel.acc_Accounting_Period_Information" />
+    <AssociationSet Name="FK_PMI_BudgetDetailsYearlyCost_FAM_FinancialYearInformation" Association="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyCost_FAM_FinancialYearInformation">
+      <End Role="acc_Accounting_Period_Information" EntitySet="acc_Accounting_Period_Information" />
+      <End Role="PMI_BudgetDetailsYearlyCost" EntitySet="PMI_BudgetDetailsYearlyCost" />
+    </AssociationSet>
+    <FunctionImport Name="sp_Pmi_GetAccountingPeriod" ReturnType="Collection(ERP_BEPZAModel.sp_Pmi_GetAccountingPeriod_Result)" />
+    <EntitySet Name="PMI_EstimationHead" EntityType="ERP_BEPZAModel.PMI_EstimationHead" />
+    <EntitySet Name="PMI_EstimationHeadDescription" EntityType="ERP_BEPZAModel.PMI_EstimationHeadDescription" />
+    <EntitySet Name="PMI_EstimationMaster" EntityType="ERP_BEPZAModel.PMI_EstimationMaster" />
+    <AssociationSet Name="FK_PMI_EstimationHeadDescription_PMI_EstimationHead" Association="ERP_BEPZAModel.FK_PMI_EstimationHeadDescription_PMI_EstimationHead">
+      <End Role="PMI_EstimationHead" EntitySet="PMI_EstimationHead" />
+      <End Role="PMI_EstimationHeadDescription" EntitySet="PMI_EstimationHeadDescription" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationSetup_PMI_EstimationHead" Association="ERP_BEPZAModel.FK_PMI_EstimationSetup_PMI_EstimationHead">
+      <End Role="PMI_EstimationHead" EntitySet="PMI_EstimationHead" />
+      <End Role="PMI_EstimationSetup" EntitySet="PMI_EstimationSetup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationHeadDescription_PMI_EstimationMaster" Association="ERP_BEPZAModel.FK_PMI_EstimationHeadDescription_PMI_EstimationMaster">
+      <End Role="PMI_EstimationMaster" EntitySet="PMI_EstimationMaster" />
+      <End Role="PMI_EstimationHeadDescription" EntitySet="PMI_EstimationHeadDescription" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationZone_PMI_ProjectMaster" Association="ERP_BEPZAModel.FK_PMI_EstimationZone_PMI_ProjectMaster">
+      <End Role="PMI_EstimationMaster" EntitySet="PMI_EstimationMaster" />
+      <End Role="PMI_EstimationZone" EntitySet="PMI_EstimationZone" />
+    </AssociationSet>
+    <EntitySet Name="vwPMIBudgetInfo" EntityType="ERP_BEPZAModel.vwPMIBudgetInfo" />
+    <EntitySet Name="PMI_EstimationDetails" EntityType="ERP_BEPZAModel.PMI_EstimationDetails" />
+    <EntitySet Name="PMI_TenderDetails" EntityType="ERP_BEPZAModel.PMI_TenderDetails" />
+    <AssociationSet Name="FK_PMI_EstimationDetails_PMI_EstimationHead" Association="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationHead">
+      <End Role="PMI_EstimationHead" EntitySet="PMI_EstimationHead" />
+      <End Role="PMI_EstimationDetails" EntitySet="PMI_EstimationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationDetails_PMI_EstimationMaster" Association="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationMaster">
+      <End Role="PMI_EstimationMaster" EntitySet="PMI_EstimationMaster" />
+      <End Role="PMI_EstimationDetails" EntitySet="PMI_EstimationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationDetails_PMI_EstimationSetup" Association="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationSetup">
+      <End Role="PMI_EstimationSetup" EntitySet="PMI_EstimationSetup" />
+      <End Role="PMI_EstimationDetails" EntitySet="PMI_EstimationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationDetails_PMI_EstimationUnit" Association="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationUnit">
+      <End Role="PMI_EstimationUnit" EntitySet="PMI_EstimationUnit" />
+      <End Role="PMI_EstimationDetails" EntitySet="PMI_EstimationDetails" />
+    </AssociationSet>
+    <FunctionImport Name="sp_Pmi_GetBudgetHeadInformation" ReturnType="Collection(ERP_BEPZAModel.sp_Pmi_GetBudgetHeadInformation_Result)" />
+    <EntitySet Name="PMI_ApprovalFlowDetails" EntityType="ERP_BEPZAModel.PMI_ApprovalFlowDetails" />
+    <EntitySet Name="PMI_ApprovalFlowMaster" EntityType="ERP_BEPZAModel.PMI_ApprovalFlowMaster" />
+    <EntitySet Name="PMI_ApprovalSection" EntityType="ERP_BEPZAModel.PMI_ApprovalSection" />
+    <AssociationSet Name="FK_PMI_ApprovalFlowDetails_PMI_ApprovalFlowMaster" Association="ERP_BEPZAModel.FK_PMI_ApprovalFlowDetails_PMI_ApprovalFlowMaster">
+      <End Role="PMI_ApprovalFlowMaster" EntitySet="PMI_ApprovalFlowMaster" />
+      <End Role="PMI_ApprovalFlowDetails" EntitySet="PMI_ApprovalFlowDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ApprovalFlowMaster_PMI_ApprovalSection" Association="ERP_BEPZAModel.FK_PMI_ApprovalFlowMaster_PMI_ApprovalSection">
+      <End Role="PMI_ApprovalSection" EntitySet="PMI_ApprovalSection" />
+      <End Role="PMI_ApprovalFlowMaster" EntitySet="PMI_ApprovalFlowMaster" />
+    </AssociationSet>
+    <EntitySet Name="PMI_ProjectApproverStatus" EntityType="ERP_BEPZAModel.PMI_ProjectApproverStatus" />
+    <EntitySet Name="PMI_AnnualProcurementPlanMaster" EntityType="ERP_BEPZAModel.PMI_AnnualProcurementPlanMaster" />
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanMaster_PMI_Ministry" Association="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanMaster_PMI_Ministry">
+      <End Role="PMI_Ministry" EntitySet="PMI_Ministry" />
+      <End Role="PMI_AnnualProcurementPlanMaster" EntitySet="PMI_AnnualProcurementPlanMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanMaster_PMI_ProjectStatus" Association="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanMaster_PMI_ProjectStatus">
+      <End Role="PMI_ProjectStatus" EntitySet="PMI_ProjectStatus" />
+      <End Role="PMI_AnnualProcurementPlanMaster" EntitySet="PMI_AnnualProcurementPlanMaster" />
+    </AssociationSet>
+    <EntitySet Name="vwPMIProjectSummary" EntityType="ERP_BEPZAModel.vwPMIProjectSummary" />
+    <EntitySet Name="PMI_ProjectMaster" EntityType="ERP_BEPZAModel.PMI_ProjectMaster" />
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_Agency" Association="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_Agency">
+      <End Role="PMI_Agency" EntitySet="PMI_Agency" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_ConstructionCategory" Association="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_ConstructionCategory">
+      <End Role="PMI_ConstructionCategory" EntitySet="PMI_ConstructionCategory" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_ConstructionType" Association="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_ConstructionType">
+      <End Role="PMI_ConstructionType" EntitySet="PMI_ConstructionType" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_Ministry" Association="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_Ministry">
+      <End Role="PMI_Ministry" EntitySet="PMI_Ministry" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_PaymentStatus" Association="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_PaymentStatus">
+      <End Role="PMI_PaymentStatus" EntitySet="PMI_PaymentStatus" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectDetails_PMI_ProjectMaster" Association="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ProjectMaster">
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+      <End Role="PMI_ProjectDetails" EntitySet="PMI_ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_ProjectStatus" Association="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_ProjectStatus">
+      <End Role="PMI_ProjectStatus" EntitySet="PMI_ProjectStatus" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectTimeExtension_PMI_ProjectMaster" Association="ERP_BEPZAModel.FK_PMI_ProjectTimeExtension_PMI_ProjectMaster">
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+      <End Role="PMI_ProjectTimeExtension" EntitySet="PMI_ProjectTimeExtension" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectZone_PMI_ProjectMaster" Association="ERP_BEPZAModel.FK_PMI_ProjectZone_PMI_ProjectMaster">
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+      <End Role="PMI_ProjectZone" EntitySet="PMI_ProjectZone" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_TenderDetails_PMI_ProjectMaster" Association="ERP_BEPZAModel.FK_PMI_TenderDetails_PMI_ProjectMaster">
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+      <End Role="PMI_TenderDetails" EntitySet="PMI_TenderDetails" />
+    </AssociationSet>
+    <EntitySet Name="PMI_AppZones" EntityType="ERP_BEPZAModel.PMI_AppZones" />
+    <AssociationSet Name="FK_PMI_AppZones_PMI_AnnualProcurementPlanMaster" Association="ERP_BEPZAModel.FK_PMI_AppZones_PMI_AnnualProcurementPlanMaster">
+      <End Role="PMI_AnnualProcurementPlanMaster" EntitySet="PMI_AnnualProcurementPlanMaster" />
+      <End Role="PMI_AppZones" EntitySet="PMI_AppZones" />
+    </AssociationSet>
+    <EntitySet Name="acc_Cost_Centre_or_Institute_Information" EntityType="ERP_BEPZAModel.acc_Cost_Centre_or_Institute_Information" />
+    <AssociationSet Name="FKE18F415067F93324" Association="ERP_BEPZAModel.FKE18F415067F93324">
+      <End Role="acc_Cost_Centre_or_Institute_Information" EntitySet="acc_Cost_Centre_or_Institute_Information" />
+      <End Role="acc_Cost_Centre_or_Institute_Information1" EntitySet="acc_Cost_Centre_or_Institute_Information" />
+    </AssociationSet>
+    <EntitySet Name="PMI_WorkStatus" EntityType="ERP_BEPZAModel.PMI_WorkStatus" />
+    <EntitySet Name="PMI_BudgetDetailsYearlyBilled" EntityType="ERP_BEPZAModel.PMI_BudgetDetailsYearlyBilled" />
+    <EntitySet Name="PMI_BudgetDetails" EntityType="ERP_BEPZAModel.PMI_BudgetDetails" />
+    <AssociationSet Name="FK_PMI_BudgetDetails_PMI_BudgetMaster" Association="ERP_BEPZAModel.FK_PMI_BudgetDetails_PMI_BudgetMaster">
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+      <End Role="PMI_BudgetDetails" EntitySet="PMI_BudgetDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetDetails_PMI_ConstructionType" Association="ERP_BEPZAModel.FK_PMI_BudgetDetails_PMI_ConstructionType">
+      <End Role="PMI_ConstructionType" EntitySet="PMI_ConstructionType" />
+      <End Role="PMI_BudgetDetails" EntitySet="PMI_BudgetDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetDetailsYearlyBilled_PMI_BudgetDetails" Association="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyBilled_PMI_BudgetDetails">
+      <End Role="PMI_BudgetDetails" EntitySet="PMI_BudgetDetails" />
+      <End Role="PMI_BudgetDetailsYearlyBilled" EntitySet="PMI_BudgetDetailsYearlyBilled" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetDetailsYearlyCost_PMI_BudgetDetails" Association="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyCost_PMI_BudgetDetails">
+      <End Role="PMI_BudgetDetails" EntitySet="PMI_BudgetDetails" />
+      <End Role="PMI_BudgetDetailsYearlyCost" EntitySet="PMI_BudgetDetailsYearlyCost" />
+    </AssociationSet>
+    <FunctionImport Name="sp_PMI_PrintBudget" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_PrintBudget_Result)">
+      <Parameter Name="BudgetMasterId" Mode="In" Type="Int32" />
+      <Parameter Name="BudgetDetailsId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_PMI_ProgressReport" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_ProgressReport_Result)">
+      <Parameter Name="ZoneId" Mode="In" Type="Int32" />
+      <Parameter Name="FinancialYearList" Mode="In" Type="String" />
+      <Parameter Name="ReportDate" Mode="In" Type="DateTime" />
+      <Parameter Name="BudgetHeadIdList" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PMI_AnnualProcurementPlanDetails" EntityType="ERP_BEPZAModel.PMI_AnnualProcurementPlanDetails" />
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanDetails_PMI_AnnualProcurementPlanMaster" Association="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_AnnualProcurementPlanMaster">
+      <End Role="PMI_AnnualProcurementPlanMaster" EntitySet="PMI_AnnualProcurementPlanMaster" />
+      <End Role="PMI_AnnualProcurementPlanDetails" EntitySet="PMI_AnnualProcurementPlanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ApprovalAuthority" Association="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_ApprovalAuthority">
+      <End Role="PMI_ApprovalAuthority" EntitySet="PMI_ApprovalAuthority" />
+      <End Role="PMI_AnnualProcurementPlanDetails" EntitySet="PMI_AnnualProcurementPlanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ConstructionType" Association="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_ConstructionType">
+      <End Role="PMI_ConstructionType" EntitySet="PMI_ConstructionType" />
+      <End Role="PMI_AnnualProcurementPlanDetails" EntitySet="PMI_AnnualProcurementPlanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ProcurementMethod" Association="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_ProcurementMethod">
+      <End Role="PMI_ProcurementMethod" EntitySet="PMI_ProcurementMethod" />
+      <End Role="PMI_AnnualProcurementPlanDetails" EntitySet="PMI_AnnualProcurementPlanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanDetails_PMI_SourceOfFund" Association="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_SourceOfFund">
+      <End Role="PMI_SourceOfFund" EntitySet="PMI_SourceOfFund" />
+      <End Role="PMI_AnnualProcurementPlanDetails" EntitySet="PMI_AnnualProcurementPlanDetails" />
+    </AssociationSet>
+    <EntitySet Name="PMI_ProgressReportDetailsYearlyBilled" EntityType="ERP_BEPZAModel.PMI_ProgressReportDetailsYearlyBilled" />
+    <EntitySet Name="PMI_ProgressReportDetails" EntityType="ERP_BEPZAModel.PMI_ProgressReportDetails" />
+    <EntitySet Name="PMI_ProgressReportMaster" EntityType="ERP_BEPZAModel.PMI_ProgressReportMaster" />
+    <AssociationSet Name="FK_PMI_ProgressReportMaster_PMI_AnnualProcurementPlanMaster" Association="ERP_BEPZAModel.FK_PMI_ProgressReportMaster_PMI_AnnualProcurementPlanMaster">
+      <End Role="PMI_AnnualProcurementPlanMaster" EntitySet="PMI_AnnualProcurementPlanMaster" />
+      <End Role="PMI_ProgressReportMaster" EntitySet="PMI_ProgressReportMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProgressReportDetails_PMI_ProgressReportMaster" Association="ERP_BEPZAModel.FK_PMI_ProgressReportDetails_PMI_ProgressReportMaster">
+      <End Role="PMI_ProgressReportMaster" EntitySet="PMI_ProgressReportMaster" />
+      <End Role="PMI_ProgressReportDetails" EntitySet="PMI_ProgressReportDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProgressReportDetails_PMI_WorkStatus" Association="ERP_BEPZAModel.FK_PMI_ProgressReportDetails_PMI_WorkStatus">
+      <End Role="PMI_WorkStatus" EntitySet="PMI_WorkStatus" />
+      <End Role="PMI_ProgressReportDetails" EntitySet="PMI_ProgressReportDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProgressReportDetailsYearlyBilled_PMI_ProgressReportDetails" Association="ERP_BEPZAModel.FK_PMI_ProgressReportDetailsYearlyBilled_PMI_ProgressReportDetails">
+      <End Role="PMI_ProgressReportDetails" EntitySet="PMI_ProgressReportDetails" />
+      <End Role="PMI_ProgressReportDetailsYearlyBilled" EntitySet="PMI_ProgressReportDetailsYearlyBilled" />
+    </AssociationSet>
+    <FunctionImport Name="sp_PMI_RptAnnualProcurementPlan" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_RptAnnualProcurementPlan_Result)">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="FinancialYearId" Mode="In" Type="Int32" />
+      <Parameter Name="StatusId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="ProjectForId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_PMI_ProgressReport_M1" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_ProgressReport_M1_Result)">
+      <Parameter Name="progressReportId" Mode="In" Type="Int32" />
+      <Parameter Name="ProjectForId" Mode="In" Type="Int32" />
+      <Parameter Name="strZoneId" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PMI_ProjectFor" EntityType="ERP_BEPZAModel.PMI_ProjectFor" />
+    <EntitySet Name="PMI_Head" EntityType="ERP_BEPZAModel.PMI_Head" />
+    <EntitySet Name="vwPMIBudgetHead" EntityType="ERP_BEPZAModel.vwPMIBudgetHead" />
+    <EntitySet Name="PMI_ProgressReportAttachment" EntityType="ERP_BEPZAModel.PMI_ProgressReportAttachment" />
+    <AssociationSet Name="FK_PMI_ProgressReportAttachment_PMI_ProgressReportMaster" Association="ERP_BEPZAModel.FK_PMI_ProgressReportAttachment_PMI_ProgressReportMaster">
+      <End Role="PMI_ProgressReportMaster" EntitySet="PMI_ProgressReportMaster" />
+      <End Role="PMI_ProgressReportAttachment" EntitySet="PMI_ProgressReportAttachment" />
+    </AssociationSet>
+    <FunctionImport Name="sp_PMI_ProgressReport_Attachment" ReturnType="Collection(ERP_BEPZAModel.sp_PMI_ProgressReport_Attachment_Result)">
+      <Parameter Name="progressReportId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_PRM_RptServiceVistory" ReturnType="Collection(ERP_BEPZAModel.SP_PRM_RptServiceVistory_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="DesignationId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="vwPMINewBudgetInfo" EntityType="ERP_BEPZAModel.vwPMINewBudgetInfo" />
+    <FunctionImport Name="sp_PMI_RptBudgetSummary">
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="ProjectForId" Mode="In" Type="Int32" />
+      <Parameter Name="BudgetHeadId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="PMI_ProgressReportSignature" EntityType="ERP_BEPZAModel.PMI_ProgressReportSignature" />
+    <AssociationSet Name="FK_PMI_ProgressReportSignature_PMI_ProgressReportMaster" Association="ERP_BEPZAModel.FK_PMI_ProgressReportSignature_PMI_ProgressReportMaster">
+      <End Role="PMI_ProgressReportMaster" EntitySet="PMI_ProgressReportMaster" />
+      <End Role="PMI_ProgressReportSignature" EntitySet="PMI_ProgressReportSignature" />
+    </AssociationSet>
+    <FunctionImport Name="SP_PMI_Signature" ReturnType="Collection(ERP_BEPZAModel.SP_PMI_Signature_Result)">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="ReportType" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_PMI_RptFinancialBudget_Result">
+    <Property Type="String" Name="FinancialYearName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="BudgetType" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Head" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="SubHead" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="EstematedCost" Nullable="false" Precision="19" />
+  </ComplexType>
+  <EntityType Name="PMI_ProjectZone">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectMasterId" Type="Int32" Nullable="false" />
+    <Property Name="ZoneId" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProjectZone_PMI_ProjectMaster" FromRole="PMI_ProjectZone" ToRole="PMI_ProjectMaster" />
+  </EntityType>
+  <EntityType Name="PMI_Agency">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_Agency" FromRole="PMI_Agency" ToRole="PMI_ProjectMaster" />
+  </EntityType>
+  <EntityType Name="PMI_ApprovalAuthority">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectDetails" Relationship="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ApprovalAuthority" FromRole="PMI_ApprovalAuthority" ToRole="PMI_ProjectDetails" />
+    <NavigationProperty Name="PMI_BudgetMaster" Relationship="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_ApprovalAuthority" FromRole="PMI_ApprovalAuthority" ToRole="PMI_BudgetMaster" />
+    <NavigationProperty Name="PMI_AnnualProcurementPlanDetails" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_ApprovalAuthority" FromRole="PMI_ApprovalAuthority" ToRole="PMI_AnnualProcurementPlanDetails" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="BudgetHeadName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PMI_ConstructionCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_ConstructionCategory" FromRole="PMI_ConstructionCategory" ToRole="PMI_ProjectMaster" />
+  </EntityType>
+  <EntityType Name="PMI_ConstructionType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_ConstructionType" FromRole="PMI_ConstructionType" ToRole="PMI_ProjectMaster" />
+    <NavigationProperty Name="PMI_BudgetDetails" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetails_PMI_ConstructionType" FromRole="PMI_ConstructionType" ToRole="PMI_BudgetDetails" />
+    <NavigationProperty Name="PMI_AnnualProcurementPlanDetails" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_ConstructionType" FromRole="PMI_ConstructionType" ToRole="PMI_AnnualProcurementPlanDetails" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationUnit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_EstimationSetup" Relationship="ERP_BEPZAModel.FK_PMI_EstimationSetup_PMI_EstimationUnit" FromRole="PMI_EstimationUnit" ToRole="PMI_EstimationSetup" />
+    <NavigationProperty Name="PMI_EstimationDetails" Relationship="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationUnit" FromRole="PMI_EstimationUnit" ToRole="PMI_EstimationDetails" />
+  </EntityType>
+  <EntityType Name="PMI_Ministry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_BudgetMaster" Relationship="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_Ministry" FromRole="PMI_Ministry" ToRole="PMI_BudgetMaster" />
+    <NavigationProperty Name="PMI_AnnualProcurementPlanMaster" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanMaster_PMI_Ministry" FromRole="PMI_Ministry" ToRole="PMI_AnnualProcurementPlanMaster" />
+    <NavigationProperty Name="PMI_ProjectMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_Ministry" FromRole="PMI_Ministry" ToRole="PMI_ProjectMaster" />
+  </EntityType>
+  <EntityType Name="PMI_PaymentStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_PaymentStatus" FromRole="PMI_PaymentStatus" ToRole="PMI_ProjectMaster" />
+  </EntityType>
+  <EntityType Name="PMI_ProcurementType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectDetails" Relationship="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ProcurementType" FromRole="PMI_ProcurementType" ToRole="PMI_ProjectDetails" />
+    <NavigationProperty Name="PMI_BudgetMaster" Relationship="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_ProcurementType" FromRole="PMI_ProcurementType" ToRole="PMI_BudgetMaster" />
+  </EntityType>
+  <EntityType Name="PMI_ProjectStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_BudgetDetailsYearlyCost" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyCost_PMI_ProjectStatus" FromRole="PMI_ProjectStatus" ToRole="PMI_BudgetDetailsYearlyCost" />
+    <NavigationProperty Name="PMI_AnnualProcurementPlanMaster" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanMaster_PMI_ProjectStatus" FromRole="PMI_ProjectStatus" ToRole="PMI_AnnualProcurementPlanMaster" />
+    <NavigationProperty Name="PMI_ProjectMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_ProjectStatus" FromRole="PMI_ProjectStatus" ToRole="PMI_ProjectMaster" />
+  </EntityType>
+  <EntityType Name="PMI_SourceOfFund">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectDetails" Relationship="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_SourceOfFund" FromRole="PMI_SourceOfFund" ToRole="PMI_ProjectDetails" />
+    <NavigationProperty Name="PMI_BudgetMaster" Relationship="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_SourceOfFund" FromRole="PMI_SourceOfFund" ToRole="PMI_BudgetMaster" />
+    <NavigationProperty Name="PMI_AnnualProcurementPlanDetails" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_SourceOfFund" FromRole="PMI_SourceOfFund" ToRole="PMI_AnnualProcurementPlanDetails" />
+  </EntityType>
+  <EntityType Name="vwPMIProcurementPlanFundRpt">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ProjectMasterId" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ProjectMasterId" Type="Int32" Nullable="false" />
+    <Property Name="SourceOfFund" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cost" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="vwPMIStatusInformation">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="ApplicableFor" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicableFor" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CommonConfigType">
+    <Key>
+      <PropertyRef Name="TableName" />
+      <PropertyRef Name="DisplayName" />
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="TableName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="ModuleId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="sp_PMI_RptTenderNoticeDetails_Result">
+    <Property Type="Int32" Name="ProjectMasterId" Nullable="false" />
+    <Property Type="String" Name="LotNumber" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Identification" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Location" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="SecurityMoney" Nullable="false" Precision="19" />
+    <Property Type="DateTime" Name="ContractSignDate" Nullable="true" />
+    <Property Type="DateTime" Name="CompletionDate" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_PMI_RptTenderNotice_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="FinancialYearName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Ministry" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Agency" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ProcuringEntryName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ProcuringEntryCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ProcuringEntryDistrict" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="InvitationFor" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="InvitationRefNo" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="Date" Nullable="true" />
+    <Property Type="String" Name="ProcurementMethod" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ProcurementType" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SourceOfFund" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Developmentpartner" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ProjectCode" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="NameOfWorks" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="PackageNo" Nullable="true" />
+    <Property Type="String" Name="PackageName" Nullable="true" />
+    <Property Type="DateTime" Name="TenderPubDate" Nullable="true" />
+    <Property Type="DateTime" Name="TenderLastSellingDate" Nullable="true" />
+    <Property Type="DateTime" Name="TenderClosingDateTime" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="TenderOpeningDateTime" Nullable="true" Precision="23" />
+    <Property Type="String" Name="SellingTenderDescription" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="ReceivingTenderDescription" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="OpeningTenderDescription" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="PreTenderMeetingPlace" Nullable="true" MaxLength="1000" />
+    <Property Type="DateTime" Name="ContractSignDate" Nullable="true" />
+    <Property Type="DateTime" Name="CompletionDate" Nullable="true" />
+    <Property Type="String" Name="EligibilityOfTenderer" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="BriefDescription" Nullable="true" />
+    <Property Type="String" Name="BriefDescriptionOfRelated" Nullable="true" />
+    <Property Type="Decimal" Name="TenderDocPrice" Nullable="true" Precision="19" />
+    <Property Type="String" Name="NameOfInvitingTender" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProcureAddress" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ContactDetails" Nullable="true" MaxLength="175" />
+  </ComplexType>
+  <EntityType Name="PMI_BudgetZoneOrProject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BudgetMasterId" Type="Int32" Nullable="false" />
+    <Property Name="ZoneOrProjectId" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_BudgetMaster" Relationship="ERP_BEPZAModel.FK_PMI_BudgetZoneOrProject_PMI_BudgetMaster" FromRole="PMI_BudgetZoneOrProject" ToRole="PMI_BudgetMaster" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationSetup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EstimationHeadId" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="ItemName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="UnitId" Type="Int32" Nullable="false" />
+    <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ItemDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PMI_EstimationUnit" Relationship="ERP_BEPZAModel.FK_PMI_EstimationSetup_PMI_EstimationUnit" FromRole="PMI_EstimationSetup" ToRole="PMI_EstimationUnit" />
+    <Property Name="ItemCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PMI_EstimationHead" Relationship="ERP_BEPZAModel.FK_PMI_EstimationSetup_PMI_EstimationHead" FromRole="PMI_EstimationSetup" ToRole="PMI_EstimationHead" />
+    <NavigationProperty Name="PMI_EstimationDetails" Relationship="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationSetup" FromRole="PMI_EstimationSetup" ToRole="PMI_EstimationDetails" />
+  </EntityType>
+  <Association Name="FK_PMI_EstimationSetup_PMI_EstimationUnit">
+    <End Type="ERP_BEPZAModel.PMI_EstimationUnit" Role="PMI_EstimationUnit" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_EstimationSetup" Role="PMI_EstimationSetup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationUnit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationSetup">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PMI_EstimationZone">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EstimationMasterId" Type="Int32" Nullable="false" />
+    <Property Name="ZoneId" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_EstimationMaster" Relationship="ERP_BEPZAModel.FK_PMI_EstimationZone_PMI_ProjectMaster" FromRole="PMI_EstimationZone" ToRole="PMI_EstimationMaster" />
+  </EntityType>
+  <EntityType Name="PMI_ProcurementMethod">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectDetails" Relationship="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ProcurementMethod" FromRole="PMI_ProcurementMethod" ToRole="PMI_ProjectDetails" />
+    <NavigationProperty Name="PMI_AnnualProcurementPlanDetails" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_ProcurementMethod" FromRole="PMI_ProcurementMethod" ToRole="PMI_AnnualProcurementPlanDetails" />
+  </EntityType>
+  <EntityType Name="PMI_ProjectDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectMasterId" Type="Int32" Nullable="false" />
+    <Property Name="ProcurementTypeId" Type="Int32" Nullable="false" />
+    <Property Name="ProcurementMethodId" Type="Int32" Nullable="false" />
+    <Property Name="SourceOfFundId" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalAuthorityId" Type="Int32" Nullable="false" />
+    <Property Name="PackageNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PackageName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Unit" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="EstimatedCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ApprovalAuthority" Relationship="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ApprovalAuthority" FromRole="PMI_ProjectDetails" ToRole="PMI_ApprovalAuthority" />
+    <NavigationProperty Name="PMI_ProcurementMethod" Relationship="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ProcurementMethod" FromRole="PMI_ProjectDetails" ToRole="PMI_ProcurementMethod" />
+    <NavigationProperty Name="PMI_ProcurementType" Relationship="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ProcurementType" FromRole="PMI_ProjectDetails" ToRole="PMI_ProcurementType" />
+    <NavigationProperty Name="PMI_SourceOfFund" Relationship="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_SourceOfFund" FromRole="PMI_ProjectDetails" ToRole="PMI_SourceOfFund" />
+    <NavigationProperty Name="PMI_ProjectMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ProjectMaster" FromRole="PMI_ProjectDetails" ToRole="PMI_ProjectMaster" />
+  </EntityType>
+  <Association Name="FK_PMI_ProjectDetails_PMI_ApprovalAuthority">
+    <End Type="ERP_BEPZAModel.PMI_ApprovalAuthority" Role="PMI_ApprovalAuthority" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectDetails" Role="PMI_ProjectDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ApprovalAuthority">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectDetails">
+        <PropertyRef Name="ApprovalAuthorityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectDetails_PMI_ProcurementMethod">
+    <End Type="ERP_BEPZAModel.PMI_ProcurementMethod" Role="PMI_ProcurementMethod" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectDetails" Role="PMI_ProjectDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProcurementMethod">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectDetails">
+        <PropertyRef Name="ProcurementMethodId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectDetails_PMI_ProcurementType">
+    <End Type="ERP_BEPZAModel.PMI_ProcurementType" Role="PMI_ProcurementType" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectDetails" Role="PMI_ProjectDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProcurementType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectDetails">
+        <PropertyRef Name="ProcurementTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectDetails_PMI_SourceOfFund">
+    <End Type="ERP_BEPZAModel.PMI_SourceOfFund" Role="PMI_SourceOfFund" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectDetails" Role="PMI_ProjectDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_SourceOfFund">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectDetails">
+        <PropertyRef Name="SourceOfFundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_PMI_ChartBudgetVariance_Result">
+    <Property Type="String" Name="ZoneName" Nullable="true" MaxLength="150" />
+    <Property Type="Decimal" Name="BudgetAmount" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ZoneInfoId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_PMI_BudgetStatus_Result">
+    <Property Type="Int32" Name="Id" Nullable="true" />
+    <Property Type="String" Name="ZoneName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="NameOfWorks" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="ApprovalDate" Nullable="true" />
+    <Property Type="Decimal" Name="BudgetAmount" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="sp_PMI_ProjectStatus_Result">
+    <Property Type="Int32" Name="Id" Nullable="true" />
+    <Property Type="String" Name="ZoneName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="NameOfWorks" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProjectType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="SiteHandoverDate" Nullable="true" />
+    <Property Type="Decimal" Name="Cost" Nullable="true" Precision="19" />
+  </ComplexType>
+  <EntityType Name="PMI_ProjectTimeExtension">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectId" Type="Int32" Nullable="false" />
+    <Property Name="ExtendedDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ExtendedDays" Type="Int32" Nullable="false" />
+    <Property Name="ExpectedCompletionDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProjectTimeExtension_PMI_ProjectMaster" FromRole="PMI_ProjectTimeExtension" ToRole="PMI_ProjectMaster" />
+  </EntityType>
+  <ComplexType Name="sp_PMI_RptProcurementPlan_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Ministry" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Agency" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ProcuringEntryName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ProcuringEntryCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ProjectCode" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="NameOfWorks" Nullable="false" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="sp_PMI_RptProcurementPlanDetails_Result">
+    <Property Type="Int32" Name="ProjectMasterId" Nullable="true" />
+    <Property Type="String" Name="PackageNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PackageName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Unit" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="String" Name="Type" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ProcurementMethod" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ApprovalAuthority" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SourceOfFund" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="EstimatedCost" Nullable="true" Precision="19" />
+    <Property Type="DateTime" Name="InvitationForTenderDate" Nullable="true" />
+    <Property Type="DateTime" Name="ContractSignDate" Nullable="true" />
+    <Property Type="DateTime" Name="CompletionDate" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_PMI_RptProjectEstimation_Result">
+    <Property Type="Int32" Name="Id" Nullable="true" />
+    <Property Type="String" Name="HeadName" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="HeadCode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="HeadDescription" Nullable="true" />
+    <Property Type="String" Name="ItemName" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="ItemCode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Unit" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="Decimal" Name="UnitPrice" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="Amount" Nullable="false" Precision="19" />
+    <Property Type="String" Name="ItemDescription" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="sp_PMI_RptZoneWiseBudget_Result">
+    <Property Type="String" Name="BudgetHead" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="BudgetSubHead" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="NameOfWorks" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="FinancialYearName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="EstematedCost" Nullable="false" Precision="19" />
+    <Property Type="String" Name="ZoneName" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="ZoneCode" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_PMI_RptWorkWiseBudget_Result">
+    <Property Type="String" Name="BudgetHead" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="BudgetSubHead" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="NameOfWorks" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="BudgetAmount" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="HeadTotalBudgetAmount" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="SubHeadTotalBudgetAmount" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="GrandTotalBudgetAmount" Nullable="false" Precision="19" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="FinancialYearName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="EstematedCost" Nullable="false" Precision="19" />
+    <Property Type="String" Name="ZoneName" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <EntityType Name="vwPMIEstimation">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EstimationDetailId" />
+      <PropertyRef Name="ProjectId" />
+      <PropertyRef Name="ProjectName" />
+      <PropertyRef Name="EstimationItemId" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="UnitPrice" />
+      <PropertyRef Name="TotalAmount" />
+      <PropertyRef Name="EstimatedCost" />
+      <PropertyRef Name="EstimationDate" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="EstimationDetailId" Type="Int32" Nullable="false" />
+    <Property Name="ProjectId" Type="Int32" Nullable="false" />
+    <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="EstimationItemId" Type="Int32" Nullable="false" />
+    <Property Name="ItemName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TotalAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ZoneId" Type="Int32" />
+    <Property Name="ZoneCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EstimatedCost" Type="Decimal" Nullable="false" Precision="2" Scale="2" />
+    <Property Name="EstimationDate" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetDetailsYearlyCost">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BudgetDetailsId" Type="Int32" Nullable="false" />
+    <Property Name="FinancialYearId" Type="Int32" Nullable="false" />
+    <Property Name="BudgetStatusId" Type="Int32" Nullable="false" />
+    <Property Name="EstematedCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProjectStatus" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyCost_PMI_ProjectStatus" FromRole="PMI_BudgetDetailsYearlyCost" ToRole="PMI_ProjectStatus" />
+    <NavigationProperty Name="acc_Accounting_Period_Information" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyCost_FAM_FinancialYearInformation" FromRole="PMI_BudgetDetailsYearlyCost" ToRole="acc_Accounting_Period_Information" />
+    <NavigationProperty Name="PMI_BudgetDetails" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyCost_PMI_BudgetDetails" FromRole="PMI_BudgetDetailsYearlyCost" ToRole="PMI_BudgetDetails" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BudgetType" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MinistryOrDivisionId" Type="Int32" Nullable="false" />
+    <Property Name="SourceOfFundId" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalAuthorityId" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ProcurementTypeId" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="LastUpdateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Comments" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ApprovalAuthority" Relationship="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_ApprovalAuthority" FromRole="PMI_BudgetMaster" ToRole="PMI_ApprovalAuthority" />
+    <NavigationProperty Name="PMI_Ministry" Relationship="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_Ministry" FromRole="PMI_BudgetMaster" ToRole="PMI_Ministry" />
+    <NavigationProperty Name="PMI_ProcurementType" Relationship="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_ProcurementType" FromRole="PMI_BudgetMaster" ToRole="PMI_ProcurementType" />
+    <NavigationProperty Name="PMI_SourceOfFund" Relationship="ERP_BEPZAModel.FK_PMI_BudgetMaster_PMI_SourceOfFund" FromRole="PMI_BudgetMaster" ToRole="PMI_SourceOfFund" />
+    <NavigationProperty Name="PMI_BudgetZoneOrProject" Relationship="ERP_BEPZAModel.FK_PMI_BudgetZoneOrProject_PMI_BudgetMaster" FromRole="PMI_BudgetMaster" ToRole="PMI_BudgetZoneOrProject" />
+    <Property Name="ApprovalStatusId" Type="Int32" />
+    <NavigationProperty Name="PMI_BudgetDetails" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetails_PMI_BudgetMaster" FromRole="PMI_BudgetMaster" ToRole="PMI_BudgetDetails" />
+    <Property Name="ZoneInfoId" Type="Int32" />
+    <Property Name="ProjectForId" Type="Int32" />
+    <Property Name="IsConfirm" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PMI_BudgetMaster_PMI_ApprovalAuthority">
+    <End Type="ERP_BEPZAModel.PMI_ApprovalAuthority" Role="PMI_ApprovalAuthority" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetMaster" Role="PMI_BudgetMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ApprovalAuthority">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetMaster">
+        <PropertyRef Name="ApprovalAuthorityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetDetailsYearlyCost_PMI_ProjectStatus">
+    <End Type="ERP_BEPZAModel.PMI_ProjectStatus" Role="PMI_ProjectStatus" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetDetailsYearlyCost" Role="PMI_BudgetDetailsYearlyCost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetailsYearlyCost">
+        <PropertyRef Name="BudgetStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetMaster_PMI_Ministry">
+    <End Type="ERP_BEPZAModel.PMI_Ministry" Role="PMI_Ministry" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetMaster" Role="PMI_BudgetMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_Ministry">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetMaster">
+        <PropertyRef Name="MinistryOrDivisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetMaster_PMI_ProcurementType">
+    <End Type="ERP_BEPZAModel.PMI_ProcurementType" Role="PMI_ProcurementType" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetMaster" Role="PMI_BudgetMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProcurementType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetMaster">
+        <PropertyRef Name="ProcurementTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetMaster_PMI_SourceOfFund">
+    <End Type="ERP_BEPZAModel.PMI_SourceOfFund" Role="PMI_SourceOfFund" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetMaster" Role="PMI_BudgetMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_SourceOfFund">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetMaster">
+        <PropertyRef Name="SourceOfFundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetZoneOrProject_PMI_BudgetMaster">
+    <End Type="ERP_BEPZAModel.PMI_BudgetMaster" Role="PMI_BudgetMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetZoneOrProject" Role="PMI_BudgetZoneOrProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_BudgetMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetZoneOrProject">
+        <PropertyRef Name="BudgetMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="acc_Accounting_Period_Information">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="createdUserDate" Type="DateTime" Precision="3" />
+    <Property Name="createdUserId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="updatedUserDate" Type="DateTime" Precision="3" />
+    <Property Name="updatedUserId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="isActive" Type="Boolean" Nullable="false" />
+    <Property Name="isClosed" Type="Boolean" Nullable="false" />
+    <Property Name="periodEndDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="periodStartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="yearName" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="fundControlInformation_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PMI_BudgetDetailsYearlyCost" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyCost_FAM_FinancialYearInformation" FromRole="acc_Accounting_Period_Information" ToRole="PMI_BudgetDetailsYearlyCost" />
+  </EntityType>
+  <Association Name="FK_PMI_BudgetDetailsYearlyCost_FAM_FinancialYearInformation">
+    <End Type="ERP_BEPZAModel.acc_Accounting_Period_Information" Role="acc_Accounting_Period_Information" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetDetailsYearlyCost" Role="PMI_BudgetDetailsYearlyCost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="acc_Accounting_Period_Information">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetailsYearlyCost">
+        <PropertyRef Name="FinancialYearId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_Pmi_GetAccountingPeriod_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="YearName" Nullable="false" MaxLength="10" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="EndDate" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsClosed" Nullable="false" />
+    <Property Type="Int32" Name="FundControlId" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="PMI_EstimationHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HeadName" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="ItemCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PMI_EstimationHeadDescription" Relationship="ERP_BEPZAModel.FK_PMI_EstimationHeadDescription_PMI_EstimationHead" FromRole="PMI_EstimationHead" ToRole="PMI_EstimationHeadDescription" />
+    <NavigationProperty Name="PMI_EstimationSetup" Relationship="ERP_BEPZAModel.FK_PMI_EstimationSetup_PMI_EstimationHead" FromRole="PMI_EstimationHead" ToRole="PMI_EstimationSetup" />
+    <NavigationProperty Name="PMI_EstimationDetails" Relationship="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationHead" FromRole="PMI_EstimationHead" ToRole="PMI_EstimationDetails" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationHeadDescription">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MasterId" Type="Int32" Nullable="false" />
+    <Property Name="EstimationHeadId" Type="Int32" Nullable="false" />
+    <Property Name="HeadDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_EstimationHead" Relationship="ERP_BEPZAModel.FK_PMI_EstimationHeadDescription_PMI_EstimationHead" FromRole="PMI_EstimationHeadDescription" ToRole="PMI_EstimationHead" />
+    <NavigationProperty Name="PMI_EstimationMaster" Relationship="ERP_BEPZAModel.FK_PMI_EstimationHeadDescription_PMI_EstimationMaster" FromRole="PMI_EstimationHeadDescription" ToRole="PMI_EstimationMaster" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectId" Type="Int32" Nullable="false" />
+    <Property Name="EstimationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EstimationStatusId" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_EstimationHeadDescription" Relationship="ERP_BEPZAModel.FK_PMI_EstimationHeadDescription_PMI_EstimationMaster" FromRole="PMI_EstimationMaster" ToRole="PMI_EstimationHeadDescription" />
+    <NavigationProperty Name="PMI_EstimationZone" Relationship="ERP_BEPZAModel.FK_PMI_EstimationZone_PMI_ProjectMaster" FromRole="PMI_EstimationMaster" ToRole="PMI_EstimationZone" />
+    <NavigationProperty Name="PMI_EstimationDetails" Relationship="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationMaster" FromRole="PMI_EstimationMaster" ToRole="PMI_EstimationDetails" />
+    <Property Name="ApprovalStatusId" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_PMI_EstimationHeadDescription_PMI_EstimationHead">
+    <End Type="ERP_BEPZAModel.PMI_EstimationHead" Role="PMI_EstimationHead" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_EstimationHeadDescription" Role="PMI_EstimationHeadDescription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationHead">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationHeadDescription">
+        <PropertyRef Name="EstimationHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationSetup_PMI_EstimationHead">
+    <End Type="ERP_BEPZAModel.PMI_EstimationHead" Role="PMI_EstimationHead" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_EstimationSetup" Role="PMI_EstimationSetup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationHead">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationSetup">
+        <PropertyRef Name="EstimationHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationHeadDescription_PMI_EstimationMaster">
+    <End Type="ERP_BEPZAModel.PMI_EstimationMaster" Role="PMI_EstimationMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_EstimationHeadDescription" Role="PMI_EstimationHeadDescription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationHeadDescription">
+        <PropertyRef Name="MasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationZone_PMI_ProjectMaster">
+    <End Type="ERP_BEPZAModel.PMI_EstimationMaster" Role="PMI_EstimationMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_EstimationZone" Role="PMI_EstimationZone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationZone">
+        <PropertyRef Name="EstimationMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vwPMIBudgetInfo">
+    <Key>
+      <PropertyRef Name="BudgetId" />
+      <PropertyRef Name="BudgetDetailsId" />
+      <PropertyRef Name="YearlyCostId" />
+      <PropertyRef Name="FinancialYearId" />
+      <PropertyRef Name="FinancialYearName" />
+      <PropertyRef Name="IsActiveFy" />
+      <PropertyRef Name="NameOfWorks" />
+      <PropertyRef Name="ProcurementTypeId" />
+      <PropertyRef Name="ProcurementType" />
+      <PropertyRef Name="BudgetAmount" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="AprovedAmount" />
+      <PropertyRef Name="ApprovalDate" />
+      <PropertyRef Name="BudgetStatusId" />
+      <PropertyRef Name="BudgetStatusName" />
+      <PropertyRef Name="BudgetType" />
+      <PropertyRef Name="ZoneId" />
+    </Key>
+    <Property Name="BudgetId" Type="Int32" Nullable="false" />
+    <Property Name="BudgetDetailsId" Type="Int32" Nullable="false" />
+    <Property Name="YearlyCostId" Type="Int32" Nullable="false" />
+    <Property Name="FinancialYearId" Type="Int32" Nullable="false" />
+    <Property Name="FinancialYearName" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="IsActiveFy" Type="Boolean" Nullable="false" />
+    <Property Name="NameOfWorks" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="ProcurementTypeId" Type="Int32" Nullable="false" />
+    <Property Name="ProcurementType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BudgetAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="AprovedAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ApprovalDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="BudgetStatusId" Type="Int32" Nullable="false" />
+    <Property Name="BudgetStatusName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BudgetType" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ZoneId" Type="Int32" Nullable="false" />
+    <Property Name="ProjectForId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MasterId" Type="Int32" Nullable="false" />
+    <Property Name="EstimationHeadId" Type="Int32" Nullable="false" />
+    <Property Name="EstimationItemId" Type="Int32" Nullable="false" />
+    <Property Name="UnitId" Type="Int32" Nullable="false" />
+    <Property Name="UnitPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="TotalAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ItemDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="SerialNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PMI_EstimationHead" Relationship="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationHead" FromRole="PMI_EstimationDetails" ToRole="PMI_EstimationHead" />
+    <NavigationProperty Name="PMI_EstimationMaster" Relationship="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationMaster" FromRole="PMI_EstimationDetails" ToRole="PMI_EstimationMaster" />
+    <NavigationProperty Name="PMI_EstimationSetup" Relationship="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationSetup" FromRole="PMI_EstimationDetails" ToRole="PMI_EstimationSetup" />
+    <NavigationProperty Name="PMI_EstimationUnit" Relationship="ERP_BEPZAModel.FK_PMI_EstimationDetails_PMI_EstimationUnit" FromRole="PMI_EstimationDetails" ToRole="PMI_EstimationUnit" />
+  </EntityType>
+  <EntityType Name="PMI_TenderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectMasterId" Type="Int32" Nullable="false" />
+    <Property Name="LotNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Identification" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SecurityMoney" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CompletionDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="TenderPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CompletionDays" Type="Int32" />
+    <NavigationProperty Name="PMI_ProjectMaster" Relationship="ERP_BEPZAModel.FK_PMI_TenderDetails_PMI_ProjectMaster" FromRole="PMI_TenderDetails" ToRole="PMI_ProjectMaster" />
+  </EntityType>
+  <Association Name="FK_PMI_EstimationDetails_PMI_EstimationHead">
+    <End Type="ERP_BEPZAModel.PMI_EstimationHead" Role="PMI_EstimationHead" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_EstimationDetails" Role="PMI_EstimationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationHead">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationDetails">
+        <PropertyRef Name="EstimationHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationDetails_PMI_EstimationMaster">
+    <End Type="ERP_BEPZAModel.PMI_EstimationMaster" Role="PMI_EstimationMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_EstimationDetails" Role="PMI_EstimationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationDetails">
+        <PropertyRef Name="MasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationDetails_PMI_EstimationSetup">
+    <End Type="ERP_BEPZAModel.PMI_EstimationSetup" Role="PMI_EstimationSetup" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_EstimationDetails" Role="PMI_EstimationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationSetup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationDetails">
+        <PropertyRef Name="EstimationItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationDetails_PMI_EstimationUnit">
+    <End Type="ERP_BEPZAModel.PMI_EstimationUnit" Role="PMI_EstimationUnit" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_EstimationDetails" Role="PMI_EstimationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationUnit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationDetails">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_Pmi_GetBudgetHeadInformation_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="BudgetHead" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="BudgetSubHead" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <EntityType Name="PMI_ApprovalFlowDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ApprovalFlowMasterId" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ApprovalFlowMaster" Relationship="ERP_BEPZAModel.FK_PMI_ApprovalFlowDetails_PMI_ApprovalFlowMaster" FromRole="PMI_ApprovalFlowDetails" ToRole="PMI_ApprovalFlowMaster" />
+  </EntityType>
+  <EntityType Name="PMI_ApprovalFlowMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BudgetProjectAPPId" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalSectionId" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ApprovalFlowDetails" Relationship="ERP_BEPZAModel.FK_PMI_ApprovalFlowDetails_PMI_ApprovalFlowMaster" FromRole="PMI_ApprovalFlowMaster" ToRole="PMI_ApprovalFlowDetails" />
+    <NavigationProperty Name="PMI_ApprovalSection" Relationship="ERP_BEPZAModel.FK_PMI_ApprovalFlowMaster_PMI_ApprovalSection" FromRole="PMI_ApprovalFlowMaster" ToRole="PMI_ApprovalSection" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PMI_ApprovalSection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ApprovalSectionName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Enum" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ApprovalFlowMaster" Relationship="ERP_BEPZAModel.FK_PMI_ApprovalFlowMaster_PMI_ApprovalSection" FromRole="PMI_ApprovalSection" ToRole="PMI_ApprovalFlowMaster" />
+  </EntityType>
+  <Association Name="FK_PMI_ApprovalFlowDetails_PMI_ApprovalFlowMaster">
+    <End Type="ERP_BEPZAModel.PMI_ApprovalFlowMaster" Role="PMI_ApprovalFlowMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ApprovalFlowDetails" Role="PMI_ApprovalFlowDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ApprovalFlowMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ApprovalFlowDetails">
+        <PropertyRef Name="ApprovalFlowMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ApprovalFlowMaster_PMI_ApprovalSection">
+    <End Type="ERP_BEPZAModel.PMI_ApprovalSection" Role="PMI_ApprovalSection" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ApprovalFlowMaster" Role="PMI_ApprovalFlowMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ApprovalSection">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ApprovalFlowMaster">
+        <PropertyRef Name="ApprovalSectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PMI_ProjectApproverStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PMI_AnnualProcurementPlanMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MinistryOrDivisionId" Type="Int32" Nullable="false" />
+    <Property Name="FinancialYearId" Type="Int32" Nullable="false" />
+    <Property Name="Agency" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ProcuringEntityName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ProcuringEntityCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="APPStatusId" Type="Int32" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovalStatusId" Type="Int32" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_Ministry" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanMaster_PMI_Ministry" FromRole="PMI_AnnualProcurementPlanMaster" ToRole="PMI_Ministry" />
+    <NavigationProperty Name="PMI_ProjectStatus" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanMaster_PMI_ProjectStatus" FromRole="PMI_AnnualProcurementPlanMaster" ToRole="PMI_ProjectStatus" />
+    <Property Name="ZoneInfoId" Type="Int32" />
+    <NavigationProperty Name="PMI_AppZones" Relationship="ERP_BEPZAModel.FK_PMI_AppZones_PMI_AnnualProcurementPlanMaster" FromRole="PMI_AnnualProcurementPlanMaster" ToRole="PMI_AppZones" />
+    <NavigationProperty Name="PMI_AnnualProcurementPlanDetails" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_AnnualProcurementPlanMaster" FromRole="PMI_AnnualProcurementPlanMaster" ToRole="PMI_AnnualProcurementPlanDetails" />
+    <NavigationProperty Name="PMI_ProgressReportMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportMaster_PMI_AnnualProcurementPlanMaster" FromRole="PMI_AnnualProcurementPlanMaster" ToRole="PMI_ProgressReportMaster" />
+    <Property Name="ProjectForId" Type="Int32" />
+    <Property Name="BudgetStatusId" Type="Int32" />
+    <Property Name="IsConfirm" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PMI_AnnualProcurementPlanMaster_PMI_Ministry">
+    <End Type="ERP_BEPZAModel.PMI_Ministry" Role="PMI_Ministry" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_AnnualProcurementPlanMaster" Role="PMI_AnnualProcurementPlanMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_Ministry">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanMaster">
+        <PropertyRef Name="MinistryOrDivisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanMaster_PMI_ProjectStatus">
+    <End Type="ERP_BEPZAModel.PMI_ProjectStatus" Role="PMI_ProjectStatus" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_AnnualProcurementPlanMaster" Role="PMI_AnnualProcurementPlanMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanMaster">
+        <PropertyRef Name="APPStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vwPMIProjectSummary">
+    <Key>
+      <PropertyRef Name="ProjectMasterId" />
+      <PropertyRef Name="AnnualProcurementPlanMasterId" />
+      <PropertyRef Name="AnnualProcurementPlanDetailsId" />
+      <PropertyRef Name="DescritionOfAPP" />
+      <PropertyRef Name="FinancialYearId" />
+      <PropertyRef Name="FinancialYearName" />
+      <PropertyRef Name="TotalCost" />
+    </Key>
+    <Property Name="ProjectMasterId" Type="Int32" Nullable="false" />
+    <Property Name="AnnualProcurementPlanMasterId" Type="Int32" Nullable="false" />
+    <Property Name="AnnualProcurementPlanDetailsId" Type="Int32" Nullable="false" />
+    <Property Name="DescritionOfAPP" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenderPubDate" Type="DateTime" Precision="0" />
+    <Property Name="MinistryId" Type="Int32" />
+    <Property Name="MinistryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FinancialYearId" Type="Int32" Nullable="false" />
+    <Property Name="FinancialYearName" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TotalCost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ProjectStatusId" Type="Int32" />
+    <Property Name="ProjectStatusName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ZoneId" Type="Int32" />
+    <Property Name="ZoneCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PMI_ProjectMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="APPDetailsId" Type="Int32" Nullable="false" />
+    <Property Name="MinistryId" Type="Int32" Nullable="false" />
+    <Property Name="AgencyId" Type="Int32" Nullable="false" />
+    <Property Name="BudgetApprovalDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NameOfWorks" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ProcuringEntryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProcuringEntryCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="InvitationRefNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ConstructionTypeId" Type="Int32" />
+    <Property Name="ConstructionCategoryId" Type="Int32" />
+    <Property Name="DevelopmentPartner" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ProjectCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AdministrativeApprovalDate" Type="DateTime" Precision="0" />
+    <Property Name="TenderEvalDate" Type="DateTime" Precision="0" />
+    <Property Name="TenderIssueDate" Type="DateTime" Precision="0" />
+    <Property Name="TenderPubDate" Type="DateTime" Precision="0" />
+    <Property Name="TenderLastSellingDate" Type="DateTime" Precision="0" />
+    <Property Name="TenderClosingDateTime" Type="DateTime" Precision="3" />
+    <Property Name="TenderOpeningDateTime" Type="DateTime" Precision="3" />
+    <Property Name="ContractSignDate" Type="DateTime" Precision="0" />
+    <Property Name="CompletionDate" Type="DateTime" Precision="0" />
+    <Property Name="SiteHandoverDate" Type="DateTime" Precision="0" />
+    <Property Name="TimeExtensionInDays" Type="Int32" />
+    <Property Name="AwardIssueDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="ProjectStatusId" Type="Int32" />
+    <Property Name="SellingTenderDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="ReceivingTenderDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="OpeningTenderDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="PreTenderMeetingPlace" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="EligibilityOfTenderer" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="BriefDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="BriefDescriptionOfRelated" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Services" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="NameOfInvitingTender" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DesignationId" Type="Int32" />
+    <Property Name="ProcureAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FaxNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Notice" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="SecurityMoneyReefingDate" Type="DateTime" Precision="0" />
+    <Property Name="LiquidatedDamage" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="PaymentStatusId" Type="Int32" />
+    <Property Name="LastPaymentDate" Type="DateTime" Precision="0" />
+    <Property Name="FinalPaymentDate" Type="DateTime" Precision="0" />
+    <Property Name="FileName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DrawingAttachment" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="DrawingApprovalDate" Type="DateTime" Precision="0" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="APPMasterId" Type="Int32" Nullable="false" />
+    <Property Name="ContractorName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfIssuingNOA" Type="DateTime" Precision="0" />
+    <Property Name="DateOfPGSubmission" Type="DateTime" Precision="0" />
+    <Property Name="DateOfPGExpire" Type="DateTime" Precision="0" />
+    <Property Name="DateOfCommencement" Type="DateTime" Precision="0" />
+    <Property Name="PhysicalProgress" Type="Decimal" Precision="6" Scale="4" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ApprovalStatusId" Type="Int32" />
+    <NavigationProperty Name="PMI_Agency" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_Agency" FromRole="PMI_ProjectMaster" ToRole="PMI_Agency" />
+    <NavigationProperty Name="PMI_ConstructionCategory" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_ConstructionCategory" FromRole="PMI_ProjectMaster" ToRole="PMI_ConstructionCategory" />
+    <NavigationProperty Name="PMI_ConstructionType" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_ConstructionType" FromRole="PMI_ProjectMaster" ToRole="PMI_ConstructionType" />
+    <NavigationProperty Name="PMI_Ministry" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_Ministry" FromRole="PMI_ProjectMaster" ToRole="PMI_Ministry" />
+    <NavigationProperty Name="PMI_PaymentStatus" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_PaymentStatus" FromRole="PMI_ProjectMaster" ToRole="PMI_PaymentStatus" />
+    <NavigationProperty Name="PMI_ProjectDetails" Relationship="ERP_BEPZAModel.FK_PMI_ProjectDetails_PMI_ProjectMaster" FromRole="PMI_ProjectMaster" ToRole="PMI_ProjectDetails" />
+    <NavigationProperty Name="PMI_ProjectStatus" Relationship="ERP_BEPZAModel.FK_PMI_ProjectMaster_PMI_ProjectStatus" FromRole="PMI_ProjectMaster" ToRole="PMI_ProjectStatus" />
+    <NavigationProperty Name="PMI_ProjectTimeExtension" Relationship="ERP_BEPZAModel.FK_PMI_ProjectTimeExtension_PMI_ProjectMaster" FromRole="PMI_ProjectMaster" ToRole="PMI_ProjectTimeExtension" />
+    <NavigationProperty Name="PMI_ProjectZone" Relationship="ERP_BEPZAModel.FK_PMI_ProjectZone_PMI_ProjectMaster" FromRole="PMI_ProjectMaster" ToRole="PMI_ProjectZone" />
+    <NavigationProperty Name="PMI_TenderDetails" Relationship="ERP_BEPZAModel.FK_PMI_TenderDetails_PMI_ProjectMaster" FromRole="PMI_ProjectMaster" ToRole="PMI_TenderDetails" />
+  </EntityType>
+  <Association Name="FK_PMI_ProjectMaster_PMI_Agency">
+    <End Type="ERP_BEPZAModel.PMI_Agency" Role="PMI_Agency" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectMaster" Role="PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_Agency">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="AgencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_ConstructionCategory">
+    <End Type="ERP_BEPZAModel.PMI_ConstructionCategory" Role="PMI_ConstructionCategory" Multiplicity="0..1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectMaster" Role="PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ConstructionCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="ConstructionCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_ConstructionType">
+    <End Type="ERP_BEPZAModel.PMI_ConstructionType" Role="PMI_ConstructionType" Multiplicity="0..1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectMaster" Role="PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ConstructionType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="ConstructionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_Ministry">
+    <End Type="ERP_BEPZAModel.PMI_Ministry" Role="PMI_Ministry" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectMaster" Role="PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_Ministry">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="MinistryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_PaymentStatus">
+    <End Type="ERP_BEPZAModel.PMI_PaymentStatus" Role="PMI_PaymentStatus" Multiplicity="0..1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectMaster" Role="PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_PaymentStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="PaymentStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectDetails_PMI_ProjectMaster">
+    <End Type="ERP_BEPZAModel.PMI_ProjectMaster" Role="PMI_ProjectMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectDetails" Role="PMI_ProjectDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectDetails">
+        <PropertyRef Name="ProjectMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_ProjectStatus">
+    <End Type="ERP_BEPZAModel.PMI_ProjectStatus" Role="PMI_ProjectStatus" Multiplicity="0..1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectMaster" Role="PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="ProjectStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectTimeExtension_PMI_ProjectMaster">
+    <End Type="ERP_BEPZAModel.PMI_ProjectMaster" Role="PMI_ProjectMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectTimeExtension" Role="PMI_ProjectTimeExtension" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectTimeExtension">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectZone_PMI_ProjectMaster">
+    <End Type="ERP_BEPZAModel.PMI_ProjectMaster" Role="PMI_ProjectMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProjectZone" Role="PMI_ProjectZone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectZone">
+        <PropertyRef Name="ProjectMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_TenderDetails_PMI_ProjectMaster">
+    <End Type="ERP_BEPZAModel.PMI_ProjectMaster" Role="PMI_ProjectMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_TenderDetails" Role="PMI_TenderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_TenderDetails">
+        <PropertyRef Name="ProjectMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PMI_AppZones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="APPMasterId" Type="Int32" Nullable="false" />
+    <Property Name="ZoneOrProjectId" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_AnnualProcurementPlanMaster" Relationship="ERP_BEPZAModel.FK_PMI_AppZones_PMI_AnnualProcurementPlanMaster" FromRole="PMI_AppZones" ToRole="PMI_AnnualProcurementPlanMaster" />
+  </EntityType>
+  <Association Name="FK_PMI_AppZones_PMI_AnnualProcurementPlanMaster">
+    <End Type="ERP_BEPZAModel.PMI_AnnualProcurementPlanMaster" Role="PMI_AnnualProcurementPlanMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_AppZones" Role="PMI_AppZones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_AnnualProcurementPlanMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AppZones">
+        <PropertyRef Name="APPMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="acc_Cost_Centre_or_Institute_Information">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="codeCount" Type="Int32" Nullable="false" />
+    <Property Name="userCode" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="isInstitute" Type="Boolean" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NameForBankAdviceLetter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="paAmmount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="parentId" Type="Int32" />
+    <Property Name="CostCenterTypeId" Type="Int32" Nullable="false" />
+    <Property Name="empId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="entityId" Type="Int32" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="Int32" />
+    <Property Name="isBudgetHead" Type="Boolean" />
+    <Property Name="BudgetGroupId" Type="Int32" />
+    <Property Name="IsFixedAssetHead" Type="Boolean" />
+    <Property Name="IsFixedAssetDevWork" Type="Boolean" />
+    <Property Name="IsFixedAssetNonDevWork" Type="Boolean" />
+    <Property Name="DepreciationRate" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="createdUserDate" Type="DateTime" Precision="3" />
+    <Property Name="createdUserId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="updatedUserDate" Type="DateTime" Precision="3" />
+    <Property Name="updatedUserId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="acc_Cost_Centre_or_Institute_Information1" Relationship="ERP_BEPZAModel.FKE18F415067F93324" FromRole="acc_Cost_Centre_or_Institute_Information" ToRole="acc_Cost_Centre_or_Institute_Information1" />
+    <NavigationProperty Name="acc_Cost_Centre_or_Institute_Information2" Relationship="ERP_BEPZAModel.FKE18F415067F93324" FromRole="acc_Cost_Centre_or_Institute_Information1" ToRole="acc_Cost_Centre_or_Institute_Information" />
+    <Property Name="BudgetCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FKE18F415067F93324">
+    <End Type="ERP_BEPZAModel.acc_Cost_Centre_or_Institute_Information" Role="acc_Cost_Centre_or_Institute_Information" Multiplicity="0..1" />
+    <End Type="ERP_BEPZAModel.acc_Cost_Centre_or_Institute_Information" Role="acc_Cost_Centre_or_Institute_Information1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="acc_Cost_Centre_or_Institute_Information">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="acc_Cost_Centre_or_Institute_Information1">
+        <PropertyRef Name="parentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PMI_WorkStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_ProgressReportDetails" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportDetails_PMI_WorkStatus" FromRole="PMI_WorkStatus" ToRole="PMI_ProgressReportDetails" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetDetailsYearlyBilled">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BudgetDetailsId" Type="Int32" Nullable="false" />
+    <Property Name="FinancialYearId" Type="Int32" />
+    <Property Name="BilledAmount" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="PMI_BudgetDetails" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyBilled_PMI_BudgetDetails" FromRole="PMI_BudgetDetailsYearlyBilled" ToRole="PMI_BudgetDetails" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BudgetMasterId" Type="Int32" Nullable="false" />
+    <Property Name="BudgetHeadId" Type="Int32" Nullable="false" />
+    <Property Name="BudgetSubHeadId" Type="Int32" Nullable="false" />
+    <Property Name="ConstructionTypeId" Type="Int32" Nullable="false" />
+    <Property Name="NameOfWorks" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="BudgetAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SubledgerId" Type="Int32" />
+    <Property Name="SerialNo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="EstimatCost" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ContractAmount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="WorkStatusId" Type="Int32" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_BudgetMaster" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetails_PMI_BudgetMaster" FromRole="PMI_BudgetDetails" ToRole="PMI_BudgetMaster" />
+    <NavigationProperty Name="PMI_ConstructionType" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetails_PMI_ConstructionType" FromRole="PMI_BudgetDetails" ToRole="PMI_ConstructionType" />
+    <NavigationProperty Name="PMI_BudgetDetailsYearlyBilled" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyBilled_PMI_BudgetDetails" FromRole="PMI_BudgetDetails" ToRole="PMI_BudgetDetailsYearlyBilled" />
+    <NavigationProperty Name="PMI_BudgetDetailsYearlyCost" Relationship="ERP_BEPZAModel.FK_PMI_BudgetDetailsYearlyCost_PMI_BudgetDetails" FromRole="PMI_BudgetDetails" ToRole="PMI_BudgetDetailsYearlyCost" />
+    <Property Name="WorkIdentificationNumber" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="HiddenSlNo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_PMI_BudgetDetails_PMI_BudgetMaster">
+    <End Type="ERP_BEPZAModel.PMI_BudgetMaster" Role="PMI_BudgetMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetDetails" Role="PMI_BudgetDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_BudgetMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetails">
+        <PropertyRef Name="BudgetMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetDetails_PMI_ConstructionType">
+    <End Type="ERP_BEPZAModel.PMI_ConstructionType" Role="PMI_ConstructionType" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetDetails" Role="PMI_BudgetDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ConstructionType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetails">
+        <PropertyRef Name="ConstructionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetDetailsYearlyBilled_PMI_BudgetDetails">
+    <End Type="ERP_BEPZAModel.PMI_BudgetDetails" Role="PMI_BudgetDetails" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetDetailsYearlyBilled" Role="PMI_BudgetDetailsYearlyBilled" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_BudgetDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetailsYearlyBilled">
+        <PropertyRef Name="BudgetDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetDetailsYearlyCost_PMI_BudgetDetails">
+    <End Type="ERP_BEPZAModel.PMI_BudgetDetails" Role="PMI_BudgetDetails" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_BudgetDetailsYearlyCost" Role="PMI_BudgetDetailsYearlyCost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_BudgetDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetailsYearlyCost">
+        <PropertyRef Name="BudgetDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_PMI_PrintBudget_Result">
+    <Property Type="Int32" Name="BudgetId" Nullable="false" />
+    <Property Type="Int32" Name="BudgetHeadId" Nullable="false" />
+    <Property Type="Int32" Name="BudgetDetailId" Nullable="false" />
+    <Property Type="String" Name="BudgetHeadName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="BudgetSubHead" Nullable="true" />
+    <Property Type="String" Name="NameOfWorks" Nullable="false" MaxLength="1000" />
+    <Property Type="Decimal" Name="BudgetAmount" Nullable="false" Precision="19" />
+    <Property Type="String" Name="Remarks" Nullable="true" />
+    <Property Type="String" Name="FinancialYearName" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="BudgetStatus" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="EstematedCost" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="TotalEstimatedBudget" Nullable="false" Precision="19" />
+    <Property Type="String" Name="BudgetType" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="SubheadTotal" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="GrandTotal" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="SerialNo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_PMI_ProgressReport_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="BudgetHead" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="BudgetSubHead" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="NameOfWorks" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="NameOfContractor" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="EstimatedAmount" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="AcceptedAmount" Nullable="false" Precision="19" />
+    <Property Type="DateTime" Name="DateOfIssuingNOA" Nullable="true" />
+    <Property Type="DateTime" Name="DateOfPGSubmitted" Nullable="true" />
+    <Property Type="DateTime" Name="ExpiryDateOfPG" Nullable="true" />
+    <Property Type="DateTime" Name="ContractSignDate" Nullable="true" />
+    <Property Type="DateTime" Name="SiteHandoverDate" Nullable="true" />
+    <Property Type="DateTime" Name="DateOfCommencement" Nullable="true" />
+    <Property Type="String" Name="CompletionTimeInDays" Nullable="true" />
+    <Property Type="String" Name="DateOfCompletionExtended" Nullable="true" />
+    <Property Type="Int32" Name="TimeElapsDays" Nullable="true" />
+    <Property Type="Decimal" Name="PhysicalProgress" Nullable="false" Precision="6" Scale="4" />
+    <Property Type="Decimal" Name="BillPaid" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="AsOnDate" Nullable="true" />
+    <Property Type="String" Name="FinancialYear" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <EntityType Name="PMI_AnnualProcurementPlanDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AnnualProcurementPlanMasterId" Type="Int32" Nullable="false" />
+    <Property Name="APPHeadId" Type="Int32" Nullable="false" />
+    <Property Name="ConstructionTypeId" Type="Int32" Nullable="false" />
+    <Property Name="DescritionOfAPP" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="LotNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PackageNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Quantity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProcurementTypeId" Type="Int32" />
+    <Property Name="SourceOfFundId" Type="Int32" />
+    <Property Name="ApprovingAuthorityId" Type="Int32" />
+    <Property Name="EstdCost" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ContractValue" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="InvitationforTender" Type="DateTime" Precision="3" />
+    <Property Name="SigningofContract" Type="DateTime" Precision="3" />
+    <Property Name="CompletionofContract" Type="DateTime" Precision="3" />
+    <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="BudgetDetailsId" Type="Int32" />
+    <Property Name="InvitationforTenderDays" Type="Int32" />
+    <Property Name="InvitationforTenderActualDates" Type="DateTime" Precision="3" />
+    <Property Name="TenderOpening" Type="DateTime" Precision="3" />
+    <Property Name="TenderOpeningDays" Type="Int32" />
+    <Property Name="TenderOpeningActualDates" Type="DateTime" Precision="3" />
+    <Property Name="TenderElavuation" Type="DateTime" Precision="3" />
+    <Property Name="TenderElavuationDays" Type="Int32" />
+    <Property Name="TenderElavuationActualDates" Type="DateTime" Precision="3" />
+    <Property Name="ApprovalToAward" Type="DateTime" Precision="3" />
+    <Property Name="ApprovalToAwardDays" Type="Int32" />
+    <Property Name="ApprovalToAwardActualDates" Type="DateTime" Precision="3" />
+    <Property Name="NotificationOfAward" Type="DateTime" Precision="3" />
+    <Property Name="NotificationOfAwardDays" Type="Int32" />
+    <Property Name="NotificationOfAwardActualDates" Type="DateTime" Precision="3" />
+    <Property Name="SigningofContractDays" Type="Int32" />
+    <Property Name="SigningofContractActualDates" Type="DateTime" Precision="3" />
+    <Property Name="TimeToContract" Type="DateTime" Precision="3" />
+    <Property Name="TimeToContractDays" Type="Int32" />
+    <Property Name="TimeToContractActualDates" Type="DateTime" Precision="3" />
+    <Property Name="CompletionofContractDays" Type="Int32" />
+    <Property Name="CompletionofContractActualDates" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_AnnualProcurementPlanMaster" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_AnnualProcurementPlanMaster" FromRole="PMI_AnnualProcurementPlanDetails" ToRole="PMI_AnnualProcurementPlanMaster" />
+    <NavigationProperty Name="PMI_ApprovalAuthority" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_ApprovalAuthority" FromRole="PMI_AnnualProcurementPlanDetails" ToRole="PMI_ApprovalAuthority" />
+    <NavigationProperty Name="PMI_ConstructionType" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_ConstructionType" FromRole="PMI_AnnualProcurementPlanDetails" ToRole="PMI_ConstructionType" />
+    <NavigationProperty Name="PMI_ProcurementMethod" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_ProcurementMethod" FromRole="PMI_AnnualProcurementPlanDetails" ToRole="PMI_ProcurementMethod" />
+    <NavigationProperty Name="PMI_SourceOfFund" Relationship="ERP_BEPZAModel.FK_PMI_AnnualProcurementPlanDetails_PMI_SourceOfFund" FromRole="PMI_AnnualProcurementPlanDetails" ToRole="PMI_SourceOfFund" />
+  </EntityType>
+  <Association Name="FK_PMI_AnnualProcurementPlanDetails_PMI_AnnualProcurementPlanMaster">
+    <End Type="ERP_BEPZAModel.PMI_AnnualProcurementPlanMaster" Role="PMI_AnnualProcurementPlanMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_AnnualProcurementPlanDetails" Role="PMI_AnnualProcurementPlanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_AnnualProcurementPlanMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanDetails">
+        <PropertyRef Name="AnnualProcurementPlanMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ApprovalAuthority">
+    <End Type="ERP_BEPZAModel.PMI_ApprovalAuthority" Role="PMI_ApprovalAuthority" Multiplicity="0..1" />
+    <End Type="ERP_BEPZAModel.PMI_AnnualProcurementPlanDetails" Role="PMI_AnnualProcurementPlanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ApprovalAuthority">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanDetails">
+        <PropertyRef Name="ApprovingAuthorityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ConstructionType">
+    <End Type="ERP_BEPZAModel.PMI_ConstructionType" Role="PMI_ConstructionType" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_AnnualProcurementPlanDetails" Role="PMI_AnnualProcurementPlanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ConstructionType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanDetails">
+        <PropertyRef Name="ConstructionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ProcurementMethod">
+    <End Type="ERP_BEPZAModel.PMI_ProcurementMethod" Role="PMI_ProcurementMethod" Multiplicity="0..1" />
+    <End Type="ERP_BEPZAModel.PMI_AnnualProcurementPlanDetails" Role="PMI_AnnualProcurementPlanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProcurementMethod">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanDetails">
+        <PropertyRef Name="ProcurementTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanDetails_PMI_SourceOfFund">
+    <End Type="ERP_BEPZAModel.PMI_SourceOfFund" Role="PMI_SourceOfFund" Multiplicity="0..1" />
+    <End Type="ERP_BEPZAModel.PMI_AnnualProcurementPlanDetails" Role="PMI_AnnualProcurementPlanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_SourceOfFund">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanDetails">
+        <PropertyRef Name="SourceOfFundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PMI_ProgressReportDetailsYearlyBilled">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProgressReportDetailsId" Type="Int32" Nullable="false" />
+    <Property Name="FinancialYearId" Type="Int32" />
+    <Property Name="BilledAmount" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="PMI_ProgressReportDetails" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportDetailsYearlyBilled_PMI_ProgressReportDetails" FromRole="PMI_ProgressReportDetailsYearlyBilled" ToRole="PMI_ProgressReportDetails" />
+  </EntityType>
+  <EntityType Name="PMI_ProgressReportDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProgressReportMasterId" Type="Int32" Nullable="false" />
+    <Property Name="NameOfWorks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NameOfContractor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EstimatedAmount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="AcceptedAmount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="DateOfNOA" Type="DateTime" Precision="3" />
+    <Property Name="ExpireDateOfBG" Type="DateTime" Precision="3" />
+    <Property Name="DateOfContractAgreement" Type="DateTime" Precision="3" />
+    <Property Name="DateOfSiteHandingOver" Type="DateTime" Precision="3" />
+    <Property Name="DateOfCommencement" Type="DateTime" Precision="3" />
+    <Property Name="CompletionTime" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="DateOfCompletion" Type="DateTime" Precision="3" />
+    <Property Name="TimeElapsed" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PhysicalProgress" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="WrokStatusId" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SerialNo" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PMI_ProgressReportMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportDetails_PMI_ProgressReportMaster" FromRole="PMI_ProgressReportDetails" ToRole="PMI_ProgressReportMaster" />
+    <NavigationProperty Name="PMI_WorkStatus" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportDetails_PMI_WorkStatus" FromRole="PMI_ProgressReportDetails" ToRole="PMI_WorkStatus" />
+    <NavigationProperty Name="PMI_ProgressReportDetailsYearlyBilled" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportDetailsYearlyBilled_PMI_ProgressReportDetails" FromRole="PMI_ProgressReportDetails" ToRole="PMI_ProgressReportDetailsYearlyBilled" />
+  </EntityType>
+  <EntityType Name="PMI_ProgressReportMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AnnualProcurementPlanMasterId" Type="Int32" Nullable="false" />
+    <Property Name="ReportDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ZoneInfoId" Type="Int32" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PMI_AnnualProcurementPlanMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportMaster_PMI_AnnualProcurementPlanMaster" FromRole="PMI_ProgressReportMaster" ToRole="PMI_AnnualProcurementPlanMaster" />
+    <NavigationProperty Name="PMI_ProgressReportDetails" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportDetails_PMI_ProgressReportMaster" FromRole="PMI_ProgressReportMaster" ToRole="PMI_ProgressReportDetails" />
+    <Property Name="ProjectForId" Type="Int32" />
+    <Property Name="FinancialYearId" Type="Int32" />
+    <Property Name="StatusId" Type="Int32" />
+    <NavigationProperty Name="PMI_ProgressReportAttachment" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportAttachment_PMI_ProgressReportMaster" FromRole="PMI_ProgressReportMaster" ToRole="PMI_ProgressReportAttachment" />
+    <NavigationProperty Name="PMI_ProgressReportSignature" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportSignature_PMI_ProgressReportMaster" FromRole="PMI_ProgressReportMaster" ToRole="PMI_ProgressReportSignature" />
+    <Property Name="IsConfirm" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PMI_ProgressReportMaster_PMI_AnnualProcurementPlanMaster">
+    <End Type="ERP_BEPZAModel.PMI_AnnualProcurementPlanMaster" Role="PMI_AnnualProcurementPlanMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProgressReportMaster" Role="PMI_ProgressReportMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_AnnualProcurementPlanMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportMaster">
+        <PropertyRef Name="AnnualProcurementPlanMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProgressReportDetails_PMI_ProgressReportMaster">
+    <End Type="ERP_BEPZAModel.PMI_ProgressReportMaster" Role="PMI_ProgressReportMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProgressReportDetails" Role="PMI_ProgressReportDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProgressReportMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportDetails">
+        <PropertyRef Name="ProgressReportMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProgressReportDetails_PMI_WorkStatus">
+    <End Type="ERP_BEPZAModel.PMI_WorkStatus" Role="PMI_WorkStatus" Multiplicity="0..1" />
+    <End Type="ERP_BEPZAModel.PMI_ProgressReportDetails" Role="PMI_ProgressReportDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_WorkStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportDetails">
+        <PropertyRef Name="WrokStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProgressReportDetailsYearlyBilled_PMI_ProgressReportDetails">
+    <End Type="ERP_BEPZAModel.PMI_ProgressReportDetails" Role="PMI_ProgressReportDetails" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProgressReportDetailsYearlyBilled" Role="PMI_ProgressReportDetailsYearlyBilled" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProgressReportDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportDetailsYearlyBilled">
+        <PropertyRef Name="ProgressReportDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_PMI_RptAnnualProcurementPlan_Result">
+    <Property Type="String" Name="Ministry" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Agency" Nullable="true" MaxLength="250" />
+    <Property Type="Int32" Name="MasterId" Nullable="false" />
+    <Property Type="String" Name="ProcuringEntityName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="ProcuringEntityCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ProjectName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="ProjectCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="yearName" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="APPStatus" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="APPHeadName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LotNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PackageNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DescritionOfAPP" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="Unit" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Quantity" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ProcurementType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SourceOfFund" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ApprovingAuthority" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="EstdCost" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ContractValue" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="InvitationforTender" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="InvitationforTenderDays" Nullable="true" />
+    <Property Type="DateTime" Name="InvitationforTenderActualDates" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="TenderOpening" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="TenderOpeningDays" Nullable="true" />
+    <Property Type="DateTime" Name="TenderOpeningActualDates" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="TenderElavuation" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="TenderElavuationDays" Nullable="true" />
+    <Property Type="DateTime" Name="TenderElavuationActualDates" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ApprovalToAward" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="ApprovalToAwardDays" Nullable="true" />
+    <Property Type="DateTime" Name="ApprovalToAwardActualDates" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="NotificationOfAward" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="NotificationOfAwardDays" Nullable="true" />
+    <Property Type="DateTime" Name="NotificationOfAwardActualDates" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="SigningofContract" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="SigningofContractDays" Nullable="true" />
+    <Property Type="DateTime" Name="SigningofContractActualDates" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="TimeToContract" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="TimeToContractDays" Nullable="true" />
+    <Property Type="DateTime" Name="TimeToContractActualDates" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="CompletionofContract" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="CompletionofContractDays" Nullable="true" />
+    <Property Type="DateTime" Name="CompletionofContractActualDates" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="sp_PMI_ProgressReport_M1_Result">
+    <Property Type="DateTime" Name="ReportDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="SerialNo" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="NameOfWorks" Nullable="true" />
+    <Property Type="String" Name="NameOfContractor" Nullable="true" />
+    <Property Type="Decimal" Name="EstimatedAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="AcceptedAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="DateOfNOA" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ExpireDateOfBG" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="DateOfContractAgreement" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="DateOfSiteHandingOver" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="DateOfCommencement" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="CompletionTime" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="DateOfCompletion" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="TimeElapsed" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="PhysicalProgress" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="WorkStatus" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="FinancialYear" Nullable="true" MaxLength="10" />
+    <Property Type="Decimal" Name="BilledAmount" Nullable="true" Precision="19" />
+  </ComplexType>
+  <EntityType Name="PMI_ProjectFor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IUser" Type="Int32" Nullable="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="Int32" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PMI_Head">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentHeadId" Type="Int32" />
+    <Property Name="HeadName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsParentHead" Type="Boolean" />
+    <Property Name="IsSubledger" Type="Boolean" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="SortingOrder" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vwPMIBudgetHead">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreatedDate" />
+      <PropertyRef Name="IUser" />
+      <PropertyRef Name="IDate" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="BudgetHead" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="BudgetSubHead" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="SortOrder" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PMI_ProgressReportAttachment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProgressReportId" Type="Int32" Nullable="false" />
+    <Property Name="PreviousDate" Type="DateTime" Precision="3" />
+    <Property Name="CurrentDate" Type="DateTime" Precision="3" />
+    <Property Name="PreviousFileName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentFileName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PreviousAttachment" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CurrentAttachment" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="PMI_ProgressReportMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportAttachment_PMI_ProgressReportMaster" FromRole="PMI_ProgressReportAttachment" ToRole="PMI_ProgressReportMaster" />
+    <Property Name="NameofWork" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_PMI_ProgressReportAttachment_PMI_ProgressReportMaster">
+    <End Type="ERP_BEPZAModel.PMI_ProgressReportMaster" Role="PMI_ProgressReportMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProgressReportAttachment" Role="PMI_ProgressReportAttachment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProgressReportMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportAttachment">
+        <PropertyRef Name="ProgressReportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_PMI_ProgressReport_Attachment_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="ProgressReportId" Nullable="false" />
+    <Property Type="String" Name="NameofWork" Nullable="true" />
+    <Property Type="DateTime" Name="PreviousDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="CurrentDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="PreviousFileName" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CurrentFileName" Nullable="true" MaxLength="500" />
+    <Property Type="Binary" Name="PreviousAttachment" Nullable="true" />
+    <Property Type="Binary" Name="CurrentAttachment" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SP_PRM_RptServiceVistory_Result">
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="DateTime" Name="DateofJoining" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Type" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="OrderDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="FromZone" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="ToZone" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SortingOrder" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="vwPMINewBudgetInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="yearName" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="BudgetType" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="yearName" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BudgetType" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ZoneId" Type="Int32" />
+    <Property Name="ProjectForId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PMI_ProgressReportSignature">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProgressReportId" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeId" Type="Int32" />
+    <NavigationProperty Name="PMI_ProgressReportMaster" Relationship="ERP_BEPZAModel.FK_PMI_ProgressReportSignature_PMI_ProgressReportMaster" FromRole="PMI_ProgressReportSignature" ToRole="PMI_ProgressReportMaster" />
+  </EntityType>
+  <Association Name="FK_PMI_ProgressReportSignature_PMI_ProgressReportMaster">
+    <End Type="ERP_BEPZAModel.PMI_ProgressReportMaster" Role="PMI_ProgressReportMaster" Multiplicity="1" />
+    <End Type="ERP_BEPZAModel.PMI_ProgressReportSignature" Role="PMI_ProgressReportSignature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProgressReportMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportSignature">
+        <PropertyRef Name="ProgressReportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="SP_PMI_Signature_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+    <Property Type="String" Name="EmpId" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+    <Property Type="Binary" Name="Signature" Nullable="true" />
+  </ComplexType>
+</Schema>

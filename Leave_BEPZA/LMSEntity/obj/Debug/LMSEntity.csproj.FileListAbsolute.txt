@@ -1,0 +1,41 @@
+D:\Nazrul\Othres\BEPZA_LMS\LMS_BEPZA\LMSEntity\bin\Debug\LMSEntity.dll
+D:\Nazrul\Othres\BEPZA_LMS\LMS_BEPZA\LMSEntity\bin\Debug\LMSEntity.pdb
+D:\Nazrul\Othres\BEPZA_LMS\LMS_BEPZA\LMSEntity\obj\Debug\LMSEntity.dll
+D:\Nazrul\Othres\BEPZA_LMS\LMS_BEPZA\LMSEntity\obj\Debug\LMSEntity.pdb
+D:\Nazrul\Othres\BEPZA_LMS\LMS_BEPZA\LMSEntity\obj\Debug\LMSEntity.csprojResolveAssemblyReference.cache
+E:\Others\BEPZA_LMS\LMS_BEPZA\LMSEntity\bin\Debug\LMSEntity.dll
+E:\Others\BEPZA_LMS\LMS_BEPZA\LMSEntity\bin\Debug\LMSEntity.pdb
+E:\Others\BEPZA_LMS\LMS_BEPZA\LMSEntity\obj\Debug\LMSEntity.csprojResolveAssemblyReference.cache
+E:\Others\BEPZA_LMS\LMS_BEPZA\LMSEntity\obj\Debug\LMSEntity.dll
+E:\Others\BEPZA_LMS\LMS_BEPZA\LMSEntity\obj\Debug\LMSEntity.pdb
+E:\TempWork\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.dll
+E:\TempWork\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.pdb
+E:\TempWork\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.csprojResolveAssemblyReference.cache
+E:\TempWork\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.dll
+E:\TempWork\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.pdb
+E:\BEPZA\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.dll
+E:\BEPZA\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.pdb
+E:\BEPZA\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.dll
+E:\BEPZA\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.csprojResolveAssemblyReference.cache
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMSEntity\bin\Debug\LMSEntity.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMSEntity\obj\Debug\LMSEntity.pdb

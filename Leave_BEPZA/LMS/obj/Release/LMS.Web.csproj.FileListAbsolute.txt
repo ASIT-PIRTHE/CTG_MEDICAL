@@ -1,0 +1,105 @@
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMS.dll.config
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMS.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMS.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMS.BLL.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMS.DAL.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMS.Util.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMSEntity.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\MvcContrib.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\MvcPaging.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\PrimaryBaseLibrary.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\System.Web.Mvc.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\TVL.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.Common.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMS.BLL.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMS.DAL.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMS.Util.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\LMSEntity.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\MvcPaging.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\TVL.DB.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.WebForms.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\obj\Release\LMS.Web.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\obj\Release\RdlCompile.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\obj\Release\RdlCompile.compiled
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\obj\Release\LMS.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS\obj\Release\LMS.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.dll.config
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.BLL.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.DAL.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.Util.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMSEntity.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.WebForms.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\MvcContrib.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\MvcPaging.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\PrimaryBaseLibrary.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\System.Web.Mvc.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\TVL.DB.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.Common.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.BLL.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.DAL.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.Util.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMSEntity.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\MvcPaging.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\TVL.DB.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.WebForms.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\obj\Release\LMS.Web.csprojResolveAssemblyReference.cache
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\obj\Release\LMS.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS\obj\Release\LMS.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.BLL.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.DAL.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.Util.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMSEntity.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.WebForms.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\MvcContrib.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\MvcPaging.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\PrimaryBaseLibrary.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\System.Web.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\TVL.DB.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.Common.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.BLL.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.DAL.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMS.Util.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\LMSEntity.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\MvcPaging.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\TVL.DB.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.WebForms.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\obj\Release\LMS.Web.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\obj\Release\RdlCompile.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\obj\Release\RdlCompile.compiled
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\obj\Release\LMS.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS\obj\Release\LMS.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMS.dll.config
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMS.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMS.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMS.BLL.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMS.DAL.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMS.Util.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMSEntity.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.WebForms.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\MvcContrib.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\MvcPaging.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\PrimaryBaseLibrary.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\System.Web.Mvc.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\TVL.DB.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.Common.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMS.BLL.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMS.DAL.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMS.Util.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\LMSEntity.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\MvcPaging.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\TVL.DB.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\TVL.DB.dll.config
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\bin\Microsoft.ReportViewer.WebForms.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\obj\Release\LMS.Web.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\obj\Release\RdlCompile.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\obj\Release\RdlCompile.compiled
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\obj\Release\LMS.Web.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\obj\Release\LMS.Web.csproj.CopyComplete
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\obj\Release\LMS.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS\obj\Release\LMS.pdb

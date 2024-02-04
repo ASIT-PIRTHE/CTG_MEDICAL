@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="POMS_MPA_AMSModelStoreContainer" CdmEntityContainer="ERP_BEPZA_AMSEntities">
+    <EntitySetMapping Name="AMS_AutoReminder">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_AutoReminder">
+        <MappingFragment StoreEntitySet="AMS_AutoReminder">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ReminderAfter" ColumnName="ReminderAfter" />
+          <ScalarProperty Name="ReminderTypeId" ColumnName="ReminderTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_Category">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_Category">
+        <MappingFragment StoreEntitySet="AMS_Category">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_DesignationInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_DesignationInfo">
+        <MappingFragment StoreEntitySet="AMS_DesignationInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_ReminderType">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_ReminderType">
+        <MappingFragment StoreEntitySet="AMS_ReminderType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_StayRule">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_StayRule">
+        <MappingFragment StoreEntitySet="AMS_StayRule">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="MaximumStay" ColumnName="MaximumStay" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_ZoneWiseQuota">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_ZoneWiseQuota">
+        <MappingFragment StoreEntitySet="AMS_ZoneWiseQuota">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Quota" ColumnName="Quota" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRM_ZoneInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.PRM_ZoneInfo">
+        <MappingFragment StoreEntitySet="PRM_ZoneInfo">
+          <ScalarProperty Name="ZoneCodeForBillingSystem" ColumnName="ZoneCodeForBillingSystem" />
+          <ScalarProperty Name="IsHeadOffice" ColumnName="IsHeadOffice" />
+          <ScalarProperty Name="ZoneAddressInBengali" ColumnName="ZoneAddressInBengali" />
+          <ScalarProperty Name="ZoneNameInBengali" ColumnName="ZoneNameInBengali" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="ZoneAddress" ColumnName="ZoneAddress" />
+          <ScalarProperty Name="OrganogramCategoryTypeId" ColumnName="OrganogramCategoryTypeId" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="ZoneCode" ColumnName="ZoneCode" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommonConfigType">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.CommonConfigType">
+        <MappingFragment StoreEntitySet="CommonConfigType">
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_AnsarDegree">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_AnsarDegree">
+        <MappingFragment StoreEntitySet="AMS_AnsarDegree">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="SpecialAchievement" ColumnName="SpecialAchievement" />
+          <ScalarProperty Name="DegreeDuration" ColumnName="DegreeDuration" />
+          <ScalarProperty Name="ObtainMarks" ColumnName="ObtainMarks" />
+          <ScalarProperty Name="YearOfPassing" ColumnName="YearOfPassing" />
+          <ScalarProperty Name="Scale" ColumnName="Scale" />
+          <ScalarProperty Name="CGPA" ColumnName="CGPA" />
+          <ScalarProperty Name="DegreeCountryId" ColumnName="DegreeCountryId" />
+          <ScalarProperty Name="AcademicGradeId" ColumnName="AcademicGradeId" />
+          <ScalarProperty Name="SubjectGroupId" ColumnName="SubjectGroupId" />
+          <ScalarProperty Name="UniversityAndBoardId" ColumnName="UniversityAndBoardId" />
+          <ScalarProperty Name="DegreeLevelId" ColumnName="DegreeLevelId" />
+          <ScalarProperty Name="InstituteName" ColumnName="InstituteName" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_EmpStatus">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_EmpStatus">
+        <MappingFragment StoreEntitySet="AMS_EmpStatus">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_AnsarPhoto">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_AnsarPhoto">
+        <MappingFragment StoreEntitySet="AMS_AnsarPhoto">
+          <ScalarProperty Name="IsPhoto" ColumnName="IsPhoto" />
+          <ScalarProperty Name="PhotoSignature" ColumnName="PhotoSignature" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_AnsarEmpInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_AnsarEmpInfo">
+        <MappingFragment StoreEntitySet="AMS_AnsarEmpInfo">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="IsFinalized" ColumnName="IsFinalized" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="ReligionId" ColumnName="ReligionId" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="AnsarJoiningDate" ColumnName="AnsarJoiningDate" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+          <ScalarProperty Name="FullNameBangla" ColumnName="FullNameBangla" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="TitleId" ColumnName="TitleId" />
+          <ScalarProperty Name="AnsarId" ColumnName="AnsarId" />
+          <ScalarProperty Name="BEPZAId" ColumnName="BEPZAId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwAMSAnsarEducationalQlfy">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.vwAMSAnsarEducationalQlfy">
+        <MappingFragment StoreEntitySet="vwAMSAnsarEducationalQlfy">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="UniversityOrBorard" ColumnName="UniversityOrBorard" />
+          <ScalarProperty Name="AccademicGrade" ColumnName="AccademicGrade" />
+          <ScalarProperty Name="SubjectGroup" ColumnName="SubjectGroup" />
+          <ScalarProperty Name="ExamLevel" ColumnName="ExamLevel" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="SpecialAchievement" ColumnName="SpecialAchievement" />
+          <ScalarProperty Name="DegreeDuration" ColumnName="DegreeDuration" />
+          <ScalarProperty Name="ObtainMarks" ColumnName="ObtainMarks" />
+          <ScalarProperty Name="YearOfPassing" ColumnName="YearOfPassing" />
+          <ScalarProperty Name="Scale" ColumnName="Scale" />
+          <ScalarProperty Name="CGPA" ColumnName="CGPA" />
+          <ScalarProperty Name="DegreeCountryId" ColumnName="DegreeCountryId" />
+          <ScalarProperty Name="AcademicGradeId" ColumnName="AcademicGradeId" />
+          <ScalarProperty Name="SubjectGroupId" ColumnName="SubjectGroupId" />
+          <ScalarProperty Name="UniversityAndBoardId" ColumnName="UniversityAndBoardId" />
+          <ScalarProperty Name="DegreeLevelId" ColumnName="DegreeLevelId" />
+          <ScalarProperty Name="InstituteName" ColumnName="InstituteName" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRM_OrganizationType">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.PRM_OrganizationType">
+        <MappingFragment StoreEntitySet="PRM_OrganizationType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_AnsarExperience">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_AnsarExperience">
+        <MappingFragment StoreEntitySet="AMS_AnsarExperience">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Responsibility" ColumnName="Responsibility" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="OrganizationTypeId" ColumnName="OrganizationTypeId" />
+          <ScalarProperty Name="Organization1" ColumnName="Organization1" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_BlacklistRemoval">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_BlacklistRemoval">
+        <MappingFragment StoreEntitySet="AMS_BlacklistRemoval">
+          <ScalarProperty Name="ApprovedByEmpId" ColumnName="ApprovedByEmpId" />
+          <ScalarProperty Name="RemovedByEmpId" ColumnName="RemovedByEmpId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="DateofRemoval" ColumnName="DateofRemoval" />
+          <ScalarProperty Name="BlacklistId" ColumnName="BlacklistId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_AMS_RptCategoryWiseAnsarList" FunctionName="POMS_MPA_AMSModel.Store.sp_AMS_RptCategoryWiseAnsarList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_AMS_RptCategoryWiseAnsarList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BEPZAId" ColumnName="BEPZAId" />
+          <ScalarProperty Name="AnsarId" ColumnName="AnsarId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="AnsarJoiningDate" ColumnName="AnsarJoiningDate" />
+          <ScalarProperty Name="NationalID" ColumnName="NationalID" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_AMS_RptZoneWiseAnsarList" FunctionName="POMS_MPA_AMSModel.Store.sp_AMS_RptZoneWiseAnsarList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_AMS_RptZoneWiseAnsarList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BEPZAId" ColumnName="BEPZAId" />
+          <ScalarProperty Name="AnsarId" ColumnName="AnsarId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="AnsarJoiningDate" ColumnName="AnsarJoiningDate" />
+          <ScalarProperty Name="NationalID" ColumnName="NationalID" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_AMS_RptBlacklistedAnsarList" FunctionName="POMS_MPA_AMSModel.Store.sp_AMS_RptBlacklistedAnsarList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_AMS_RptBlacklistedAnsarList_Result">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="BEPZAId" ColumnName="BEPZAId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="AnsarId" ColumnName="AnsarId" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="BlacklistedBy" ColumnName="BlacklistedBy" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_AMS_RptReminderLetter" FunctionName="POMS_MPA_AMSModel.Store.sp_AMS_RptReminderLetter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_AMS_RptReminderLetter_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BEPZAId" ColumnName="BEPZAId" />
+          <ScalarProperty Name="AnsarId" ColumnName="AnsarId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="RemindarDate" ColumnName="RemindarDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PRM_EmploymentInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.PRM_EmploymentInfo">
+        <MappingFragment StoreEntitySet="PRM_EmploymentInfo">
+          <ScalarProperty Name="IsGPFEligible" ColumnName="IsGPFEligible" />
+          <ScalarProperty Name="IsRefreshmentEligible" ColumnName="IsRefreshmentEligible" />
+          <ScalarProperty Name="ETIN" ColumnName="ETIN" />
+          <ScalarProperty Name="SalaryWithdrawFromZoneId" ColumnName="SalaryWithdrawFromZoneId" />
+          <ScalarProperty Name="DateofRetirement" ColumnName="DateofRetirement" />
+          <ScalarProperty Name="HavingChildWithDisability" ColumnName="HavingChildWithDisability" />
+          <ScalarProperty Name="TaxAssesseeType" ColumnName="TaxAssesseeType" />
+          <ScalarProperty Name="TaxRegionId" ColumnName="TaxRegionId" />
+          <ScalarProperty Name="IsEligibleForCpf" ColumnName="IsEligibleForCpf" />
+          <ScalarProperty Name="HonoraryDegree" ColumnName="HonoraryDegree" />
+          <ScalarProperty Name="Intercom" ColumnName="Intercom" />
+          <ScalarProperty Name="TelephoneOffice" ColumnName="TelephoneOffice" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="IsGeneralShifted" ColumnName="IsGeneralShifted" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="AttendanceStatus" ColumnName="AttendanceStatus" />
+          <ScalarProperty Name="AttendanceEffectiveDate" ColumnName="AttendanceEffectiveDate" />
+          <ScalarProperty Name="FingerPrintIdentiyNo" ColumnName="FingerPrintIdentiyNo" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="IsLeverageEligible" ColumnName="IsLeverageEligible" />
+          <ScalarProperty Name="IsPensionEligible" ColumnName="IsPensionEligible" />
+          <ScalarProperty Name="PRLDate" ColumnName="PRLDate" />
+          <ScalarProperty Name="DateofSeniority" ColumnName="DateofSeniority" />
+          <ScalarProperty Name="SeniorityPosition" ColumnName="SeniorityPosition" />
+          <ScalarProperty Name="EmploymentProcessId" ColumnName="EmploymentProcessId" />
+          <ScalarProperty Name="EmployeeClassId" ColumnName="EmployeeClassId" />
+          <ScalarProperty Name="QuotaId" ColumnName="QuotaId" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="DateofAppointment" ColumnName="DateofAppointment" />
+          <ScalarProperty Name="OrganogramLevelId" ColumnName="OrganogramLevelId" />
+          <ScalarProperty Name="ContractType" ColumnName="ContractType" />
+          <ScalarProperty Name="ContractDuration" ColumnName="ContractDuration" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="ContractExpireDate" ColumnName="ContractExpireDate" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="JobGradeId" ColumnName="JobGradeId" />
+          <ScalarProperty Name="SalaryScaleId" ColumnName="SalaryScaleId" />
+          <ScalarProperty Name="IsBonusEligible" ColumnName="IsBonusEligible" />
+          <ScalarProperty Name="DateofInactive" ColumnName="DateofInactive" />
+          <ScalarProperty Name="EmploymentStatusId" ColumnName="EmploymentStatusId" />
+          <ScalarProperty Name="BankAccountNo" ColumnName="BankAccountNo" />
+          <ScalarProperty Name="BankBranchId" ColumnName="BankBranchId" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="EmialAddress" ColumnName="EmialAddress" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="OvertimeRate" ColumnName="OvertimeRate" />
+          <ScalarProperty Name="IsOvertimeEligible" ColumnName="IsOvertimeEligible" />
+          <ScalarProperty Name="IsConsultant" ColumnName="IsConsultant" />
+          <ScalarProperty Name="IsContractual" ColumnName="IsContractual" />
+          <ScalarProperty Name="ReligionId" ColumnName="ReligionId" />
+          <ScalarProperty Name="EmploymentTypeId" ColumnName="EmploymentTypeId" />
+          <ScalarProperty Name="StaffCategoryId" ColumnName="StaffCategoryId" />
+          <ScalarProperty Name="ResourceLevelId" ColumnName="ResourceLevelId" />
+          <ScalarProperty Name="JobLocationId" ColumnName="JobLocationId" />
+          <ScalarProperty Name="SubSectionId" ColumnName="SubSectionId" />
+          <ScalarProperty Name="SectionId" ColumnName="SectionId" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
+          <ScalarProperty Name="StatusDesignationId" ColumnName="StatusDesignationId" />
+          <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+          <ScalarProperty Name="DateofPosition" ColumnName="DateofPosition" />
+          <ScalarProperty Name="DateofConfirmation" ColumnName="DateofConfirmation" />
+          <ScalarProperty Name="ProvisionMonth" ColumnName="ProvisionMonth" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="FullNameBangla" ColumnName="FullNameBangla" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="TitleId" ColumnName="TitleId" />
+          <ScalarProperty Name="EmployeeInitial" ColumnName="EmployeeInitial" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_AMS_GetServiceDuration" FunctionName="POMS_MPA_AMSModel.Store.sp_AMS_GetServiceDuration">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_AMS_GetServiceDuration_Result">
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="SMS_SecurityInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.SMS_SecurityInfo">
+        <MappingFragment StoreEntitySet="SMS_SecurityInfo">
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="DateofPromotion" ColumnName="DateofPromotion" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SMS_Organization">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.SMS_Organization">
+        <MappingFragment StoreEntitySet="SMS_Organization">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_Blacklist">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_Blacklist">
+        <MappingFragment StoreEntitySet="AMS_Blacklist">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IsRevoked" ColumnName="IsRevoked" />
+          <ScalarProperty Name="ApprovedByEmpId" ColumnName="ApprovedByEmpId" />
+          <ScalarProperty Name="BlacklistedByEmpId" ColumnName="BlacklistedByEmpId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_SMS_RptOrganizationWiseSecurityPersonnelList" FunctionName="POMS_MPA_AMSModel.Store.sp_SMS_RptOrganizationWiseSecurityPersonnelList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_SMS_RptOrganizationWiseSecurityPersonnelList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="OrgName" ColumnName="OrgName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_SMS_RptSecurityPersonnelListWorkingInIntelligence" FunctionName="POMS_MPA_AMSModel.Store.sp_SMS_RptSecurityPersonnelListWorkingInIntelligence">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_SMS_RptSecurityPersonnelListWorkingInIntelligence_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="EduQual" ColumnName="EduQual" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="WorkZoneId" ColumnName="WorkZoneId" />
+          <ScalarProperty Name="PeriodFrom" ColumnName="PeriodFrom" />
+          <ScalarProperty Name="PeriodTo" ColumnName="PeriodTo" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="DisciplineRecord" ColumnName="DisciplineRecord" />
+          <ScalarProperty Name="ZonePeriodFrom" ColumnName="ZonePeriodFrom" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_SMS_RptAwardedOrPunishedSecurityPersonnelList" FunctionName="POMS_MPA_AMSModel.Store.sp_SMS_RptAwardedOrPunishedSecurityPersonnelList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_SMS_RptAwardedOrPunishedSecurityPersonnelList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="CurrentZone" ColumnName="CurrentZone" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="WorkZoneId" ColumnName="WorkZoneId" />
+          <ScalarProperty Name="PeriodFrom" ColumnName="PeriodFrom" />
+          <ScalarProperty Name="PeriodTo" ColumnName="PeriodTo" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="DisciplineRecord" ColumnName="DisciplineRecord" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="AMS_AnsarPersonalInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_AnsarPersonalInfo">
+        <MappingFragment StoreEntitySet="AMS_AnsarPersonalInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IdentificationMark" ColumnName="IdentificationMark" />
+          <ScalarProperty Name="MotherProfessionId" ColumnName="MotherProfessionId" />
+          <ScalarProperty Name="FatherProfessionId" ColumnName="FatherProfessionId" />
+          <ScalarProperty Name="PermanentPhoneExtention" ColumnName="PermanentPhoneExtention" />
+          <ScalarProperty Name="PermanentPhone" ColumnName="PermanentPhone" />
+          <ScalarProperty Name="PermanentMobNo" ColumnName="PermanentMobNo" />
+          <ScalarProperty Name="PermanentPostCode" ColumnName="PermanentPostCode" />
+          <ScalarProperty Name="PermanentPostName" ColumnName="PermanentPostName" />
+          <ScalarProperty Name="PermanentThanaId" ColumnName="PermanentThanaId" />
+          <ScalarProperty Name="PermanentDistrictId" ColumnName="PermanentDistrictId" />
+          <ScalarProperty Name="PermanentCountryId" ColumnName="PermanentCountryId" />
+          <ScalarProperty Name="PermanentAddress2" ColumnName="PermanentAddress2" />
+          <ScalarProperty Name="PermanentAddress1" ColumnName="PermanentAddress1" />
+          <ScalarProperty Name="PresentPhoneExtention" ColumnName="PresentPhoneExtention" />
+          <ScalarProperty Name="PresentMobNo" ColumnName="PresentMobNo" />
+          <ScalarProperty Name="PresentPhone" ColumnName="PresentPhone" />
+          <ScalarProperty Name="PresentPostCode" ColumnName="PresentPostCode" />
+          <ScalarProperty Name="PresentPostName" ColumnName="PresentPostName" />
+          <ScalarProperty Name="PresentThanaId" ColumnName="PresentThanaId" />
+          <ScalarProperty Name="PresentDistrictId" ColumnName="PresentDistrictId" />
+          <ScalarProperty Name="PresentCountryId" ColumnName="PresentCountryId" />
+          <ScalarProperty Name="PresentAddress2" ColumnName="PresentAddress2" />
+          <ScalarProperty Name="PresentAddress1" ColumnName="PresentAddress1" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="Hieght" ColumnName="Hieght" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="SpouseName" ColumnName="SpouseName" />
+          <ScalarProperty Name="MarriageDate" ColumnName="MarriageDate" />
+          <ScalarProperty Name="MaritalStatusId" ColumnName="MaritalStatusId" />
+          <ScalarProperty Name="NationalID" ColumnName="NationalID" />
+          <ScalarProperty Name="NationalityId" ColumnName="NationalityId" />
+          <ScalarProperty Name="BloodGroupId" ColumnName="BloodGroupId" />
+          <ScalarProperty Name="CountryofBirthId" ColumnName="CountryofBirthId" />
+          <ScalarProperty Name="PlaceofBirth" ColumnName="PlaceofBirth" />
+          <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMS_AnsarServiceHistory">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.AMS_AnsarServiceHistory">
+        <MappingFragment StoreEntitySet="AMS_AnsarServiceHistory">
+          <ScalarProperty Name="DisciplinaryRecord" ColumnName="DisciplinaryRecord" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="RemarkableWork" ColumnName="RemarkableWork" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="PeriodTo" ColumnName="PeriodTo" />
+          <ScalarProperty Name="PeriodFrom" ColumnName="PeriodFrom" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SMS_SecurityServiceHistory">
+      <EntityTypeMapping TypeName="ERP_BEPZA_AMSModel.SMS_SecurityServiceHistory">
+        <MappingFragment StoreEntitySet="SMS_SecurityServiceHistory">
+          <ScalarProperty Name="Award" ColumnName="Award" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Is_Intelligence" ColumnName="Is_Intelligence" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="DisciplineRecord" ColumnName="DisciplineRecord" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="PeriodTo" ColumnName="PeriodTo" />
+          <ScalarProperty Name="PeriodFrom" ColumnName="PeriodFrom" />
+          <ScalarProperty Name="WorkZoneId" ColumnName="WorkZoneId" />
+          <ScalarProperty Name="SecurityInfoId" ColumnName="SecurityInfoId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_AMS_RptEmployeeWiseAnsarDetails" FunctionName="POMS_MPA_AMSModel.Store.sp_AMS_RptEmployeeWiseAnsarDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_AMS_RptEmployeeWiseAnsarDetails_Result">
+          <ScalarProperty Name="BEPZAId" ColumnName="BEPZAId" />
+          <ScalarProperty Name="AnsarId" ColumnName="AnsarId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+          <ScalarProperty Name="PermanentAddress" ColumnName="PermanentAddress" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="NationalID" ColumnName="NationalID" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="EduQual" ColumnName="EduQual" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="AnsarJoiningDate" ColumnName="AnsarJoiningDate" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="PeriodFrom" ColumnName="PeriodFrom" />
+          <ScalarProperty Name="PeriodTo" ColumnName="PeriodTo" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="RemarkableWork" ColumnName="RemarkableWork" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_SMS_RptSecurityPersonnelDetails" FunctionName="POMS_MPA_AMSModel.Store.sp_SMS_RptSecurityPersonnelDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_SMS_RptSecurityPersonnelDetails_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="EduQual" ColumnName="EduQual" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="DateofPromotion" ColumnName="DateofPromotion" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="Is_Intelligence" ColumnName="Is_Intelligence" />
+          <ScalarProperty Name="PeriodFrom" ColumnName="PeriodFrom" />
+          <ScalarProperty Name="PeriodTo" ColumnName="PeriodTo" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="DisciplineRecord" ColumnName="DisciplineRecord" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_SMS_RptZoneWiseSecurityPersonnelList" FunctionName="POMS_MPA_AMSModel.Store.sp_SMS_RptZoneWiseSecurityPersonnelList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_SMS_RptZoneWiseSecurityPersonnelList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="Zones" ColumnName="Zones" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_SMS_RptZoneWiseBroadSheet" FunctionName="POMS_MPA_AMSModel.Store.sp_SMS_RptZoneWiseBroadSheet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZA_AMSModel.sp_SMS_RptZoneWiseBroadSheet_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="DateofPromotion" ColumnName="DateofPromotion" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="EducationalQualification" ColumnName="EducationalQualification" />
+          <ScalarProperty Name="PreviousJobInfo" ColumnName="PreviousJobInfo" />
+          <ScalarProperty Name="Zones" ColumnName="Zones" />
+          <ScalarProperty Name="PhotoSignature" ColumnName="PhotoSignature" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

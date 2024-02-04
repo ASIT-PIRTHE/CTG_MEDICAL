@@ -1,0 +1,25 @@
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.dll.config
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.dll.config
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.csprojResolveAssemblyReference.cache
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.dll.config
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\TVL.DB\bin\Release\TVL.DB.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\TVL.DB\obj\Release\TVL.DB.pdb

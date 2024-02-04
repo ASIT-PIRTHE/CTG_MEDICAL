@@ -1,0 +1,658 @@
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.Resources.ErrorMessages.resources
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csproj.GenerateResource.Cache
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\obj\Debug\RdlCompile.cache
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\obj\Debug\RdlCompile.compiled
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportAttendanceTemplate.xlsx
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportOvertimeTemplate.xlsx
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportRefreshmentTemplate.xlsx
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeader.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankAdviceLetterMasterRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseMonthlyElectricityBillRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseMonthlySalaryStatement.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BonusPaySlipRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\ElectricBillRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlyPayrollExpSheetRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\YearlySalaryStatementRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlySalaryRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OvertimeReportStaffRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\SalaryPaySlipRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_4ReportHeader.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_BankAdviceLetterPayeeList.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMReportHeader.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySheet.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySlipDetailAddition.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySlipDetailDeduction.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\NightBillRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseIncentiveBonus.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\DepartmentWiseIncentiveBonus.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\EmployeeWiseIncentiveBonus.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BonusStatementReport.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OtherAllowanceDetailsRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OtherDeductionDetailsRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxComputationRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxSummaryRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\JournalVoucherRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeAdvanceTaxPaid.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeOtherTaxInvestment.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxableSalary.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxationSlabs.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMReportHeaderBengali.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxUptoPreviousMonth.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderA4Portrait.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderA4LandS.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderLegalLandS.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\SalaryPaySlipDetailRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeader.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeader4AdviceLetter.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\EmployeeBasicInfo.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\LeaveEncashmentRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\FinalSettlementRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeaderA4LandS.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeaderLegalLandS.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySheetTaxable.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\AttendanceRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlyOtherAdjustmentRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MISReport.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseSummaryRpt.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_2Heads.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_3Heads.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_1Head.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Resources\ErrorMessages.resx
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Resources\ErrorMessages.Designer.cs
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\PGM.Web.dll.config
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\PGM.Web.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\PGM.Web.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Autofac.Configuration.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Autofac.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Autofac.Integration.Mvc.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\AutoMapper.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\DAL.Infrastructure.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\DAL.PGM.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\DB.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Domain.PGM.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Elmah.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\EntityFramework.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\EntityFramework.SqlServer.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\EPPlus.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\GenCode128.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Lib.Web.Mvc.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\LinqToExcel.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.Common.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Microsoft.Web.Helpers.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\MyNotificationLib.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Newtonsoft.Json.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Remotion.Data.Linq.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Remotion.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Remotion.Interfaces.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Net.Http.Formatting.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.Helpers.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.Http.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.Http.WebHost.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.Mvc.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.Razor.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.WebPages.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Razor.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Utility.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\WebMatrix.Data.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\WebMatrix.WebData.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\LinqKit.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\DAL.Infrastructure.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\DAL.PGM.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\DB.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Domain.PGM.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Utility.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\EntityFramework.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\EntityFramework.SqlServer.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\EPPlus.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\LinqToExcel.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Newtonsoft.Json.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Net.Http.Formatting.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.Helpers.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.Http.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.Http.WebHost.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.Mvc.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.Razor.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.WebPages.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Razor.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\WebMatrix.Data.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\WebMatrix.WebData.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\LinqKit.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxSummaryRptByEmployee.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\RefreshmentBillForOfficer.rdlc
+D:\Nazrul\Projects\VistaPayroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlySalaryDifferenceRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportAttendanceTemplate.xlsx
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportOvertimeTemplate.xlsx
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportRefreshmentTemplate.xlsx
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeader.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankAdviceLetterMasterRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseMonthlyElectricityBillRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseMonthlySalaryStatement.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BonusPaySlipRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\ElectricBillRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlyPayrollExpSheetRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\YearlySalaryStatementRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlySalaryRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OvertimeReportStaffRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\SalaryPaySlipRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_4ReportHeader.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_BankAdviceLetterPayeeList.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMReportHeader.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySheet.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySlipDetailAddition.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySlipDetailDeduction.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\NightBillRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseIncentiveBonus.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\DepartmentWiseIncentiveBonus.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\EmployeeWiseIncentiveBonus.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BonusStatementReport.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OtherAllowanceDetailsRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OtherDeductionDetailsRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxComputationRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxSummaryRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\JournalVoucherRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeAdvanceTaxPaid.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeOtherTaxInvestment.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxableSalary.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxationSlabs.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMReportHeaderBengali.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxUptoPreviousMonth.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderA4Portrait.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderA4LandS.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderLegalLandS.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\SalaryPaySlipDetailRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeader.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeader4AdviceLetter.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\EmployeeBasicInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\LeaveEncashmentRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\FinalSettlementRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeaderA4LandS.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeaderLegalLandS.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySheetTaxable.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\AttendanceRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlyOtherAdjustmentRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MISReport.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseSummaryRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_2Heads.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_3Heads.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_1Head.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxSummaryRptByEmployee.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\RefreshmentBillForOfficer.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlySalaryDifferenceRpt.rdlc
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Resources\ErrorMessages.resx
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Resources\ErrorMessages.Designer.cs
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\PGM.Web.dll.config
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\PGM.Web.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\PGM.Web.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Autofac.Configuration.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Autofac.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Autofac.Integration.Mvc.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\AutoMapper.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.Infrastructure.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.PGM.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DB.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Domain.PGM.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Elmah.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.SqlServer.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EPPlus.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\GenCode128.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Lib.Web.Mvc.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqToExcel.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.Common.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.WebForms.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.Web.Helpers.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\MyNotificationLib.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Newtonsoft.Json.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Remotion.Data.Linq.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Remotion.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Remotion.Interfaces.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Net.Http.Formatting.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Helpers.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.WebHost.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Mvc.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Deployment.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Utility.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.Data.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.WebData.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqKit.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.Infrastructure.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.PGM.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DB.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Domain.PGM.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Utility.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.SqlServer.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EPPlus.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqToExcel.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Newtonsoft.Json.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Net.Http.Formatting.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Helpers.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.WebHost.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Mvc.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Deployment.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.Data.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.WebData.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqKit.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.Resources.ErrorMessages.resources
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csproj.GenerateResource.Cache
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\RdlCompile.cache
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\RdlCompile.compiled
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportAttendanceTemplate.xlsx
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportOvertimeTemplate.xlsx
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportRefreshmentTemplate.xlsx
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeader.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankAdviceLetterMasterRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseMonthlyElectricityBillRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseMonthlySalaryStatement.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BonusPaySlipRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\ElectricBillRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlyPayrollExpSheetRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\YearlySalaryStatementRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlySalaryRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OvertimeReportStaffRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\SalaryPaySlipRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_4ReportHeader.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_BankAdviceLetterPayeeList.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMReportHeader.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySheet.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySlipDetailAddition.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySlipDetailDeduction.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\NightBillRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseIncentiveBonus.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\DepartmentWiseIncentiveBonus.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\EmployeeWiseIncentiveBonus.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BonusStatementReport.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OtherAllowanceDetailsRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OtherDeductionDetailsRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxComputationRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxSummaryRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\JournalVoucherRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeAdvanceTaxPaid.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeOtherTaxInvestment.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxableSalary.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxationSlabs.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMReportHeaderBengali.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxUptoPreviousMonth.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderA4Portrait.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderA4LandS.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderLegalLandS.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\SalaryPaySlipDetailRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeader.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeader4AdviceLetter.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\EmployeeBasicInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\LeaveEncashmentRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\FinalSettlementRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeaderA4LandS.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeaderLegalLandS.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySheetTaxable.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\AttendanceRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlyOtherAdjustmentRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MISReport.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseSummaryRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_2Heads.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_3Heads.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_1Head.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxSummaryRptByEmployee.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\RefreshmentBillForOfficer.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlySalaryDifferenceRpt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Resources\ErrorMessages.resx
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Resources\ErrorMessages.Designer.cs
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\PGM.Web.dll.config
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\PGM.Web.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\PGM.Web.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Autofac.Configuration.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Autofac.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Autofac.Integration.Mvc.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\AutoMapper.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.Infrastructure.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.PGM.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DB.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Domain.PGM.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Elmah.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.SqlServer.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EPPlus.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\GenCode128.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Lib.Web.Mvc.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqToExcel.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.Common.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.WebForms.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.Web.Helpers.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\MyNotificationLib.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Newtonsoft.Json.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Remotion.Data.Linq.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Remotion.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Remotion.Interfaces.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Net.Http.Formatting.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Helpers.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.WebHost.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Mvc.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Razor.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Deployment.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Razor.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Utility.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.Data.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.WebData.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqKit.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.Infrastructure.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.PGM.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DB.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Domain.PGM.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Utility.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.SqlServer.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EPPlus.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqToExcel.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Newtonsoft.Json.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Net.Http.Formatting.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Helpers.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.WebHost.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Mvc.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Razor.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Deployment.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Razor.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.Data.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.WebData.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqKit.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csprojResolveAssemblyReference.cache
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.Resources.ErrorMessages.resources
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csproj.GenerateResource.Cache
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportAttendanceTemplate.xlsx
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportOvertimeTemplate.xlsx
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportRefreshmentTemplate.xlsx
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeader.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankAdviceLetterMasterRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseMonthlyElectricityBillRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseMonthlySalaryStatement.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BonusPaySlipRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\ElectricBillRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlyPayrollExpSheetRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\YearlySalaryStatementRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlySalaryRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OvertimeReportStaffRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\SalaryPaySlipRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_4ReportHeader.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_BankAdviceLetterPayeeList.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMReportHeader.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySheet.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySlipDetailAddition.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySlipDetailDeduction.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\NightBillRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseIncentiveBonus.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\DepartmentWiseIncentiveBonus.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\EmployeeWiseIncentiveBonus.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BonusStatementReport.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OtherAllowanceDetailsRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OtherDeductionDetailsRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxComputationRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxSummaryRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\JournalVoucherRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeAdvanceTaxPaid.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeOtherTaxInvestment.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxableSalary.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxationSlabs.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMReportHeaderBengali.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxUptoPreviousMonth.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderA4Portrait.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderA4LandS.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderLegalLandS.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\SalaryPaySlipDetailRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeader.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeader4AdviceLetter.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\EmployeeBasicInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\LeaveEncashmentRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\FinalSettlementRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeaderA4LandS.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeaderLegalLandS.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySheetTaxable.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\AttendanceRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlyOtherAdjustmentRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MISReport.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseSummaryRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_2Heads.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_3Heads.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_1Head.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxSummaryRptByEmployee.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\RefreshmentBillForOfficer.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlySalaryDifferenceRpt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Resources\ErrorMessages.resx
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Resources\ErrorMessages.Designer.cs
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\PGM.Web.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\PGM.Web.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\PGM.Web.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Autofac.Configuration.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Autofac.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Autofac.Integration.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\AutoMapper.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.PGM.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DB.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Domain.PGM.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Elmah.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.SqlServer.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EPPlus.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\GenCode128.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Lib.Web.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqToExcel.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.Common.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.WebForms.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.Web.Helpers.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\MyNotificationLib.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Newtonsoft.Json.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Remotion.Data.Linq.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Remotion.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Remotion.Interfaces.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Net.Http.Formatting.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Helpers.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.WebHost.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Deployment.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Utility.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.Data.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.WebData.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqKit.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.Infrastructure.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DAL.PGM.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\DB.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Domain.PGM.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Utility.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EntityFramework.SqlServer.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\EPPlus.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqToExcel.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\Newtonsoft.Json.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Net.Http.Formatting.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Helpers.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.WebHost.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Mvc.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Deployment.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.Data.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\WebMatrix.WebData.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\bin\LinqKit.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.Resources.ErrorMessages.resources
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csproj.GenerateResource.Cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\RdlCompile.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\RdlCompile.compiled
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportAttendanceTemplate.xlsx
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportOvertimeTemplate.xlsx
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Content\PGM_ImportXlTemplate\ImportRefreshmentTemplate.xlsx
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeader.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankAdviceLetterMasterRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseMonthlyElectricityBillRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseMonthlySalaryStatement.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BonusPaySlipRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\ElectricBillRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlyPayrollExpSheetRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\YearlySalaryStatementRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlySalaryRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OvertimeReportStaffRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\SalaryPaySlipRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_4ReportHeader.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_BankAdviceLetterPayeeList.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMReportHeader.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySheet.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySlipDetailAddition.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySlipDetailDeduction.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\NightBillRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BankWiseIncentiveBonus.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\DepartmentWiseIncentiveBonus.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\EmployeeWiseIncentiveBonus.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\BonusStatementReport.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OtherAllowanceDetailsRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\OtherDeductionDetailsRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxComputationRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxSummaryRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\JournalVoucherRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeAdvanceTaxPaid.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeOtherTaxInvestment.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxableSalary.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxationSlabs.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMReportHeaderBengali.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_IncomeTaxUptoPreviousMonth.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderA4Portrait.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderA4LandS.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeaderLegalLandS.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\SalaryPaySlipDetailRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeader.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_ReportHeader4AdviceLetter.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\EmployeeBasicInfo.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\LeaveEncashmentRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\FinalSettlementRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeaderA4LandS.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_PGMZoneWiseReportHeaderLegalLandS.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\_SalaryPaySheetTaxable.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\AttendanceRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlyOtherAdjustmentRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MISReport.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseSummaryRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_2Heads.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_3Heads.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\HeadWiseReport_1Head.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\IncomeTaxSummaryRptByEmployee.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\RefreshmentBillForOfficer.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Reports\PGM\rdlc\MonthlySalaryDifferenceRpt.rdlc
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Resources\ErrorMessages.resx
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Resources\ErrorMessages.Designer.cs
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\PGM.Web.dll.config
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\PGM.Web.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\PGM.Web.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Autofac.Configuration.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Autofac.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Autofac.Integration.Mvc.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\AutoMapper.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\DAL.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\DAL.PGM.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\DB.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Domain.PGM.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Elmah.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\EntityFramework.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\EntityFramework.SqlServer.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\EPPlus.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\GenCode128.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Lib.Web.Mvc.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\LinqToExcel.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.Common.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Microsoft.ReportViewer.WebForms.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Microsoft.Web.Helpers.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\MyNotificationLib.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Newtonsoft.Json.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Remotion.Data.Linq.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Remotion.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Remotion.Interfaces.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Net.Http.Formatting.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.Helpers.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.WebHost.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.Mvc.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Deployment.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Utility.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\WebMatrix.Data.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\WebMatrix.WebData.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\LinqKit.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\DAL.Infrastructure.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\DAL.PGM.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\DAL.PGM.dll.config
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\DB.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\DB.dll.config
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Domain.PGM.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Domain.PGM.dll.config
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Utility.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\EntityFramework.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\EntityFramework.SqlServer.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\EPPlus.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\LinqToExcel.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\Newtonsoft.Json.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Net.Http.Formatting.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.Helpers.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.Http.WebHost.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.Mvc.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Deployment.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\System.Web.WebPages.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\WebMatrix.Data.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\WebMatrix.WebData.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\bin\LinqKit.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.Resources.ErrorMessages.resources
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csproj.GenerateResource.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\obj\Debug\RdlCompile.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\obj\Debug\RdlCompile.compiled
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.csproj.CopyComplete
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\PGM.Web\obj\Debug\PGM.Web.pdb

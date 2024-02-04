@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IWM_MFSFAMModelStoreContainer" CdmEntityContainer="ERP_BEPZAFAMEntities">
+    <FunctionImportMapping FunctionImportName="CommonConfigGet" FunctionName="IWM_MFSFAMModel.Store.CommonConfigGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAFAMModel.CommonConfigGet" />
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CommonConfigTypeDML" FunctionName="IWM_MFSFAMModel.Store.CommonConfigTypeDML" />
+    <EntitySetMapping Name="CommonConfigTypes">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.CommonConfigType">
+        <MappingFragment StoreEntitySet="CommonConfigType">
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_ApprovalPath">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_ApprovalPath">
+        <MappingFragment StoreEntitySet="FAM_ApprovalPath">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PathName" ColumnName="PathName" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_ApprovalPathNodeInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_ApprovalPathNodeInfo">
+        <MappingFragment StoreEntitySet="FAM_ApprovalPathNodeInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ParentNodeEmpId" ColumnName="ParentNodeEmpId" />
+          <ScalarProperty Name="NodeOrder" ColumnName="NodeOrder" />
+          <ScalarProperty Name="NodeEmpId" ColumnName="NodeEmpId" />
+          <ScalarProperty Name="RoleDesignationId" ColumnName="RoleDesignationId" />
+          <ScalarProperty Name="ApprovalType" ColumnName="ApprovalType" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="NodeId" ColumnName="NodeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_BankBranchAccountNo">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_BankBranchAccountNo">
+        <MappingFragment StoreEntitySet="FAM_BankBranchAccountNo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="AccountHeadId" ColumnName="AccountHeadId" />
+          <ScalarProperty Name="BankAccountNo" ColumnName="BankAccountNo" />
+          <ScalarProperty Name="BankBranchMapId" ColumnName="BankBranchMapId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_BankBranchMap">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_BankBranchMap">
+        <MappingFragment StoreEntitySet="FAM_BankBranchMap">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="SWIFTCode" ColumnName="SWIFTCode" />
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_BSPLReportHeadMapping">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_BSPLReportHeadMapping">
+        <MappingFragment StoreEntitySet="FAM_BSPLReportHeadMapping">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ReportHeadSerial" ColumnName="ReportHeadSerial" />
+          <ScalarProperty Name="BSPLReportHeadId" ColumnName="BSPLReportHeadId" />
+          <ScalarProperty Name="ReportId" ColumnName="ReportId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_BSPLReportHeadMappingDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_BSPLReportHeadMappingDetails">
+        <MappingFragment StoreEntitySet="FAM_BSPLReportHeadMappingDetails">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="AccountHeadId" ColumnName="AccountHeadId" />
+          <ScalarProperty Name="BSPLReportHeadMappingId" ColumnName="BSPLReportHeadMappingId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_BSPLReportHeadName">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_BSPLReportHeadName">
+        <MappingFragment StoreEntitySet="FAM_BSPLReportHeadName">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_CentralBudgetAllocation">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_CentralBudgetAllocation">
+        <MappingFragment StoreEntitySet="FAM_CentralBudgetAllocation">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+          <ScalarProperty Name="CurrentApprovalNodeId" ColumnName="CurrentApprovalNodeId" />
+          <ScalarProperty Name="ApprovalPathId" ColumnName="ApprovalPathId" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_CentralBudgetAllocationDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_CentralBudgetAllocationDetails">
+        <MappingFragment StoreEntitySet="FAM_CentralBudgetAllocationDetails">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RevisedAmount" ColumnName="RevisedAmount" />
+          <ScalarProperty Name="OriginalAmount" ColumnName="OriginalAmount" />
+          <ScalarProperty Name="AccountHeadId" ColumnName="AccountHeadId" />
+          <ScalarProperty Name="CentralBudgetId" ColumnName="CentralBudgetId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_CentralBudgetRevision">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_CentralBudgetRevision">
+        <MappingFragment StoreEntitySet="FAM_CentralBudgetRevision">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+          <ScalarProperty Name="CurrentApprovalNodeId" ColumnName="CurrentApprovalNodeId" />
+          <ScalarProperty Name="ApprovalPathId" ColumnName="ApprovalPathId" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RevisionNo" ColumnName="RevisionNo" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_CentralBudgetRevisionDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_CentralBudgetRevisionDetails">
+        <MappingFragment StoreEntitySet="FAM_CentralBudgetRevisionDetails">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RevisedBudget" ColumnName="RevisedBudget" />
+          <ScalarProperty Name="PreviousBudget" ColumnName="PreviousBudget" />
+          <ScalarProperty Name="RevisionAccountHeadId" ColumnName="RevisionAccountHeadId" />
+          <ScalarProperty Name="CentralBudgetRevisionId" ColumnName="CentralBudgetRevisionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_ChequeBookInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_ChequeBookInfo">
+        <MappingFragment StoreEntitySet="FAM_ChequeBookInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="NumberOfLeaf" ColumnName="NumberOfLeaf" />
+          <ScalarProperty Name="ChequeStartingNumber" ColumnName="ChequeStartingNumber" />
+          <ScalarProperty Name="ChequeInitialPart" ColumnName="ChequeInitialPart" />
+          <ScalarProperty Name="ChequeBookNumber" ColumnName="ChequeBookNumber" />
+          <ScalarProperty Name="BankAccountId" ColumnName="BankAccountId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_ChequeInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_ChequeInfo">
+        <MappingFragment StoreEntitySet="FAM_ChequeInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ChequeAmount" ColumnName="ChequeAmount" />
+          <ScalarProperty Name="ChequeStatus" ColumnName="ChequeStatus" />
+          <ScalarProperty Name="ChequeNumber" ColumnName="ChequeNumber" />
+          <ScalarProperty Name="ChequeBookId" ColumnName="ChequeBookId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_DivisionUnitBudgetAllocation">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_DivisionUnitBudgetAllocation">
+        <MappingFragment StoreEntitySet="FAM_DivisionUnitBudgetAllocation">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="DivisionUnitId" ColumnName="DivisionUnitId" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_DivisionUnitBudgetHead">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_DivisionUnitBudgetHead">
+        <MappingFragment StoreEntitySet="FAM_DivisionUnitBudgetHead">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="AccountHeadId" ColumnName="AccountHeadId" />
+          <ScalarProperty Name="DivisionUnitId" ColumnName="DivisionUnitId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_FacilityAccountHeadMapping">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_FacilityAccountHeadMapping">
+        <MappingFragment StoreEntitySet="FAM_FacilityAccountHeadMapping">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="AccountHeadId" ColumnName="AccountHeadId" />
+          <ScalarProperty Name="ProjectTypeId" ColumnName="ProjectTypeId" />
+          <ScalarProperty Name="FacilityId" ColumnName="FacilityId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_FinancialYearInformation">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_FinancialYearInformation">
+        <MappingFragment StoreEntitySet="FAM_FinancialYearInformation">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsClose" ColumnName="IsClose" />
+          <ScalarProperty Name="FinancialYearVoucherFormat" ColumnName="FinancialYearVoucherFormat" />
+          <ScalarProperty Name="FinancialYearEndDate" ColumnName="FinancialYearEndDate" />
+          <ScalarProperty Name="FinancialYearStartDate" ColumnName="FinancialYearStartDate" />
+          <ScalarProperty Name="FinancialYearName" ColumnName="FinancialYearName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_PaymentType">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_PaymentType">
+        <MappingFragment StoreEntitySet="FAM_PaymentType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_Purpose">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_Purpose">
+        <MappingFragment StoreEntitySet="FAM_Purpose">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_PurposeAccountHeadMapping">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_PurposeAccountHeadMapping">
+        <MappingFragment StoreEntitySet="FAM_PurposeAccountHeadMapping">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AccountHeadId" ColumnName="AccountHeadId" />
+          <ScalarProperty Name="PurposeId" ColumnName="PurposeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_ReportName">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_ReportName">
+        <MappingFragment StoreEntitySet="FAM_ReportName">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_VendorInformation">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_VendorInformation">
+        <MappingFragment StoreEntitySet="FAM_VendorInformation">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_VoucherType">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_VoucherType">
+        <MappingFragment StoreEntitySet="FAM_VoucherType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwCompanyInformations">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.vwCompanyInformation">
+        <MappingFragment StoreEntitySet="vwCompanyInformation">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+          <ScalarProperty Name="WebURL" ColumnName="WebURL" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="Phone2" ColumnName="Phone2" />
+          <ScalarProperty Name="Phone1" ColumnName="Phone1" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_VoucherInfoDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_VoucherInfoDetails">
+        <MappingFragment StoreEntitySet="FAM_VoucherInfoDetails">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ReconcileDate" ColumnName="ReconcileDate" />
+          <ScalarProperty Name="IsReconciled" ColumnName="IsReconciled" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="ChequeNumber" ColumnName="ChequeNumber" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Credit" ColumnName="Credit" />
+          <ScalarProperty Name="Debit" ColumnName="Debit" />
+          <ScalarProperty Name="AccountHeadId" ColumnName="AccountHeadId" />
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_ApproverType">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_ApproverType">
+        <MappingFragment StoreEntitySet="FAM_ApproverType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_PeriodicBalance">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_PeriodicBalance">
+        <MappingFragment StoreEntitySet="FAM_PeriodicBalance">
+          <ScalarProperty Name="AccountHeadCode" ColumnName="AccountHeadCode" />
+          <ScalarProperty Name="ClosingAmount" ColumnName="ClosingAmount" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="AccountHeadId" ColumnName="AccountHeadId" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_TempTrialBalanceDetailChartofAccount">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_TempTrialBalanceDetailChartofAccount">
+        <MappingFragment StoreEntitySet="FAM_TempTrialBalanceDetailChartofAccount">
+          <ScalarProperty Name="AccountHeadType" ColumnName="AccountHeadType" />
+          <ScalarProperty Name="IsPostingAccount" ColumnName="IsPostingAccount" />
+          <ScalarProperty Name="CreditAmt" ColumnName="CreditAmt" />
+          <ScalarProperty Name="DebitAmt" ColumnName="DebitAmt" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="AccountHeadName" ColumnName="AccountHeadName" />
+          <ScalarProperty Name="AccountHeadCode" ColumnName="AccountHeadCode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_TemptblBalanceSheetbyControlHeadComparision">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_TemptblBalanceSheetbyControlHeadComparision">
+        <MappingFragment StoreEntitySet="FAM_TemptblBalanceSheetbyControlHeadComparision">
+          <ScalarProperty Name="LeafNode" ColumnName="LeafNode" />
+          <ScalarProperty Name="mnyAmountprev" ColumnName="mnyAmountprev" />
+          <ScalarProperty Name="mnyAmount" ColumnName="mnyAmount" />
+          <ScalarProperty Name="mnyOB" ColumnName="mnyOB" />
+          <ScalarProperty Name="bitISgrossProfit" ColumnName="bitISgrossProfit" />
+          <ScalarProperty Name="strCompanyId" ColumnName="strCompanyId" />
+          <ScalarProperty Name="AccountHeadName" ColumnName="AccountHeadName" />
+          <ScalarProperty Name="strControlCode" ColumnName="strControlCode" />
+          <ScalarProperty Name="intControlAccount" ColumnName="intControlAccount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uspFAMBalanceSheetbyControlHeadComparision" FunctionName="IWM_MFSFAMModel.Store.uspFAMBalanceSheetbyControlHeadComparision" />
+    <EntitySetMapping Name="FAM_TemptblIncomeAndExpenditureDetailReport">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_TemptblIncomeAndExpenditureDetailReport">
+        <MappingFragment StoreEntitySet="FAM_TemptblIncomeAndExpenditureDetailReport">
+          <ScalarProperty Name="LeafNode" ColumnName="LeafNode" />
+          <ScalarProperty Name="mnyAmountprev" ColumnName="mnyAmountprev" />
+          <ScalarProperty Name="mnyAmount" ColumnName="mnyAmount" />
+          <ScalarProperty Name="mnyOB" ColumnName="mnyOB" />
+          <ScalarProperty Name="bitISgrossProfit" ColumnName="bitISgrossProfit" />
+          <ScalarProperty Name="strCompanyId" ColumnName="strCompanyId" />
+          <ScalarProperty Name="AccountHeadName" ColumnName="AccountHeadName" />
+          <ScalarProperty Name="strControlCode" ColumnName="strControlCode" />
+          <ScalarProperty Name="intControlAccount" ColumnName="intControlAccount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_TemptblIncomeAndExpenditureReport">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_TemptblIncomeAndExpenditureReport">
+        <MappingFragment StoreEntitySet="FAM_TemptblIncomeAndExpenditureReport">
+          <ScalarProperty Name="LeafNode" ColumnName="LeafNode" />
+          <ScalarProperty Name="mnyAmountprev" ColumnName="mnyAmountprev" />
+          <ScalarProperty Name="mnyAmount" ColumnName="mnyAmount" />
+          <ScalarProperty Name="mnyOB" ColumnName="mnyOB" />
+          <ScalarProperty Name="bitISgrossProfit" ColumnName="bitISgrossProfit" />
+          <ScalarProperty Name="strCompanyId" ColumnName="strCompanyId" />
+          <ScalarProperty Name="AccountHeadName" ColumnName="AccountHeadName" />
+          <ScalarProperty Name="strControlCode" ColumnName="strControlCode" />
+          <ScalarProperty Name="intControlAccount" ColumnName="intControlAccount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uspFAMIncomeAndExpenditureDetailReport" FunctionName="IWM_MFSFAMModel.Store.uspFAMIncomeAndExpenditureDetailReport" />
+    <FunctionImportMapping FunctionImportName="uspFAMIndividualAdvance" FunctionName="IWM_MFSFAMModel.Store.uspFAMIndividualAdvance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAFAMModel.Test_Russel">
+          <ScalarProperty Name="EmpRowId" ColumnName="EmpRowId" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="EmployeeInitial" ColumnName="EmployeeInitial" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="ProjectNo" ColumnName="ProjectNo" />
+          <ScalarProperty Name="AmountReceived" ColumnName="AmountReceived" />
+          <ScalarProperty Name="Adjustment" ColumnName="Adjustment" />
+          <ScalarProperty Name="MoreThan3Months" ColumnName="MoreThan3Months" />
+          <ScalarProperty Name="MoreThan6Months" ColumnName="MoreThan6Months" />
+          <ScalarProperty Name="MoreThan1Year" ColumnName="MoreThan1Year" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspFAMOpeningBalanceMonthForAccountHead" FunctionName="IWM_MFSFAMModel.Store.uspFAMOpeningBalanceMonthForAccountHead" />
+    <FunctionImportMapping FunctionImportName="uspFAMOpeningClosingBalanceForAccountHead" FunctionName="IWM_MFSFAMModel.Store.uspFAMOpeningClosingBalanceForAccountHead" />
+    <FunctionImportMapping FunctionImportName="uspFAMCurrentBalanceOfAccountHead" FunctionName="IWM_MFSFAMModel.Store.uspFAMCurrentBalanceOfAccountHead" />
+    <EntitySetMapping Name="FAM_ApprovalComments">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_ApprovalComments">
+        <MappingFragment StoreEntitySet="FAM_ApprovalComments">
+          <ScalarProperty Name="ApprovalFor" ColumnName="ApprovalFor" />
+          <ScalarProperty Name="CommentDate" ColumnName="CommentDate" />
+          <ScalarProperty Name="ApprovalComment" ColumnName="ApprovalComment" />
+          <ScalarProperty Name="ApprovalPathId" ColumnName="ApprovalPathId" />
+          <ScalarProperty Name="RecommenderApproverId" ColumnName="RecommenderApproverId" />
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_DivisionUnitBudgetAllocationDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_DivisionUnitBudgetAllocationDetails">
+        <MappingFragment StoreEntitySet="FAM_DivisionUnitBudgetAllocationDetails">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="RevisedAmount" ColumnName="RevisedAmount" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="AccountHeadId" ColumnName="AccountHeadId" />
+          <ScalarProperty Name="DivisionUnitBudgetId" ColumnName="DivisionUnitBudgetId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_DivisionUnitBudgetRevision">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_DivisionUnitBudgetRevision">
+        <MappingFragment StoreEntitySet="FAM_DivisionUnitBudgetRevision">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RevisionNo" ColumnName="RevisionNo" />
+          <ScalarProperty Name="DivisionUnitId" ColumnName="DivisionUnitId" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_DivisionUnitBudgetRevisionDetails">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_DivisionUnitBudgetRevisionDetails">
+        <MappingFragment StoreEntitySet="FAM_DivisionUnitBudgetRevisionDetails">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RevisedBudget" ColumnName="RevisedBudget" />
+          <ScalarProperty Name="PreviousBudget" ColumnName="PreviousBudget" />
+          <ScalarProperty Name="RevisionAccountHeadId" ColumnName="RevisionAccountHeadId" />
+          <ScalarProperty Name="DivisionUnitBudgetRevisionId" ColumnName="DivisionUnitBudgetRevisionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uspFAMOpeningBalanceForAccountHeadIDWise" FunctionName="IWM_MFSFAMModel.Store.uspFAMOpeningBalanceForAccountHeadIDWise" />
+    <FunctionImportMapping FunctionImportName="uspFAMReceiptAndPaymentStatement" FunctionName="IWM_MFSFAMModel.Store.uspFAMReceiptAndPaymentStatement" />
+    <EntitySetMapping Name="FAM_TemptblReceiptAndPaymentStatement">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_TemptblReceiptAndPaymentStatement">
+        <MappingFragment StoreEntitySet="FAM_TemptblReceiptAndPaymentStatement">
+          <ScalarProperty Name="mnyAmount" ColumnName="mnyAmount" />
+          <ScalarProperty Name="strReportHeadType" ColumnName="strReportHeadType" />
+          <ScalarProperty Name="LeafNode" ColumnName="LeafNode" />
+          <ScalarProperty Name="strCompanyId" ColumnName="strCompanyId" />
+          <ScalarProperty Name="AccountHeadName" ColumnName="AccountHeadName" />
+          <ScalarProperty Name="strControlCode" ColumnName="strControlCode" />
+          <ScalarProperty Name="intControlAccount" ColumnName="intControlAccount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uspFAMCashFlowStatement" FunctionName="IWM_MFSFAMModel.Store.uspFAMCashFlowStatement">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAFAMModel.CashFlowStatement">
+          <ScalarProperty Name="strControlCode" ColumnName="strControlCode" />
+          <ScalarProperty Name="AccountHeadName" ColumnName="AccountHeadName" />
+          <ScalarProperty Name="strCompanyId" ColumnName="strCompanyId" />
+          <ScalarProperty Name="LeafNode" ColumnName="LeafNode" />
+          <ScalarProperty Name="strReportHeadType" ColumnName="strReportHeadType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspFAMDivWiseEarningExpenditureSummary" FunctionName="IWM_MFSFAMModel.Store.uspFAMDivWiseEarningExpenditureSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ERP_BEPZAFAMModel.DivisionWiseEarningExpenditure">
+          <ScalarProperty Name="HeadOrder" ColumnName="HeadOrder" />
+          <ScalarProperty Name="ReportHead" ColumnName="ReportHead" />
+          <ScalarProperty Name="DivisionName" ColumnName="DivisionName" />
+          <ScalarProperty Name="mnyAmount" ColumnName="mnyAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspFAMIncomeAndExpenditureReport" FunctionName="IWM_MFSFAMModel.Store.uspFAMIncomeAndExpenditureReport" />
+    <EntitySetMapping Name="FAM_ChartOfAccount">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_ChartOfAccount">
+        <MappingFragment StoreEntitySet="FAM_ChartOfAccount">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="IsBank" ColumnName="IsBank" />
+          <ScalarProperty Name="CashBankType" ColumnName="CashBankType" />
+          <ScalarProperty Name="IsBudgetHead" ColumnName="IsBudgetHead" />
+          <ScalarProperty Name="BSPLSerial" ColumnName="BSPLSerial" />
+          <ScalarProperty Name="BSPLName" ColumnName="BSPLName" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="ParentHeadCode" ColumnName="ParentHeadCode" />
+          <ScalarProperty Name="IsPostingAccount" ColumnName="IsPostingAccount" />
+          <ScalarProperty Name="AccountHeadType" ColumnName="AccountHeadType" />
+          <ScalarProperty Name="AccountHeadName" ColumnName="AccountHeadName" />
+          <ScalarProperty Name="AccountHeadCode" ColumnName="AccountHeadCode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uspFAMTrialBalanceDetailedALLChartOfAccount" FunctionName="IWM_MFSFAMModel.Store.uspFAMTrialBalanceDetailedALLChartOfAccount" />
+    <EntitySetMapping Name="FAM_VoucherInfo">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_VoucherInfo">
+        <MappingFragment StoreEntitySet="FAM_VoucherInfo">
+          <ScalarProperty Name="IsRealized" ColumnName="IsRealized" />
+          <ScalarProperty Name="InvoiceVoucherReferenceId" ColumnName="InvoiceVoucherReferenceId" />
+          <ScalarProperty Name="BankAccountNoReceive" ColumnName="BankAccountNoReceive" />
+          <ScalarProperty Name="ApprovalComment" ColumnName="ApprovalComment" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="ApprovalPathId" ColumnName="ApprovalPathId" />
+          <ScalarProperty Name="CurrentApprovalNodeId" ColumnName="CurrentApprovalNodeId" />
+          <ScalarProperty Name="Narration" ColumnName="Narration" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="FinalApproverId" ColumnName="FinalApproverId" />
+          <ScalarProperty Name="ApproveDate" ColumnName="ApproveDate" />
+          <ScalarProperty Name="VoucherStatus" ColumnName="VoucherStatus" />
+          <ScalarProperty Name="BankAccountId" ColumnName="BankAccountId" />
+          <ScalarProperty Name="PaymentTypeReferenceNumber" ColumnName="PaymentTypeReferenceNumber" />
+          <ScalarProperty Name="PaymentTypeId" ColumnName="PaymentTypeId" />
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="ReferenceType" ColumnName="ReferenceType" />
+          <ScalarProperty Name="ReceiveFromVendorId" ColumnName="ReceiveFromVendorId" />
+          <ScalarProperty Name="ReceiveFromClientId" ColumnName="ReceiveFromClientId" />
+          <ScalarProperty Name="ReceiveFromStaffId" ColumnName="ReceiveFromStaffId" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="PayeeVendorId" ColumnName="PayeeVendorId" />
+          <ScalarProperty Name="PayeeClientId" ColumnName="PayeeClientId" />
+          <ScalarProperty Name="PayeeStaffId" ColumnName="PayeeStaffId" />
+          <ScalarProperty Name="ApplicableFor" ColumnName="ApplicableFor" />
+          <ScalarProperty Name="IsCashOrBank" ColumnName="IsCashOrBank" />
+          <ScalarProperty Name="VoucherTypeId" ColumnName="VoucherTypeId" />
+          <ScalarProperty Name="VoucherDate" ColumnName="VoucherDate" />
+          <ScalarProperty Name="VoucherNumber" ColumnName="VoucherNumber" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAM_ApprovalFlow">
+      <EntityTypeMapping TypeName="ERP_BEPZAFAMModel.FAM_ApprovalFlow">
+        <MappingFragment StoreEntitySet="FAM_ApprovalFlow">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="DocumentStatus" ColumnName="DocumentStatus" />
+          <ScalarProperty Name="DestinationId" ColumnName="DestinationId" />
+          <ScalarProperty Name="DocumentPreStatus" ColumnName="DocumentPreStatus" />
+          <ScalarProperty Name="ArrivalDate" ColumnName="ArrivalDate" />
+          <ScalarProperty Name="CreatorId" ColumnName="CreatorId" />
+          <ScalarProperty Name="DocumentId" ColumnName="DocumentId" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

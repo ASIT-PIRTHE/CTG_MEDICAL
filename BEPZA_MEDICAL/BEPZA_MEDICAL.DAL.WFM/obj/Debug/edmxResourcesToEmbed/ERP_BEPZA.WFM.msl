@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERP_BEPZADALWFMStoreContainer" CdmEntityContainer="ERP_BEPZAWFMEntities">
+    <EntitySetMapping Name="WFM_ReasonOfWelfareCategory">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_ReasonOfWelfareCategory">
+        <MappingFragment StoreEntitySet="WFM_ReasonOfWelfareCategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WelfareFundCategoryId" ColumnName="WelfareFundCategoryId" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_OfflineApplicationInfoDetailAttachment">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_OfflineApplicationInfoDetailAttachment">
+        <MappingFragment StoreEntitySet="WFM_OfflineApplicationInfoDetailAttachment">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="OfflineApplicationInfoId" ColumnName="OfflineApplicationInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_OnlineApplicationInfoDetailAttachment">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_OnlineApplicationInfoDetailAttachment">
+        <MappingFragment StoreEntitySet="WFM_OnlineApplicationInfoDetailAttachment">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="OnlineApplicationInfoId" ColumnName="OnlineApplicationInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_PaymentInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_PaymentInfo">
+        <MappingFragment StoreEntitySet="WFM_PaymentInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="PayOrderDate" ColumnName="PayOrderDate" />
+          <ScalarProperty Name="PayOrderNo" ColumnName="PayOrderNo" />
+          <ScalarProperty Name="ApprovalWelfareFundInfoId" ColumnName="ApprovalWelfareFundInfoId" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_ApprovalWelfareFundInfoCommittee">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_ApprovalWelfareFundInfoCommittee">
+        <MappingFragment StoreEntitySet="WFM_ApprovalWelfareFundInfoCommittee">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="ActiveStatus" ColumnName="ActiveStatus" />
+          <ScalarProperty Name="MemberRole" ColumnName="MemberRole" />
+          <ScalarProperty Name="MemberDesignation" ColumnName="MemberDesignation" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="MemberEmployeeId" ColumnName="MemberEmployeeId" />
+          <ScalarProperty Name="IsExternal" ColumnName="IsExternal" />
+          <ScalarProperty Name="ApprovalWelfareFundInfoId" ColumnName="ApprovalWelfareFundInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_VerifyTheApplication">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_VerifyTheApplication">
+        <MappingFragment StoreEntitySet="WFM_VerifyTheApplication">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="WelfareFundCategoryId" ColumnName="WelfareFundCategoryId" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="VerifiedById" ColumnName="VerifiedById" />
+          <ScalarProperty Name="VerifyDate" ColumnName="VerifyDate" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="CycleId" ColumnName="CycleId" />
+          <ScalarProperty Name="ApplicantZoneInfoId" ColumnName="ApplicantZoneInfoId" />
+          <ScalarProperty Name="ApplicationStatus" ColumnName="ApplicationStatus" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_PaymentInfoEmployeeDetails">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_PaymentInfoEmployeeDetails">
+        <MappingFragment StoreEntitySet="WFM_PaymentInfoEmployeeDetails">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="PaymentInfoId" ColumnName="PaymentInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_VerifyTheApplicationDetails">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_VerifyTheApplicationDetails">
+        <MappingFragment StoreEntitySet="WFM_VerifyTheApplicationDetails">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="AppliedAmount" ColumnName="AppliedAmount" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="VerifyTheApplicationId" ColumnName="VerifyTheApplicationId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_WFM_WelfareFundConsolidateReport" FunctionName="BEPZA_MEDICAL.DAL.WFM.Store.SP_WFM_WelfareFundConsolidateReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.SP_WFM_WelfareFundConsolidateReport_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="WFM_ApprovalWelfareFundInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_ApprovalWelfareFundInfo">
+        <MappingFragment StoreEntitySet="WFM_ApprovalWelfareFundInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="MeetAgenda" ColumnName="MeetAgenda" />
+          <ScalarProperty Name="WelfareFundCategoryId" ColumnName="WelfareFundCategoryId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="CycleInfoId" ColumnName="CycleInfoId" />
+          <ScalarProperty Name="MeetPlace" ColumnName="MeetPlace" />
+          <ScalarProperty Name="MeetTime" ColumnName="MeetTime" />
+          <ScalarProperty Name="MeetDate" ColumnName="MeetDate" />
+          <ScalarProperty Name="CommitteeName" ColumnName="CommitteeName" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_CycleInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_CycleInfo">
+        <MappingFragment StoreEntitySet="WFM_CycleInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ToMonth" ColumnName="ToMonth" />
+          <ScalarProperty Name="FromMonth" ColumnName="FromMonth" />
+          <ScalarProperty Name="CycleName" ColumnName="CycleName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_WFM_SectionWiseWelfareFund" FunctionName="BEPZA_MEDICAL.DAL.WFM.Store.SP_WFM_SectionWiseWelfareFund">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.SP_WFM_SectionWiseWelfareFund_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="WFM_WelfareFundPolicy">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_WelfareFundPolicy">
+        <MappingFragment StoreEntitySet="WFM_WelfareFundPolicy">
+          <ScalarProperty Name="ReferenceDate" ColumnName="ReferenceDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsContinuous" ColumnName="IsContinuous" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="OtherMaxAmount" ColumnName="OtherMaxAmount" />
+          <ScalarProperty Name="MaxAmount" ColumnName="MaxAmount" />
+          <ScalarProperty Name="MinServiceYear" ColumnName="MinServiceYear" />
+          <ScalarProperty Name="EffectiveToDate" ColumnName="EffectiveToDate" />
+          <ScalarProperty Name="EffectiveFromDate" ColumnName="EffectiveFromDate" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="WelfareFundCategoryId" ColumnName="WelfareFundCategoryId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_WFM_getCoABudgetHeatList" FunctionName="BEPZA_MEDICAL.DAL.WFM.Store.SP_WFM_getCoABudgetHeatList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.SP_WFM_getCoABudgetHeatList_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="accountName" ColumnName="accountName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_WFM_RptApprovedApplicantList" FunctionName="BEPZA_MEDICAL.DAL.WFM.Store.sp_WFM_RptApprovedApplicantList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.sp_WFM_RptApprovedApplicantList_Result">
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="MeetAgenda" ColumnName="MeetAgenda" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ApprovedAmount" ColumnName="ApprovedAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="vwWfmApplicationInformations">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.vwWfmApplicationInformation">
+        <MappingFragment StoreEntitySet="vwWfmApplicationInformation">
+          <ScalarProperty Name="CycleId" ColumnName="CycleId" />
+          <ScalarProperty Name="ApplicationStatus" ColumnName="ApplicationStatus" />
+          <ScalarProperty Name="ApprovalStatusId" ColumnName="ApprovalStatusId" />
+          <ScalarProperty Name="IsOnline" ColumnName="IsOnline" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ApplyMonthId" ColumnName="ApplyMonthId" />
+          <ScalarProperty Name="ApplyYear" ColumnName="ApplyYear" />
+          <ScalarProperty Name="ForwardTo" ColumnName="ForwardTo" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="AppTo" ColumnName="AppTo" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="AppliedAmount" ColumnName="AppliedAmount" />
+          <ScalarProperty Name="FundCategoryName" ColumnName="FundCategoryName" />
+          <ScalarProperty Name="WelfareFundCategoryId" ColumnName="WelfareFundCategoryId" />
+          <ScalarProperty Name="ApplicationNo" ColumnName="ApplicationNo" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="ApplicationDate" ColumnName="ApplicationDate" />
+          <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_ApprovalWelfareFundInfoEmployeeDetails">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_ApprovalWelfareFundInfoEmployeeDetails">
+        <MappingFragment StoreEntitySet="WFM_ApprovalWelfareFundInfoEmployeeDetails">
+          <ScalarProperty Name="IsOnline" ColumnName="IsOnline" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ApprovedAmount" ColumnName="ApprovedAmount" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="ApprovalWelfareFundInfoId" ColumnName="ApprovalWelfareFundInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_WFM_getCoABudgetHeadAmount" FunctionName="BEPZA_MEDICAL.DAL.WFM.Store.SP_WFM_getCoABudgetHeadAmount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.SP_WFM_getCoABudgetHeadAmount_Result">
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="yearName" ColumnName="yearName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_WFM_ZoneWiseWelfareFund" FunctionName="BEPZA_MEDICAL.DAL.WFM.Store.SP_WFM_ZoneWiseWelfareFund">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.SP_WFM_ZoneWiseWelfareFund_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="WFM_OfflineApplicationInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_OfflineApplicationInfo">
+        <MappingFragment StoreEntitySet="WFM_OfflineApplicationInfo">
+          <ScalarProperty Name="SuggestAmount" ColumnName="SuggestAmount" />
+          <ScalarProperty Name="CycleId" ColumnName="CycleId" />
+          <ScalarProperty Name="ApplicationStatusId" ColumnName="ApplicationStatusId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="NID" ColumnName="NID" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SignatoryId" ColumnName="SignatoryId" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="AppTo" ColumnName="AppTo" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="AppliedAmount" ColumnName="AppliedAmount" />
+          <ScalarProperty Name="WelfareFundCategoryId" ColumnName="WelfareFundCategoryId" />
+          <ScalarProperty Name="ApplicationNo" ColumnName="ApplicationNo" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="ApplicationDate" ColumnName="ApplicationDate" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="BankAccountNo" ColumnName="BankAccountNo" />
+          <ScalarProperty Name="BranchNameId" ColumnName="BranchNameId" />
+          <ScalarProperty Name="BankNameId" ColumnName="BankNameId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="RelationId" ColumnName="RelationId" />
+          <ScalarProperty Name="ApplicantName" ColumnName="ApplicantName" />
+          <ScalarProperty Name="ApplicantStatus" ColumnName="ApplicantStatus" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_OnlineApplicationInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_OnlineApplicationInfo">
+        <MappingFragment StoreEntitySet="WFM_OnlineApplicationInfo">
+          <ScalarProperty Name="SuggestAmount" ColumnName="SuggestAmount" />
+          <ScalarProperty Name="CycleId" ColumnName="CycleId" />
+          <ScalarProperty Name="ApplicationStatusId" ColumnName="ApplicationStatusId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SignatoryId" ColumnName="SignatoryId" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="AppTo" ColumnName="AppTo" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="AppliedAmount" ColumnName="AppliedAmount" />
+          <ScalarProperty Name="WelfareFundCategoryId" ColumnName="WelfareFundCategoryId" />
+          <ScalarProperty Name="ApplicationNo" ColumnName="ApplicationNo" />
+          <ScalarProperty Name="RefNo" ColumnName="RefNo" />
+          <ScalarProperty Name="ApplicationDate" ColumnName="ApplicationDate" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WFM_WelfareFundCategory">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_WelfareFundCategory">
+        <MappingFragment StoreEntitySet="WFM_WelfareFundCategory">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="COAId" ColumnName="COAId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="WFM_uspVoucherPosting" FunctionName="BEPZA_MEDICAL.DAL.WFM.Store.WFM_uspVoucherPosting">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.WFM.WFM_uspVoucherPosting_Result">
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="VouchrTypeId" ColumnName="VouchrTypeId" />
+          <ScalarProperty Name="FundControlId" ColumnName="FundControlId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

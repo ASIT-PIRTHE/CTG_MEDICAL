@@ -1,0 +1,454 @@
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\RdlCompile.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\RdlCompile.compiled
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanReceiveDetail_Format1.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanInstallmentPaid.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanSchedule.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanStatus.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanClose.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforHBLoan.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforMotorCar.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueStatement.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanRecoveryStatement.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatement.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatus.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCollectionStatement.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\subRptDonorLoanSchedule.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanInstallmentHistory.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptNonRefundableLoanStatement.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMismatchOfLoanInstAndSalary.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCashChequeCollection.rdlc
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll.config
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.Common.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.SqlServer.Types.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MsieJavaScriptEngine.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Data.Linq.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Mono.Cecil.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.csprojResolveAssemblyReference.cache
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanReceiveDetail_Format1.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanInstallmentPaid.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanSchedule.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanStatus.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanClose.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforHBLoan.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforMotorCar.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueStatement.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanRecoveryStatement.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatement.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatus.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCollectionStatement.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\subRptDonorLoanSchedule.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptNonRefundableLoanStatement.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMismatchOfLoanInstAndSalary.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCashChequeCollection.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanInstallmentHistory.rdlc
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll.config
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.pdb
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.Common.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.WebForms.DLL
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.SqlServer.Types.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MsieJavaScriptEngine.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Data.Linq.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Mono.Cecil.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.pdb
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.pdb
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.pdb
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.pdb
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.pdb
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.pdb
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.pdb
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.xml
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.csprojResolveAssemblyReference.cache
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\RdlCompile.cache
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\RdlCompile.compiled
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.dll
+E:\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.pdb
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanReceiveDetail_Format1.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanInstallmentPaid.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanSchedule.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanStatus.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanClose.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforHBLoan.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforMotorCar.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueStatement.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanRecoveryStatement.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatement.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatus.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCollectionStatement.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\subRptDonorLoanSchedule.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanInstallmentHistory.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptNonRefundableLoanStatement.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMismatchOfLoanInstAndSalary.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCashChequeCollection.rdlc
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll.config
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.pdb
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.Common.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.WebForms.DLL
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.SqlServer.Types.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MsieJavaScriptEngine.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Data.Linq.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Mono.Cecil.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.pdb
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.pdb
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.pdb
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.pdb
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.pdb
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.pdb
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.pdb
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\RdlCompile.cache
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\RdlCompile.compiled
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.dll
+E:\BEPZA\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanReceiveDetail_Format1.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanInstallmentPaid.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanSchedule.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanStatus.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanClose.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforHBLoan.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforMotorCar.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueStatement.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanRecoveryStatement.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatement.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatus.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCollectionStatement.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\subRptDonorLoanSchedule.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanInstallmentHistory.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptNonRefundableLoanStatement.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMismatchOfLoanInstAndSalary.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCashChequeCollection.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll.config
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.Common.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.WebForms.DLL
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.SqlServer.Types.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MsieJavaScriptEngine.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Data.Linq.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Mono.Cecil.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.csprojResolveAssemblyReference.cache
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanReceiveDetail_Format1.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanInstallmentPaid.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanSchedule.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanStatus.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanClose.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforHBLoan.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforMotorCar.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueStatement.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanRecoveryStatement.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatement.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatus.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCollectionStatement.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\subRptDonorLoanSchedule.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptNonRefundableLoanStatement.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMismatchOfLoanInstAndSalary.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCashChequeCollection.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.Common.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.WebForms.DLL
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.SqlServer.Types.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MsieJavaScriptEngine.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Data.Linq.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Mono.Cecil.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\RdlCompile.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\RdlCompile.compiled
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.pdb
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanReceiveDetail_Format1.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanInstallmentPaid.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanSchedule.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptDonorLoanStatus.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanClose.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforHBLoan.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueforMotorCar.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanIssueStatement.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanRecoveryStatement.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatement.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptLoanStatus.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCollectionStatement.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\subRptDonorLoanSchedule.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptNonRefundableLoanStatement.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMismatchOfLoanInstAndSalary.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Modules\Reports\Rdlc\RptMonthlyCashChequeCollection.rdlc
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll.config
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\VistaLOAN.Web.pdb
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.Common.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.SqlServer.Types.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MsieJavaScriptEngine.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Data.Linq.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Mono.Cecil.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\CsQuery.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Dapper.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\EPPlus.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.pdb
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\FluentMigrator.Runner.pdb
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\MoreLinq.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Newtonsoft.Json.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\NUglify.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Core.pdb
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.pdb
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Data.Entity.pdb
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Services.pdb
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\Serenity.Web.pdb
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\StackExchange.Exceptional.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Helpers.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Mvc.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.Razor.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Deployment.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\System.Web.WebPages.Razor.xml
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\RdlCompile.cache
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\RdlCompile.compiled
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.csproj.CopyComplete
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.dll
+D:\WORK-0\bepza-past\erp_bepza\BEPZA_Source_Code\LMS_BEPZA\VistaLOAN\VistaLOAN.Web\obj\Debug\VistaLOAN.Web.pdb

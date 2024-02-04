@@ -1,0 +1,45 @@
+﻿@model BEPZA_MEDICAL.Web.Areas.PRM.ViewModel.TestResultforApplicantInfoViewModel
+
+@using BEPZA_MEDICAL.Web.Helpers
+
+<tr class="dynamicRow">
+    @using (Html.BeginCollectionItem("ApplicantInformationListDetail"))
+    {
+        @Html.HiddenFor(x => x.Id)
+        @Html.HiddenFor(x => x.ApplicantInfoId)
+
+        <td style="width: 30px; text-align: center ">
+            @Html.CheckBoxFor(x => x.IsCheckedFinal, new { @class = "rchkFinal2" })
+        </td>
+        <td width="10%" style="text-align: left">
+            @Html.Encode(Model.RollNo)
+        </td>
+        <td width="15%" style="text-align: left">
+            @Html.Encode(Model.ApplicantName)
+        </td>
+        <td width="8%" style="text-align: center">
+            @Html.Encode(Model.DateOfBirth)
+        </td>
+         <td width="8%" style="text-align: center">
+            @Html.Encode(Model.FullMark)
+        </td>
+        <td width="8%" style="text-align: center">
+            @Html.Encode(Model.PassMark)
+        </td>
+
+        <td width="10%" style="text-align: left">
+            @Html.TextBoxFor(x => x.ObtainedMarks, new { @class = "required" })
+        </td>
+        <td width="10%" style="text-align: left">
+            @Html.TextBoxFor(x => x.Notes)
+        </td>
+        <td width="5%">
+            <a href="#" class="deleteRow" title="delete" onclick="RemoveDb(this,@Model.Id,'@Url.Action("DeleteDetail")')">
+                <img src='@Url.Content("~/Content/Images/Delete.png")' alt="Delete" style="border: none; " />
+            </a>
+        </td>
+    }
+</tr>
+<script type="text/javascript">
+    FormatTextBox();
+</script>

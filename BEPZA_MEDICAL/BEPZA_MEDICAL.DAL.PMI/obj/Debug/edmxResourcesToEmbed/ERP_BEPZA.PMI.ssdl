@@ -1,0 +1,2043 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ERP_BEPZAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="acc_Accounting_Period_Information">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="createdUserDate" Type="datetime" />
+    <Property Name="createdUserId" Type="nvarchar" MaxLength="255" />
+    <Property Name="updatedUserDate" Type="datetime" />
+    <Property Name="updatedUserId" Type="nvarchar" MaxLength="255" />
+    <Property Name="isActive" Type="bit" Nullable="false" />
+    <Property Name="isClosed" Type="bit" Nullable="false" />
+    <Property Name="periodEndDate" Type="datetime" Nullable="false" />
+    <Property Name="periodStartDate" Type="datetime" Nullable="false" />
+    <Property Name="yearName" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="fundControlInformation_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="acc_Cost_Centre_or_Institute_Information">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="codeCount" Type="int" Nullable="false" />
+    <Property Name="userCode" Type="nvarchar" MaxLength="150" />
+    <Property Name="isInstitute" Type="bit" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NameForBankAdviceLetter" Type="nvarchar(max)" />
+    <Property Name="paAmmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="remarks" Type="nvarchar(max)" />
+    <Property Name="parentId" Type="int" />
+    <Property Name="CostCenterTypeId" Type="int" Nullable="false" />
+    <Property Name="empId" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="entityId" Type="int" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" />
+    <Property Name="isBudgetHead" Type="bit" />
+    <Property Name="BudgetGroupId" Type="int" />
+    <Property Name="IsFixedAssetHead" Type="bit" />
+    <Property Name="IsFixedAssetDevWork" Type="bit" />
+    <Property Name="IsFixedAssetNonDevWork" Type="bit" />
+    <Property Name="DepreciationRate" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="createdUserDate" Type="datetime" />
+    <Property Name="createdUserId" Type="nvarchar" MaxLength="255" />
+    <Property Name="updatedUserDate" Type="datetime" />
+    <Property Name="updatedUserId" Type="nvarchar" MaxLength="255" />
+    <Property Name="BudgetCode" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.CommonConfigType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CommonConfigType">
+    <Key>
+      <PropertyRef Name="TableName" />
+      <PropertyRef Name="DisplayName" />
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="TableName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PMI_Agency">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_AnnualProcurementPlanDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AnnualProcurementPlanMasterId" Type="int" Nullable="false" />
+    <Property Name="APPHeadId" Type="int" Nullable="false" />
+    <Property Name="ConstructionTypeId" Type="int" Nullable="false" />
+    <Property Name="DescritionOfAPP" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="LotNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="PackageNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="Quantity" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcurementTypeId" Type="int" />
+    <Property Name="SourceOfFundId" Type="int" />
+    <Property Name="ApprovingAuthorityId" Type="int" />
+    <Property Name="EstdCost" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ContractValue" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="InvitationforTender" Type="datetime" />
+    <Property Name="SigningofContract" Type="datetime" />
+    <Property Name="CompletionofContract" Type="datetime" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="250" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="BudgetDetailsId" Type="int" />
+    <Property Name="InvitationforTenderDays" Type="int" />
+    <Property Name="InvitationforTenderActualDates" Type="datetime" />
+    <Property Name="TenderOpening" Type="datetime" />
+    <Property Name="TenderOpeningDays" Type="int" />
+    <Property Name="TenderOpeningActualDates" Type="datetime" />
+    <Property Name="TenderElavuation" Type="datetime" />
+    <Property Name="TenderElavuationDays" Type="int" />
+    <Property Name="TenderElavuationActualDates" Type="datetime" />
+    <Property Name="ApprovalToAward" Type="datetime" />
+    <Property Name="ApprovalToAwardDays" Type="int" />
+    <Property Name="ApprovalToAwardActualDates" Type="datetime" />
+    <Property Name="NotificationOfAward" Type="datetime" />
+    <Property Name="NotificationOfAwardDays" Type="int" />
+    <Property Name="NotificationOfAwardActualDates" Type="datetime" />
+    <Property Name="SigningofContractDays" Type="int" />
+    <Property Name="SigningofContractActualDates" Type="datetime" />
+    <Property Name="TimeToContract" Type="datetime" />
+    <Property Name="TimeToContractDays" Type="int" />
+    <Property Name="TimeToContractActualDates" Type="datetime" />
+    <Property Name="CompletionofContractDays" Type="int" />
+    <Property Name="CompletionofContractActualDates" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_AnnualProcurementPlanMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MinistryOrDivisionId" Type="int" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="BudgetStatusId" Type="int" />
+    <Property Name="Agency" Type="nvarchar" MaxLength="250" />
+    <Property Name="ProcuringEntityName" Type="nvarchar" MaxLength="250" />
+    <Property Name="ProcuringEntityCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="250" />
+    <Property Name="ProjectCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="APPStatusId" Type="int" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="500" />
+    <Property Name="ApprovalStatusId" Type="int" />
+    <Property Name="ZoneInfoId" Type="int" />
+    <Property Name="ProjectForId" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="IsConfirm" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PMI_ApprovalAuthority">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ApprovalFlowDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ApprovalFlowMasterId" Type="int" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ApprovalFlowMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BudgetProjectAPPId" Type="int" Nullable="false" />
+    <Property Name="ApprovalSectionId" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ApprovalSection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ApprovalSectionName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Enum" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_AppZones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="APPMasterId" Type="int" Nullable="false" />
+    <Property Name="ZoneOrProjectId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BudgetMasterId" Type="int" Nullable="false" />
+    <Property Name="BudgetHeadId" Type="int" Nullable="false" />
+    <Property Name="BudgetSubHeadId" Type="int" Nullable="false" />
+    <Property Name="ConstructionTypeId" Type="int" Nullable="false" />
+    <Property Name="NameOfWorks" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="BudgetAmount" Type="money" Nullable="false" />
+    <Property Name="Remarks" Type="varchar(max)" />
+    <Property Name="SubledgerId" Type="int" />
+    <Property Name="SerialNo" Type="nvarchar" MaxLength="500" />
+    <Property Name="HiddenSlNo" Type="nvarchar" MaxLength="500" />
+    <Property Name="EstimatCost" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ContractAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="WorkIdentificationNumber" Type="nvarchar" MaxLength="500" />
+    <Property Name="WorkStatusId" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetDetailsYearlyBilled">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BudgetDetailsId" Type="int" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" />
+    <Property Name="BilledAmount" Type="money" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetDetailsYearlyCost">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BudgetDetailsId" Type="int" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="BudgetStatusId" Type="int" Nullable="false" />
+    <Property Name="EstematedCost" Type="money" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="BudgetHeadName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BudgetType" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="MinistryOrDivisionId" Type="int" Nullable="false" />
+    <Property Name="SourceOfFundId" Type="int" Nullable="false" />
+    <Property Name="ApprovalAuthorityId" Type="int" Nullable="false" />
+    <Property Name="ApprovalDate" Type="date" Nullable="false" />
+    <Property Name="ProcurementTypeId" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="date" Nullable="false" />
+    <Property Name="LastUpdateDate" Type="date" Nullable="false" />
+    <Property Name="Comments" Type="varchar" MaxLength="1000" />
+    <Property Name="ZoneInfoId" Type="int" />
+    <Property Name="ProjectForId" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ApprovalStatusId" Type="int" />
+    <Property Name="IsConfirm" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_BudgetZoneOrProject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BudgetMasterId" Type="int" Nullable="false" />
+    <Property Name="ZoneOrProjectId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ConstructionCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ConstructionType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MasterId" Type="int" Nullable="false" />
+    <Property Name="EstimationHeadId" Type="int" Nullable="false" />
+    <Property Name="EstimationItemId" Type="int" Nullable="false" />
+    <Property Name="UnitId" Type="int" Nullable="false" />
+    <Property Name="UnitPrice" Type="money" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="TotalAmount" Type="money" Nullable="false" />
+    <Property Name="ItemDescription" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="SerialNo" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HeadName" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ItemCode" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationHeadDescription">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MasterId" Type="int" Nullable="false" />
+    <Property Name="EstimationHeadId" Type="int" Nullable="false" />
+    <Property Name="HeadDescription" Type="varchar(max)" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectId" Type="int" Nullable="false" />
+    <Property Name="EstimationDate" Type="date" Nullable="false" />
+    <Property Name="EstimationStatusId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ApprovalStatusId" Type="int" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationSetup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EstimationHeadId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ItemName" Type="varchar(max)" />
+    <Property Name="UnitId" Type="int" Nullable="false" />
+    <Property Name="UnitPrice" Type="money" Nullable="false" />
+    <Property Name="ItemDescription" Type="varchar(max)" />
+    <Property Name="ItemCode" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationUnit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_EstimationZone">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EstimationMasterId" Type="int" Nullable="false" />
+    <Property Name="ZoneId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_Head">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentHeadId" Type="int" />
+    <Property Name="HeadName" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsParentHead" Type="bit" />
+    <Property Name="IsSubledger" Type="bit" />
+    <Property Name="SortingOrder" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_Ministry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_PaymentStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ProcurementMethod">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ProcurementType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ProgressReportAttachment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProgressReportId" Type="int" Nullable="false" />
+    <Property Name="NameofWork" Type="nvarchar(max)" />
+    <Property Name="PreviousDate" Type="datetime" />
+    <Property Name="CurrentDate" Type="datetime" />
+    <Property Name="PreviousFileName" Type="nvarchar" MaxLength="500" />
+    <Property Name="CurrentFileName" Type="nvarchar" MaxLength="500" />
+    <Property Name="PreviousAttachment" Type="varbinary(max)" />
+    <Property Name="CurrentAttachment" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="PMI_ProgressReportDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProgressReportMasterId" Type="int" Nullable="false" />
+    <Property Name="NameOfWorks" Type="nvarchar(max)" />
+    <Property Name="NameOfContractor" Type="nvarchar(max)" />
+    <Property Name="EstimatedAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AcceptedAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DateOfNOA" Type="datetime" />
+    <Property Name="ExpireDateOfBG" Type="datetime" />
+    <Property Name="DateOfContractAgreement" Type="datetime" />
+    <Property Name="DateOfSiteHandingOver" Type="datetime" />
+    <Property Name="DateOfCommencement" Type="datetime" />
+    <Property Name="CompletionTime" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DateOfCompletion" Type="datetime" />
+    <Property Name="TimeElapsed" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PhysicalProgress" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="WrokStatusId" Type="int" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="500" />
+    <Property Name="SerialNo" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PMI_ProgressReportDetailsYearlyBilled">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProgressReportDetailsId" Type="int" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" />
+    <Property Name="BilledAmount" Type="money" />
+  </EntityType>
+  <EntityType Name="PMI_ProgressReportMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AnnualProcurementPlanMasterId" Type="int" Nullable="false" />
+    <Property Name="ReportDate" Type="datetime" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" />
+    <Property Name="ProjectForId" Type="int" />
+    <Property Name="FinancialYearId" Type="int" />
+    <Property Name="StatusId" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="IsConfirm" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PMI_ProgressReportSignature">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProgressReportId" Type="int" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" />
+  </EntityType>
+  <EntityType Name="PMI_ProjectApproverStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ProjectDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectMasterId" Type="int" Nullable="false" />
+    <Property Name="ProcurementTypeId" Type="int" Nullable="false" />
+    <Property Name="ProcurementMethodId" Type="int" Nullable="false" />
+    <Property Name="SourceOfFundId" Type="int" Nullable="false" />
+    <Property Name="ApprovalAuthorityId" Type="int" Nullable="false" />
+    <Property Name="PackageNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PackageName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Unit" Type="varchar" MaxLength="100" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="EstimatedCost" Type="money" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ProjectFor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" />
+    <Property Name="IUser" Type="int" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="int" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ProjectMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="APPDetailsId" Type="int" Nullable="false" />
+    <Property Name="MinistryId" Type="int" Nullable="false" />
+    <Property Name="AgencyId" Type="int" Nullable="false" />
+    <Property Name="BudgetApprovalDate" Type="date" Nullable="false" />
+    <Property Name="NameOfWorks" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ProcuringEntryName" Type="varchar" MaxLength="50" />
+    <Property Name="ProcuringEntryCode" Type="varchar" MaxLength="50" />
+    <Property Name="InvitationRefNo" Type="varchar" MaxLength="50" />
+    <Property Name="ConstructionTypeId" Type="int" />
+    <Property Name="ConstructionCategoryId" Type="int" />
+    <Property Name="DevelopmentPartner" Type="varchar" MaxLength="100" />
+    <Property Name="ProjectCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="AdministrativeApprovalDate" Type="date" />
+    <Property Name="TenderEvalDate" Type="date" />
+    <Property Name="TenderIssueDate" Type="date" />
+    <Property Name="TenderPubDate" Type="date" />
+    <Property Name="TenderLastSellingDate" Type="date" />
+    <Property Name="TenderClosingDateTime" Type="datetime" />
+    <Property Name="TenderOpeningDateTime" Type="datetime" />
+    <Property Name="ContractSignDate" Type="date" />
+    <Property Name="CompletionDate" Type="date" />
+    <Property Name="SiteHandoverDate" Type="date" />
+    <Property Name="TimeExtensionInDays" Type="int" />
+    <Property Name="AwardIssueDate" Type="date" />
+    <Property Name="CreatedDate" Type="date" />
+    <Property Name="ProjectStatusId" Type="int" />
+    <Property Name="SellingTenderDescription" Type="varchar" MaxLength="1000" />
+    <Property Name="ReceivingTenderDescription" Type="varchar" MaxLength="1000" />
+    <Property Name="OpeningTenderDescription" Type="varchar" MaxLength="1000" />
+    <Property Name="PreTenderMeetingPlace" Type="varchar" MaxLength="1000" />
+    <Property Name="EligibilityOfTenderer" Type="varchar" MaxLength="1000" />
+    <Property Name="BriefDescription" Type="varchar(max)" />
+    <Property Name="BriefDescriptionOfRelated" Type="varchar(max)" />
+    <Property Name="Services" Type="varchar" MaxLength="1000" />
+    <Property Name="NameOfInvitingTender" Type="varchar" MaxLength="100" />
+    <Property Name="DesignationId" Type="int" />
+    <Property Name="ProcureAddress" Type="varchar" MaxLength="200" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="50" />
+    <Property Name="EmailAddress" Type="varchar" MaxLength="50" />
+    <Property Name="FaxNumber" Type="varchar" MaxLength="50" />
+    <Property Name="Notice" Type="varchar" MaxLength="1000" />
+    <Property Name="SecurityMoneyReefingDate" Type="date" />
+    <Property Name="LiquidatedDamage" Type="varchar" MaxLength="500" />
+    <Property Name="PaymentStatusId" Type="int" />
+    <Property Name="LastPaymentDate" Type="date" />
+    <Property Name="FinalPaymentDate" Type="date" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="100" />
+    <Property Name="DrawingAttachment" Type="varbinary(max)" />
+    <Property Name="DrawingApprovalDate" Type="date" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="APPMasterId" Type="int" Nullable="false" />
+    <Property Name="ContractorName" Type="varchar" MaxLength="100" />
+    <Property Name="DateOfIssuingNOA" Type="date" />
+    <Property Name="DateOfPGSubmission" Type="date" />
+    <Property Name="DateOfPGExpire" Type="date" />
+    <Property Name="DateOfCommencement" Type="date" />
+    <Property Name="PhysicalProgress" Type="decimal" Precision="6" Scale="4" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="ApprovalStatusId" Type="int" />
+  </EntityType>
+  <EntityType Name="PMI_ProjectStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ProjectTimeExtension">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectId" Type="int" Nullable="false" />
+    <Property Name="ExtendedDate" Type="date" Nullable="false" />
+    <Property Name="ExtendedDays" Type="int" Nullable="false" />
+    <Property Name="ExpectedCompletionDate" Type="date" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_ProjectZone">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectMasterId" Type="int" Nullable="false" />
+    <Property Name="ZoneId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_SourceOfFund">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PMI_TenderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjectMasterId" Type="int" Nullable="false" />
+    <Property Name="LotNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Identification" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Location" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SecurityMoney" Type="money" Nullable="false" />
+    <Property Name="CompletionDate" Type="date" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="TenderPrice" Type="money" />
+    <Property Name="CompletionDays" Type="int" />
+  </EntityType>
+  <EntityType Name="PMI_WorkStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwPMIBudgetHead' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwPMIBudgetHead">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CreatedBy" />
+      <PropertyRef Name="CreatedDate" />
+      <PropertyRef Name="IUser" />
+      <PropertyRef Name="IDate" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="BudgetHead" Type="nvarchar" MaxLength="500" />
+    <Property Name="BudgetSubHead" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="SortOrder" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwPMIBudgetInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwPMIBudgetInfo">
+    <Key>
+      <PropertyRef Name="BudgetId" />
+      <PropertyRef Name="BudgetDetailsId" />
+      <PropertyRef Name="YearlyCostId" />
+      <PropertyRef Name="FinancialYearId" />
+      <PropertyRef Name="FinancialYearName" />
+      <PropertyRef Name="IsActiveFy" />
+      <PropertyRef Name="NameOfWorks" />
+      <PropertyRef Name="ProcurementTypeId" />
+      <PropertyRef Name="ProcurementType" />
+      <PropertyRef Name="BudgetAmount" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="AprovedAmount" />
+      <PropertyRef Name="ApprovalDate" />
+      <PropertyRef Name="BudgetStatusId" />
+      <PropertyRef Name="BudgetStatusName" />
+      <PropertyRef Name="BudgetType" />
+      <PropertyRef Name="ZoneId" />
+    </Key>
+    <Property Name="BudgetId" Type="int" Nullable="false" />
+    <Property Name="BudgetDetailsId" Type="int" Nullable="false" />
+    <Property Name="YearlyCostId" Type="int" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="FinancialYearName" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IsActiveFy" Type="bit" Nullable="false" />
+    <Property Name="NameOfWorks" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="ProcurementTypeId" Type="int" Nullable="false" />
+    <Property Name="ProcurementType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BudgetAmount" Type="money" Nullable="false" />
+    <Property Name="CreationDate" Type="date" Nullable="false" />
+    <Property Name="AprovedAmount" Type="money" Nullable="false" />
+    <Property Name="ApprovalDate" Type="date" Nullable="false" />
+    <Property Name="BudgetStatusId" Type="int" Nullable="false" />
+    <Property Name="BudgetStatusName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BudgetType" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ZoneId" Type="int" Nullable="false" />
+    <Property Name="ProjectForId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwPMIEstimation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwPMIEstimation">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EstimationDetailId" />
+      <PropertyRef Name="ProjectId" />
+      <PropertyRef Name="ProjectName" />
+      <PropertyRef Name="EstimationItemId" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="UnitPrice" />
+      <PropertyRef Name="TotalAmount" />
+      <PropertyRef Name="EstimatedCost" />
+      <PropertyRef Name="EstimationDate" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="EstimationDetailId" Type="int" Nullable="false" />
+    <Property Name="ProjectId" Type="int" Nullable="false" />
+    <Property Name="ProjectName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="EstimationItemId" Type="int" Nullable="false" />
+    <Property Name="ItemName" Type="varchar(max)" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="UnitPrice" Type="money" Nullable="false" />
+    <Property Name="TotalAmount" Type="money" Nullable="false" />
+    <Property Name="ZoneId" Type="int" />
+    <Property Name="ZoneCode" Type="nvarchar(max)" />
+    <Property Name="EstimatedCost" Type="numeric" Precision="2" Scale="2" Nullable="false" />
+    <Property Name="EstimationDate" Type="date" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwPMINewBudgetInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwPMINewBudgetInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="yearName" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="BudgetType" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="yearName" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BudgetType" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ZoneId" Type="int" />
+    <Property Name="ProjectForId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwPMIProcurementPlanFundRpt' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwPMIProcurementPlanFundRpt">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ProjectMasterId" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ProjectMasterId" Type="int" Nullable="false" />
+    <Property Name="SourceOfFund" Type="varchar" MaxLength="50" />
+    <Property Name="Cost" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwPMIProjectSummary' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwPMIProjectSummary">
+    <Key>
+      <PropertyRef Name="ProjectMasterId" />
+      <PropertyRef Name="AnnualProcurementPlanMasterId" />
+      <PropertyRef Name="AnnualProcurementPlanDetailsId" />
+      <PropertyRef Name="DescritionOfAPP" />
+      <PropertyRef Name="FinancialYearId" />
+      <PropertyRef Name="FinancialYearName" />
+      <PropertyRef Name="TotalCost" />
+    </Key>
+    <Property Name="ProjectMasterId" Type="int" Nullable="false" />
+    <Property Name="AnnualProcurementPlanMasterId" Type="int" Nullable="false" />
+    <Property Name="AnnualProcurementPlanDetailsId" Type="int" Nullable="false" />
+    <Property Name="DescritionOfAPP" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ProjectCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenderPubDate" Type="date" />
+    <Property Name="MinistryId" Type="int" />
+    <Property Name="MinistryName" Type="varchar" MaxLength="50" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="FinancialYearName" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TotalCost" Type="money" Nullable="false" />
+    <Property Name="ProjectStatusId" Type="int" />
+    <Property Name="ProjectStatusName" Type="varchar" MaxLength="50" />
+    <Property Name="ZoneId" Type="int" />
+    <Property Name="ZoneCode" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwPMIStatusInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwPMIStatusInformation">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="ApplicableFor" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="50" />
+    <Property Name="ApplicableFor" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PMI_AnnualProcurementPlanDetails_PMI_AnnualProcurementPlanMaster">
+    <End Role="PMI_AnnualProcurementPlanMaster" Type="Self.PMI_AnnualProcurementPlanMaster" Multiplicity="1" />
+    <End Role="PMI_AnnualProcurementPlanDetails" Type="Self.PMI_AnnualProcurementPlanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_AnnualProcurementPlanMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanDetails">
+        <PropertyRef Name="AnnualProcurementPlanMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ApprovalAuthority">
+    <End Role="PMI_ApprovalAuthority" Type="Self.PMI_ApprovalAuthority" Multiplicity="0..1" />
+    <End Role="PMI_AnnualProcurementPlanDetails" Type="Self.PMI_AnnualProcurementPlanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ApprovalAuthority">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanDetails">
+        <PropertyRef Name="ApprovingAuthorityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ConstructionType">
+    <End Role="PMI_ConstructionType" Type="Self.PMI_ConstructionType" Multiplicity="1" />
+    <End Role="PMI_AnnualProcurementPlanDetails" Type="Self.PMI_AnnualProcurementPlanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ConstructionType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanDetails">
+        <PropertyRef Name="ConstructionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ProcurementMethod">
+    <End Role="PMI_ProcurementMethod" Type="Self.PMI_ProcurementMethod" Multiplicity="0..1" />
+    <End Role="PMI_AnnualProcurementPlanDetails" Type="Self.PMI_AnnualProcurementPlanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProcurementMethod">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanDetails">
+        <PropertyRef Name="ProcurementTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanDetails_PMI_SourceOfFund">
+    <End Role="PMI_SourceOfFund" Type="Self.PMI_SourceOfFund" Multiplicity="0..1" />
+    <End Role="PMI_AnnualProcurementPlanDetails" Type="Self.PMI_AnnualProcurementPlanDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_SourceOfFund">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanDetails">
+        <PropertyRef Name="SourceOfFundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanMaster_PMI_Ministry">
+    <End Role="PMI_Ministry" Type="Self.PMI_Ministry" Multiplicity="1" />
+    <End Role="PMI_AnnualProcurementPlanMaster" Type="Self.PMI_AnnualProcurementPlanMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_Ministry">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanMaster">
+        <PropertyRef Name="MinistryOrDivisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AnnualProcurementPlanMaster_PMI_ProjectStatus">
+    <End Role="PMI_ProjectStatus" Type="Self.PMI_ProjectStatus" Multiplicity="1" />
+    <End Role="PMI_AnnualProcurementPlanMaster" Type="Self.PMI_AnnualProcurementPlanMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AnnualProcurementPlanMaster">
+        <PropertyRef Name="APPStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ApprovalFlowDetails_PMI_ApprovalFlowMaster">
+    <End Role="PMI_ApprovalFlowMaster" Type="Self.PMI_ApprovalFlowMaster" Multiplicity="1" />
+    <End Role="PMI_ApprovalFlowDetails" Type="Self.PMI_ApprovalFlowDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ApprovalFlowMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ApprovalFlowDetails">
+        <PropertyRef Name="ApprovalFlowMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ApprovalFlowMaster_PMI_ApprovalSection">
+    <End Role="PMI_ApprovalSection" Type="Self.PMI_ApprovalSection" Multiplicity="1" />
+    <End Role="PMI_ApprovalFlowMaster" Type="Self.PMI_ApprovalFlowMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ApprovalSection">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ApprovalFlowMaster">
+        <PropertyRef Name="ApprovalSectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_AppZones_PMI_AnnualProcurementPlanMaster">
+    <End Role="PMI_AnnualProcurementPlanMaster" Type="Self.PMI_AnnualProcurementPlanMaster" Multiplicity="1" />
+    <End Role="PMI_AppZones" Type="Self.PMI_AppZones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_AnnualProcurementPlanMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_AppZones">
+        <PropertyRef Name="APPMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetDetails_PMI_BudgetMaster">
+    <End Role="PMI_BudgetMaster" Type="Self.PMI_BudgetMaster" Multiplicity="1" />
+    <End Role="PMI_BudgetDetails" Type="Self.PMI_BudgetDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_BudgetMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetails">
+        <PropertyRef Name="BudgetMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetDetails_PMI_ConstructionType">
+    <End Role="PMI_ConstructionType" Type="Self.PMI_ConstructionType" Multiplicity="1" />
+    <End Role="PMI_BudgetDetails" Type="Self.PMI_BudgetDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ConstructionType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetails">
+        <PropertyRef Name="ConstructionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetDetailsYearlyBilled_PMI_BudgetDetails">
+    <End Role="PMI_BudgetDetails" Type="Self.PMI_BudgetDetails" Multiplicity="1" />
+    <End Role="PMI_BudgetDetailsYearlyBilled" Type="Self.PMI_BudgetDetailsYearlyBilled" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_BudgetDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetailsYearlyBilled">
+        <PropertyRef Name="BudgetDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetDetailsYearlyCost_FAM_FinancialYearInformation">
+    <End Role="acc_Accounting_Period_Information" Type="Self.acc_Accounting_Period_Information" Multiplicity="1" />
+    <End Role="PMI_BudgetDetailsYearlyCost" Type="Self.PMI_BudgetDetailsYearlyCost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="acc_Accounting_Period_Information">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetailsYearlyCost">
+        <PropertyRef Name="FinancialYearId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetDetailsYearlyCost_PMI_BudgetDetails">
+    <End Role="PMI_BudgetDetails" Type="Self.PMI_BudgetDetails" Multiplicity="1" />
+    <End Role="PMI_BudgetDetailsYearlyCost" Type="Self.PMI_BudgetDetailsYearlyCost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_BudgetDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetailsYearlyCost">
+        <PropertyRef Name="BudgetDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetDetailsYearlyCost_PMI_ProjectStatus">
+    <End Role="PMI_ProjectStatus" Type="Self.PMI_ProjectStatus" Multiplicity="1" />
+    <End Role="PMI_BudgetDetailsYearlyCost" Type="Self.PMI_BudgetDetailsYearlyCost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetDetailsYearlyCost">
+        <PropertyRef Name="BudgetStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetMaster_PMI_ApprovalAuthority">
+    <End Role="PMI_ApprovalAuthority" Type="Self.PMI_ApprovalAuthority" Multiplicity="1" />
+    <End Role="PMI_BudgetMaster" Type="Self.PMI_BudgetMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ApprovalAuthority">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetMaster">
+        <PropertyRef Name="ApprovalAuthorityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetMaster_PMI_Ministry">
+    <End Role="PMI_Ministry" Type="Self.PMI_Ministry" Multiplicity="1" />
+    <End Role="PMI_BudgetMaster" Type="Self.PMI_BudgetMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_Ministry">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetMaster">
+        <PropertyRef Name="MinistryOrDivisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetMaster_PMI_ProcurementType">
+    <End Role="PMI_ProcurementType" Type="Self.PMI_ProcurementType" Multiplicity="1" />
+    <End Role="PMI_BudgetMaster" Type="Self.PMI_BudgetMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProcurementType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetMaster">
+        <PropertyRef Name="ProcurementTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetMaster_PMI_SourceOfFund">
+    <End Role="PMI_SourceOfFund" Type="Self.PMI_SourceOfFund" Multiplicity="1" />
+    <End Role="PMI_BudgetMaster" Type="Self.PMI_BudgetMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_SourceOfFund">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetMaster">
+        <PropertyRef Name="SourceOfFundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_BudgetZoneOrProject_PMI_BudgetMaster">
+    <End Role="PMI_BudgetMaster" Type="Self.PMI_BudgetMaster" Multiplicity="1" />
+    <End Role="PMI_BudgetZoneOrProject" Type="Self.PMI_BudgetZoneOrProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_BudgetMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_BudgetZoneOrProject">
+        <PropertyRef Name="BudgetMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationDetails_PMI_EstimationHead">
+    <End Role="PMI_EstimationHead" Type="Self.PMI_EstimationHead" Multiplicity="1" />
+    <End Role="PMI_EstimationDetails" Type="Self.PMI_EstimationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationHead">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationDetails">
+        <PropertyRef Name="EstimationHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationDetails_PMI_EstimationMaster">
+    <End Role="PMI_EstimationMaster" Type="Self.PMI_EstimationMaster" Multiplicity="1" />
+    <End Role="PMI_EstimationDetails" Type="Self.PMI_EstimationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationDetails">
+        <PropertyRef Name="MasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationDetails_PMI_EstimationSetup">
+    <End Role="PMI_EstimationSetup" Type="Self.PMI_EstimationSetup" Multiplicity="1" />
+    <End Role="PMI_EstimationDetails" Type="Self.PMI_EstimationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationSetup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationDetails">
+        <PropertyRef Name="EstimationItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationDetails_PMI_EstimationUnit">
+    <End Role="PMI_EstimationUnit" Type="Self.PMI_EstimationUnit" Multiplicity="1" />
+    <End Role="PMI_EstimationDetails" Type="Self.PMI_EstimationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationUnit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationDetails">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationHeadDescription_PMI_EstimationHead">
+    <End Role="PMI_EstimationHead" Type="Self.PMI_EstimationHead" Multiplicity="1" />
+    <End Role="PMI_EstimationHeadDescription" Type="Self.PMI_EstimationHeadDescription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationHead">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationHeadDescription">
+        <PropertyRef Name="EstimationHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationHeadDescription_PMI_EstimationMaster">
+    <End Role="PMI_EstimationMaster" Type="Self.PMI_EstimationMaster" Multiplicity="1" />
+    <End Role="PMI_EstimationHeadDescription" Type="Self.PMI_EstimationHeadDescription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationHeadDescription">
+        <PropertyRef Name="MasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationSetup_PMI_EstimationHead">
+    <End Role="PMI_EstimationHead" Type="Self.PMI_EstimationHead" Multiplicity="1" />
+    <End Role="PMI_EstimationSetup" Type="Self.PMI_EstimationSetup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationHead">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationSetup">
+        <PropertyRef Name="EstimationHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationSetup_PMI_EstimationUnit">
+    <End Role="PMI_EstimationUnit" Type="Self.PMI_EstimationUnit" Multiplicity="1" />
+    <End Role="PMI_EstimationSetup" Type="Self.PMI_EstimationSetup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationUnit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationSetup">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_EstimationZone_PMI_ProjectMaster">
+    <End Role="PMI_EstimationMaster" Type="Self.PMI_EstimationMaster" Multiplicity="1" />
+    <End Role="PMI_EstimationZone" Type="Self.PMI_EstimationZone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_EstimationMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_EstimationZone">
+        <PropertyRef Name="EstimationMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProgressReportAttachment_PMI_ProgressReportMaster">
+    <End Role="PMI_ProgressReportMaster" Type="Self.PMI_ProgressReportMaster" Multiplicity="1" />
+    <End Role="PMI_ProgressReportAttachment" Type="Self.PMI_ProgressReportAttachment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProgressReportMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportAttachment">
+        <PropertyRef Name="ProgressReportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProgressReportDetails_PMI_ProgressReportMaster">
+    <End Role="PMI_ProgressReportMaster" Type="Self.PMI_ProgressReportMaster" Multiplicity="1" />
+    <End Role="PMI_ProgressReportDetails" Type="Self.PMI_ProgressReportDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProgressReportMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportDetails">
+        <PropertyRef Name="ProgressReportMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProgressReportDetails_PMI_WorkStatus">
+    <End Role="PMI_WorkStatus" Type="Self.PMI_WorkStatus" Multiplicity="0..1" />
+    <End Role="PMI_ProgressReportDetails" Type="Self.PMI_ProgressReportDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_WorkStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportDetails">
+        <PropertyRef Name="WrokStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProgressReportDetailsYearlyBilled_PMI_ProgressReportDetails">
+    <End Role="PMI_ProgressReportDetails" Type="Self.PMI_ProgressReportDetails" Multiplicity="1" />
+    <End Role="PMI_ProgressReportDetailsYearlyBilled" Type="Self.PMI_ProgressReportDetailsYearlyBilled" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProgressReportDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportDetailsYearlyBilled">
+        <PropertyRef Name="ProgressReportDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProgressReportMaster_PMI_AnnualProcurementPlanMaster">
+    <End Role="PMI_AnnualProcurementPlanMaster" Type="Self.PMI_AnnualProcurementPlanMaster" Multiplicity="1" />
+    <End Role="PMI_ProgressReportMaster" Type="Self.PMI_ProgressReportMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_AnnualProcurementPlanMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportMaster">
+        <PropertyRef Name="AnnualProcurementPlanMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProgressReportSignature_PMI_ProgressReportMaster">
+    <End Role="PMI_ProgressReportMaster" Type="Self.PMI_ProgressReportMaster" Multiplicity="1" />
+    <End Role="PMI_ProgressReportSignature" Type="Self.PMI_ProgressReportSignature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProgressReportMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProgressReportSignature">
+        <PropertyRef Name="ProgressReportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectDetails_PMI_ApprovalAuthority">
+    <End Role="PMI_ApprovalAuthority" Type="Self.PMI_ApprovalAuthority" Multiplicity="1" />
+    <End Role="PMI_ProjectDetails" Type="Self.PMI_ProjectDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ApprovalAuthority">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectDetails">
+        <PropertyRef Name="ApprovalAuthorityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectDetails_PMI_ProcurementMethod">
+    <End Role="PMI_ProcurementMethod" Type="Self.PMI_ProcurementMethod" Multiplicity="1" />
+    <End Role="PMI_ProjectDetails" Type="Self.PMI_ProjectDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProcurementMethod">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectDetails">
+        <PropertyRef Name="ProcurementMethodId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectDetails_PMI_ProcurementType">
+    <End Role="PMI_ProcurementType" Type="Self.PMI_ProcurementType" Multiplicity="1" />
+    <End Role="PMI_ProjectDetails" Type="Self.PMI_ProjectDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProcurementType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectDetails">
+        <PropertyRef Name="ProcurementTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectDetails_PMI_ProjectMaster">
+    <End Role="PMI_ProjectMaster" Type="Self.PMI_ProjectMaster" Multiplicity="1" />
+    <End Role="PMI_ProjectDetails" Type="Self.PMI_ProjectDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectDetails">
+        <PropertyRef Name="ProjectMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectDetails_PMI_SourceOfFund">
+    <End Role="PMI_SourceOfFund" Type="Self.PMI_SourceOfFund" Multiplicity="1" />
+    <End Role="PMI_ProjectDetails" Type="Self.PMI_ProjectDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_SourceOfFund">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectDetails">
+        <PropertyRef Name="SourceOfFundId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_Agency">
+    <End Role="PMI_Agency" Type="Self.PMI_Agency" Multiplicity="1" />
+    <End Role="PMI_ProjectMaster" Type="Self.PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_Agency">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="AgencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_ConstructionCategory">
+    <End Role="PMI_ConstructionCategory" Type="Self.PMI_ConstructionCategory" Multiplicity="0..1" />
+    <End Role="PMI_ProjectMaster" Type="Self.PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ConstructionCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="ConstructionCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_ConstructionType">
+    <End Role="PMI_ConstructionType" Type="Self.PMI_ConstructionType" Multiplicity="0..1" />
+    <End Role="PMI_ProjectMaster" Type="Self.PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ConstructionType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="ConstructionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_Ministry">
+    <End Role="PMI_Ministry" Type="Self.PMI_Ministry" Multiplicity="1" />
+    <End Role="PMI_ProjectMaster" Type="Self.PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_Ministry">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="MinistryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_PaymentStatus">
+    <End Role="PMI_PaymentStatus" Type="Self.PMI_PaymentStatus" Multiplicity="0..1" />
+    <End Role="PMI_ProjectMaster" Type="Self.PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_PaymentStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="PaymentStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectMaster_PMI_ProjectStatus">
+    <End Role="PMI_ProjectStatus" Type="Self.PMI_ProjectStatus" Multiplicity="0..1" />
+    <End Role="PMI_ProjectMaster" Type="Self.PMI_ProjectMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectMaster">
+        <PropertyRef Name="ProjectStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectTimeExtension_PMI_ProjectMaster">
+    <End Role="PMI_ProjectMaster" Type="Self.PMI_ProjectMaster" Multiplicity="1" />
+    <End Role="PMI_ProjectTimeExtension" Type="Self.PMI_ProjectTimeExtension" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectTimeExtension">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_ProjectZone_PMI_ProjectMaster">
+    <End Role="PMI_ProjectMaster" Type="Self.PMI_ProjectMaster" Multiplicity="1" />
+    <End Role="PMI_ProjectZone" Type="Self.PMI_ProjectZone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_ProjectZone">
+        <PropertyRef Name="ProjectMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PMI_TenderDetails_PMI_ProjectMaster">
+    <End Role="PMI_ProjectMaster" Type="Self.PMI_ProjectMaster" Multiplicity="1" />
+    <End Role="PMI_TenderDetails" Type="Self.PMI_TenderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PMI_ProjectMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PMI_TenderDetails">
+        <PropertyRef Name="ProjectMasterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKE18F415067F93324">
+    <End Role="acc_Cost_Centre_or_Institute_Information" Type="Self.acc_Cost_Centre_or_Institute_Information" Multiplicity="0..1" />
+    <End Role="acc_Cost_Centre_or_Institute_Information1" Type="Self.acc_Cost_Centre_or_Institute_Information" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="acc_Cost_Centre_or_Institute_Information">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="acc_Cost_Centre_or_Institute_Information1">
+        <PropertyRef Name="parentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="sp_PMI_BudgetStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="BudgetStatusId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_PMI_ChartBudgetVariance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="BudgetStatusId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Pmi_GetAccountingPeriod" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_Pmi_GetBudgetHeadInformation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_PMI_PrintBudget" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BudgetMasterId" Type="int" Mode="In" />
+    <Parameter Name="BudgetDetailsId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_PMI_ProgressReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZoneId" Type="int" Mode="In" />
+    <Parameter Name="FinancialYearList" Type="varchar" Mode="In" />
+    <Parameter Name="ReportDate" Type="date" Mode="In" />
+    <Parameter Name="BudgetHeadIdList" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_PMI_ProgressReport_Attachment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="progressReportId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_PMI_ProgressReport_M1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="progressReportId" Type="int" Mode="In" />
+    <Parameter Name="ProjectForId" Type="int" Mode="In" />
+    <Parameter Name="strZoneId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_PMI_ProjectStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_PMI_RptAnnualProcurementPlan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="StatusId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="ProjectForId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_PMI_RptBudgetSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="ProjectForId" Type="int" Mode="In" />
+    <Parameter Name="BudgetHeadId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_PMI_RptFinancialBudget" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="StatusId" Type="int" Mode="In" />
+    <Parameter Name="BudgetType" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_PMI_RptProcurementPlan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="FromDate" Type="datetime" Mode="In" />
+    <Parameter Name="ToDate" Type="datetime" Mode="In" />
+    <Parameter Name="NameOfWorksId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="StatusId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_PMI_RptProcurementPlanDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="FromDate" Type="datetime" Mode="In" />
+    <Parameter Name="ToDate" Type="datetime" Mode="In" />
+    <Parameter Name="NameOfWorksId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="StatusId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_PMI_RptProjectEstimation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NameOfWorksId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_PMI_RptTenderNotice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="FromDate" Type="datetime" Mode="In" />
+    <Parameter Name="ToDate" Type="datetime" Mode="In" />
+    <Parameter Name="NameOfWorksId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_PMI_RptTenderNoticeDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="FromDate" Type="datetime" Mode="In" />
+    <Parameter Name="ToDate" Type="datetime" Mode="In" />
+    <Parameter Name="NameOfWorksId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_PMI_RptWorkWiseBudget" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZoneId" Type="int" Mode="In" />
+    <Parameter Name="BudgetHeadId" Type="varchar" Mode="In" />
+    <Parameter Name="BudgetSubHeadId" Type="varchar" Mode="In" />
+    <Parameter Name="FinancialYearId" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_PMI_RptZoneWiseBudget" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FinancialYearId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="StatusId" Type="int" Mode="In" />
+    <Parameter Name="ProjectForId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="SP_PMI_Signature" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="ReportType" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_PRM_RptServiceVistory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="DesignationId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="ERP_BEPZAModelStoreContainer">
+    <EntitySet Name="acc_Accounting_Period_Information" EntityType="Self.acc_Accounting_Period_Information" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="acc_Cost_Centre_or_Institute_Information" EntityType="Self.acc_Cost_Centre_or_Institute_Information" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_Agency" EntityType="Self.PMI_Agency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_AnnualProcurementPlanDetails" EntityType="Self.PMI_AnnualProcurementPlanDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_AnnualProcurementPlanMaster" EntityType="Self.PMI_AnnualProcurementPlanMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ApprovalAuthority" EntityType="Self.PMI_ApprovalAuthority" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ApprovalFlowDetails" EntityType="Self.PMI_ApprovalFlowDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ApprovalFlowMaster" EntityType="Self.PMI_ApprovalFlowMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ApprovalSection" EntityType="Self.PMI_ApprovalSection" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_AppZones" EntityType="Self.PMI_AppZones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_BudgetDetails" EntityType="Self.PMI_BudgetDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_BudgetDetailsYearlyBilled" EntityType="Self.PMI_BudgetDetailsYearlyBilled" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_BudgetDetailsYearlyCost" EntityType="Self.PMI_BudgetDetailsYearlyCost" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_BudgetHead" EntityType="Self.PMI_BudgetHead" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_BudgetMaster" EntityType="Self.PMI_BudgetMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_BudgetType" EntityType="Self.PMI_BudgetType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_BudgetZoneOrProject" EntityType="Self.PMI_BudgetZoneOrProject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ConstructionCategory" EntityType="Self.PMI_ConstructionCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ConstructionType" EntityType="Self.PMI_ConstructionType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_EstimationDetails" EntityType="Self.PMI_EstimationDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_EstimationHead" EntityType="Self.PMI_EstimationHead" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_EstimationHeadDescription" EntityType="Self.PMI_EstimationHeadDescription" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_EstimationMaster" EntityType="Self.PMI_EstimationMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_EstimationSetup" EntityType="Self.PMI_EstimationSetup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_EstimationUnit" EntityType="Self.PMI_EstimationUnit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_EstimationZone" EntityType="Self.PMI_EstimationZone" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_Head" EntityType="Self.PMI_Head" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_Ministry" EntityType="Self.PMI_Ministry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_PaymentStatus" EntityType="Self.PMI_PaymentStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProcurementMethod" EntityType="Self.PMI_ProcurementMethod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProcurementType" EntityType="Self.PMI_ProcurementType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProgressReportAttachment" EntityType="Self.PMI_ProgressReportAttachment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProgressReportDetails" EntityType="Self.PMI_ProgressReportDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProgressReportDetailsYearlyBilled" EntityType="Self.PMI_ProgressReportDetailsYearlyBilled" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProgressReportMaster" EntityType="Self.PMI_ProgressReportMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProgressReportSignature" EntityType="Self.PMI_ProgressReportSignature" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProjectApproverStatus" EntityType="Self.PMI_ProjectApproverStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProjectDetails" EntityType="Self.PMI_ProjectDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProjectFor" EntityType="Self.PMI_ProjectFor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProjectMaster" EntityType="Self.PMI_ProjectMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProjectStatus" EntityType="Self.PMI_ProjectStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProjectTimeExtension" EntityType="Self.PMI_ProjectTimeExtension" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_ProjectZone" EntityType="Self.PMI_ProjectZone" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_SourceOfFund" EntityType="Self.PMI_SourceOfFund" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_TenderDetails" EntityType="Self.PMI_TenderDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PMI_WorkStatus" EntityType="Self.PMI_WorkStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CommonConfigType" EntityType="Self.CommonConfigType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CommonConfigType].[TableName] AS [TableName], 
+    [CommonConfigType].[DisplayName] AS [DisplayName], 
+    [CommonConfigType].[SortOrder] AS [SortOrder], 
+    [CommonConfigType].[ModuleId] AS [ModuleId]
+    FROM [dbo].[CommonConfigType] AS [CommonConfigType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPMIBudgetHead" EntityType="Self.vwPMIBudgetHead" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwPMIBudgetHead].[Id] AS [Id], 
+    [vwPMIBudgetHead].[ParentId] AS [ParentId], 
+    [vwPMIBudgetHead].[BudgetHead] AS [BudgetHead], 
+    [vwPMIBudgetHead].[BudgetSubHead] AS [BudgetSubHead], 
+    [vwPMIBudgetHead].[IsActive] AS [IsActive], 
+    [vwPMIBudgetHead].[CreatedBy] AS [CreatedBy], 
+    [vwPMIBudgetHead].[CreatedDate] AS [CreatedDate], 
+    [vwPMIBudgetHead].[IUser] AS [IUser], 
+    [vwPMIBudgetHead].[IDate] AS [IDate], 
+    [vwPMIBudgetHead].[EUser] AS [EUser], 
+    [vwPMIBudgetHead].[EDate] AS [EDate], 
+    [vwPMIBudgetHead].[SortOrder] AS [SortOrder]
+    FROM [dbo].[vwPMIBudgetHead] AS [vwPMIBudgetHead]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPMIBudgetInfo" EntityType="Self.vwPMIBudgetInfo" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwPMIBudgetInfo].[BudgetId] AS [BudgetId], 
+    [vwPMIBudgetInfo].[BudgetDetailsId] AS [BudgetDetailsId], 
+    [vwPMIBudgetInfo].[YearlyCostId] AS [YearlyCostId], 
+    [vwPMIBudgetInfo].[FinancialYearId] AS [FinancialYearId], 
+    [vwPMIBudgetInfo].[FinancialYearName] AS [FinancialYearName], 
+    [vwPMIBudgetInfo].[IsActiveFy] AS [IsActiveFy], 
+    [vwPMIBudgetInfo].[NameOfWorks] AS [NameOfWorks], 
+    [vwPMIBudgetInfo].[ProcurementTypeId] AS [ProcurementTypeId], 
+    [vwPMIBudgetInfo].[ProcurementType] AS [ProcurementType], 
+    [vwPMIBudgetInfo].[BudgetAmount] AS [BudgetAmount], 
+    [vwPMIBudgetInfo].[CreationDate] AS [CreationDate], 
+    [vwPMIBudgetInfo].[AprovedAmount] AS [AprovedAmount], 
+    [vwPMIBudgetInfo].[ApprovalDate] AS [ApprovalDate], 
+    [vwPMIBudgetInfo].[BudgetStatusId] AS [BudgetStatusId], 
+    [vwPMIBudgetInfo].[BudgetStatusName] AS [BudgetStatusName], 
+    [vwPMIBudgetInfo].[BudgetType] AS [BudgetType], 
+    [vwPMIBudgetInfo].[ZoneId] AS [ZoneId], 
+    [vwPMIBudgetInfo].[ProjectForId] AS [ProjectForId]
+    FROM [dbo].[vwPMIBudgetInfo] AS [vwPMIBudgetInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPMIEstimation" EntityType="Self.vwPMIEstimation" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwPMIEstimation].[Id] AS [Id], 
+    [vwPMIEstimation].[EstimationDetailId] AS [EstimationDetailId], 
+    [vwPMIEstimation].[ProjectId] AS [ProjectId], 
+    [vwPMIEstimation].[ProjectName] AS [ProjectName], 
+    [vwPMIEstimation].[EstimationItemId] AS [EstimationItemId], 
+    [vwPMIEstimation].[ItemName] AS [ItemName], 
+    [vwPMIEstimation].[Quantity] AS [Quantity], 
+    [vwPMIEstimation].[UnitPrice] AS [UnitPrice], 
+    [vwPMIEstimation].[TotalAmount] AS [TotalAmount], 
+    [vwPMIEstimation].[ZoneId] AS [ZoneId], 
+    [vwPMIEstimation].[ZoneCode] AS [ZoneCode], 
+    [vwPMIEstimation].[EstimatedCost] AS [EstimatedCost], 
+    [vwPMIEstimation].[EstimationDate] AS [EstimationDate]
+    FROM [dbo].[vwPMIEstimation] AS [vwPMIEstimation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPMINewBudgetInfo" EntityType="Self.vwPMINewBudgetInfo" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwPMINewBudgetInfo].[Id] AS [Id], 
+    [vwPMINewBudgetInfo].[yearName] AS [yearName], 
+    [vwPMINewBudgetInfo].[Status] AS [Status], 
+    [vwPMINewBudgetInfo].[BudgetType] AS [BudgetType], 
+    [vwPMINewBudgetInfo].[ZoneId] AS [ZoneId], 
+    [vwPMINewBudgetInfo].[ProjectForId] AS [ProjectForId]
+    FROM [dbo].[vwPMINewBudgetInfo] AS [vwPMINewBudgetInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPMIProcurementPlanFundRpt" EntityType="Self.vwPMIProcurementPlanFundRpt" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwPMIProcurementPlanFundRpt].[ID] AS [ID], 
+    [vwPMIProcurementPlanFundRpt].[ProjectMasterId] AS [ProjectMasterId], 
+    [vwPMIProcurementPlanFundRpt].[SourceOfFund] AS [SourceOfFund], 
+    [vwPMIProcurementPlanFundRpt].[Cost] AS [Cost]
+    FROM [dbo].[vwPMIProcurementPlanFundRpt] AS [vwPMIProcurementPlanFundRpt]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPMIProjectSummary" EntityType="Self.vwPMIProjectSummary" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwPMIProjectSummary].[ProjectMasterId] AS [ProjectMasterId], 
+    [vwPMIProjectSummary].[AnnualProcurementPlanMasterId] AS [AnnualProcurementPlanMasterId], 
+    [vwPMIProjectSummary].[AnnualProcurementPlanDetailsId] AS [AnnualProcurementPlanDetailsId], 
+    [vwPMIProjectSummary].[DescritionOfAPP] AS [DescritionOfAPP], 
+    [vwPMIProjectSummary].[ProjectCode] AS [ProjectCode], 
+    [vwPMIProjectSummary].[TenderPubDate] AS [TenderPubDate], 
+    [vwPMIProjectSummary].[MinistryId] AS [MinistryId], 
+    [vwPMIProjectSummary].[MinistryName] AS [MinistryName], 
+    [vwPMIProjectSummary].[FinancialYearId] AS [FinancialYearId], 
+    [vwPMIProjectSummary].[FinancialYearName] AS [FinancialYearName], 
+    [vwPMIProjectSummary].[TotalCost] AS [TotalCost], 
+    [vwPMIProjectSummary].[ProjectStatusId] AS [ProjectStatusId], 
+    [vwPMIProjectSummary].[ProjectStatusName] AS [ProjectStatusName], 
+    [vwPMIProjectSummary].[ZoneId] AS [ZoneId], 
+    [vwPMIProjectSummary].[ZoneCode] AS [ZoneCode]
+    FROM [dbo].[vwPMIProjectSummary] AS [vwPMIProjectSummary]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwPMIStatusInformation" EntityType="Self.vwPMIStatusInformation" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwPMIStatusInformation].[Id] AS [Id], 
+    [vwPMIStatusInformation].[Name] AS [Name], 
+    [vwPMIStatusInformation].[SortOrder] AS [SortOrder], 
+    [vwPMIStatusInformation].[Remarks] AS [Remarks], 
+    [vwPMIStatusInformation].[ApplicableFor] AS [ApplicableFor]
+    FROM [dbo].[vwPMIStatusInformation] AS [vwPMIStatusInformation]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanDetails_PMI_AnnualProcurementPlanMaster" Association="Self.FK_PMI_AnnualProcurementPlanDetails_PMI_AnnualProcurementPlanMaster">
+      <End Role="PMI_AnnualProcurementPlanMaster" EntitySet="PMI_AnnualProcurementPlanMaster" />
+      <End Role="PMI_AnnualProcurementPlanDetails" EntitySet="PMI_AnnualProcurementPlanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ApprovalAuthority" Association="Self.FK_PMI_AnnualProcurementPlanDetails_PMI_ApprovalAuthority">
+      <End Role="PMI_ApprovalAuthority" EntitySet="PMI_ApprovalAuthority" />
+      <End Role="PMI_AnnualProcurementPlanDetails" EntitySet="PMI_AnnualProcurementPlanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ConstructionType" Association="Self.FK_PMI_AnnualProcurementPlanDetails_PMI_ConstructionType">
+      <End Role="PMI_ConstructionType" EntitySet="PMI_ConstructionType" />
+      <End Role="PMI_AnnualProcurementPlanDetails" EntitySet="PMI_AnnualProcurementPlanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanDetails_PMI_ProcurementMethod" Association="Self.FK_PMI_AnnualProcurementPlanDetails_PMI_ProcurementMethod">
+      <End Role="PMI_ProcurementMethod" EntitySet="PMI_ProcurementMethod" />
+      <End Role="PMI_AnnualProcurementPlanDetails" EntitySet="PMI_AnnualProcurementPlanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanDetails_PMI_SourceOfFund" Association="Self.FK_PMI_AnnualProcurementPlanDetails_PMI_SourceOfFund">
+      <End Role="PMI_SourceOfFund" EntitySet="PMI_SourceOfFund" />
+      <End Role="PMI_AnnualProcurementPlanDetails" EntitySet="PMI_AnnualProcurementPlanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanMaster_PMI_Ministry" Association="Self.FK_PMI_AnnualProcurementPlanMaster_PMI_Ministry">
+      <End Role="PMI_Ministry" EntitySet="PMI_Ministry" />
+      <End Role="PMI_AnnualProcurementPlanMaster" EntitySet="PMI_AnnualProcurementPlanMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AnnualProcurementPlanMaster_PMI_ProjectStatus" Association="Self.FK_PMI_AnnualProcurementPlanMaster_PMI_ProjectStatus">
+      <End Role="PMI_ProjectStatus" EntitySet="PMI_ProjectStatus" />
+      <End Role="PMI_AnnualProcurementPlanMaster" EntitySet="PMI_AnnualProcurementPlanMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ApprovalFlowDetails_PMI_ApprovalFlowMaster" Association="Self.FK_PMI_ApprovalFlowDetails_PMI_ApprovalFlowMaster">
+      <End Role="PMI_ApprovalFlowMaster" EntitySet="PMI_ApprovalFlowMaster" />
+      <End Role="PMI_ApprovalFlowDetails" EntitySet="PMI_ApprovalFlowDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ApprovalFlowMaster_PMI_ApprovalSection" Association="Self.FK_PMI_ApprovalFlowMaster_PMI_ApprovalSection">
+      <End Role="PMI_ApprovalSection" EntitySet="PMI_ApprovalSection" />
+      <End Role="PMI_ApprovalFlowMaster" EntitySet="PMI_ApprovalFlowMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_AppZones_PMI_AnnualProcurementPlanMaster" Association="Self.FK_PMI_AppZones_PMI_AnnualProcurementPlanMaster">
+      <End Role="PMI_AnnualProcurementPlanMaster" EntitySet="PMI_AnnualProcurementPlanMaster" />
+      <End Role="PMI_AppZones" EntitySet="PMI_AppZones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetDetails_PMI_BudgetMaster" Association="Self.FK_PMI_BudgetDetails_PMI_BudgetMaster">
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+      <End Role="PMI_BudgetDetails" EntitySet="PMI_BudgetDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetDetails_PMI_ConstructionType" Association="Self.FK_PMI_BudgetDetails_PMI_ConstructionType">
+      <End Role="PMI_ConstructionType" EntitySet="PMI_ConstructionType" />
+      <End Role="PMI_BudgetDetails" EntitySet="PMI_BudgetDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetDetailsYearlyBilled_PMI_BudgetDetails" Association="Self.FK_PMI_BudgetDetailsYearlyBilled_PMI_BudgetDetails">
+      <End Role="PMI_BudgetDetails" EntitySet="PMI_BudgetDetails" />
+      <End Role="PMI_BudgetDetailsYearlyBilled" EntitySet="PMI_BudgetDetailsYearlyBilled" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetDetailsYearlyCost_FAM_FinancialYearInformation" Association="Self.FK_PMI_BudgetDetailsYearlyCost_FAM_FinancialYearInformation">
+      <End Role="acc_Accounting_Period_Information" EntitySet="acc_Accounting_Period_Information" />
+      <End Role="PMI_BudgetDetailsYearlyCost" EntitySet="PMI_BudgetDetailsYearlyCost" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetDetailsYearlyCost_PMI_BudgetDetails" Association="Self.FK_PMI_BudgetDetailsYearlyCost_PMI_BudgetDetails">
+      <End Role="PMI_BudgetDetails" EntitySet="PMI_BudgetDetails" />
+      <End Role="PMI_BudgetDetailsYearlyCost" EntitySet="PMI_BudgetDetailsYearlyCost" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetDetailsYearlyCost_PMI_ProjectStatus" Association="Self.FK_PMI_BudgetDetailsYearlyCost_PMI_ProjectStatus">
+      <End Role="PMI_ProjectStatus" EntitySet="PMI_ProjectStatus" />
+      <End Role="PMI_BudgetDetailsYearlyCost" EntitySet="PMI_BudgetDetailsYearlyCost" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetMaster_PMI_ApprovalAuthority" Association="Self.FK_PMI_BudgetMaster_PMI_ApprovalAuthority">
+      <End Role="PMI_ApprovalAuthority" EntitySet="PMI_ApprovalAuthority" />
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetMaster_PMI_Ministry" Association="Self.FK_PMI_BudgetMaster_PMI_Ministry">
+      <End Role="PMI_Ministry" EntitySet="PMI_Ministry" />
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetMaster_PMI_ProcurementType" Association="Self.FK_PMI_BudgetMaster_PMI_ProcurementType">
+      <End Role="PMI_ProcurementType" EntitySet="PMI_ProcurementType" />
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetMaster_PMI_SourceOfFund" Association="Self.FK_PMI_BudgetMaster_PMI_SourceOfFund">
+      <End Role="PMI_SourceOfFund" EntitySet="PMI_SourceOfFund" />
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_BudgetZoneOrProject_PMI_BudgetMaster" Association="Self.FK_PMI_BudgetZoneOrProject_PMI_BudgetMaster">
+      <End Role="PMI_BudgetMaster" EntitySet="PMI_BudgetMaster" />
+      <End Role="PMI_BudgetZoneOrProject" EntitySet="PMI_BudgetZoneOrProject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationDetails_PMI_EstimationHead" Association="Self.FK_PMI_EstimationDetails_PMI_EstimationHead">
+      <End Role="PMI_EstimationHead" EntitySet="PMI_EstimationHead" />
+      <End Role="PMI_EstimationDetails" EntitySet="PMI_EstimationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationDetails_PMI_EstimationMaster" Association="Self.FK_PMI_EstimationDetails_PMI_EstimationMaster">
+      <End Role="PMI_EstimationMaster" EntitySet="PMI_EstimationMaster" />
+      <End Role="PMI_EstimationDetails" EntitySet="PMI_EstimationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationDetails_PMI_EstimationSetup" Association="Self.FK_PMI_EstimationDetails_PMI_EstimationSetup">
+      <End Role="PMI_EstimationSetup" EntitySet="PMI_EstimationSetup" />
+      <End Role="PMI_EstimationDetails" EntitySet="PMI_EstimationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationDetails_PMI_EstimationUnit" Association="Self.FK_PMI_EstimationDetails_PMI_EstimationUnit">
+      <End Role="PMI_EstimationUnit" EntitySet="PMI_EstimationUnit" />
+      <End Role="PMI_EstimationDetails" EntitySet="PMI_EstimationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationHeadDescription_PMI_EstimationHead" Association="Self.FK_PMI_EstimationHeadDescription_PMI_EstimationHead">
+      <End Role="PMI_EstimationHead" EntitySet="PMI_EstimationHead" />
+      <End Role="PMI_EstimationHeadDescription" EntitySet="PMI_EstimationHeadDescription" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationHeadDescription_PMI_EstimationMaster" Association="Self.FK_PMI_EstimationHeadDescription_PMI_EstimationMaster">
+      <End Role="PMI_EstimationMaster" EntitySet="PMI_EstimationMaster" />
+      <End Role="PMI_EstimationHeadDescription" EntitySet="PMI_EstimationHeadDescription" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationSetup_PMI_EstimationHead" Association="Self.FK_PMI_EstimationSetup_PMI_EstimationHead">
+      <End Role="PMI_EstimationHead" EntitySet="PMI_EstimationHead" />
+      <End Role="PMI_EstimationSetup" EntitySet="PMI_EstimationSetup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationSetup_PMI_EstimationUnit" Association="Self.FK_PMI_EstimationSetup_PMI_EstimationUnit">
+      <End Role="PMI_EstimationUnit" EntitySet="PMI_EstimationUnit" />
+      <End Role="PMI_EstimationSetup" EntitySet="PMI_EstimationSetup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_EstimationZone_PMI_ProjectMaster" Association="Self.FK_PMI_EstimationZone_PMI_ProjectMaster">
+      <End Role="PMI_EstimationMaster" EntitySet="PMI_EstimationMaster" />
+      <End Role="PMI_EstimationZone" EntitySet="PMI_EstimationZone" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProgressReportAttachment_PMI_ProgressReportMaster" Association="Self.FK_PMI_ProgressReportAttachment_PMI_ProgressReportMaster">
+      <End Role="PMI_ProgressReportMaster" EntitySet="PMI_ProgressReportMaster" />
+      <End Role="PMI_ProgressReportAttachment" EntitySet="PMI_ProgressReportAttachment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProgressReportDetails_PMI_ProgressReportMaster" Association="Self.FK_PMI_ProgressReportDetails_PMI_ProgressReportMaster">
+      <End Role="PMI_ProgressReportMaster" EntitySet="PMI_ProgressReportMaster" />
+      <End Role="PMI_ProgressReportDetails" EntitySet="PMI_ProgressReportDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProgressReportDetails_PMI_WorkStatus" Association="Self.FK_PMI_ProgressReportDetails_PMI_WorkStatus">
+      <End Role="PMI_WorkStatus" EntitySet="PMI_WorkStatus" />
+      <End Role="PMI_ProgressReportDetails" EntitySet="PMI_ProgressReportDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProgressReportDetailsYearlyBilled_PMI_ProgressReportDetails" Association="Self.FK_PMI_ProgressReportDetailsYearlyBilled_PMI_ProgressReportDetails">
+      <End Role="PMI_ProgressReportDetails" EntitySet="PMI_ProgressReportDetails" />
+      <End Role="PMI_ProgressReportDetailsYearlyBilled" EntitySet="PMI_ProgressReportDetailsYearlyBilled" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProgressReportMaster_PMI_AnnualProcurementPlanMaster" Association="Self.FK_PMI_ProgressReportMaster_PMI_AnnualProcurementPlanMaster">
+      <End Role="PMI_AnnualProcurementPlanMaster" EntitySet="PMI_AnnualProcurementPlanMaster" />
+      <End Role="PMI_ProgressReportMaster" EntitySet="PMI_ProgressReportMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProgressReportSignature_PMI_ProgressReportMaster" Association="Self.FK_PMI_ProgressReportSignature_PMI_ProgressReportMaster">
+      <End Role="PMI_ProgressReportMaster" EntitySet="PMI_ProgressReportMaster" />
+      <End Role="PMI_ProgressReportSignature" EntitySet="PMI_ProgressReportSignature" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectDetails_PMI_ApprovalAuthority" Association="Self.FK_PMI_ProjectDetails_PMI_ApprovalAuthority">
+      <End Role="PMI_ApprovalAuthority" EntitySet="PMI_ApprovalAuthority" />
+      <End Role="PMI_ProjectDetails" EntitySet="PMI_ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectDetails_PMI_ProcurementMethod" Association="Self.FK_PMI_ProjectDetails_PMI_ProcurementMethod">
+      <End Role="PMI_ProcurementMethod" EntitySet="PMI_ProcurementMethod" />
+      <End Role="PMI_ProjectDetails" EntitySet="PMI_ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectDetails_PMI_ProcurementType" Association="Self.FK_PMI_ProjectDetails_PMI_ProcurementType">
+      <End Role="PMI_ProcurementType" EntitySet="PMI_ProcurementType" />
+      <End Role="PMI_ProjectDetails" EntitySet="PMI_ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectDetails_PMI_ProjectMaster" Association="Self.FK_PMI_ProjectDetails_PMI_ProjectMaster">
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+      <End Role="PMI_ProjectDetails" EntitySet="PMI_ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectDetails_PMI_SourceOfFund" Association="Self.FK_PMI_ProjectDetails_PMI_SourceOfFund">
+      <End Role="PMI_SourceOfFund" EntitySet="PMI_SourceOfFund" />
+      <End Role="PMI_ProjectDetails" EntitySet="PMI_ProjectDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_Agency" Association="Self.FK_PMI_ProjectMaster_PMI_Agency">
+      <End Role="PMI_Agency" EntitySet="PMI_Agency" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_ConstructionCategory" Association="Self.FK_PMI_ProjectMaster_PMI_ConstructionCategory">
+      <End Role="PMI_ConstructionCategory" EntitySet="PMI_ConstructionCategory" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_ConstructionType" Association="Self.FK_PMI_ProjectMaster_PMI_ConstructionType">
+      <End Role="PMI_ConstructionType" EntitySet="PMI_ConstructionType" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_Ministry" Association="Self.FK_PMI_ProjectMaster_PMI_Ministry">
+      <End Role="PMI_Ministry" EntitySet="PMI_Ministry" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_PaymentStatus" Association="Self.FK_PMI_ProjectMaster_PMI_PaymentStatus">
+      <End Role="PMI_PaymentStatus" EntitySet="PMI_PaymentStatus" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectMaster_PMI_ProjectStatus" Association="Self.FK_PMI_ProjectMaster_PMI_ProjectStatus">
+      <End Role="PMI_ProjectStatus" EntitySet="PMI_ProjectStatus" />
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectTimeExtension_PMI_ProjectMaster" Association="Self.FK_PMI_ProjectTimeExtension_PMI_ProjectMaster">
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+      <End Role="PMI_ProjectTimeExtension" EntitySet="PMI_ProjectTimeExtension" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_ProjectZone_PMI_ProjectMaster" Association="Self.FK_PMI_ProjectZone_PMI_ProjectMaster">
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+      <End Role="PMI_ProjectZone" EntitySet="PMI_ProjectZone" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PMI_TenderDetails_PMI_ProjectMaster" Association="Self.FK_PMI_TenderDetails_PMI_ProjectMaster">
+      <End Role="PMI_ProjectMaster" EntitySet="PMI_ProjectMaster" />
+      <End Role="PMI_TenderDetails" EntitySet="PMI_TenderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FKE18F415067F93324" Association="Self.FKE18F415067F93324">
+      <End Role="acc_Cost_Centre_or_Institute_Information" EntitySet="acc_Cost_Centre_or_Institute_Information" />
+      <End Role="acc_Cost_Centre_or_Institute_Information1" EntitySet="acc_Cost_Centre_or_Institute_Information" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,114 @@
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\DataAccess.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\DataAccess.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\DBClient.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\Entity.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\PrimaryBaseLibrary.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\System.Web.Mvc.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\System.Web.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\System.Web.WebPages.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\DBClient.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\Entity.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\PrimaryBaseLibrary.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\System.Web.Mvc.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\System.Web.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\System.Web.WebPages.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\obj\Release\DataAccess.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\DataAccess\obj\Release\DataAccess.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DataAccess.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DataAccess.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DBClient.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\Entity.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\PrimaryBaseLibrary.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Mvc.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Razor.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Razor.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\Microsoft.Web.Infrastructure.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Deployment.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DBClient.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\Entity.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\PrimaryBaseLibrary.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Mvc.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Razor.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Razor.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Deployment.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DataAccess.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DataAccess.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DBClient.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\Entity.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\PrimaryBaseLibrary.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Deployment.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DBClient.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\Entity.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\PrimaryBaseLibrary.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Mvc.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Deployment.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DataAccess.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DataAccess.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DBClient.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\Entity.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\PrimaryBaseLibrary.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Mvc.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Razor.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Razor.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\Microsoft.Web.Infrastructure.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Deployment.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\DBClient.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\Entity.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\PrimaryBaseLibrary.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Mvc.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.Razor.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Razor.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Deployment.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.csproj.AssemblyReference.cache
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.csproj.CoreCompileInputs.cache
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.csproj.CopyComplete
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\DataAccess\obj\Release\DataAccess.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\DataAccess.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\DataAccess.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\DBClient.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\Entity.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\PrimaryBaseLibrary.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\System.Web.Mvc.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\System.Web.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Deployment.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\DBClient.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\Entity.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\PrimaryBaseLibrary.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\System.Web.Mvc.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\System.Web.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\bin\Release\System.Web.WebPages.Deployment.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\obj\Release\DataAccess.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\obj\Release\DataAccess.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\obj\Release\DataAccess.csproj.CopyComplete
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\obj\Release\DataAccess.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\DataAccess\obj\Release\DataAccess.pdb

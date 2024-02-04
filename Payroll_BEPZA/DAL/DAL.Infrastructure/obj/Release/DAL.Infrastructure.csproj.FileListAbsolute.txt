@@ -1,0 +1,35 @@
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\DAL.Infrastructure.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\DAL.Infrastructure.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.SqlServer.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\LinqKit.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.SqlServer.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\LinqKit.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\DAL.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\DAL.Infrastructure.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.SqlServer.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\LinqKit.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.SqlServer.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\LinqKit.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\DAL.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\DAL.Infrastructure.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.SqlServer.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\LinqKit.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\EntityFramework.SqlServer.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Release\LinqKit.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.csproj.CopyComplete
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Release\DAL.Infrastructure.pdb

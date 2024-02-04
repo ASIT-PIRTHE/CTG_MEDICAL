@@ -1,0 +1,19 @@
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\bin\Release\ERP_BEPZA.DB.dll.config
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\bin\Release\ERP_BEPZA.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\bin\Release\ERP_BEPZA.DB.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\obj\Release\ERP_BEPZA.DB.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\obj\Release\ERP_BEPZA.DB.csproj.CoreCompileInputs.cache
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\obj\Release\ERP_BEPZA.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\obj\Release\ERP_BEPZA.DB.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Release\ERP_BEPZA.DB.dll.config
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Release\ERP_BEPZA.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Release\ERP_BEPZA.DB.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Release\ERP_BEPZA.DB.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Release\ERP_BEPZA.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Release\ERP_BEPZA.DB.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Release\ERP_BEPZA.DB.dll.config
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Release\ERP_BEPZA.DB.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Release\ERP_BEPZA.DB.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Release\ERP_BEPZA.DB.csprojResolveAssemblyReference.cache
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Release\ERP_BEPZA.DB.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Release\ERP_BEPZA.DB.pdb

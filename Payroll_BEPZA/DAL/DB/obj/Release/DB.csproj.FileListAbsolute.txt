@@ -1,0 +1,19 @@
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\bin\Release\DB.dll.config
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\bin\Release\DB.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\bin\Release\DB.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\obj\Release\DB.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\obj\Release\DB.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\obj\Release\DB.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\bin\Release\DB.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\bin\Release\DB.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\bin\Release\DB.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\obj\Release\DB.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\obj\Release\DB.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\obj\Release\DB.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\bin\Release\DB.dll.config
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\bin\Release\DB.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\bin\Release\DB.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\obj\Release\DB.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\obj\Release\DB.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\obj\Release\DB.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\obj\Release\DB.pdb

@@ -1,0 +1,1921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BEPZA_MEDICAL.DAL.INV.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.CommonConfigType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CommonConfigType">
+    <Key>
+      <PropertyRef Name="TableName" />
+      <PropertyRef Name="DisplayName" />
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="TableName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_AdjustmentInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdjustmentNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AdjustmentDate" Type="datetime" Nullable="false" />
+    <Property Name="AdjustedByEmpId" Type="int" Nullable="false" />
+    <Property Name="ApprovedByEmpId" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="INV_AdjustmentItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdjustmentId" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="ItemStatusId" Type="int" Nullable="false" />
+    <Property Name="Rate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TotalCost" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_AssetQuotaInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="ZoneId" Type="int" Nullable="false" />
+    <Property Name="Quota" Type="int" Nullable="false" />
+    <Property Name="UnitId" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_Color">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_DelegationApprovalInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemTypeId" Type="int" Nullable="false" />
+    <Property Name="ApprovalDate" Type="datetime" Nullable="false" />
+    <Property Name="DepartmentId" Type="int" Nullable="false" />
+    <Property Name="DesignationId" Type="int" Nullable="false" />
+    <Property Name="ApprovalLimit" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_IssueInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IssueNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IndentId" Type="int" Nullable="false" />
+    <Property Name="IssueDate" Type="datetime" Nullable="false" />
+    <Property Name="IndentDate" Type="datetime" />
+    <Property Name="IssuedToId" Type="int" Nullable="false" />
+    <Property Name="IssuedById" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_IssueItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IssueId" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="PurchaseId" Type="int" />
+    <Property Name="IssueQuantity" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="DemandQuantity" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="INV_IssueReturnInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReturnNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ReturnDate" Type="datetime" Nullable="false" />
+    <Property Name="ReceivedFromEmpId" Type="int" Nullable="false" />
+    <Property Name="ReceivedByEmpId" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="ScrapId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_IssueReturnItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IssueReturnId" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="ItemStatusId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_ItemInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="100" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="ColorId" Type="int" />
+    <Property Name="ManufacturerId" Type="int" />
+    <Property Name="MinimumQuantity" Type="int" />
+    <Property Name="ReOrderQuantity" Type="int" />
+    <Property Name="MaximumQuantity" Type="int" />
+    <Property Name="IsPeriodicAsset" Type="bit" />
+    <Property Name="IsCondemnableAsset" Type="bit" />
+    <Property Name="HasQuota" Type="bit" />
+    <Property Name="TypeId" Type="int" />
+    <Property Name="ModelId" Type="int" />
+    <Property Name="UnitId" Type="int" />
+    <Property Name="Size" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" />
+    <Property Name="AssetGroupId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_ItemStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_ItemType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IsGroup" Type="bit" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CodeCount" Type="int" Nullable="false" />
+    <Property Name="Level" Type="int" Nullable="false" />
+    <Property Name="ItemTypeName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="BudgetHeadId" Type="int" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_Manufacturer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_Model">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_PeriodicAssetDuration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemInfoId" Type="int" Nullable="false" />
+    <Property Name="DesignationId" Type="int" Nullable="false" />
+    <Property Name="ReIssueAfter" Type="int" Nullable="false" />
+    <Property Name="DurationScale" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_PurchaseInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MRR" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PO" Type="varchar" MaxLength="50" />
+    <Property Name="Challan" Type="varchar" MaxLength="50" />
+    <Property Name="Reference" Type="varchar" MaxLength="50" />
+    <Property Name="MRRDate" Type="datetime" />
+    <Property Name="PurchaseDate" Type="datetime" Nullable="false" />
+    <Property Name="PODate" Type="datetime" />
+    <Property Name="ChallanDate" Type="datetime" />
+    <Property Name="PurchaseTypeId" Type="int" Nullable="false" />
+    <Property Name="SupplierId" Type="int" Nullable="false" />
+    <Property Name="ReceivedBy" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_PurchaseItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PurchaseId" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Rate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TotalCost" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="INV_PurchaseType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_RequisitionInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="IndentDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="IndentNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IssuedByEmpId" Type="int" />
+    <Property Name="IssuedToEmpId" Type="int" Nullable="false" />
+    <Property Name="TotalQuantity" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IsOnline" Type="bit" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="IsProcessed" Type="bit" Nullable="false" />
+    <Property Name="ForwardToEmpId" Type="int" Nullable="false" />
+    <Property Name="ApprovalStatusId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_RequisitionItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RequisitionId" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="ApproveQuantity" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="INV_ScrapInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="ScrapDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="ScrapNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IssuedByEmpId" Type="int" />
+    <Property Name="IssuedToEmpId" Type="int" Nullable="false" />
+    <Property Name="TotalQuantity" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IsOnline" Type="bit" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="IsProcessed" Type="bit" Nullable="false" />
+    <Property Name="ApproverId" Type="int" Nullable="false" />
+    <Property Name="ApprovalStatusId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_ScrapItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScrapId" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="ItemStatusId" Type="int" Nullable="false" />
+    <Property Name="ApproveQuantity" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.INV_ScrapItemHistory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="INV_ScrapItemHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ScrapId" />
+      <PropertyRef Name="ScrapItemId" />
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="ItemStatusId" />
+      <PropertyRef Name="IUser" />
+      <PropertyRef Name="IDate" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ScrapId" Type="int" Nullable="false" />
+    <Property Name="ScrapItemId" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="ItemStatusId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_SupplierInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="PhoneNo" Type="varchar" MaxLength="50" />
+    <Property Name="FaxNo" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="TradeLicenseNo" Type="varchar" MaxLength="50" />
+    <Property Name="TIN" Type="varchar" MaxLength="50" />
+    <Property Name="VATRegNo" Type="varchar" MaxLength="50" />
+    <Property Name="ContactPersonName" Type="varchar" MaxLength="50" />
+    <Property Name="ContactPersonNo" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar(max)" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="INV_TransferInInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="TransferDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="TransferNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ChallanDate" Type="datetime2" Precision="7" />
+    <Property Name="ChallanNo" Type="varchar" MaxLength="50" />
+    <Property Name="ReceivedFromId" Type="int" Nullable="false" />
+    <Property Name="ReceivedById" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="100" />
+    <Property Name="TransferOutId" Type="int" />
+  </EntityType>
+  <EntityType Name="INV_TransferInItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TransferInId" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PurchaseId" Type="int" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="INV_TransferOutInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="TransferDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="TransferNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ChallanDate" Type="datetime2" Precision="7" />
+    <Property Name="ChallanNo" Type="varchar" MaxLength="50" />
+    <Property Name="TransferredToZoneId" Type="int" Nullable="false" />
+    <Property Name="TransferredByEmpId" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsProcessed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_TransferOutItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TransferOutId" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PurchaseId" Type="int" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="INV_Unit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PRM_EmploymentInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="EmployeeInitial" Type="varchar" MaxLength="15" />
+    <Property Name="TitleId" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="MiddleName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="FullName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="FullNameBangla" Type="nvarchar" MaxLength="200" />
+    <Property Name="DateofJoining" Type="datetime" Nullable="false" />
+    <Property Name="ProvisionMonth" Type="int" Nullable="false" />
+    <Property Name="DateofConfirmation" Type="datetime" />
+    <Property Name="DateofPosition" Type="datetime" Nullable="false" />
+    <Property Name="DesignationId" Type="int" Nullable="false" />
+    <Property Name="StatusDesignationId" Type="int" />
+    <Property Name="DisciplineId" Type="int" />
+    <Property Name="DivisionId" Type="int" />
+    <Property Name="SectionId" Type="int" />
+    <Property Name="SubSectionId" Type="int" />
+    <Property Name="JobLocationId" Type="int" Nullable="false" />
+    <Property Name="ResourceLevelId" Type="int" />
+    <Property Name="StaffCategoryId" Type="int" Nullable="false" />
+    <Property Name="EmploymentTypeId" Type="int" Nullable="false" />
+    <Property Name="ReligionId" Type="int" Nullable="false" />
+    <Property Name="OvertimeRate" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+    <Property Name="EmialAddress" Type="varchar" MaxLength="50" />
+    <Property Name="BankId" Type="int" />
+    <Property Name="BankBranchId" Type="int" />
+    <Property Name="BankAccountNo" Type="varchar" MaxLength="50" />
+    <Property Name="EmploymentStatusId" Type="int" Nullable="false" />
+    <Property Name="DateofInactive" Type="datetime" />
+    <Property Name="IsConsultant" Type="bit" Nullable="false" />
+    <Property Name="IsContractual" Type="bit" Nullable="false" />
+    <Property Name="IsOvertimeEligible" Type="bit" Nullable="false" />
+    <Property Name="IsRefreshmentEligible" Type="bit" />
+    <Property Name="IsBonusEligible" Type="bit" Nullable="false" />
+    <Property Name="IsEligibleForCpf" Type="bit" />
+    <Property Name="IsPensionEligible" Type="bit" Nullable="false" />
+    <Property Name="IsLeverageEligible" Type="bit" Nullable="false" />
+    <Property Name="SalaryScaleId" Type="int" Nullable="false" />
+    <Property Name="JobGradeId" Type="int" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ContractExpireDate" Type="datetime" />
+    <Property Name="DateofBirth" Type="datetime" Nullable="false" />
+    <Property Name="ContractDuration" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="ContractType" Type="int" />
+    <Property Name="OrganogramLevelId" Type="int" Nullable="false" />
+    <Property Name="DateofAppointment" Type="datetime" Nullable="false" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="QuotaId" Type="int" />
+    <Property Name="EmployeeClassId" Type="int" />
+    <Property Name="EmploymentProcessId" Type="int" />
+    <Property Name="SeniorityPosition" Type="varchar" MaxLength="50" />
+    <Property Name="DateofSeniority" Type="datetime" />
+    <Property Name="PRLDate" Type="datetime" />
+    <Property Name="CardNo" Type="varchar" MaxLength="20" />
+    <Property Name="FingerPrintIdentiyNo" Type="varchar" MaxLength="50" />
+    <Property Name="AttendanceEffectiveDate" Type="datetime" />
+    <Property Name="AttendanceStatus" Type="bit" Nullable="false" />
+    <Property Name="IsGeneralShifted" Type="bit" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="TelephoneOffice" Type="varchar" MaxLength="50" />
+    <Property Name="Intercom" Type="varchar" MaxLength="50" />
+    <Property Name="HonoraryDegree" Type="nvarchar" MaxLength="150" />
+    <Property Name="TaxRegionId" Type="int" />
+    <Property Name="TaxAssesseeType" Type="tinyint" />
+    <Property Name="HavingChildWithDisability" Type="bit" />
+    <Property Name="DateofRetirement" Type="datetime" />
+    <Property Name="SalaryWithdrawFromZoneId" Type="int" />
+    <Property Name="RegionId" Type="int" />
+    <Property Name="ETIN" Type="nvarchar" MaxLength="20" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PRM_ZoneInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneName" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ZoneNameInBengali" Type="nvarchar" MaxLength="200" />
+    <Property Name="ZoneCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="OrganogramCategoryTypeId" Type="int" Nullable="false" />
+    <Property Name="ZoneAddress" Type="varchar(max)" />
+    <Property Name="ZoneAddressInBengali" Type="nvarchar(max)" />
+    <Property Name="Prefix" Type="varchar" MaxLength="50" />
+    <Property Name="IsHeadOffice" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwINVBudgetHead' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwINVBudgetHead">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AccountName" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountName" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwINVItemHistory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwINVItemHistory">
+    <Key>
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="ItemName" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="Challan" />
+      <PropertyRef Name="TransactionType" />
+      <PropertyRef Name="InQuantity" />
+      <PropertyRef Name="OutQuantity" />
+      <PropertyRef Name="ZoneInfoId" />
+      <PropertyRef Name="IDate" />
+    </Key>
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="ItemName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Date" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Challan" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TransactionType" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="InQuantity" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="OutQuantity" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_INV_AdjustmentInfo_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_AdjustmentInfo" Type="Self.INV_AdjustmentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentInfo">
+        <PropertyRef Name="AdjustedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AdjustmentInfo_PRM_EmploymentInfo1">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_AdjustmentInfo" Type="Self.INV_AdjustmentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentInfo">
+        <PropertyRef Name="ApprovedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AdjustmentInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_AdjustmentInfo" Type="Self.INV_AdjustmentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AdjustmentItem_INV_AdjustmentInfo">
+    <End Role="INV_AdjustmentInfo" Type="Self.INV_AdjustmentInfo" Multiplicity="1" />
+    <End Role="INV_AdjustmentItem" Type="Self.INV_AdjustmentItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_AdjustmentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentItem">
+        <PropertyRef Name="AdjustmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AdjustmentItem_INV_ItemInfo">
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="1" />
+    <End Role="INV_AdjustmentItem" Type="Self.INV_AdjustmentItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AdjustmentItem_INV_ItemStatus">
+    <End Role="INV_ItemStatus" Type="Self.INV_ItemStatus" Multiplicity="1" />
+    <End Role="INV_AdjustmentItem" Type="Self.INV_AdjustmentItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentItem">
+        <PropertyRef Name="ItemStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AssetQuotaInfo_INV_ItemInfo1">
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="1" />
+    <End Role="INV_AssetQuotaInfo" Type="Self.INV_AssetQuotaInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AssetQuotaInfo">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AssetQuotaInfo_INV_Unit1">
+    <End Role="INV_Unit" Type="Self.INV_Unit" Multiplicity="1" />
+    <End Role="INV_AssetQuotaInfo" Type="Self.INV_AssetQuotaInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Unit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AssetQuotaInfo">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AssetQuotaInfo_PRM_ZoneInfo1">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_AssetQuotaInfo" Type="Self.INV_AssetQuotaInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AssetQuotaInfo">
+        <PropertyRef Name="ZoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_DelegationApprovalInfo_INV_ItemType">
+    <End Role="INV_ItemType" Type="Self.INV_ItemType" Multiplicity="1" />
+    <End Role="INV_DelegationApprovalInfo" Type="Self.INV_DelegationApprovalInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_DelegationApprovalInfo">
+        <PropertyRef Name="ItemTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_DelegationApprovalInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_DelegationApprovalInfo" Type="Self.INV_DelegationApprovalInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_DelegationApprovalInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueInfo_INV_RequisitionInfo">
+    <End Role="INV_RequisitionInfo" Type="Self.INV_RequisitionInfo" Multiplicity="1" />
+    <End Role="INV_IssueInfo" Type="Self.INV_IssueInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_RequisitionInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueInfo">
+        <PropertyRef Name="IndentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueInfo_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_IssueInfo" Type="Self.INV_IssueInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueInfo">
+        <PropertyRef Name="IssuedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueInfo_PRM_EmploymentInfo1">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_IssueInfo" Type="Self.INV_IssueInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueInfo">
+        <PropertyRef Name="IssuedToId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_IssueInfo" Type="Self.INV_IssueInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueItem_INV_IssueInfo">
+    <End Role="INV_IssueInfo" Type="Self.INV_IssueInfo" Multiplicity="1" />
+    <End Role="INV_IssueItem" Type="Self.INV_IssueItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_IssueInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueItem">
+        <PropertyRef Name="IssueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueItem_INV_ItemInfo">
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="1" />
+    <End Role="INV_IssueItem" Type="Self.INV_IssueItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueItem_INV_PurchaseInfo">
+    <End Role="INV_PurchaseInfo" Type="Self.INV_PurchaseInfo" Multiplicity="0..1" />
+    <End Role="INV_IssueItem" Type="Self.INV_IssueItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_PurchaseInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueItem">
+        <PropertyRef Name="PurchaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnInfo_INV_ScrapInfo">
+    <End Role="INV_ScrapInfo" Type="Self.INV_ScrapInfo" Multiplicity="1" />
+    <End Role="INV_IssueReturnInfo" Type="Self.INV_IssueReturnInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ScrapInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnInfo">
+        <PropertyRef Name="ScrapId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnInfo_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_IssueReturnInfo" Type="Self.INV_IssueReturnInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnInfo">
+        <PropertyRef Name="ReceivedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnInfo_PRM_EmploymentInfo1">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_IssueReturnInfo" Type="Self.INV_IssueReturnInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnInfo">
+        <PropertyRef Name="ReceivedFromEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_IssueReturnInfo" Type="Self.INV_IssueReturnInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnItem_INV_IssueReturnInfo">
+    <End Role="INV_IssueReturnInfo" Type="Self.INV_IssueReturnInfo" Multiplicity="1" />
+    <End Role="INV_IssueReturnItem" Type="Self.INV_IssueReturnItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_IssueReturnInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnItem">
+        <PropertyRef Name="IssueReturnId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnItem_INV_ItemInfo">
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="1" />
+    <End Role="INV_IssueReturnItem" Type="Self.INV_IssueReturnItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnItem_INV_ItemStatus">
+    <End Role="INV_ItemStatus" Type="Self.INV_ItemStatus" Multiplicity="1" />
+    <End Role="INV_IssueReturnItem" Type="Self.INV_IssueReturnItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnItem">
+        <PropertyRef Name="ItemStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_Category">
+    <End Role="INV_Category" Type="Self.INV_Category" Multiplicity="0..1" />
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_Color">
+    <End Role="INV_Color" Type="Self.INV_Color" Multiplicity="0..1" />
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Color">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="ColorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_ItemType">
+    <End Role="INV_ItemType" Type="Self.INV_ItemType" Multiplicity="0..1" />
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_Manufacturer">
+    <End Role="INV_Manufacturer" Type="Self.INV_Manufacturer" Multiplicity="0..1" />
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Manufacturer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="ManufacturerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_Model">
+    <End Role="INV_Model" Type="Self.INV_Model" Multiplicity="0..1" />
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Model">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_Unit">
+    <End Role="INV_Unit" Type="Self.INV_Unit" Multiplicity="0..1" />
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Unit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemType_INV_ItemType">
+    <End Role="INV_ItemType" Type="Self.INV_ItemType" Multiplicity="0..1" />
+    <End Role="INV_ItemType1" Type="Self.INV_ItemType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemType1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PeriodicAssetDuration_INV_ItemInfo">
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="1" />
+    <End Role="INV_PeriodicAssetDuration" Type="Self.INV_PeriodicAssetDuration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PeriodicAssetDuration">
+        <PropertyRef Name="ItemInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseInfo_INV_PurchaseType">
+    <End Role="INV_PurchaseType" Type="Self.INV_PurchaseType" Multiplicity="1" />
+    <End Role="INV_PurchaseInfo" Type="Self.INV_PurchaseInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_PurchaseType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseInfo">
+        <PropertyRef Name="PurchaseTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseInfo_INV_SupplierInfo">
+    <End Role="INV_SupplierInfo" Type="Self.INV_SupplierInfo" Multiplicity="1" />
+    <End Role="INV_PurchaseInfo" Type="Self.INV_PurchaseInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_SupplierInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseInfo">
+        <PropertyRef Name="SupplierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseInfo_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_PurchaseInfo" Type="Self.INV_PurchaseInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseInfo">
+        <PropertyRef Name="ReceivedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_PurchaseInfo" Type="Self.INV_PurchaseInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseItem_INV_ItemInfo">
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="1" />
+    <End Role="INV_PurchaseItem" Type="Self.INV_PurchaseItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseItem_INV_PurchaseInfo">
+    <End Role="INV_PurchaseInfo" Type="Self.INV_PurchaseInfo" Multiplicity="1" />
+    <End Role="INV_PurchaseItem" Type="Self.INV_PurchaseItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_PurchaseInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseItem">
+        <PropertyRef Name="PurchaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_RequisitionInfo_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="0..1" />
+    <End Role="INV_RequisitionInfo" Type="Self.INV_RequisitionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionInfo">
+        <PropertyRef Name="IssuedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_RequisitionInfo_PRM_EmploymentInfo1">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_RequisitionInfo" Type="Self.INV_RequisitionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionInfo">
+        <PropertyRef Name="IssuedToEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_RequisitionInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_RequisitionInfo" Type="Self.INV_RequisitionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_RequisitionItem_INV_ItemInfo">
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="1" />
+    <End Role="INV_RequisitionItem" Type="Self.INV_RequisitionItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_RequisitionItem_INV_RequisitionInfo">
+    <End Role="INV_RequisitionInfo" Type="Self.INV_RequisitionInfo" Multiplicity="1" />
+    <End Role="INV_RequisitionItem" Type="Self.INV_RequisitionItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_RequisitionInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionItem">
+        <PropertyRef Name="RequisitionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ScrapInfo_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="0..1" />
+    <End Role="INV_ScrapInfo" Type="Self.INV_ScrapInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapInfo">
+        <PropertyRef Name="IssuedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ScrapInfo_PRM_EmploymentInfo1">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_ScrapInfo" Type="Self.INV_ScrapInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapInfo">
+        <PropertyRef Name="IssuedToEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ScrapInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_ScrapInfo" Type="Self.INV_ScrapInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ScrapItem_INV_ItemInfo">
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="1" />
+    <End Role="INV_ScrapItem" Type="Self.INV_ScrapItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ScrapItem_INV_ItemStatus">
+    <End Role="INV_ItemStatus" Type="Self.INV_ItemStatus" Multiplicity="1" />
+    <End Role="INV_ScrapItem" Type="Self.INV_ScrapItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapItem">
+        <PropertyRef Name="ItemStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ScrapItem_INV_ScrapInfo">
+    <End Role="INV_ScrapInfo" Type="Self.INV_ScrapInfo" Multiplicity="1" />
+    <End Role="INV_ScrapItem" Type="Self.INV_ScrapItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ScrapInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapItem">
+        <PropertyRef Name="ScrapId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInInfo_INV_TransferOutInfo">
+    <End Role="INV_TransferOutInfo" Type="Self.INV_TransferOutInfo" Multiplicity="0..1" />
+    <End Role="INV_TransferInInfo" Type="Self.INV_TransferInInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_TransferOutInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInInfo">
+        <PropertyRef Name="TransferOutId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInInfo_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_TransferInInfo" Type="Self.INV_TransferInInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInInfo">
+        <PropertyRef Name="ReceivedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_TransferInInfo" Type="Self.INV_TransferInInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInInfo">
+        <PropertyRef Name="ReceivedFromId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInInfo_PRM_ZoneInfo1">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_TransferInInfo" Type="Self.INV_TransferInInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInItem_INV_ItemInfo">
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="1" />
+    <End Role="INV_TransferInItem" Type="Self.INV_TransferInItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInItem_INV_PurchaseInfo">
+    <End Role="INV_PurchaseInfo" Type="Self.INV_PurchaseInfo" Multiplicity="0..1" />
+    <End Role="INV_TransferInItem" Type="Self.INV_TransferInItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_PurchaseInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInItem">
+        <PropertyRef Name="PurchaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInItem_INV_TransferInInfo">
+    <End Role="INV_TransferInInfo" Type="Self.INV_TransferInInfo" Multiplicity="1" />
+    <End Role="INV_TransferInItem" Type="Self.INV_TransferInItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_TransferInInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInItem">
+        <PropertyRef Name="TransferInId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutInfo_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_TransferOutInfo" Type="Self.INV_TransferOutInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutInfo">
+        <PropertyRef Name="TransferredByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_TransferOutInfo" Type="Self.INV_TransferOutInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutInfo_PRM_ZoneInfo1">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="INV_TransferOutInfo" Type="Self.INV_TransferOutInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutInfo">
+        <PropertyRef Name="TransferredToZoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutItem_INV_ItemInfo">
+    <End Role="INV_ItemInfo" Type="Self.INV_ItemInfo" Multiplicity="1" />
+    <End Role="INV_TransferOutItem" Type="Self.INV_TransferOutItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutItem_INV_PurchaseInfo">
+    <End Role="INV_PurchaseInfo" Type="Self.INV_PurchaseInfo" Multiplicity="0..1" />
+    <End Role="INV_TransferOutItem" Type="Self.INV_TransferOutItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_PurchaseInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutItem">
+        <PropertyRef Name="PurchaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutItem_INV_TransferOutInfo">
+    <End Role="INV_TransferOutInfo" Type="Self.INV_TransferOutInfo" Multiplicity="1" />
+    <End Role="INV_TransferOutItem" Type="Self.INV_TransferOutItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_TransferOutInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutItem">
+        <PropertyRef Name="TransferOutId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRM_EmploymentInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PRM_EmploymentInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PRM_AcceptanceLetterInfo_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="INV_RequisitionInfo" Type="Self.INV_RequisitionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionInfo">
+        <PropertyRef Name="ForwardToEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_INV_GetItemBalanceByMRR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DATE" Type="date" Mode="In" />
+    <Parameter Name="ItemId" Type="int" Mode="In" />
+    <Parameter Name="PurchaseId" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="ItemId" Type="int" Nullable="false" />
+          <Property Name="Balance" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fn_INV_GetItemClosingBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DATE" Type="date" Mode="In" />
+    <Parameter Name="ItemId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="ItemId" Type="int" Nullable="false" />
+          <Property Name="Balance" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fn_INV_GetItemOpeningBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DATE" Type="date" Mode="In" />
+    <Parameter Name="ItemId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="ItemId" Type="int" Nullable="false" />
+          <Property Name="Balance" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="INV_uspAdjustmentVoucherPosting" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="INV_uspPurchaseVoucherPosting" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_INV_PendingRequisitionList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZoneInfoId" Type="int" Mode="In" />
+    <Parameter Name="IndentId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_INV_PendingScrapList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZoneInfoId" Type="int" Mode="In" />
+    <Parameter Name="ScrapId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_INV_PendingTransferList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZoneInfoId" Type="int" Mode="In" />
+    <Parameter Name="TransferOutId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_INV_RptEmployeeWiseItemLedger" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="DateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="DateTo" Type="datetime" Mode="In" />
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="ItemTypeId" Type="int" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="ModelId" Type="int" Mode="In" />
+    <Parameter Name="ColorId" Type="int" Mode="In" />
+    <Parameter Name="ItemId" Type="int" Mode="In" />
+    <Parameter Name="AssetGroupId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_INV_RptIssueInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="IssueDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="IssueDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="IndentDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="IndentDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="IssuedToId" Type="int" Mode="In" />
+    <Parameter Name="IssueNo" Type="varchar" Mode="In" />
+    <Parameter Name="IndentId" Type="int" Mode="In" />
+    <Parameter Name="ItemTypeId" Type="int" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="ModelId" Type="int" Mode="In" />
+    <Parameter Name="ColorId" Type="int" Mode="In" />
+    <Parameter Name="ItemId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_INV_RptIssueReturn" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="ReturnDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="ReturnDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="ReceivedFromId" Type="int" Mode="In" />
+    <Parameter Name="ReturnNo" Type="varchar" Mode="In" />
+    <Parameter Name="ItemTypeId" Type="int" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="ModelId" Type="int" Mode="In" />
+    <Parameter Name="ColorId" Type="int" Mode="In" />
+    <Parameter Name="ItemId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_INV_RptItemLedger" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="DateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="DateTo" Type="datetime" Mode="In" />
+    <Parameter Name="ItemTypeId" Type="int" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="ModelId" Type="int" Mode="In" />
+    <Parameter Name="ColorId" Type="int" Mode="In" />
+    <Parameter Name="ItemId" Type="int" Mode="In" />
+    <Parameter Name="AssetGroupId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_INV_RptPurchaseInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="PurchaseDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="PurchaseDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="PODateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="PODateTo" Type="datetime" Mode="In" />
+    <Parameter Name="ChallanDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="ChallanDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="PurchaseTypeId" Type="int" Mode="In" />
+    <Parameter Name="SupplierId" Type="int" Mode="In" />
+    <Parameter Name="ItemTypeId" Type="int" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="ModelId" Type="int" Mode="In" />
+    <Parameter Name="ColorId" Type="int" Mode="In" />
+    <Parameter Name="ItemId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_INV_RptStockBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="DateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="DateTo" Type="datetime" Mode="In" />
+    <Parameter Name="ItemTypeId" Type="int" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="ModelId" Type="int" Mode="In" />
+    <Parameter Name="ColorId" Type="int" Mode="In" />
+    <Parameter Name="ItemId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_INV_RptTransferInInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FromDate" Type="datetime" Mode="In" />
+    <Parameter Name="ToDate" Type="datetime" Mode="In" />
+    <Parameter Name="challanFromDate" Type="datetime" Mode="In" />
+    <Parameter Name="challanToDate" Type="datetime" Mode="In" />
+    <Parameter Name="receivedFromId" Type="int" Mode="In" />
+    <Parameter Name="itemId" Type="int" Mode="In" />
+    <Parameter Name="categoryId" Type="int" Mode="In" />
+    <Parameter Name="typeId" Type="int" Mode="In" />
+    <Parameter Name="colorId" Type="int" Mode="In" />
+    <Parameter Name="modelId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_INV_RptTransferOutInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FromDate" Type="datetime" Mode="In" />
+    <Parameter Name="ToDate" Type="datetime" Mode="In" />
+    <Parameter Name="challanFromDate" Type="datetime" Mode="In" />
+    <Parameter Name="challanToDate" Type="datetime" Mode="In" />
+    <Parameter Name="transferredTo" Type="int" Mode="In" />
+    <Parameter Name="itemId" Type="int" Mode="In" />
+    <Parameter Name="categoryId" Type="int" Mode="In" />
+    <Parameter Name="typeId" Type="int" Mode="In" />
+    <Parameter Name="colorId" Type="int" Mode="In" />
+    <Parameter Name="modelId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <EntityContainer Name="ERP_BEPZADALINVStoreContainer">
+    <EntitySet Name="INV_AdjustmentInfo" EntityType="Self.INV_AdjustmentInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_AdjustmentItem" EntityType="Self.INV_AdjustmentItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_AssetQuotaInfo" EntityType="Self.INV_AssetQuotaInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_Category" EntityType="Self.INV_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_Color" EntityType="Self.INV_Color" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_DelegationApprovalInfo" EntityType="Self.INV_DelegationApprovalInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_IssueInfo" EntityType="Self.INV_IssueInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_IssueItem" EntityType="Self.INV_IssueItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_IssueReturnInfo" EntityType="Self.INV_IssueReturnInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_IssueReturnItem" EntityType="Self.INV_IssueReturnItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_ItemInfo" EntityType="Self.INV_ItemInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_ItemStatus" EntityType="Self.INV_ItemStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_ItemType" EntityType="Self.INV_ItemType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_Manufacturer" EntityType="Self.INV_Manufacturer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_Model" EntityType="Self.INV_Model" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_PeriodicAssetDuration" EntityType="Self.INV_PeriodicAssetDuration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_PurchaseInfo" EntityType="Self.INV_PurchaseInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_PurchaseItem" EntityType="Self.INV_PurchaseItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_PurchaseType" EntityType="Self.INV_PurchaseType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_RequisitionInfo" EntityType="Self.INV_RequisitionInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_RequisitionItem" EntityType="Self.INV_RequisitionItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_ScrapInfo" EntityType="Self.INV_ScrapInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_ScrapItem" EntityType="Self.INV_ScrapItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_SupplierInfo" EntityType="Self.INV_SupplierInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_TransferInInfo" EntityType="Self.INV_TransferInInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_TransferInItem" EntityType="Self.INV_TransferInItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_TransferOutInfo" EntityType="Self.INV_TransferOutInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_TransferOutItem" EntityType="Self.INV_TransferOutItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INV_Unit" EntityType="Self.INV_Unit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRM_EmploymentInfo" EntityType="Self.PRM_EmploymentInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRM_ZoneInfo" EntityType="Self.PRM_ZoneInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CommonConfigType" EntityType="Self.CommonConfigType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CommonConfigType].[TableName] AS [TableName], 
+    [CommonConfigType].[DisplayName] AS [DisplayName], 
+    [CommonConfigType].[SortOrder] AS [SortOrder], 
+    [CommonConfigType].[ModuleId] AS [ModuleId]
+    FROM [dbo].[CommonConfigType] AS [CommonConfigType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="INV_ScrapItemHistory" EntityType="Self.INV_ScrapItemHistory" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [INV_ScrapItemHistory].[Id] AS [Id], 
+    [INV_ScrapItemHistory].[ScrapId] AS [ScrapId], 
+    [INV_ScrapItemHistory].[ScrapItemId] AS [ScrapItemId], 
+    [INV_ScrapItemHistory].[ItemId] AS [ItemId], 
+    [INV_ScrapItemHistory].[Quantity] AS [Quantity], 
+    [INV_ScrapItemHistory].[Comment] AS [Comment], 
+    [INV_ScrapItemHistory].[ItemStatusId] AS [ItemStatusId], 
+    [INV_ScrapItemHistory].[IUser] AS [IUser], 
+    [INV_ScrapItemHistory].[IDate] AS [IDate], 
+    [INV_ScrapItemHistory].[EUser] AS [EUser], 
+    [INV_ScrapItemHistory].[EDate] AS [EDate]
+    FROM [dbo].[INV_ScrapItemHistory] AS [INV_ScrapItemHistory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwINVBudgetHead" EntityType="Self.vwINVBudgetHead" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwINVBudgetHead].[Id] AS [Id], 
+    [vwINVBudgetHead].[AccountName] AS [AccountName]
+    FROM [dbo].[vwINVBudgetHead] AS [vwINVBudgetHead]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwINVItemHistory" EntityType="Self.vwINVItemHistory" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwINVItemHistory].[ItemId] AS [ItemId], 
+    [vwINVItemHistory].[ItemName] AS [ItemName], 
+    [vwINVItemHistory].[Date] AS [Date], 
+    [vwINVItemHistory].[Challan] AS [Challan], 
+    [vwINVItemHistory].[TransactionType] AS [TransactionType], 
+    [vwINVItemHistory].[InQuantity] AS [InQuantity], 
+    [vwINVItemHistory].[OutQuantity] AS [OutQuantity], 
+    [vwINVItemHistory].[ZoneInfoId] AS [ZoneInfoId], 
+    [vwINVItemHistory].[IDate] AS [IDate]
+    FROM [dbo].[vwINVItemHistory] AS [vwINVItemHistory]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_INV_AdjustmentInfo_PRM_EmploymentInfo" Association="Self.FK_INV_AdjustmentInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_AdjustmentInfo" EntitySet="INV_AdjustmentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AdjustmentInfo_PRM_EmploymentInfo1" Association="Self.FK_INV_AdjustmentInfo_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_AdjustmentInfo" EntitySet="INV_AdjustmentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AdjustmentInfo_PRM_ZoneInfo" Association="Self.FK_INV_AdjustmentInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_AdjustmentInfo" EntitySet="INV_AdjustmentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AdjustmentItem_INV_AdjustmentInfo" Association="Self.FK_INV_AdjustmentItem_INV_AdjustmentInfo">
+      <End Role="INV_AdjustmentInfo" EntitySet="INV_AdjustmentInfo" />
+      <End Role="INV_AdjustmentItem" EntitySet="INV_AdjustmentItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AdjustmentItem_INV_ItemInfo" Association="Self.FK_INV_AdjustmentItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_AdjustmentItem" EntitySet="INV_AdjustmentItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AdjustmentItem_INV_ItemStatus" Association="Self.FK_INV_AdjustmentItem_INV_ItemStatus">
+      <End Role="INV_ItemStatus" EntitySet="INV_ItemStatus" />
+      <End Role="INV_AdjustmentItem" EntitySet="INV_AdjustmentItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AssetQuotaInfo_INV_ItemInfo1" Association="Self.FK_INV_AssetQuotaInfo_INV_ItemInfo1">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_AssetQuotaInfo" EntitySet="INV_AssetQuotaInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AssetQuotaInfo_INV_Unit1" Association="Self.FK_INV_AssetQuotaInfo_INV_Unit1">
+      <End Role="INV_Unit" EntitySet="INV_Unit" />
+      <End Role="INV_AssetQuotaInfo" EntitySet="INV_AssetQuotaInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AssetQuotaInfo_PRM_ZoneInfo1" Association="Self.FK_INV_AssetQuotaInfo_PRM_ZoneInfo1">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_AssetQuotaInfo" EntitySet="INV_AssetQuotaInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_DelegationApprovalInfo_INV_ItemType" Association="Self.FK_INV_DelegationApprovalInfo_INV_ItemType">
+      <End Role="INV_ItemType" EntitySet="INV_ItemType" />
+      <End Role="INV_DelegationApprovalInfo" EntitySet="INV_DelegationApprovalInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_DelegationApprovalInfo_PRM_ZoneInfo" Association="Self.FK_INV_DelegationApprovalInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_DelegationApprovalInfo" EntitySet="INV_DelegationApprovalInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueInfo_INV_RequisitionInfo" Association="Self.FK_INV_IssueInfo_INV_RequisitionInfo">
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+      <End Role="INV_IssueInfo" EntitySet="INV_IssueInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueInfo_PRM_EmploymentInfo" Association="Self.FK_INV_IssueInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_IssueInfo" EntitySet="INV_IssueInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueInfo_PRM_EmploymentInfo1" Association="Self.FK_INV_IssueInfo_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_IssueInfo" EntitySet="INV_IssueInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueInfo_PRM_ZoneInfo" Association="Self.FK_INV_IssueInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_IssueInfo" EntitySet="INV_IssueInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueItem_INV_IssueInfo" Association="Self.FK_INV_IssueItem_INV_IssueInfo">
+      <End Role="INV_IssueInfo" EntitySet="INV_IssueInfo" />
+      <End Role="INV_IssueItem" EntitySet="INV_IssueItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueItem_INV_ItemInfo" Association="Self.FK_INV_IssueItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_IssueItem" EntitySet="INV_IssueItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueItem_INV_PurchaseInfo" Association="Self.FK_INV_IssueItem_INV_PurchaseInfo">
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+      <End Role="INV_IssueItem" EntitySet="INV_IssueItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnInfo_INV_ScrapInfo" Association="Self.FK_INV_IssueReturnInfo_INV_ScrapInfo">
+      <End Role="INV_ScrapInfo" EntitySet="INV_ScrapInfo" />
+      <End Role="INV_IssueReturnInfo" EntitySet="INV_IssueReturnInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnInfo_PRM_EmploymentInfo" Association="Self.FK_INV_IssueReturnInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_IssueReturnInfo" EntitySet="INV_IssueReturnInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnInfo_PRM_EmploymentInfo1" Association="Self.FK_INV_IssueReturnInfo_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_IssueReturnInfo" EntitySet="INV_IssueReturnInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnInfo_PRM_ZoneInfo" Association="Self.FK_INV_IssueReturnInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_IssueReturnInfo" EntitySet="INV_IssueReturnInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnItem_INV_IssueReturnInfo" Association="Self.FK_INV_IssueReturnItem_INV_IssueReturnInfo">
+      <End Role="INV_IssueReturnInfo" EntitySet="INV_IssueReturnInfo" />
+      <End Role="INV_IssueReturnItem" EntitySet="INV_IssueReturnItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnItem_INV_ItemInfo" Association="Self.FK_INV_IssueReturnItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_IssueReturnItem" EntitySet="INV_IssueReturnItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnItem_INV_ItemStatus" Association="Self.FK_INV_IssueReturnItem_INV_ItemStatus">
+      <End Role="INV_ItemStatus" EntitySet="INV_ItemStatus" />
+      <End Role="INV_IssueReturnItem" EntitySet="INV_IssueReturnItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_Category" Association="Self.FK_INV_ItemInfo_INV_Category">
+      <End Role="INV_Category" EntitySet="INV_Category" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_Color" Association="Self.FK_INV_ItemInfo_INV_Color">
+      <End Role="INV_Color" EntitySet="INV_Color" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_ItemType" Association="Self.FK_INV_ItemInfo_INV_ItemType">
+      <End Role="INV_ItemType" EntitySet="INV_ItemType" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_Manufacturer" Association="Self.FK_INV_ItemInfo_INV_Manufacturer">
+      <End Role="INV_Manufacturer" EntitySet="INV_Manufacturer" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_Model" Association="Self.FK_INV_ItemInfo_INV_Model">
+      <End Role="INV_Model" EntitySet="INV_Model" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_Unit" Association="Self.FK_INV_ItemInfo_INV_Unit">
+      <End Role="INV_Unit" EntitySet="INV_Unit" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemType_INV_ItemType" Association="Self.FK_INV_ItemType_INV_ItemType">
+      <End Role="INV_ItemType" EntitySet="INV_ItemType" />
+      <End Role="INV_ItemType1" EntitySet="INV_ItemType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PeriodicAssetDuration_INV_ItemInfo" Association="Self.FK_INV_PeriodicAssetDuration_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_PeriodicAssetDuration" EntitySet="INV_PeriodicAssetDuration" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseInfo_INV_PurchaseType" Association="Self.FK_INV_PurchaseInfo_INV_PurchaseType">
+      <End Role="INV_PurchaseType" EntitySet="INV_PurchaseType" />
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseInfo_INV_SupplierInfo" Association="Self.FK_INV_PurchaseInfo_INV_SupplierInfo">
+      <End Role="INV_SupplierInfo" EntitySet="INV_SupplierInfo" />
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseInfo_PRM_EmploymentInfo" Association="Self.FK_INV_PurchaseInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseInfo_PRM_ZoneInfo" Association="Self.FK_INV_PurchaseInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseItem_INV_ItemInfo" Association="Self.FK_INV_PurchaseItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_PurchaseItem" EntitySet="INV_PurchaseItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseItem_INV_PurchaseInfo" Association="Self.FK_INV_PurchaseItem_INV_PurchaseInfo">
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+      <End Role="INV_PurchaseItem" EntitySet="INV_PurchaseItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_RequisitionInfo_PRM_EmploymentInfo" Association="Self.FK_INV_RequisitionInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_RequisitionInfo_PRM_EmploymentInfo1" Association="Self.FK_INV_RequisitionInfo_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_RequisitionInfo_PRM_ZoneInfo" Association="Self.FK_INV_RequisitionInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_RequisitionItem_INV_ItemInfo" Association="Self.FK_INV_RequisitionItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_RequisitionItem" EntitySet="INV_RequisitionItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_RequisitionItem_INV_RequisitionInfo" Association="Self.FK_INV_RequisitionItem_INV_RequisitionInfo">
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+      <End Role="INV_RequisitionItem" EntitySet="INV_RequisitionItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ScrapInfo_PRM_EmploymentInfo" Association="Self.FK_INV_ScrapInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_ScrapInfo" EntitySet="INV_ScrapInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ScrapInfo_PRM_EmploymentInfo1" Association="Self.FK_INV_ScrapInfo_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_ScrapInfo" EntitySet="INV_ScrapInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ScrapInfo_PRM_ZoneInfo" Association="Self.FK_INV_ScrapInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_ScrapInfo" EntitySet="INV_ScrapInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ScrapItem_INV_ItemInfo" Association="Self.FK_INV_ScrapItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_ScrapItem" EntitySet="INV_ScrapItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ScrapItem_INV_ItemStatus" Association="Self.FK_INV_ScrapItem_INV_ItemStatus">
+      <End Role="INV_ItemStatus" EntitySet="INV_ItemStatus" />
+      <End Role="INV_ScrapItem" EntitySet="INV_ScrapItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ScrapItem_INV_ScrapInfo" Association="Self.FK_INV_ScrapItem_INV_ScrapInfo">
+      <End Role="INV_ScrapInfo" EntitySet="INV_ScrapInfo" />
+      <End Role="INV_ScrapItem" EntitySet="INV_ScrapItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInInfo_INV_TransferOutInfo" Association="Self.FK_INV_TransferInInfo_INV_TransferOutInfo">
+      <End Role="INV_TransferOutInfo" EntitySet="INV_TransferOutInfo" />
+      <End Role="INV_TransferInInfo" EntitySet="INV_TransferInInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInInfo_PRM_EmploymentInfo" Association="Self.FK_INV_TransferInInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_TransferInInfo" EntitySet="INV_TransferInInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInInfo_PRM_ZoneInfo" Association="Self.FK_INV_TransferInInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_TransferInInfo" EntitySet="INV_TransferInInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInInfo_PRM_ZoneInfo1" Association="Self.FK_INV_TransferInInfo_PRM_ZoneInfo1">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_TransferInInfo" EntitySet="INV_TransferInInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInItem_INV_ItemInfo" Association="Self.FK_INV_TransferInItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_TransferInItem" EntitySet="INV_TransferInItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInItem_INV_PurchaseInfo" Association="Self.FK_INV_TransferInItem_INV_PurchaseInfo">
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+      <End Role="INV_TransferInItem" EntitySet="INV_TransferInItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInItem_INV_TransferInInfo" Association="Self.FK_INV_TransferInItem_INV_TransferInInfo">
+      <End Role="INV_TransferInInfo" EntitySet="INV_TransferInInfo" />
+      <End Role="INV_TransferInItem" EntitySet="INV_TransferInItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutInfo_PRM_EmploymentInfo" Association="Self.FK_INV_TransferOutInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_TransferOutInfo" EntitySet="INV_TransferOutInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutInfo_PRM_ZoneInfo" Association="Self.FK_INV_TransferOutInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_TransferOutInfo" EntitySet="INV_TransferOutInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutInfo_PRM_ZoneInfo1" Association="Self.FK_INV_TransferOutInfo_PRM_ZoneInfo1">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_TransferOutInfo" EntitySet="INV_TransferOutInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutItem_INV_ItemInfo" Association="Self.FK_INV_TransferOutItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_TransferOutItem" EntitySet="INV_TransferOutItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutItem_INV_PurchaseInfo" Association="Self.FK_INV_TransferOutItem_INV_PurchaseInfo">
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+      <End Role="INV_TransferOutItem" EntitySet="INV_TransferOutItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutItem_INV_TransferOutInfo" Association="Self.FK_INV_TransferOutItem_INV_TransferOutInfo">
+      <End Role="INV_TransferOutInfo" EntitySet="INV_TransferOutInfo" />
+      <End Role="INV_TransferOutItem" EntitySet="INV_TransferOutItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRM_EmploymentInfo_PRM_ZoneInfo" Association="Self.FK_PRM_EmploymentInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="PRM_AcceptanceLetterInfo_PRM_EmploymentInfo" Association="Self.PRM_AcceptanceLetterInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,960 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BEPZA_MEDICAL.DAL.FAR.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="acc_Accounting_Period_Information">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="createdUserDate" Type="datetime" />
+    <Property Name="createdUserId" Type="nvarchar" MaxLength="255" />
+    <Property Name="updatedUserDate" Type="datetime" />
+    <Property Name="updatedUserId" Type="nvarchar" MaxLength="255" />
+    <Property Name="isActive" Type="bit" Nullable="false" />
+    <Property Name="isClosed" Type="bit" Nullable="false" />
+    <Property Name="periodEndDate" Type="datetime" Nullable="false" />
+    <Property Name="periodStartDate" Type="datetime" Nullable="false" />
+    <Property Name="yearName" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="fundControlInformation_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FAR_AccidentInformation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIxedAssetId" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="LocationId" Type="int" />
+    <Property Name="Driver" Type="varchar" MaxLength="150" />
+    <Property Name="Description" Type="varchar" MaxLength="350" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_AdditionalInfoofVehicle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIxedAssetId" Type="int" Nullable="false" />
+    <Property Name="SourceOfFundId" Type="int" />
+    <Property Name="Registration" Type="varchar" MaxLength="50" />
+    <Property Name="Chassis" Type="varchar" MaxLength="50" />
+    <Property Name="Engine" Type="varchar" MaxLength="50" />
+    <Property Name="CC" Type="varchar" MaxLength="50" />
+    <Property Name="Seats" Type="int" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="350" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_AdditionalInfoofVehicleDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdditionalInfoofVehicleId" Type="int" Nullable="false" />
+    <Property Name="SparePartInfoId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_AssetCondition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="AssetStatusId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_AssetMaintenanceInformation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIxedAssetId" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="MaintenanceTypeInfoId" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="350" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="500" />
+    <Property Name="Attachment" Type="varbinary(max)" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_AssetMaintenanceInformationDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AssetMaintenanceInfoId" Type="int" Nullable="false" />
+    <Property Name="SparePartInfoId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Rate" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_AssetStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_AssetTransfer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FixedAssetId" Type="int" Nullable="false" />
+    <Property Name="AssetStatusId" Type="int" Nullable="false" />
+    <Property Name="TransferDate" Type="date" Nullable="false" />
+    <Property Name="FromLocationId" Type="int" Nullable="false" />
+    <Property Name="ToLocationId" Type="int" Nullable="false" />
+    <Property Name="FromBeneficiaryEmployeeId" Type="int" />
+    <Property Name="ToBeneficiaryEmployeeId" Type="int" />
+    <Property Name="Accessories" Type="varchar" MaxLength="500" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="ExpectedDateOfReturn" Type="date" />
+    <Property Name="ReturnDate" Type="date" />
+    <Property Name="IssuedBy" Type="int" />
+    <Property Name="ReceivedBy" Type="int" />
+    <Property Name="ReturnBy" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ToZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="ToOrganogramLevelId" Type="int" />
+  </EntityType>
+  <EntityType Name="FAR_Catagory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CategoryCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MinimumCost" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="DepreciationMethodId" Type="int" Nullable="false" />
+    <Property Name="ReservedIDFrom" Type="bigint" Nullable="false" />
+    <Property Name="ReservedIDTo" Type="bigint" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_Depreciation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="FinYearName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FinYearStartDate" Type="datetime" Nullable="false" />
+    <Property Name="FinYearEndDate" Type="datetime" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProcessDate" Type="date" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_DepreciationDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepreciationId" Type="int" Nullable="false" />
+    <Property Name="FixedAssetId" Type="int" Nullable="false" />
+    <Property Name="AssetStatusId" Type="int" Nullable="false" />
+    <Property Name="AssetConditionId" Type="int" Nullable="false" />
+    <Property Name="DepreciationRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="AssetCost" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="OBBookValue" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="OBDepreciation" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Depreciation" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="CBDepreciation" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="CBBookValue" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_DepreciationMethod">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_FixedAsset">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemTypeId" Type="int" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="AssetType" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IsRefurbishment" Type="bit" Nullable="false" />
+    <Property Name="IsCalculateDepreciation" Type="bit" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="SubCategoryId" Type="int" Nullable="false" />
+    <Property Name="AssetCode" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="AssetName" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="DepreciationRate" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="AssetStatusId" Type="int" Nullable="false" />
+    <Property Name="AssetConditionId" Type="int" />
+    <Property Name="SupplierId" Type="int" Nullable="false" />
+    <Property Name="PurchaseDate" Type="date" Nullable="false" />
+    <Property Name="DepreciationEffectiveDate" Type="date" Nullable="false" />
+    <Property Name="AssetCost" Type="decimal" Precision="16" Scale="2" Nullable="false" />
+    <Property Name="OBDepreciation" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="OBBookValue" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="LocationId" Type="int" Nullable="false" />
+    <Property Name="BeneficiaryEmployeeId" Type="int" />
+    <Property Name="IsAllowDepreciationCal" Type="bit" Nullable="false" />
+    <Property Name="SerialNo" Type="varchar" MaxLength="100" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="OrganogramLevelId" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="PurchaseId" Type="int" />
+    <Property Name="ItemId" Type="int" />
+  </EntityType>
+  <EntityType Name="FAR_Location">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_MaintenanceTypeInformation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaintenanceType" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="IsPeriodicallyRepeating" Type="bit" Nullable="false" />
+    <Property Name="RedoAfter" Type="int" />
+    <Property Name="RedoType" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_Repair">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FixedAssetId" Type="int" Nullable="false" />
+    <Property Name="EffectiveDate" Type="date" Nullable="false" />
+    <Property Name="DepreciationRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="AssetStatusId" Type="int" Nullable="false" />
+    <Property Name="AssetConditionId" Type="int" />
+    <Property Name="CurrentBookValue" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="IsImpactWithDep" Type="bit" Nullable="false" />
+    <Property Name="RepairCost" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="AppreciatedCost" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="UpdatedBookValue" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="TotalCost" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_SaleDisposal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="strType" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="FixedAssetId" Type="int" Nullable="false" />
+    <Property Name="EffectiveDate" Type="date" Nullable="false" />
+    <Property Name="PreviousStatusId" Type="int" Nullable="false" />
+    <Property Name="PreviousConditionId" Type="int" />
+    <Property Name="AssetStatusId" Type="int" Nullable="false" />
+    <Property Name="AssetConditionId" Type="int" />
+    <Property Name="AssetCost" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="CurrentBookValue" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="AccumulatedDep" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="SalValue" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="CapitalGain" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_SparePartInformation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SparePart" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_SubCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubCategoryName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SubCategoryCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="DepreciationRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAR_Supplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_FAR_AccidentInformation_FAR_FixedAsset">
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="1" />
+    <End Role="FAR_AccidentInformation" Type="Self.FAR_AccidentInformation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_FixedAsset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AccidentInformation">
+        <PropertyRef Name="FIxedAssetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AdditionalInfoofVehicle_FAR_FixedAsset">
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="1" />
+    <End Role="FAR_AdditionalInfoofVehicle" Type="Self.FAR_AdditionalInfoofVehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_FixedAsset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AdditionalInfoofVehicle">
+        <PropertyRef Name="FIxedAssetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AdditionalInfoofVehicleDetail_FAR_AdditionalInfoofVehicle">
+    <End Role="FAR_AdditionalInfoofVehicle" Type="Self.FAR_AdditionalInfoofVehicle" Multiplicity="1" />
+    <End Role="FAR_AdditionalInfoofVehicleDetail" Type="Self.FAR_AdditionalInfoofVehicleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AdditionalInfoofVehicle">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AdditionalInfoofVehicleDetail">
+        <PropertyRef Name="AdditionalInfoofVehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AdditionalInfoofVehicleDetail_FAR_SparePartInformation">
+    <End Role="FAR_SparePartInformation" Type="Self.FAR_SparePartInformation" Multiplicity="1" />
+    <End Role="FAR_AdditionalInfoofVehicleDetail" Type="Self.FAR_AdditionalInfoofVehicleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_SparePartInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AdditionalInfoofVehicleDetail">
+        <PropertyRef Name="SparePartInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AssetCondition_FAR_AssetStatus">
+    <End Role="FAR_AssetStatus" Type="Self.FAR_AssetStatus" Multiplicity="1" />
+    <End Role="FAR_AssetCondition" Type="Self.FAR_AssetCondition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AssetCondition">
+        <PropertyRef Name="AssetStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AssetMaintenanceInformation_FAR_MaintenanceTypeInformation">
+    <End Role="FAR_MaintenanceTypeInformation" Type="Self.FAR_MaintenanceTypeInformation" Multiplicity="1" />
+    <End Role="FAR_AssetMaintenanceInformation" Type="Self.FAR_AssetMaintenanceInformation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_MaintenanceTypeInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AssetMaintenanceInformation">
+        <PropertyRef Name="MaintenanceTypeInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AssetMaintenanceInformationDetail_FAR_AssetMaintenanceInformation">
+    <End Role="FAR_AssetMaintenanceInformation" Type="Self.FAR_AssetMaintenanceInformation" Multiplicity="1" />
+    <End Role="FAR_AssetMaintenanceInformationDetail" Type="Self.FAR_AssetMaintenanceInformationDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetMaintenanceInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AssetMaintenanceInformationDetail">
+        <PropertyRef Name="AssetMaintenanceInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AssetMaintenanceInformationDetail_FAR_SparePartInformation">
+    <End Role="FAR_SparePartInformation" Type="Self.FAR_SparePartInformation" Multiplicity="1" />
+    <End Role="FAR_AssetMaintenanceInformationDetail" Type="Self.FAR_AssetMaintenanceInformationDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_SparePartInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AssetMaintenanceInformationDetail">
+        <PropertyRef Name="SparePartInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AssetTransfer_FAR_AssetStatus">
+    <End Role="FAR_AssetStatus" Type="Self.FAR_AssetStatus" Multiplicity="1" />
+    <End Role="FAR_AssetTransfer" Type="Self.FAR_AssetTransfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AssetTransfer">
+        <PropertyRef Name="AssetStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AssetTransfer_FAR_FixedAsset">
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="1" />
+    <End Role="FAR_AssetTransfer" Type="Self.FAR_AssetTransfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_FixedAsset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AssetTransfer">
+        <PropertyRef Name="FixedAssetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AssetTransfer_FAR_Location">
+    <End Role="FAR_Location" Type="Self.FAR_Location" Multiplicity="1" />
+    <End Role="FAR_AssetTransfer" Type="Self.FAR_AssetTransfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AssetTransfer">
+        <PropertyRef Name="FromLocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_AssetTransfer_FAR_Location1">
+    <End Role="FAR_Location" Type="Self.FAR_Location" Multiplicity="1" />
+    <End Role="FAR_AssetTransfer" Type="Self.FAR_AssetTransfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_AssetTransfer">
+        <PropertyRef Name="ToLocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_Catagory_FAR_DepreciationMethod">
+    <End Role="FAR_DepreciationMethod" Type="Self.FAR_DepreciationMethod" Multiplicity="1" />
+    <End Role="FAR_Catagory" Type="Self.FAR_Catagory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_DepreciationMethod">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_Catagory">
+        <PropertyRef Name="DepreciationMethodId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_Depreciation_acc_Accounting_Period_Information">
+    <End Role="acc_Accounting_Period_Information" Type="Self.acc_Accounting_Period_Information" Multiplicity="1" />
+    <End Role="FAR_Depreciation" Type="Self.FAR_Depreciation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="acc_Accounting_Period_Information">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FAR_Depreciation">
+        <PropertyRef Name="FinancialYearId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_DepreciationDetail_FAR_AssetCondition">
+    <End Role="FAR_AssetCondition" Type="Self.FAR_AssetCondition" Multiplicity="1" />
+    <End Role="FAR_DepreciationDetail" Type="Self.FAR_DepreciationDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetCondition">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_DepreciationDetail">
+        <PropertyRef Name="AssetConditionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_DepreciationDetail_FAR_AssetStatus">
+    <End Role="FAR_AssetStatus" Type="Self.FAR_AssetStatus" Multiplicity="1" />
+    <End Role="FAR_DepreciationDetail" Type="Self.FAR_DepreciationDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_DepreciationDetail">
+        <PropertyRef Name="AssetStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_DepreciationDetail_FAR_Depreciation">
+    <End Role="FAR_Depreciation" Type="Self.FAR_Depreciation" Multiplicity="1" />
+    <End Role="FAR_DepreciationDetail" Type="Self.FAR_DepreciationDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_Depreciation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_DepreciationDetail">
+        <PropertyRef Name="DepreciationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_DepreciationDetail_FAR_FixedAsset">
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="1" />
+    <End Role="FAR_DepreciationDetail" Type="Self.FAR_DepreciationDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_FixedAsset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_DepreciationDetail">
+        <PropertyRef Name="FixedAssetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_FixedAsset_FAR_AssetCondition">
+    <End Role="FAR_AssetCondition" Type="Self.FAR_AssetCondition" Multiplicity="0..1" />
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetCondition">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_FixedAsset">
+        <PropertyRef Name="AssetConditionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_FixedAsset_FAR_AssetStatus">
+    <End Role="FAR_AssetStatus" Type="Self.FAR_AssetStatus" Multiplicity="1" />
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_FixedAsset">
+        <PropertyRef Name="AssetStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_FixedAsset_FAR_Catagory">
+    <End Role="FAR_Catagory" Type="Self.FAR_Catagory" Multiplicity="1" />
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_Catagory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_FixedAsset">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_FixedAsset_FAR_Location">
+    <End Role="FAR_Location" Type="Self.FAR_Location" Multiplicity="1" />
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_FixedAsset">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_FixedAsset_FAR_SubCategory">
+    <End Role="FAR_SubCategory" Type="Self.FAR_SubCategory" Multiplicity="1" />
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_SubCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_FixedAsset">
+        <PropertyRef Name="SubCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_Repair_FAR_AssetCondition">
+    <End Role="FAR_AssetCondition" Type="Self.FAR_AssetCondition" Multiplicity="0..1" />
+    <End Role="FAR_Repair" Type="Self.FAR_Repair" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetCondition">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_Repair">
+        <PropertyRef Name="AssetConditionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_Repair_FAR_AssetStatus">
+    <End Role="FAR_AssetStatus" Type="Self.FAR_AssetStatus" Multiplicity="1" />
+    <End Role="FAR_Repair" Type="Self.FAR_Repair" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_Repair">
+        <PropertyRef Name="AssetStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_Repair_FAR_FixedAsset">
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="1" />
+    <End Role="FAR_Repair" Type="Self.FAR_Repair" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_FixedAsset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_Repair">
+        <PropertyRef Name="FixedAssetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_SaleDisposal_FAR_AssetCondition">
+    <End Role="FAR_AssetCondition" Type="Self.FAR_AssetCondition" Multiplicity="0..1" />
+    <End Role="FAR_SaleDisposal" Type="Self.FAR_SaleDisposal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetCondition">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_SaleDisposal">
+        <PropertyRef Name="AssetConditionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_SaleDisposal_FAR_AssetStatus">
+    <End Role="FAR_AssetStatus" Type="Self.FAR_AssetStatus" Multiplicity="1" />
+    <End Role="FAR_SaleDisposal" Type="Self.FAR_SaleDisposal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_AssetStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_SaleDisposal">
+        <PropertyRef Name="AssetStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_SaleDisposal_FAR_FixedAsset">
+    <End Role="FAR_FixedAsset" Type="Self.FAR_FixedAsset" Multiplicity="1" />
+    <End Role="FAR_SaleDisposal" Type="Self.FAR_SaleDisposal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_FixedAsset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_SaleDisposal">
+        <PropertyRef Name="FixedAssetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAR_SubCategory_FAR_Catagory">
+    <End Role="FAR_Catagory" Type="Self.FAR_Catagory" Multiplicity="1" />
+    <End Role="FAR_SubCategory" Type="Self.FAR_SubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAR_Catagory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAR_SubCategory">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="FAR_uspVoucherPosting" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FAR_AssetRegisterWithDepreciationCalRpt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="param_financialyYearId" Type="int" Mode="In" />
+    <Parameter Name="Option" Type="int" Mode="In" />
+    <Parameter Name="AssetCategoryId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FAR_AssetTransferHistoryRpt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FixedAssetId" Type="int" Mode="In" />
+    <Parameter Name="SubCategoryId" Type="int" Mode="In" />
+    <Parameter Name="ToLocationId" Type="int" Mode="In" />
+    <Parameter Name="ToBeneficiaryEmployeeId" Type="int" Mode="In" />
+    <Parameter Name="FromDate" Type="date" Mode="In" />
+    <Parameter Name="ToDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_FAR_FixedAssetRegisterRpt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="FixedAssetId" Type="int" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="SubCategoryId" Type="int" Mode="In" />
+    <Parameter Name="FromDate" Type="date" Mode="In" />
+    <Parameter Name="ToDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_FAR_FixedAssetScheduleRpt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="ItemTypeId" Type="int" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="FromDate" Type="date" Mode="In" />
+    <Parameter Name="ToDate" Type="date" Mode="In" />
+    <Parameter Name="RefurbishmentType" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_FAR_GetDepreciationByFixedAssetId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FixedAssetId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FAR_GetDepreciationStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FixedAssetId" Type="varchar" Mode="In" />
+    <Parameter Name="ProcessDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_FAR_GetNextFinancialYear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="param_financialYearId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FAR_GetUniqueMRRList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="param_ZoneInfoIdId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FAR_LocationWiseAssetListRpt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="ItemTypeId" Type="int" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="SubCategoryId" Type="int" Mode="In" />
+    <Parameter Name="LocationId" Type="int" Mode="In" />
+    <Parameter Name="StartPeriod" Type="date" Mode="In" />
+    <Parameter Name="EndPeriod" Type="date" Mode="In" />
+    <Parameter Name="BeneficiaryEmpID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_FAR_ProcDepreciationCal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZoneInfoId" Type="int" Mode="In" />
+    <Parameter Name="param_financialyYearId" Type="int" Mode="In" />
+    <Parameter Name="ProcessDate" Type="date" Mode="In" />
+    <Parameter Name="Remarks" Type="varchar" Mode="In" />
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="SP_FAR_ProcDepreciationCalRollback" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZoneInfoId" Type="int" Mode="In" />
+    <Parameter Name="param_depreId" Type="int" Mode="In" />
+    <Parameter Name="ProcessDate" Type="date" Mode="In" />
+    <Parameter Name="Remarks" Type="varchar" Mode="In" />
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="SP_FAR_ProcDepreciationCalRollbackIndividual" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ZonrInfoId" Type="int" Mode="In" />
+    <Parameter Name="DepreciationId" Type="int" Mode="In" />
+    <Parameter Name="DetailId" Type="int" Mode="In" />
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <EntityContainer Name="ERP_BEPZADALFARStoreContainer">
+    <EntitySet Name="acc_Accounting_Period_Information" EntityType="Self.acc_Accounting_Period_Information" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_AccidentInformation" EntityType="Self.FAR_AccidentInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_AdditionalInfoofVehicle" EntityType="Self.FAR_AdditionalInfoofVehicle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_AdditionalInfoofVehicleDetail" EntityType="Self.FAR_AdditionalInfoofVehicleDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_AssetCondition" EntityType="Self.FAR_AssetCondition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_AssetMaintenanceInformation" EntityType="Self.FAR_AssetMaintenanceInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_AssetMaintenanceInformationDetail" EntityType="Self.FAR_AssetMaintenanceInformationDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_AssetStatus" EntityType="Self.FAR_AssetStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_AssetTransfer" EntityType="Self.FAR_AssetTransfer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_Catagory" EntityType="Self.FAR_Catagory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_Depreciation" EntityType="Self.FAR_Depreciation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_DepreciationDetail" EntityType="Self.FAR_DepreciationDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_DepreciationMethod" EntityType="Self.FAR_DepreciationMethod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_FixedAsset" EntityType="Self.FAR_FixedAsset" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_Location" EntityType="Self.FAR_Location" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_MaintenanceTypeInformation" EntityType="Self.FAR_MaintenanceTypeInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_Repair" EntityType="Self.FAR_Repair" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_SaleDisposal" EntityType="Self.FAR_SaleDisposal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_SparePartInformation" EntityType="Self.FAR_SparePartInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_SubCategory" EntityType="Self.FAR_SubCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAR_Supplier" EntityType="Self.FAR_Supplier" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_FAR_AccidentInformation_FAR_FixedAsset" Association="Self.FK_FAR_AccidentInformation_FAR_FixedAsset">
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+      <End Role="FAR_AccidentInformation" EntitySet="FAR_AccidentInformation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AdditionalInfoofVehicle_FAR_FixedAsset" Association="Self.FK_FAR_AdditionalInfoofVehicle_FAR_FixedAsset">
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+      <End Role="FAR_AdditionalInfoofVehicle" EntitySet="FAR_AdditionalInfoofVehicle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AdditionalInfoofVehicleDetail_FAR_AdditionalInfoofVehicle" Association="Self.FK_FAR_AdditionalInfoofVehicleDetail_FAR_AdditionalInfoofVehicle">
+      <End Role="FAR_AdditionalInfoofVehicle" EntitySet="FAR_AdditionalInfoofVehicle" />
+      <End Role="FAR_AdditionalInfoofVehicleDetail" EntitySet="FAR_AdditionalInfoofVehicleDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AdditionalInfoofVehicleDetail_FAR_SparePartInformation" Association="Self.FK_FAR_AdditionalInfoofVehicleDetail_FAR_SparePartInformation">
+      <End Role="FAR_SparePartInformation" EntitySet="FAR_SparePartInformation" />
+      <End Role="FAR_AdditionalInfoofVehicleDetail" EntitySet="FAR_AdditionalInfoofVehicleDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AssetCondition_FAR_AssetStatus" Association="Self.FK_FAR_AssetCondition_FAR_AssetStatus">
+      <End Role="FAR_AssetStatus" EntitySet="FAR_AssetStatus" />
+      <End Role="FAR_AssetCondition" EntitySet="FAR_AssetCondition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AssetMaintenanceInformation_FAR_MaintenanceTypeInformation" Association="Self.FK_FAR_AssetMaintenanceInformation_FAR_MaintenanceTypeInformation">
+      <End Role="FAR_MaintenanceTypeInformation" EntitySet="FAR_MaintenanceTypeInformation" />
+      <End Role="FAR_AssetMaintenanceInformation" EntitySet="FAR_AssetMaintenanceInformation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AssetMaintenanceInformationDetail_FAR_AssetMaintenanceInformation" Association="Self.FK_FAR_AssetMaintenanceInformationDetail_FAR_AssetMaintenanceInformation">
+      <End Role="FAR_AssetMaintenanceInformation" EntitySet="FAR_AssetMaintenanceInformation" />
+      <End Role="FAR_AssetMaintenanceInformationDetail" EntitySet="FAR_AssetMaintenanceInformationDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AssetMaintenanceInformationDetail_FAR_SparePartInformation" Association="Self.FK_FAR_AssetMaintenanceInformationDetail_FAR_SparePartInformation">
+      <End Role="FAR_SparePartInformation" EntitySet="FAR_SparePartInformation" />
+      <End Role="FAR_AssetMaintenanceInformationDetail" EntitySet="FAR_AssetMaintenanceInformationDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AssetTransfer_FAR_AssetStatus" Association="Self.FK_FAR_AssetTransfer_FAR_AssetStatus">
+      <End Role="FAR_AssetStatus" EntitySet="FAR_AssetStatus" />
+      <End Role="FAR_AssetTransfer" EntitySet="FAR_AssetTransfer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AssetTransfer_FAR_FixedAsset" Association="Self.FK_FAR_AssetTransfer_FAR_FixedAsset">
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+      <End Role="FAR_AssetTransfer" EntitySet="FAR_AssetTransfer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AssetTransfer_FAR_Location" Association="Self.FK_FAR_AssetTransfer_FAR_Location">
+      <End Role="FAR_Location" EntitySet="FAR_Location" />
+      <End Role="FAR_AssetTransfer" EntitySet="FAR_AssetTransfer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_AssetTransfer_FAR_Location1" Association="Self.FK_FAR_AssetTransfer_FAR_Location1">
+      <End Role="FAR_Location" EntitySet="FAR_Location" />
+      <End Role="FAR_AssetTransfer" EntitySet="FAR_AssetTransfer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_Catagory_FAR_DepreciationMethod" Association="Self.FK_FAR_Catagory_FAR_DepreciationMethod">
+      <End Role="FAR_DepreciationMethod" EntitySet="FAR_DepreciationMethod" />
+      <End Role="FAR_Catagory" EntitySet="FAR_Catagory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_Depreciation_acc_Accounting_Period_Information" Association="Self.FK_FAR_Depreciation_acc_Accounting_Period_Information">
+      <End Role="acc_Accounting_Period_Information" EntitySet="acc_Accounting_Period_Information" />
+      <End Role="FAR_Depreciation" EntitySet="FAR_Depreciation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_DepreciationDetail_FAR_AssetCondition" Association="Self.FK_FAR_DepreciationDetail_FAR_AssetCondition">
+      <End Role="FAR_AssetCondition" EntitySet="FAR_AssetCondition" />
+      <End Role="FAR_DepreciationDetail" EntitySet="FAR_DepreciationDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_DepreciationDetail_FAR_AssetStatus" Association="Self.FK_FAR_DepreciationDetail_FAR_AssetStatus">
+      <End Role="FAR_AssetStatus" EntitySet="FAR_AssetStatus" />
+      <End Role="FAR_DepreciationDetail" EntitySet="FAR_DepreciationDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_DepreciationDetail_FAR_Depreciation" Association="Self.FK_FAR_DepreciationDetail_FAR_Depreciation">
+      <End Role="FAR_Depreciation" EntitySet="FAR_Depreciation" />
+      <End Role="FAR_DepreciationDetail" EntitySet="FAR_DepreciationDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_DepreciationDetail_FAR_FixedAsset" Association="Self.FK_FAR_DepreciationDetail_FAR_FixedAsset">
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+      <End Role="FAR_DepreciationDetail" EntitySet="FAR_DepreciationDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_FixedAsset_FAR_AssetCondition" Association="Self.FK_FAR_FixedAsset_FAR_AssetCondition">
+      <End Role="FAR_AssetCondition" EntitySet="FAR_AssetCondition" />
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_FixedAsset_FAR_AssetStatus" Association="Self.FK_FAR_FixedAsset_FAR_AssetStatus">
+      <End Role="FAR_AssetStatus" EntitySet="FAR_AssetStatus" />
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_FixedAsset_FAR_Catagory" Association="Self.FK_FAR_FixedAsset_FAR_Catagory">
+      <End Role="FAR_Catagory" EntitySet="FAR_Catagory" />
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_FixedAsset_FAR_Location" Association="Self.FK_FAR_FixedAsset_FAR_Location">
+      <End Role="FAR_Location" EntitySet="FAR_Location" />
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_FixedAsset_FAR_SubCategory" Association="Self.FK_FAR_FixedAsset_FAR_SubCategory">
+      <End Role="FAR_SubCategory" EntitySet="FAR_SubCategory" />
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_Repair_FAR_AssetCondition" Association="Self.FK_FAR_Repair_FAR_AssetCondition">
+      <End Role="FAR_AssetCondition" EntitySet="FAR_AssetCondition" />
+      <End Role="FAR_Repair" EntitySet="FAR_Repair" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_Repair_FAR_AssetStatus" Association="Self.FK_FAR_Repair_FAR_AssetStatus">
+      <End Role="FAR_AssetStatus" EntitySet="FAR_AssetStatus" />
+      <End Role="FAR_Repair" EntitySet="FAR_Repair" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_Repair_FAR_FixedAsset" Association="Self.FK_FAR_Repair_FAR_FixedAsset">
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+      <End Role="FAR_Repair" EntitySet="FAR_Repair" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_SaleDisposal_FAR_AssetCondition" Association="Self.FK_FAR_SaleDisposal_FAR_AssetCondition">
+      <End Role="FAR_AssetCondition" EntitySet="FAR_AssetCondition" />
+      <End Role="FAR_SaleDisposal" EntitySet="FAR_SaleDisposal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_SaleDisposal_FAR_AssetStatus" Association="Self.FK_FAR_SaleDisposal_FAR_AssetStatus">
+      <End Role="FAR_AssetStatus" EntitySet="FAR_AssetStatus" />
+      <End Role="FAR_SaleDisposal" EntitySet="FAR_SaleDisposal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_SaleDisposal_FAR_FixedAsset" Association="Self.FK_FAR_SaleDisposal_FAR_FixedAsset">
+      <End Role="FAR_FixedAsset" EntitySet="FAR_FixedAsset" />
+      <End Role="FAR_SaleDisposal" EntitySet="FAR_SaleDisposal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAR_SubCategory_FAR_Catagory" Association="Self.FK_FAR_SubCategory_FAR_Catagory">
+      <End Role="FAR_Catagory" EntitySet="FAR_Catagory" />
+      <End Role="FAR_SubCategory" EntitySet="FAR_SubCategory" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

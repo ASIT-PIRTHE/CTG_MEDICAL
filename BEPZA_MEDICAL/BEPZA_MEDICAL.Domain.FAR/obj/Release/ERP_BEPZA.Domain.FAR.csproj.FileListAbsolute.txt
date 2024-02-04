@@ -1,0 +1,36 @@
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.Domain.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.Domain.FAR.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.DAL.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.infrastructure.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\EntityFramework.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\LinqKit.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.DAL.FAR.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.infrastructure.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\EntityFramework.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Release\ERP_BEPZA.Domain.FAR.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Release\ERP_BEPZA.Domain.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Release\ERP_BEPZA.Domain.FAR.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.Domain.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.Domain.FAR.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.DAL.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.infrastructure.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\EntityFramework.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\LinqKit.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.DAL.FAR.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.infrastructure.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\EntityFramework.xml
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Release\ERP_BEPZA.Domain.FAR.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Release\ERP_BEPZA.Domain.FAR.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Release\ERP_BEPZA.Domain.FAR.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.Domain.FAR.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.Domain.FAR.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.DAL.FAR.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.infrastructure.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\EntityFramework.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\LinqKit.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.DAL.FAR.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\ERP_BEPZA.infrastructure.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\bin\Release\EntityFramework.xml
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Release\ERP_BEPZA.Domain.FAR.csprojResolveAssemblyReference.cache
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Release\ERP_BEPZA.Domain.FAR.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.Domain.FAR\obj\Release\ERP_BEPZA.Domain.FAR.pdb

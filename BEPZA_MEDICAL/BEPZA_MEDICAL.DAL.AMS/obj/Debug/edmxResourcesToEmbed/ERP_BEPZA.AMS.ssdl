@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="POMS_MPA_AMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AMS_AnsarDegree">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="InstituteName" Type="varchar" MaxLength="250" />
+    <Property Name="DegreeLevelId" Type="int" Nullable="false" />
+    <Property Name="UniversityAndBoardId" Type="int" Nullable="false" />
+    <Property Name="SubjectGroupId" Type="int" />
+    <Property Name="AcademicGradeId" Type="int" Nullable="false" />
+    <Property Name="DegreeCountryId" Type="int" Nullable="false" />
+    <Property Name="CGPA" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="Scale" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="YearOfPassing" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ObtainMarks" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="DegreeDuration" Type="decimal" Precision="4" Scale="2" />
+    <Property Name="SpecialAchievement" Type="varchar" MaxLength="200" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AMS_AnsarEmpInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BEPZAId" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="AnsarId" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="TitleId" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="MiddleName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="FullName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="FullNameBangla" Type="nvarchar" MaxLength="200" />
+    <Property Name="DesignationId" Type="int" />
+    <Property Name="DateofBirth" Type="datetime" />
+    <Property Name="AnsarJoiningDate" Type="datetime" />
+    <Property Name="DateofJoining" Type="datetime" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="Salary" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Gender" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ReligionId" Type="int" />
+    <Property Name="StatusId" Type="int" Nullable="false" />
+    <Property Name="InactiveDate" Type="datetime" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+    <Property Name="DistrictId" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="IsFinalized" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AMS_AnsarExperience">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="Organization1" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="OrganizationTypeId" Type="int" Nullable="false" />
+    <Property Name="FromDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="Responsibility" Type="varchar" MaxLength="200" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="Address" Type="varchar" MaxLength="200" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="AMS_AnsarPersonalInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="FatherName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="MotherName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PlaceofBirth" Type="varchar" MaxLength="50" />
+    <Property Name="CountryofBirthId" Type="int" Nullable="false" />
+    <Property Name="BloodGroupId" Type="int" />
+    <Property Name="NationalityId" Type="int" Nullable="false" />
+    <Property Name="NationalID" Type="varchar" MaxLength="20" />
+    <Property Name="MaritalStatusId" Type="int" Nullable="false" />
+    <Property Name="MarriageDate" Type="datetime" />
+    <Property Name="SpouseName" Type="varchar" MaxLength="100" />
+    <Property Name="Weight" Type="int" />
+    <Property Name="Hieght" Type="int" />
+    <Property Name="TIN" Type="varchar" MaxLength="20" />
+    <Property Name="PresentAddress1" Type="varchar" MaxLength="500" />
+    <Property Name="PresentAddress2" Type="varchar" MaxLength="500" />
+    <Property Name="PresentCountryId" Type="int" Nullable="false" />
+    <Property Name="PresentDistrictId" Type="int" Nullable="false" />
+    <Property Name="PresentThanaId" Type="int" />
+    <Property Name="PresentPostName" Type="varchar" MaxLength="50" />
+    <Property Name="PresentPostCode" Type="varchar" MaxLength="10" />
+    <Property Name="PresentPhone" Type="varchar" MaxLength="20" />
+    <Property Name="PresentMobNo" Type="varchar" MaxLength="20" />
+    <Property Name="PresentPhoneExtention" Type="varchar" MaxLength="10" />
+    <Property Name="PermanentAddress1" Type="varchar" MaxLength="500" />
+    <Property Name="PermanentAddress2" Type="varchar" MaxLength="500" />
+    <Property Name="PermanentCountryId" Type="int" Nullable="false" />
+    <Property Name="PermanentDistrictId" Type="int" Nullable="false" />
+    <Property Name="PermanentThanaId" Type="int" />
+    <Property Name="PermanentPostName" Type="varchar" MaxLength="50" />
+    <Property Name="PermanentPostCode" Type="varchar" MaxLength="10" />
+    <Property Name="PermanentMobNo" Type="varchar" MaxLength="20" />
+    <Property Name="PermanentPhone" Type="varchar" MaxLength="20" />
+    <Property Name="PermanentPhoneExtention" Type="varchar" MaxLength="10" />
+    <Property Name="FatherProfessionId" Type="int" />
+    <Property Name="MotherProfessionId" Type="int" />
+    <Property Name="IdentificationMark" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AMS_AnsarPhoto">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="PhotoSignature" Type="varbinary(max)" Nullable="false" />
+    <Property Name="IsPhoto" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AMS_AnsarServiceHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="ZoneId" Type="int" Nullable="false" />
+    <Property Name="PeriodFrom" Type="datetime" Nullable="false" />
+    <Property Name="PeriodTo" Type="datetime" />
+    <Property Name="Duration" Type="decimal" Precision="4" Scale="2" />
+    <Property Name="RemarkableWork" Type="nvarchar(max)" />
+    <Property Name="Comment" Type="varchar" MaxLength="200" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="DisciplinaryRecord" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AMS_AutoReminder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReminderTypeId" Type="int" Nullable="false" />
+    <Property Name="ReminderAfter" Type="decimal" Precision="4" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AMS_Blacklist">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="Reason" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="BlacklistedByEmpId" Type="int" Nullable="false" />
+    <Property Name="ApprovedByEmpId" Type="int" />
+    <Property Name="IsRevoked" Type="bit" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AMS_BlacklistRemoval">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BlacklistId" Type="int" Nullable="false" />
+    <Property Name="DateofRemoval" Type="datetime" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="RemovedByEmpId" Type="int" Nullable="false" />
+    <Property Name="ApprovedByEmpId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AMS_Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AMS_DesignationInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DesignationName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AMS_EmpStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="AMS_ReminderType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AMS_StayRule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="MaximumStay" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AMS_ZoneWiseQuota">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="Quota" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.CommonConfigType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CommonConfigType">
+    <Key>
+      <PropertyRef Name="TableName" />
+      <PropertyRef Name="DisplayName" />
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="TableName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRM_EmploymentInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="EmployeeInitial" Type="varchar" MaxLength="15" />
+    <Property Name="TitleId" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="MiddleName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="FullName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="FullNameBangla" Type="nvarchar" MaxLength="200" />
+    <Property Name="DateofJoining" Type="datetime" Nullable="false" />
+    <Property Name="ProvisionMonth" Type="int" Nullable="false" />
+    <Property Name="DateofConfirmation" Type="datetime" />
+    <Property Name="DateofPosition" Type="datetime" Nullable="false" />
+    <Property Name="DesignationId" Type="int" Nullable="false" />
+    <Property Name="StatusDesignationId" Type="int" />
+    <Property Name="DisciplineId" Type="int" />
+    <Property Name="DivisionId" Type="int" />
+    <Property Name="SectionId" Type="int" />
+    <Property Name="SubSectionId" Type="int" />
+    <Property Name="JobLocationId" Type="int" Nullable="false" />
+    <Property Name="ResourceLevelId" Type="int" />
+    <Property Name="StaffCategoryId" Type="int" Nullable="false" />
+    <Property Name="EmploymentTypeId" Type="int" Nullable="false" />
+    <Property Name="ReligionId" Type="int" Nullable="false" />
+    <Property Name="IsContractual" Type="bit" Nullable="false" />
+    <Property Name="OvertimeRate" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+    <Property Name="EmialAddress" Type="varchar" MaxLength="50" />
+    <Property Name="BankId" Type="int" />
+    <Property Name="BankBranchId" Type="int" />
+    <Property Name="BankAccountNo" Type="varchar" MaxLength="50" />
+    <Property Name="EmploymentStatusId" Type="int" Nullable="false" />
+    <Property Name="DateofInactive" Type="datetime" />
+    <Property Name="IsConsultant" Type="bit" Nullable="false" />
+    <Property Name="IsOvertimeEligible" Type="bit" Nullable="false" />
+    <Property Name="IsRefreshmentEligible" Type="bit" />
+    <Property Name="IsBonusEligible" Type="bit" Nullable="false" />
+    <Property Name="IsEligibleForCpf" Type="bit" />
+    <Property Name="IsGPFEligible" Type="bit" />
+    <Property Name="IsPensionEligible" Type="bit" Nullable="false" />
+    <Property Name="IsLeverageEligible" Type="bit" Nullable="false" />
+    <Property Name="IsGeneralShifted" Type="bit" Nullable="false" />
+    <Property Name="SalaryScaleId" Type="int" Nullable="false" />
+    <Property Name="JobGradeId" Type="int" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ContractExpireDate" Type="datetime" />
+    <Property Name="DateofBirth" Type="datetime" Nullable="false" />
+    <Property Name="ContractDuration" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="ContractType" Type="int" />
+    <Property Name="OrganogramLevelId" Type="int" Nullable="false" />
+    <Property Name="DateofAppointment" Type="datetime" Nullable="false" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="QuotaId" Type="int" />
+    <Property Name="EmployeeClassId" Type="int" />
+    <Property Name="EmploymentProcessId" Type="int" />
+    <Property Name="SeniorityPosition" Type="varchar" MaxLength="50" />
+    <Property Name="DateofSeniority" Type="datetime" />
+    <Property Name="PRLDate" Type="datetime" />
+    <Property Name="CardNo" Type="varchar" MaxLength="20" />
+    <Property Name="FingerPrintIdentiyNo" Type="varchar" MaxLength="50" />
+    <Property Name="AttendanceEffectiveDate" Type="datetime" />
+    <Property Name="AttendanceStatus" Type="bit" Nullable="false" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="TelephoneOffice" Type="varchar" MaxLength="50" />
+    <Property Name="Intercom" Type="varchar" MaxLength="50" />
+    <Property Name="HonoraryDegree" Type="nvarchar" MaxLength="150" />
+    <Property Name="TaxRegionId" Type="int" />
+    <Property Name="TaxAssesseeType" Type="tinyint" />
+    <Property Name="HavingChildWithDisability" Type="bit" />
+    <Property Name="DateofRetirement" Type="datetime" />
+    <Property Name="SalaryWithdrawFromZoneId" Type="int" />
+    <Property Name="RegionId" Type="int" />
+    <Property Name="ETIN" Type="nvarchar" MaxLength="20" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PRM_OrganizationType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PRM_ZoneInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZoneName" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ZoneNameInBengali" Type="nvarchar" MaxLength="200" />
+    <Property Name="ZoneCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="OrganogramCategoryTypeId" Type="int" Nullable="false" />
+    <Property Name="ZoneAddress" Type="varchar(max)" />
+    <Property Name="ZoneAddressInBengali" Type="nvarchar(max)" />
+    <Property Name="Prefix" Type="varchar" MaxLength="50" />
+    <Property Name="IsHeadOffice" Type="bit" Nullable="false" />
+    <Property Name="ZoneCodeForBillingSystem" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SMS_Organization">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SMS_SecurityInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="DateofPromotion" Type="datetime" />
+    <Property Name="ZoneInfoId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="InactiveDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SMS_SecurityServiceHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="SecurityInfoId" Type="int" Nullable="false" />
+    <Property Name="WorkZoneId" Type="int" Nullable="false" />
+    <Property Name="PeriodFrom" Type="datetime" Nullable="false" />
+    <Property Name="PeriodTo" Type="datetime" />
+    <Property Name="Duration" Type="decimal" Precision="4" Scale="2" />
+    <Property Name="DisciplineRecord" Type="nvarchar(max)" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" />
+    <Property Name="Is_Intelligence" Type="bit" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="Award" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwAMSAnsarEducationalQlfy' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwAMSAnsarEducationalQlfy">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="DegreeLevelId" />
+      <PropertyRef Name="UniversityAndBoardId" />
+      <PropertyRef Name="SubjectGroupId" />
+      <PropertyRef Name="AcademicGradeId" />
+      <PropertyRef Name="DegreeCountryId" />
+      <PropertyRef Name="YearOfPassing" />
+      <PropertyRef Name="IUser" />
+      <PropertyRef Name="IDate" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="InstituteName" Type="varchar" MaxLength="250" />
+    <Property Name="DegreeLevelId" Type="int" Nullable="false" />
+    <Property Name="UniversityAndBoardId" Type="int" Nullable="false" />
+    <Property Name="SubjectGroupId" Type="int" Nullable="false" />
+    <Property Name="AcademicGradeId" Type="int" Nullable="false" />
+    <Property Name="DegreeCountryId" Type="int" Nullable="false" />
+    <Property Name="CGPA" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="Scale" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="YearOfPassing" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ObtainMarks" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="DegreeDuration" Type="decimal" Precision="4" Scale="2" />
+    <Property Name="SpecialAchievement" Type="varchar" MaxLength="200" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ExamLevel" Type="varchar" MaxLength="100" />
+    <Property Name="SubjectGroup" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="AccademicGrade" Type="varchar" MaxLength="100" />
+    <Property Name="UniversityOrBorard" Type="varchar" MaxLength="100" />
+    <Property Name="Country" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_AMS_AnsarDegree_AMS_AnsarEmpInfo">
+    <End Role="AMS_AnsarEmpInfo" Type="Self.AMS_AnsarEmpInfo" Multiplicity="1" />
+    <End Role="AMS_AnsarDegree" Type="Self.AMS_AnsarDegree" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_AnsarEmpInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarDegree">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AnsarEmpInfo_AMS_Category">
+    <End Role="AMS_Category" Type="Self.AMS_Category" Multiplicity="1" />
+    <End Role="AMS_AnsarEmpInfo" Type="Self.AMS_AnsarEmpInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarEmpInfo">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AnsarEmpInfo_AMS_DesignationInfo">
+    <End Role="AMS_DesignationInfo" Type="Self.AMS_DesignationInfo" Multiplicity="0..1" />
+    <End Role="AMS_AnsarEmpInfo" Type="Self.AMS_AnsarEmpInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_DesignationInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarEmpInfo">
+        <PropertyRef Name="DesignationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AnsarEmpInfo_AMS_EmpStatus">
+    <End Role="AMS_EmpStatus" Type="Self.AMS_EmpStatus" Multiplicity="1" />
+    <End Role="AMS_AnsarEmpInfo" Type="Self.AMS_AnsarEmpInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_EmpStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarEmpInfo">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AnsarEmpInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="AMS_AnsarEmpInfo" Type="Self.AMS_AnsarEmpInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarEmpInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AnsarExperience_AMS_AnsarEmpInfo">
+    <End Role="AMS_AnsarEmpInfo" Type="Self.AMS_AnsarEmpInfo" Multiplicity="1" />
+    <End Role="AMS_AnsarExperience" Type="Self.AMS_AnsarExperience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_AnsarEmpInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarExperience">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AnsarExperience_PRM_OrganizationType">
+    <End Role="PRM_OrganizationType" Type="Self.PRM_OrganizationType" Multiplicity="1" />
+    <End Role="AMS_AnsarExperience" Type="Self.AMS_AnsarExperience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_OrganizationType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarExperience">
+        <PropertyRef Name="OrganizationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AnsarPersonalInfo_AMS_AnsarEmpInfo">
+    <End Role="AMS_AnsarEmpInfo" Type="Self.AMS_AnsarEmpInfo" Multiplicity="1" />
+    <End Role="AMS_AnsarPersonalInfo" Type="Self.AMS_AnsarPersonalInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_AnsarEmpInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarPersonalInfo">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AnsarPhoto_AMS_AnsarEmpInfo">
+    <End Role="AMS_AnsarEmpInfo" Type="Self.AMS_AnsarEmpInfo" Multiplicity="1" />
+    <End Role="AMS_AnsarPhoto" Type="Self.AMS_AnsarPhoto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_AnsarEmpInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarPhoto">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AnsarServiceHistory_AMS_AnsarEmpInfo">
+    <End Role="AMS_AnsarEmpInfo" Type="Self.AMS_AnsarEmpInfo" Multiplicity="1" />
+    <End Role="AMS_AnsarServiceHistory" Type="Self.AMS_AnsarServiceHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_AnsarEmpInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarServiceHistory">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AnsarServiceHistory_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="AMS_AnsarServiceHistory" Type="Self.AMS_AnsarServiceHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AnsarServiceHistory">
+        <PropertyRef Name="ZoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_AutoReminder_AMS_ReminderType">
+    <End Role="AMS_ReminderType" Type="Self.AMS_ReminderType" Multiplicity="1" />
+    <End Role="AMS_AutoReminder" Type="Self.AMS_AutoReminder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_ReminderType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_AutoReminder">
+        <PropertyRef Name="ReminderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_Blacklist_AMS_AnsarEmpInfo">
+    <End Role="AMS_AnsarEmpInfo" Type="Self.AMS_AnsarEmpInfo" Multiplicity="1" />
+    <End Role="AMS_Blacklist" Type="Self.AMS_Blacklist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_AnsarEmpInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_Blacklist">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_Blacklist_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="AMS_Blacklist" Type="Self.AMS_Blacklist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_Blacklist">
+        <PropertyRef Name="BlacklistedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_BlacklistRemoval_AMS_Blacklist">
+    <End Role="AMS_Blacklist" Type="Self.AMS_Blacklist" Multiplicity="1" />
+    <End Role="AMS_BlacklistRemoval" Type="Self.AMS_BlacklistRemoval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_Blacklist">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_BlacklistRemoval">
+        <PropertyRef Name="BlacklistId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_BlacklistRemoval_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="AMS_BlacklistRemoval" Type="Self.AMS_BlacklistRemoval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_BlacklistRemoval">
+        <PropertyRef Name="RemovedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_BlacklistRemoval_PRM_EmploymentInfo1">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="AMS_BlacklistRemoval" Type="Self.AMS_BlacklistRemoval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_BlacklistRemoval">
+        <PropertyRef Name="ApprovedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_StayRule_AMS_Category">
+    <End Role="AMS_Category" Type="Self.AMS_Category" Multiplicity="1" />
+    <End Role="AMS_StayRule" Type="Self.AMS_StayRule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_StayRule">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_ZoneWiseQuota_AMS_Category">
+    <End Role="AMS_Category" Type="Self.AMS_Category" Multiplicity="1" />
+    <End Role="AMS_ZoneWiseQuota" Type="Self.AMS_ZoneWiseQuota" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AMS_Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_ZoneWiseQuota">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AMS_ZoneWiseQuota_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="AMS_ZoneWiseQuota" Type="Self.AMS_ZoneWiseQuota" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AMS_ZoneWiseQuota">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRM_EmploymentInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PRM_EmploymentInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SMS_SecurityInfo_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="SMS_SecurityInfo" Type="Self.SMS_SecurityInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SMS_SecurityInfo">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SMS_SecurityInfo_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="SMS_SecurityInfo" Type="Self.SMS_SecurityInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SMS_SecurityInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SMS_SecurityServiceHistory_PRM_EmploymentInfo">
+    <End Role="PRM_EmploymentInfo" Type="Self.PRM_EmploymentInfo" Multiplicity="1" />
+    <End Role="SMS_SecurityServiceHistory" Type="Self.SMS_SecurityServiceHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SMS_SecurityServiceHistory">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SMS_SecurityServiceHistory_PRM_ZoneInfo">
+    <End Role="PRM_ZoneInfo" Type="Self.PRM_ZoneInfo" Multiplicity="1" />
+    <End Role="SMS_SecurityServiceHistory" Type="Self.SMS_SecurityServiceHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SMS_SecurityServiceHistory">
+        <PropertyRef Name="WorkZoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SMS_SecurityServiceHistory_SMS_SecurityInfo">
+    <End Role="SMS_SecurityInfo" Type="Self.SMS_SecurityInfo" Multiplicity="1" />
+    <End Role="SMS_SecurityServiceHistory" Type="Self.SMS_SecurityServiceHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SMS_SecurityInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SMS_SecurityServiceHistory">
+        <PropertyRef Name="SecurityInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fnGetDateDifference" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="nvarchar">
+    <Parameter Name="FromDate" Type="datetime" Mode="In" />
+    <Parameter Name="ToDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_AMS_GetServiceDuration" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FromDate" Type="datetime" Mode="In" />
+    <Parameter Name="ToDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_AMS_RptBlacklistedAnsarList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="DateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="DateTo" Type="datetime" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_AMS_RptCategoryWiseAnsarList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="StatusId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_AMS_RptEmployeeWiseAnsarDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_AMS_RptReminderLetter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="ReminderTypeId" Type="int" Mode="In" />
+    <Parameter Name="DateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="DateTo" Type="datetime" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_AMS_RptZoneWiseAnsarList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="StatusId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_SMS_RptAwardedOrPunishedSecurityPersonnelList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_SMS_RptOrganizationWiseSecurityPersonnelList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="OrgId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_SMS_RptSecurityPersonnelDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_SMS_RptSecurityPersonnelListWorkingInIntelligence" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_SMS_RptZoneWiseBroadSheet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="DesignationId" Type="int" Mode="In" />
+    <Parameter Name="DistrictId" Type="int" Mode="In" />
+    <Parameter Name="PunishmentId" Type="int" Mode="In" />
+    <Parameter Name="RewardId" Type="int" Mode="In" />
+    <Parameter Name="From" Type="decimal" Mode="In" />
+    <Parameter Name="To" Type="decimal" Mode="In" />
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="sp_SMS_RptZoneWiseSecurityPersonnelList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="zoneList" Type="varchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <EntityContainer Name="POMS_MPA_AMSModelStoreContainer">
+    <EntitySet Name="AMS_AnsarDegree" EntityType="Self.AMS_AnsarDegree" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_AnsarEmpInfo" EntityType="Self.AMS_AnsarEmpInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_AnsarExperience" EntityType="Self.AMS_AnsarExperience" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_AnsarPersonalInfo" EntityType="Self.AMS_AnsarPersonalInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_AnsarPhoto" EntityType="Self.AMS_AnsarPhoto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_AnsarServiceHistory" EntityType="Self.AMS_AnsarServiceHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_AutoReminder" EntityType="Self.AMS_AutoReminder" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_Blacklist" EntityType="Self.AMS_Blacklist" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_BlacklistRemoval" EntityType="Self.AMS_BlacklistRemoval" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_Category" EntityType="Self.AMS_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_DesignationInfo" EntityType="Self.AMS_DesignationInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_EmpStatus" EntityType="Self.AMS_EmpStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_ReminderType" EntityType="Self.AMS_ReminderType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_StayRule" EntityType="Self.AMS_StayRule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AMS_ZoneWiseQuota" EntityType="Self.AMS_ZoneWiseQuota" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRM_EmploymentInfo" EntityType="Self.PRM_EmploymentInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRM_OrganizationType" EntityType="Self.PRM_OrganizationType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRM_ZoneInfo" EntityType="Self.PRM_ZoneInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SMS_Organization" EntityType="Self.SMS_Organization" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SMS_SecurityInfo" EntityType="Self.SMS_SecurityInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SMS_SecurityServiceHistory" EntityType="Self.SMS_SecurityServiceHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CommonConfigType" EntityType="Self.CommonConfigType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CommonConfigType].[TableName] AS [TableName], 
+    [CommonConfigType].[DisplayName] AS [DisplayName], 
+    [CommonConfigType].[SortOrder] AS [SortOrder], 
+    [CommonConfigType].[ModuleId] AS [ModuleId]
+    FROM [dbo].[CommonConfigType] AS [CommonConfigType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwAMSAnsarEducationalQlfy" EntityType="Self.vwAMSAnsarEducationalQlfy" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwAMSAnsarEducationalQlfy].[Id] AS [Id], 
+    [vwAMSAnsarEducationalQlfy].[EmployeeId] AS [EmployeeId], 
+    [vwAMSAnsarEducationalQlfy].[InstituteName] AS [InstituteName], 
+    [vwAMSAnsarEducationalQlfy].[DegreeLevelId] AS [DegreeLevelId], 
+    [vwAMSAnsarEducationalQlfy].[UniversityAndBoardId] AS [UniversityAndBoardId], 
+    [vwAMSAnsarEducationalQlfy].[SubjectGroupId] AS [SubjectGroupId], 
+    [vwAMSAnsarEducationalQlfy].[AcademicGradeId] AS [AcademicGradeId], 
+    [vwAMSAnsarEducationalQlfy].[DegreeCountryId] AS [DegreeCountryId], 
+    [vwAMSAnsarEducationalQlfy].[CGPA] AS [CGPA], 
+    [vwAMSAnsarEducationalQlfy].[Scale] AS [Scale], 
+    [vwAMSAnsarEducationalQlfy].[YearOfPassing] AS [YearOfPassing], 
+    [vwAMSAnsarEducationalQlfy].[ObtainMarks] AS [ObtainMarks], 
+    [vwAMSAnsarEducationalQlfy].[DegreeDuration] AS [DegreeDuration], 
+    [vwAMSAnsarEducationalQlfy].[SpecialAchievement] AS [SpecialAchievement], 
+    [vwAMSAnsarEducationalQlfy].[IUser] AS [IUser], 
+    [vwAMSAnsarEducationalQlfy].[EUser] AS [EUser], 
+    [vwAMSAnsarEducationalQlfy].[IDate] AS [IDate], 
+    [vwAMSAnsarEducationalQlfy].[EDate] AS [EDate], 
+    [vwAMSAnsarEducationalQlfy].[ExamLevel] AS [ExamLevel], 
+    [vwAMSAnsarEducationalQlfy].[SubjectGroup] AS [SubjectGroup], 
+    [vwAMSAnsarEducationalQlfy].[AccademicGrade] AS [AccademicGrade], 
+    [vwAMSAnsarEducationalQlfy].[UniversityOrBorard] AS [UniversityOrBorard], 
+    [vwAMSAnsarEducationalQlfy].[Country] AS [Country]
+    FROM [dbo].[vwAMSAnsarEducationalQlfy] AS [vwAMSAnsarEducationalQlfy]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_AMS_AnsarDegree_AMS_AnsarEmpInfo" Association="Self.FK_AMS_AnsarDegree_AMS_AnsarEmpInfo">
+      <End Role="AMS_AnsarEmpInfo" EntitySet="AMS_AnsarEmpInfo" />
+      <End Role="AMS_AnsarDegree" EntitySet="AMS_AnsarDegree" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AnsarEmpInfo_AMS_Category" Association="Self.FK_AMS_AnsarEmpInfo_AMS_Category">
+      <End Role="AMS_Category" EntitySet="AMS_Category" />
+      <End Role="AMS_AnsarEmpInfo" EntitySet="AMS_AnsarEmpInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AnsarEmpInfo_AMS_DesignationInfo" Association="Self.FK_AMS_AnsarEmpInfo_AMS_DesignationInfo">
+      <End Role="AMS_DesignationInfo" EntitySet="AMS_DesignationInfo" />
+      <End Role="AMS_AnsarEmpInfo" EntitySet="AMS_AnsarEmpInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AnsarEmpInfo_AMS_EmpStatus" Association="Self.FK_AMS_AnsarEmpInfo_AMS_EmpStatus">
+      <End Role="AMS_EmpStatus" EntitySet="AMS_EmpStatus" />
+      <End Role="AMS_AnsarEmpInfo" EntitySet="AMS_AnsarEmpInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AnsarEmpInfo_PRM_ZoneInfo" Association="Self.FK_AMS_AnsarEmpInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="AMS_AnsarEmpInfo" EntitySet="AMS_AnsarEmpInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AnsarExperience_AMS_AnsarEmpInfo" Association="Self.FK_AMS_AnsarExperience_AMS_AnsarEmpInfo">
+      <End Role="AMS_AnsarEmpInfo" EntitySet="AMS_AnsarEmpInfo" />
+      <End Role="AMS_AnsarExperience" EntitySet="AMS_AnsarExperience" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AnsarExperience_PRM_OrganizationType" Association="Self.FK_AMS_AnsarExperience_PRM_OrganizationType">
+      <End Role="PRM_OrganizationType" EntitySet="PRM_OrganizationType" />
+      <End Role="AMS_AnsarExperience" EntitySet="AMS_AnsarExperience" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AnsarPersonalInfo_AMS_AnsarEmpInfo" Association="Self.FK_AMS_AnsarPersonalInfo_AMS_AnsarEmpInfo">
+      <End Role="AMS_AnsarEmpInfo" EntitySet="AMS_AnsarEmpInfo" />
+      <End Role="AMS_AnsarPersonalInfo" EntitySet="AMS_AnsarPersonalInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AnsarPhoto_AMS_AnsarEmpInfo" Association="Self.FK_AMS_AnsarPhoto_AMS_AnsarEmpInfo">
+      <End Role="AMS_AnsarEmpInfo" EntitySet="AMS_AnsarEmpInfo" />
+      <End Role="AMS_AnsarPhoto" EntitySet="AMS_AnsarPhoto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AnsarServiceHistory_AMS_AnsarEmpInfo" Association="Self.FK_AMS_AnsarServiceHistory_AMS_AnsarEmpInfo">
+      <End Role="AMS_AnsarEmpInfo" EntitySet="AMS_AnsarEmpInfo" />
+      <End Role="AMS_AnsarServiceHistory" EntitySet="AMS_AnsarServiceHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AnsarServiceHistory_PRM_ZoneInfo" Association="Self.FK_AMS_AnsarServiceHistory_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="AMS_AnsarServiceHistory" EntitySet="AMS_AnsarServiceHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_AutoReminder_AMS_ReminderType" Association="Self.FK_AMS_AutoReminder_AMS_ReminderType">
+      <End Role="AMS_ReminderType" EntitySet="AMS_ReminderType" />
+      <End Role="AMS_AutoReminder" EntitySet="AMS_AutoReminder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_Blacklist_AMS_AnsarEmpInfo" Association="Self.FK_AMS_Blacklist_AMS_AnsarEmpInfo">
+      <End Role="AMS_AnsarEmpInfo" EntitySet="AMS_AnsarEmpInfo" />
+      <End Role="AMS_Blacklist" EntitySet="AMS_Blacklist" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_Blacklist_PRM_EmploymentInfo" Association="Self.FK_AMS_Blacklist_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="AMS_Blacklist" EntitySet="AMS_Blacklist" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_BlacklistRemoval_AMS_Blacklist" Association="Self.FK_AMS_BlacklistRemoval_AMS_Blacklist">
+      <End Role="AMS_Blacklist" EntitySet="AMS_Blacklist" />
+      <End Role="AMS_BlacklistRemoval" EntitySet="AMS_BlacklistRemoval" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_BlacklistRemoval_PRM_EmploymentInfo" Association="Self.FK_AMS_BlacklistRemoval_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="AMS_BlacklistRemoval" EntitySet="AMS_BlacklistRemoval" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_BlacklistRemoval_PRM_EmploymentInfo1" Association="Self.FK_AMS_BlacklistRemoval_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="AMS_BlacklistRemoval" EntitySet="AMS_BlacklistRemoval" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_StayRule_AMS_Category" Association="Self.FK_AMS_StayRule_AMS_Category">
+      <End Role="AMS_Category" EntitySet="AMS_Category" />
+      <End Role="AMS_StayRule" EntitySet="AMS_StayRule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_ZoneWiseQuota_AMS_Category" Association="Self.FK_AMS_ZoneWiseQuota_AMS_Category">
+      <End Role="AMS_Category" EntitySet="AMS_Category" />
+      <End Role="AMS_ZoneWiseQuota" EntitySet="AMS_ZoneWiseQuota" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AMS_ZoneWiseQuota_PRM_ZoneInfo" Association="Self.FK_AMS_ZoneWiseQuota_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="AMS_ZoneWiseQuota" EntitySet="AMS_ZoneWiseQuota" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRM_EmploymentInfo_PRM_ZoneInfo" Association="Self.FK_PRM_EmploymentInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SMS_SecurityInfo_PRM_EmploymentInfo" Association="Self.FK_SMS_SecurityInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="SMS_SecurityInfo" EntitySet="SMS_SecurityInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SMS_SecurityInfo_PRM_ZoneInfo" Association="Self.FK_SMS_SecurityInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="SMS_SecurityInfo" EntitySet="SMS_SecurityInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SMS_SecurityServiceHistory_PRM_EmploymentInfo" Association="Self.FK_SMS_SecurityServiceHistory_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="SMS_SecurityServiceHistory" EntitySet="SMS_SecurityServiceHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SMS_SecurityServiceHistory_PRM_ZoneInfo" Association="Self.FK_SMS_SecurityServiceHistory_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="SMS_SecurityServiceHistory" EntitySet="SMS_SecurityServiceHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SMS_SecurityServiceHistory_SMS_SecurityInfo" Association="Self.FK_SMS_SecurityServiceHistory_SMS_SecurityInfo">
+      <End Role="SMS_SecurityInfo" EntitySet="SMS_SecurityInfo" />
+      <End Role="SMS_SecurityServiceHistory" EntitySet="SMS_SecurityServiceHistory" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

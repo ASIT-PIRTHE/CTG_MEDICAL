@@ -1,0 +1,1233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERP_BEPZADALCPFStoreContainer" CdmEntityContainer="ERP_BEPZACPFEntities">
+    <EntitySetMapping Name="CPF_AccountHeadCategory">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_AccountHeadCategory">
+        <MappingFragment StoreEntitySet="CPF_AccountHeadCategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_BankAccountInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_BankAccountInfo">
+        <MappingFragment StoreEntitySet="CPF_BankAccountInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_ContributionRateSetup">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_ContributionRateSetup">
+        <MappingFragment StoreEntitySet="CPF_ContributionRateSetup">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="OfficeContributionRate" ColumnName="OfficeContributionRate" />
+          <ScalarProperty Name="OwnContributionRate" ColumnName="OwnContributionRate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_DocumentType">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_DocumentType">
+        <MappingFragment StoreEntitySet="CPF_DocumentType">
+          <ScalarProperty Name="PrimaryKeyColumnName" ColumnName="PrimaryKeyColumnName" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_ForfeitedRule">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_ForfeitedRule">
+        <MappingFragment StoreEntitySet="CPF_ForfeitedRule">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ForfeitedRate" ColumnName="ForfeitedRate" />
+          <ScalarProperty Name="ToServiceLength" ColumnName="ToServiceLength" />
+          <ScalarProperty Name="FromServiceLength" ColumnName="FromServiceLength" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_GratuityInterestRate">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GratuityInterestRate">
+        <MappingFragment StoreEntitySet="CPF_GratuityInterestRate">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_LoanPolicy">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_LoanPolicy">
+        <MappingFragment StoreEntitySet="CPF_LoanPolicy">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="RfMinServiceYear" ColumnName="RfMinServiceYear" />
+          <ScalarProperty Name="RfMaxConcurrentLoan" ColumnName="RfMaxConcurrentLoan" />
+          <ScalarProperty Name="IsRfInstallmentAddedWithBalance" ColumnName="IsRfInstallmentAddedWithBalance" />
+          <ScalarProperty Name="IsRfDeductFromBalance" ColumnName="IsRfDeductFromBalance" />
+          <ScalarProperty Name="RfApplicableFor" ColumnName="RfApplicableFor" />
+          <ScalarProperty Name="RfLoanPercentage" ColumnName="RfLoanPercentage" />
+          <ScalarProperty Name="NRfMinimumAge" ColumnName="NRfMinimumAge" />
+          <ScalarProperty Name="NRfApplicableFor" ColumnName="NRfApplicableFor" />
+          <ScalarProperty Name="NRfLoanPercentage" ColumnName="NRfLoanPercentage" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="LoanPolicyFor" ColumnName="LoanPolicyFor" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_MemberNominee">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_MemberNominee">
+        <MappingFragment StoreEntitySet="CPF_MemberNominee">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="FileExtension" ColumnName="FileExtension" />
+          <ScalarProperty Name="Photograph" ColumnName="Photograph" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="GuardianAddress" ColumnName="GuardianAddress" />
+          <ScalarProperty Name="GuardianName" ColumnName="GuardianName" />
+          <ScalarProperty Name="PercentOfShare" ColumnName="PercentOfShare" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Relationship" ColumnName="Relationship" />
+          <ScalarProperty Name="NomineeAddress" ColumnName="NomineeAddress" />
+          <ScalarProperty Name="NomineeName" ColumnName="NomineeName" />
+          <ScalarProperty Name="MembershipId" ColumnName="MembershipId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_PaymentType">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_PaymentType">
+        <MappingFragment StoreEntitySet="CPF_PaymentType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_ProfitDistributionDetail">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_ProfitDistributionDetail">
+        <MappingFragment StoreEntitySet="CPF_ProfitDistributionDetail">
+          <ScalarProperty Name="ComClosingBalanceProfit" ColumnName="ComClosingBalanceProfit" />
+          <ScalarProperty Name="ComProfitOpening" ColumnName="ComProfitOpening" />
+          <ScalarProperty Name="EmpClosingBalanceProfit" ColumnName="EmpClosingBalanceProfit" />
+          <ScalarProperty Name="EmpProfitOpening" ColumnName="EmpProfitOpening" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="TotalBalance" ColumnName="TotalBalance" />
+          <ScalarProperty Name="ComClosingBalance" ColumnName="ComClosingBalance" />
+          <ScalarProperty Name="ComForfeitedAmount" ColumnName="ComForfeitedAmount" />
+          <ScalarProperty Name="ComFinalPayment" ColumnName="ComFinalPayment" />
+          <ScalarProperty Name="ComWithdrawnInPeriod" ColumnName="ComWithdrawnInPeriod" />
+          <ScalarProperty Name="ComProfitInPeriod" ColumnName="ComProfitInPeriod" />
+          <ScalarProperty Name="ComContributionInPeriod" ColumnName="ComContributionInPeriod" />
+          <ScalarProperty Name="ComOpening" ColumnName="ComOpening" />
+          <ScalarProperty Name="EmpClosingBalance" ColumnName="EmpClosingBalance" />
+          <ScalarProperty Name="EmpFinalPayment" ColumnName="EmpFinalPayment" />
+          <ScalarProperty Name="EmpWithdrawnInPeriod" ColumnName="EmpWithdrawnInPeriod" />
+          <ScalarProperty Name="EmpProfitInPeriod" ColumnName="EmpProfitInPeriod" />
+          <ScalarProperty Name="EmpContributionInPeriod" ColumnName="EmpContributionInPeriod" />
+          <ScalarProperty Name="EmpOpening" ColumnName="EmpOpening" />
+          <ScalarProperty Name="MembershipId" ColumnName="MembershipId" />
+          <ScalarProperty Name="ProfitDistributionId" ColumnName="ProfitDistributionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_SpecialParameter">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_SpecialParameter">
+        <MappingFragment StoreEntitySet="CPF_SpecialParameter">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="LoanInterestRate" ColumnName="LoanInterestRate" />
+          <ScalarProperty Name="OutgoingMemProfitRate" ColumnName="OutgoingMemProfitRate" />
+          <ScalarProperty Name="WithdrawalCRHeadId" ColumnName="WithdrawalCRHeadId" />
+          <ScalarProperty Name="WithdrawalDRHeadId" ColumnName="WithdrawalDRHeadId" />
+          <ScalarProperty Name="OutgoingMemIntCRHeadId" ColumnName="OutgoingMemIntCRHeadId" />
+          <ScalarProperty Name="OutgoingMemIntDRHeadId" ColumnName="OutgoingMemIntDRHeadId" />
+          <ScalarProperty Name="ComProfitCRHeadId" ColumnName="ComProfitCRHeadId" />
+          <ScalarProperty Name="ComProfitDRHeadId" ColumnName="ComProfitDRHeadId" />
+          <ScalarProperty Name="EmpProfitCRHeadId" ColumnName="EmpProfitCRHeadId" />
+          <ScalarProperty Name="EmpProfitDRHeadId" ColumnName="EmpProfitDRHeadId" />
+          <ScalarProperty Name="ComCoreContCRHeadId" ColumnName="ComCoreContCRHeadId" />
+          <ScalarProperty Name="ComCoreContDRHeadId" ColumnName="ComCoreContDRHeadId" />
+          <ScalarProperty Name="EmpCoreContCRHeadId" ColumnName="EmpCoreContCRHeadId" />
+          <ScalarProperty Name="EmpCoreContDRHeadId" ColumnName="EmpCoreContDRHeadId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommonConfigTypes">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CommonConfigType">
+        <MappingFragment StoreEntitySet="CommonConfigType">
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CommonConfigTypeDML" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CommonConfigTypeDML" />
+    <FunctionImportMapping FunctionImportName="CPF_GetMyLoanStatus" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetMyLoanStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.GetMyLoanStatusResult">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="BalanceOn" ColumnName="BalanceOn" />
+          <ScalarProperty Name="MembershipLength" ColumnName="MembershipLength" />
+          <ScalarProperty Name="EmployeeInitial" ColumnName="EmployeeInitial" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="LoanNo" ColumnName="LoanNo" />
+          <ScalarProperty Name="LoanDate" ColumnName="LoanDate" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="NoOfInstallmentPrincipal" ColumnName="NoOfInstallmentPrincipal" />
+          <ScalarProperty Name="NoOfInstallmentInterest" ColumnName="NoOfInstallmentInterest" />
+          <ScalarProperty Name="TotalNoOfInstallment" ColumnName="TotalNoOfInstallment" />
+          <ScalarProperty Name="TotalRepayment" ColumnName="TotalRepayment" />
+          <ScalarProperty Name="RepaymentDate" ColumnName="RepaymentDate" />
+          <ScalarProperty Name="PrincipalInstallment" ColumnName="PrincipalInstallment" />
+          <ScalarProperty Name="InterestInstallment" ColumnName="InterestInstallment" />
+          <ScalarProperty Name="RepaymentEndDate" ColumnName="RepaymentEndDate" />
+          <ScalarProperty Name="LoanIDMaster" ColumnName="LoanIDMaster" />
+          <ScalarProperty Name="PaidInstallmentAmount" ColumnName="PaidInstallmentAmount" />
+          <ScalarProperty Name="NoOfPaidInstallment" ColumnName="NoOfPaidInstallment" />
+          <ScalarProperty Name="LoanId" ColumnName="LoanId" />
+          <ScalarProperty Name="UnpaidInstallmentAmount" ColumnName="UnpaidInstallmentAmount" />
+          <ScalarProperty Name="NoOfUnPaidInstallment" ColumnName="NoOfUnPaidInstallment" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_procGetBalanceScheet" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_procGetBalanceScheet" />
+    <FunctionImportMapping FunctionImportName="CPF_procGetIncomeExpenditure" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_procGetIncomeExpenditure" />
+    <FunctionImportMapping FunctionImportName="CPF_procGetTrialBalance" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_procGetTrialBalance" />
+    <FunctionImportMapping FunctionImportName="CPF_procProfitDistributionRollbackIndividual" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_procProfitDistributionRollbackIndividual" />
+    <FunctionImportMapping FunctionImportName="CPF_AdvanceRefundRealized" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_AdvanceRefundRealized" />
+    <FunctionImportMapping FunctionImportName="CPF_AvailableInvAccrualStepNo" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_AvailableInvAccrualStepNo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_AvailableInvAccrualStepNo_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StepNo" ColumnName="StepNo" />
+          <ScalarProperty Name="InvestmentDetailId" ColumnName="InvestmentDetailId" />
+          <ScalarProperty Name="InvestmentId" ColumnName="InvestmentId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_BalanceSheetByLevel" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_BalanceSheetByLevel" />
+    <FunctionImportMapping FunctionImportName="CPF_EmployeeCPF_WF_FundStatus" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_EmployeeCPF_WF_FundStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_EmployeeCPF_WF_FundStatus_Result">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="PFOwnContribution" ColumnName="PFOwnContribution" />
+          <ScalarProperty Name="PFOfficeContribution" ColumnName="PFOfficeContribution" />
+          <ScalarProperty Name="GrantedLoanAmount" ColumnName="GrantedLoanAmount" />
+          <ScalarProperty Name="TotalInstallment" ColumnName="TotalInstallment" />
+          <ScalarProperty Name="TotalOwnContributionBalance" ColumnName="TotalOwnContributionBalance" />
+          <ScalarProperty Name="TotalOfficeContributionBalance" ColumnName="TotalOfficeContributionBalance" />
+          <ScalarProperty Name="DateUpTo" ColumnName="DateUpTo" />
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="PfMembershipDate" ColumnName="PfMembershipDate" />
+          <ScalarProperty Name="WfMembershipId" ColumnName="WfMembershipId" />
+          <ScalarProperty Name="DateOfMembership" ColumnName="DateOfMembership" />
+          <ScalarProperty Name="DepositUpTo" ColumnName="DepositUpTo" />
+          <ScalarProperty Name="WfBalance" ColumnName="WfBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetChartOfAccount" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetChartOfAccount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetChartOfAccount_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AccountHeadCode" ColumnName="AccountHeadCode" />
+          <ScalarProperty Name="AccountHeadName" ColumnName="AccountHeadName" />
+          <ScalarProperty Name="AccountHeadType" ColumnName="AccountHeadType" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="IsPostingAccount" ColumnName="IsPostingAccount" />
+          <ScalarProperty Name="strLevel" ColumnName="strLevel" />
+          <ScalarProperty Name="strPath" ColumnName="strPath" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetDebitCreditBankReconciliation" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetDebitCreditBankReconciliation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.GetDebitOrCredit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VoucherNo" ColumnName="VoucherNo" />
+          <ScalarProperty Name="Payee" ColumnName="Payee" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="ChequeDate" ColumnName="ChequeDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetDesignationList" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetDesignationList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetDesignationList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetDivisionUnit" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetDivisionUnit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetDivisionUnit_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetJobGradeList" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetJobGradeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetJobGradeList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GradeName" ColumnName="GradeName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetLevelOfCOA" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetLevelOfCOA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetLevelOfCOA_Result">
+          <ScalarProperty Name="LevelNo" ColumnName="LevelNo" />
+          <ScalarProperty Name="LevelName" ColumnName="LevelName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetLoanPolicy" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetLoanPolicy">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetLoanPolicy_Result">
+          <ScalarProperty Name="LoanPolicyFor" ColumnName="LoanPolicyFor" />
+          <ScalarProperty Name="NRfLoanPercentage" ColumnName="NRfLoanPercentage" />
+          <ScalarProperty Name="NRfApplicableFor" ColumnName="NRfApplicableFor" />
+          <ScalarProperty Name="NRfMinimumAge" ColumnName="NRfMinimumAge" />
+          <ScalarProperty Name="RfLoanPercentage" ColumnName="RfLoanPercentage" />
+          <ScalarProperty Name="RfApplicableFor" ColumnName="RfApplicableFor" />
+          <ScalarProperty Name="IsRfDeductFromBalance" ColumnName="IsRfDeductFromBalance" />
+          <ScalarProperty Name="IsRfInstallmentAddedWithBalance" ColumnName="IsRfInstallmentAddedWithBalance" />
+          <ScalarProperty Name="RfMaxConcurrentLoan" ColumnName="RfMaxConcurrentLoan" />
+          <ScalarProperty Name="RfMinServiceYear" ColumnName="RfMinServiceYear" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetPFYearList" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetPFYearList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetPFYearList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CPFPeriod" ColumnName="CPFPeriod" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetTestName" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetTestName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetTestName_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmployeeInitial" ColumnName="EmployeeInitial" />
+          <ScalarProperty Name="TitleId" ColumnName="TitleId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="FullNameBangla" ColumnName="FullNameBangla" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="ProvisionMonth" ColumnName="ProvisionMonth" />
+          <ScalarProperty Name="DateofConfirmation" ColumnName="DateofConfirmation" />
+          <ScalarProperty Name="DateofPosition" ColumnName="DateofPosition" />
+          <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+          <ScalarProperty Name="StatusDesignationId" ColumnName="StatusDesignationId" />
+          <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="SectionId" ColumnName="SectionId" />
+          <ScalarProperty Name="SubSectionId" ColumnName="SubSectionId" />
+          <ScalarProperty Name="JobLocationId" ColumnName="JobLocationId" />
+          <ScalarProperty Name="ResourceLevelId" ColumnName="ResourceLevelId" />
+          <ScalarProperty Name="StaffCategoryId" ColumnName="StaffCategoryId" />
+          <ScalarProperty Name="EmploymentTypeId" ColumnName="EmploymentTypeId" />
+          <ScalarProperty Name="ReligionId" ColumnName="ReligionId" />
+          <ScalarProperty Name="IsContractual" ColumnName="IsContractual" />
+          <ScalarProperty Name="IsConsultant" ColumnName="IsConsultant" />
+          <ScalarProperty Name="IsOvertimeEligible" ColumnName="IsOvertimeEligible" />
+          <ScalarProperty Name="OvertimeRate" ColumnName="OvertimeRate" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="EmialAddress" ColumnName="EmialAddress" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="BankBranchId" ColumnName="BankBranchId" />
+          <ScalarProperty Name="BankAccountNo" ColumnName="BankAccountNo" />
+          <ScalarProperty Name="EmploymentStatusId" ColumnName="EmploymentStatusId" />
+          <ScalarProperty Name="DateofInactive" ColumnName="DateofInactive" />
+          <ScalarProperty Name="IsBonusEligible" ColumnName="IsBonusEligible" />
+          <ScalarProperty Name="SalaryScaleId" ColumnName="SalaryScaleId" />
+          <ScalarProperty Name="JobGradeId" ColumnName="JobGradeId" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="ContractExpireDate" ColumnName="ContractExpireDate" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="ContractDuration" ColumnName="ContractDuration" />
+          <ScalarProperty Name="ContractType" ColumnName="ContractType" />
+          <ScalarProperty Name="OrganogramLevelId" ColumnName="OrganogramLevelId" />
+          <ScalarProperty Name="DateofAppointment" ColumnName="DateofAppointment" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="QuotaId" ColumnName="QuotaId" />
+          <ScalarProperty Name="EmployeeClassId" ColumnName="EmployeeClassId" />
+          <ScalarProperty Name="EmploymentProcessId" ColumnName="EmploymentProcessId" />
+          <ScalarProperty Name="SeniorityPosition" ColumnName="SeniorityPosition" />
+          <ScalarProperty Name="DateofSeniority" ColumnName="DateofSeniority" />
+          <ScalarProperty Name="PRLDate" ColumnName="PRLDate" />
+          <ScalarProperty Name="IsPensionEligible" ColumnName="IsPensionEligible" />
+          <ScalarProperty Name="IsLeverageEligible" ColumnName="IsLeverageEligible" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="FingerPrintIdentiyNo" ColumnName="FingerPrintIdentiyNo" />
+          <ScalarProperty Name="AttendanceEffectiveDate" ColumnName="AttendanceEffectiveDate" />
+          <ScalarProperty Name="AttendanceStatus" ColumnName="AttendanceStatus" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IsGeneralShifted" ColumnName="IsGeneralShifted" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="TelephoneOffice" ColumnName="TelephoneOffice" />
+          <ScalarProperty Name="Intercom" ColumnName="Intercom" />
+          <ScalarProperty Name="HonoraryDegree" ColumnName="HonoraryDegree" />
+          <ScalarProperty Name="IsEligibleForCpf" ColumnName="IsEligibleForCpf" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetVoucherTypeList" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetVoucherTypeList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetVoucherTypeList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_IncomeExpenceStatementByLevel" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_IncomeExpenceStatementByLevel" />
+    <FunctionImportMapping FunctionImportName="CPF_MemberSchedule" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_MemberSchedule">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_MemberSchedule_Result">
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+          <ScalarProperty Name="EmpOpening" ColumnName="EmpOpening" />
+          <ScalarProperty Name="EmpContributionInPeriod" ColumnName="EmpContributionInPeriod" />
+          <ScalarProperty Name="EmpProfitInPeriod" ColumnName="EmpProfitInPeriod" />
+          <ScalarProperty Name="EmpWithdrawnInPeriod" ColumnName="EmpWithdrawnInPeriod" />
+          <ScalarProperty Name="EmpFinalPayment" ColumnName="EmpFinalPayment" />
+          <ScalarProperty Name="EmpBalance" ColumnName="EmpBalance" />
+          <ScalarProperty Name="ComOpening" ColumnName="ComOpening" />
+          <ScalarProperty Name="ComContributionInPeriod" ColumnName="ComContributionInPeriod" />
+          <ScalarProperty Name="ComProfitInPeriod" ColumnName="ComProfitInPeriod" />
+          <ScalarProperty Name="ComWithdrawnInPeriod" ColumnName="ComWithdrawnInPeriod" />
+          <ScalarProperty Name="ComForfeitedAmount" ColumnName="ComForfeitedAmount" />
+          <ScalarProperty Name="ComFinalPayment" ColumnName="ComFinalPayment" />
+          <ScalarProperty Name="ComBalance" ColumnName="ComBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_MonthlyContribution" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_MonthlyContribution">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_MonthlyContribution_Result">
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="Month_Year" ColumnName="Month_Year" />
+          <ScalarProperty Name="ContributionAmount" ColumnName="ContributionAmount" />
+          <ScalarProperty Name="SalaryDate" ColumnName="SalaryDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_ProvidentFundSatementProvisioin" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_ProvidentFundSatementProvisioin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_ProvidentFundSatementProvisioin_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmployeeInitial" ColumnName="EmployeeInitial" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="EmployeeOpeningBalance" ColumnName="EmployeeOpeningBalance" />
+          <ScalarProperty Name="EmployerOpeningBalance" ColumnName="EmployerOpeningBalance" />
+          <ScalarProperty Name="EmpContribution" ColumnName="EmpContribution" />
+          <ScalarProperty Name="ComContribution" ColumnName="ComContribution" />
+          <ScalarProperty Name="EmpShareOfProfit" ColumnName="EmpShareOfProfit" />
+          <ScalarProperty Name="ComShareOfProfit" ColumnName="ComShareOfProfit" />
+          <ScalarProperty Name="EmpWithdrawalAmount" ColumnName="EmpWithdrawalAmount" />
+          <ScalarProperty Name="ComWithdrawalAmount" ColumnName="ComWithdrawalAmount" />
+          <ScalarProperty Name="ComSettlementAmt" ColumnName="ComSettlementAmt" />
+          <ScalarProperty Name="EmpSettlementAmt" ColumnName="EmpSettlementAmt" />
+          <ScalarProperty Name="ComForfeitedAmount" ColumnName="ComForfeitedAmount" />
+          <ScalarProperty Name="EmpForfeitedAmount" ColumnName="EmpForfeitedAmount" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="LoanRefund" ColumnName="LoanRefund" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_RptGenerateScheduleofInvestment" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_RptGenerateScheduleofInvestment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_RptGenerateScheduleofInvestment_Result">
+          <ScalarProperty Name="InvestmentNo" ColumnName="InvestmentNo" />
+          <ScalarProperty Name="InvestmentTypeId" ColumnName="InvestmentTypeId" />
+          <ScalarProperty Name="InvestmentType" ColumnName="InvestmentType" />
+          <ScalarProperty Name="DateOfPurchase" ColumnName="DateOfPurchase" />
+          <ScalarProperty Name="DateOfMaturity" ColumnName="DateOfMaturity" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="DurationInYear" ColumnName="DurationInYear" />
+          <ScalarProperty Name="FaceValue" ColumnName="FaceValue" />
+          <ScalarProperty Name="PurchaseValue" ColumnName="PurchaseValue" />
+          <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+          <ScalarProperty Name="SlabNo" ColumnName="SlabNo" />
+          <ScalarProperty Name="PeriodFromDate" ColumnName="PeriodFromDate" />
+          <ScalarProperty Name="PeriodToDate" ColumnName="PeriodToDate" />
+          <ScalarProperty Name="NoOfDays" ColumnName="NoOfDays" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_RptInvestmentAccrualReport" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_RptInvestmentAccrualReport" />
+    <FunctionImportMapping FunctionImportName="CPF_ScheduleOfAdvanceLoan" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_ScheduleOfAdvanceLoan" />
+    <FunctionImportMapping FunctionImportName="CPF_TrialBalanceByLevel" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_TrialBalanceByLevel" />
+    <FunctionImportMapping FunctionImportName="CPF_VoucherGenerate" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_VoucherGenerate" />
+    <FunctionImportMapping FunctionImportName="CPF_VoucherGenerateDetail" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_VoucherGenerateDetail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_VoucherGenerateDetail_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="DebitAmount" ColumnName="DebitAmount" />
+          <ScalarProperty Name="CreditAmount" ColumnName="CreditAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CommonConfigGet" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CommonConfigGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CommonConfigGetResult" />
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="CPF_DefaultMapping">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_DefaultMapping">
+        <MappingFragment StoreEntitySet="CPF_DefaultMapping">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="CssClassName" ColumnName="CssClassName" />
+          <ScalarProperty Name="MappingColumn" ColumnName="MappingColumn" />
+          <ScalarProperty Name="MappingId" ColumnName="MappingId" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwCPFNominees">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.vwCPFNominee">
+        <MappingFragment StoreEntitySet="vwCPFNominee">
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="isAddPhoto" ColumnName="isAddPhoto" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="NomineeAddress" ColumnName="NomineeAddress" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="RelationName" ColumnName="RelationName" />
+          <ScalarProperty Name="RelationId" ColumnName="RelationId" />
+          <ScalarProperty Name="FamilyMemberId" ColumnName="FamilyMemberId" />
+          <ScalarProperty Name="PercentOfShare" ColumnName="PercentOfShare" />
+          <ScalarProperty Name="NomineeFor" ColumnName="NomineeFor" />
+          <ScalarProperty Name="NomineeForId" ColumnName="NomineeForId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CPF_FinalResultOfCpf_EmployeeWise" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_FinalResultOfCpf_EmployeeWise">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_FinalResultOfCpf_EmployeeWise_Result">
+          <ScalarProperty Name="AutoId" ColumnName="AutoId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+          <ScalarProperty Name="PfPeriodId" ColumnName="PfPeriodId" />
+          <ScalarProperty Name="PfMonthName" ColumnName="PfMonthName" />
+          <ScalarProperty Name="PfMonthId" ColumnName="PfMonthId" />
+          <ScalarProperty Name="PrevYearContribution" ColumnName="PrevYearContribution" />
+          <ScalarProperty Name="CurrentYearContribution" ColumnName="CurrentYearContribution" />
+          <ScalarProperty Name="TotalContribution" ColumnName="TotalContribution" />
+          <ScalarProperty Name="ProfitPercentage" ColumnName="ProfitPercentage" />
+          <ScalarProperty Name="TotalProfit" ColumnName="TotalProfit" />
+          <ScalarProperty Name="ProfitBalance" ColumnName="ProfitBalance" />
+          <ScalarProperty Name="TotalOwnContribution" ColumnName="TotalOwnContribution" />
+          <ScalarProperty Name="TotalProfitAmount" ColumnName="TotalProfitAmount" />
+          <ScalarProperty Name="Loan" ColumnName="Loan" />
+          <ScalarProperty Name="Interest" ColumnName="Interest" />
+          <ScalarProperty Name="TotalDeduction" ColumnName="TotalDeduction" />
+          <ScalarProperty Name="TotalPayableAmount" ColumnName="TotalPayableAmount" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="ICNumber" ColumnName="ICNumber" />
+          <ScalarProperty Name="NomineeName" ColumnName="NomineeName" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="CalculationMethod" ColumnName="CalculationMethod" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetContributionDuringtheYear" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetContributionDuringtheYear">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetContributionDuringtheYear_Result">
+          <ScalarProperty Name="SalaryMonth" ColumnName="SalaryMonth" />
+          <ScalarProperty Name="SalaryYear" ColumnName="SalaryYear" />
+          <ScalarProperty Name="HeadName" ColumnName="HeadName" />
+          <ScalarProperty Name="HeadAmount" ColumnName="HeadAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_RptCpfLoanInfo" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_RptCpfLoanInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_RptCpfLoanInfo_Result">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="LoanId" ColumnName="LoanId" />
+          <ScalarProperty Name="LoanNo" ColumnName="LoanNo" />
+          <ScalarProperty Name="LoanDate" ColumnName="LoanDate" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="Installment" ColumnName="Installment" />
+          <ScalarProperty Name="Interest" ColumnName="Interest" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_RptMonthlyProvidentFundRegister" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_RptMonthlyProvidentFundRegister">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_RptMonthlyProvidentFundRegister_Result">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="PfMonthId" ColumnName="PfMonthId" />
+          <ScalarProperty Name="PfMonthName" ColumnName="PfMonthName" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+          <ScalarProperty Name="OwnContrib" ColumnName="OwnContrib" />
+          <ScalarProperty Name="EmpTotalContrib" ColumnName="EmpTotalContrib" />
+          <ScalarProperty Name="ComTotalContirb" ColumnName="ComTotalContirb" />
+          <ScalarProperty Name="Profit" ColumnName="Profit" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="SequenceNo" ColumnName="SequenceNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_RptProvidentFundLoanInstallment" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_RptProvidentFundLoanInstallment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_RptProvidentFundLoanInstallment_Result">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+          <ScalarProperty Name="PfMonthName" ColumnName="PfMonthName" />
+          <ScalarProperty Name="Contribution" ColumnName="Contribution" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="LoanDues" ColumnName="LoanDues" />
+          <ScalarProperty Name="SequenceNo" ColumnName="SequenceNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_RptProvidentFundWorksheet" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_RptProvidentFundWorksheet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_RptProvidentFundWorksheet_Result">
+          <ScalarProperty Name="ICNo" ColumnName="ICNo" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="Profit" ColumnName="Profit" />
+          <ScalarProperty Name="OwnContribution" ColumnName="OwnContribution" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="FianlSettlement" ColumnName="FianlSettlement" />
+          <ScalarProperty Name="PFBalance" ColumnName="PFBalance" />
+          <ScalarProperty Name="OpeningLoanBalance" ColumnName="OpeningLoanBalance" />
+          <ScalarProperty Name="CurrentLoan" ColumnName="CurrentLoan" />
+          <ScalarProperty Name="LoanFromSalary" ColumnName="LoanFromSalary" />
+          <ScalarProperty Name="LoanFromCash" ColumnName="LoanFromCash" />
+          <ScalarProperty Name="LoanFromSettlement" ColumnName="LoanFromSettlement" />
+          <ScalarProperty Name="InterestFromSalary" ColumnName="InterestFromSalary" />
+          <ScalarProperty Name="InterestFromCash" ColumnName="InterestFromCash" />
+          <ScalarProperty Name="InterestFromSettlement" ColumnName="InterestFromSettlement" />
+          <ScalarProperty Name="ClosingLoanBalance" ColumnName="ClosingLoanBalance" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetMyLoanSummary" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetMyLoanSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetMyLoanSummary_Result">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="LoanId" ColumnName="LoanId" />
+          <ScalarProperty Name="LoanNo" ColumnName="LoanNo" />
+          <ScalarProperty Name="LoanDate" ColumnName="LoanDate" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="GrantedPrincipalInstallmentNo" ColumnName="GrantedPrincipalInstallmentNo" />
+          <ScalarProperty Name="GrantedInterestInstallmentNo" ColumnName="GrantedInterestInstallmentNo" />
+          <ScalarProperty Name="Installment" ColumnName="Installment" />
+          <ScalarProperty Name="Interest" ColumnName="Interest" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="NoOfPrincipalPaid" ColumnName="NoOfPrincipalPaid" />
+          <ScalarProperty Name="NoOfInterestPaid" ColumnName="NoOfInterestPaid" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="MembershipLength" ColumnName="MembershipLength" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_SP_PFListOfLoan" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_SP_PFListOfLoan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_SP_PFListOfLoan_Result">
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="LoanId" ColumnName="LoanId" />
+          <ScalarProperty Name="SanctionDate" ColumnName="SanctionDate" />
+          <ScalarProperty Name="ApplyDate" ColumnName="ApplyDate" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="Installment" ColumnName="Installment" />
+          <ScalarProperty Name="Interest" ColumnName="Interest" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="LoanStatus" ColumnName="LoanStatus" />
+          <ScalarProperty Name="IsRefundablePfLoan" ColumnName="IsRefundablePfLoan" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="CPF_MembershipInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_MembershipInfo">
+        <MappingFragment StoreEntitySet="CPF_MembershipInfo">
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="PermanentDate" ColumnName="PermanentDate" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="BankBranchId" ColumnName="BankBranchId" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="ApplicationReceiptDate" ColumnName="ApplicationReceiptDate" />
+          <ScalarProperty Name="ApplicationDate" ColumnName="ApplicationDate" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="PresentBasicPay" ColumnName="PresentBasicPay" />
+          <ScalarProperty Name="PresentPayScale" ColumnName="PresentPayScale" />
+          <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+          <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="OfficeName" ColumnName="OfficeName" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ApprovalPathId" ColumnName="ApprovalPathId" />
+          <ScalarProperty Name="ApprovedById" ColumnName="ApprovedById" />
+          <ScalarProperty Name="ApproveDate" ColumnName="ApproveDate" />
+          <ScalarProperty Name="ApprovalStatusId" ColumnName="ApprovalStatusId" />
+          <ScalarProperty Name="MembershipStatus" ColumnName="MembershipStatus" />
+          <ScalarProperty Name="Witness2MembershipID" ColumnName="Witness2MembershipID" />
+          <ScalarProperty Name="Witness2Address" ColumnName="Witness2Address" />
+          <ScalarProperty Name="Witness2Designation" ColumnName="Witness2Designation" />
+          <ScalarProperty Name="Witness2Name" ColumnName="Witness2Name" />
+          <ScalarProperty Name="WitnessMembershipID" ColumnName="WitnessMembershipID" />
+          <ScalarProperty Name="WitnessAddress" ColumnName="WitnessAddress" />
+          <ScalarProperty Name="WitnessDesignation" ColumnName="WitnessDesignation" />
+          <ScalarProperty Name="WitnessName" ColumnName="WitnessName" />
+          <ScalarProperty Name="PermanentAddress" ColumnName="PermanentAddress" />
+          <ScalarProperty Name="PresentAddress" ColumnName="PresentAddress" />
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APV_ApprovalStatus">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.APV_ApprovalStatus">
+        <MappingFragment StoreEntitySet="APV_ApprovalStatus">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CPF_SP_RptMonthlyPFStatement" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_SP_RptMonthlyPFStatement">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptMonthlyPFStatement_Result">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="SortingOrder" ColumnName="SortingOrder" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="StaffCategory" ColumnName="StaffCategory" />
+          <ScalarProperty Name="pMembershipId" ColumnName="pMembershipId" />
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="SalaryYear" ColumnName="SalaryYear" />
+          <ScalarProperty Name="SalaryMonth" ColumnName="SalaryMonth" />
+          <ScalarProperty Name="PFOwn" ColumnName="PFOwn" />
+          <ScalarProperty Name="PFCompany" ColumnName="PFCompany" />
+          <ScalarProperty Name="ProfitRate" ColumnName="ProfitRate" />
+          <ScalarProperty Name="ProfitOwn" ColumnName="ProfitOwn" />
+          <ScalarProperty Name="ProfitCompany" ColumnName="ProfitCompany" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_DeleteMembership" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_DeleteMembership" />
+    <FunctionImportMapping FunctionImportName="CPF_uspVoucherPostingForPFProfit" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_uspVoucherPostingForPFProfit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_uspVoucherPostingForProfit_Result" />
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_uspVoucherPostingForFinalSettlement" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_uspVoucherPostingForFinalSettlement">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_uspVoucherPostingForProfit_Result">
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="VouchrTypeId" ColumnName="VouchrTypeId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="CustomPropertyAttributes">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CustomPropertyAttribute">
+        <MappingFragment StoreEntitySet="CustomPropertyAttribute">
+          <ScalarProperty Name="IsRequired" ColumnName="IsRequired" />
+          <ScalarProperty Name="DisplayText" ColumnName="DisplayText" />
+          <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetContributionOfPF" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetContributionOfPF">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetContributionOfPF_Result">
+          <ScalarProperty Name="SalaryMonth" ColumnName="SalaryMonth" />
+          <ScalarProperty Name="SalaryYear" ColumnName="SalaryYear" />
+          <ScalarProperty Name="HeadName" ColumnName="HeadName" />
+          <ScalarProperty Name="HeadAmount" ColumnName="HeadAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetMyCPFSummary" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetMyCPFSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetMyCPFSummary_Result">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="MembershipLength" ColumnName="MembershipLength" />
+          <ScalarProperty Name="OwnContribution" ColumnName="OwnContribution" />
+          <ScalarProperty Name="CompanyContribution" ColumnName="CompanyContribution" />
+          <ScalarProperty Name="EmpProfitInPeriod" ColumnName="EmpProfitInPeriod" />
+          <ScalarProperty Name="ComProfitInPeriod" ColumnName="ComProfitInPeriod" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="Interest" ColumnName="Interest" />
+          <ScalarProperty Name="PaidLoan" ColumnName="PaidLoan" />
+          <ScalarProperty Name="LoanDues" ColumnName="LoanDues" />
+          <ScalarProperty Name="TotalContribution" ColumnName="TotalContribution" />
+          <ScalarProperty Name="ForfeitedAmount" ColumnName="ForfeitedAmount" />
+          <ScalarProperty Name="NetBalance" ColumnName="NetBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_FN_GetEmployeeTotalContribution" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_FN_GetEmployeeTotalContribution">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_FN_GetEmployeeTotalContribution_Result">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="SalaryHeadId" ColumnName="SalaryHeadId" />
+          <ScalarProperty Name="DateUpTo" ColumnName="DateUpTo" />
+          <ScalarProperty Name="TotalCont" ColumnName="TotalCont" />
+          <ScalarProperty Name="TotalInst" ColumnName="TotalInst" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_GetMyCPFLoanApplication" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_GetMyCPFLoanApplication">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_GetMyCPFLoanApplication_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="ApplyDate" ColumnName="ApplyDate" />
+          <ScalarProperty Name="ApplyLoanAmount" ColumnName="ApplyLoanAmount" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="ApplyPrincipalInstallmentNo" ColumnName="ApplyPrincipalInstallmentNo" />
+          <ScalarProperty Name="OwnContribution" ColumnName="OwnContribution" />
+          <ScalarProperty Name="CompanyContribution" ColumnName="CompanyContribution" />
+          <ScalarProperty Name="GrantedLoanAmount" ColumnName="GrantedLoanAmount" />
+          <ScalarProperty Name="IssuedAmount" ColumnName="IssuedAmount" />
+          <ScalarProperty Name="GrantedPrincipalInstallmentNo" ColumnName="GrantedPrincipalInstallmentNo" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="NationalID" ColumnName="NationalID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="CPF_ProfitInterestRate">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_ProfitInterestRate">
+        <MappingFragment StoreEntitySet="CPF_ProfitInterestRate">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PfPeriodDuration" ColumnName="PfPeriodDuration" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_OpeningBalance">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_OpeningBalance">
+        <MappingFragment StoreEntitySet="CPF_OpeningBalance">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="PrevYearComProfit" ColumnName="PrevYearComProfit" />
+          <ScalarProperty Name="PrevYearComCoreContribution" ColumnName="PrevYearComCoreContribution" />
+          <ScalarProperty Name="PrevYearEmpProfit" ColumnName="PrevYearEmpProfit" />
+          <ScalarProperty Name="PrevYearEmpCoreContribution" ColumnName="PrevYearEmpCoreContribution" />
+          <ScalarProperty Name="ComProfit" ColumnName="ComProfit" />
+          <ScalarProperty Name="ComCoreContribution" ColumnName="ComCoreContribution" />
+          <ScalarProperty Name="EmpProfit" ColumnName="EmpProfit" />
+          <ScalarProperty Name="EmpCoreContribution" ColumnName="EmpCoreContribution" />
+          <ScalarProperty Name="ComTotal" ColumnName="ComTotal" />
+          <ScalarProperty Name="EmpTotal" ColumnName="EmpTotal" />
+          <ScalarProperty Name="DateOfOpening" ColumnName="DateOfOpening" />
+          <ScalarProperty Name="MembershipId" ColumnName="MembershipId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_ProfitDistribution">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_ProfitDistribution">
+        <MappingFragment StoreEntitySet="CPF_ProfitDistribution">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ProfitRate" ColumnName="ProfitRate" />
+          <ScalarProperty Name="PeriodYear" ColumnName="PeriodYear" />
+          <ScalarProperty Name="PeriodMonth" ColumnName="PeriodMonth" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_Settlement">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_Settlement">
+        <MappingFragment StoreEntitySet="CPF_Settlement">
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="NetPayable" ColumnName="NetPayable" />
+          <ScalarProperty Name="OtherDeduction" ColumnName="OtherDeduction" />
+          <ScalarProperty Name="DueLoan" ColumnName="DueLoan" />
+          <ScalarProperty Name="LoanRefund" ColumnName="LoanRefund" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="LoanId" ColumnName="LoanId" />
+          <ScalarProperty Name="GrandTotal" ColumnName="GrandTotal" />
+          <ScalarProperty Name="ComBalance" ColumnName="ComBalance" />
+          <ScalarProperty Name="ForfeitedAmount" ColumnName="ForfeitedAmount" />
+          <ScalarProperty Name="ComProftInPeriod" ColumnName="ComProftInPeriod" />
+          <ScalarProperty Name="ComContributionInPeriod" ColumnName="ComContributionInPeriod" />
+          <ScalarProperty Name="ComOpening" ColumnName="ComOpening" />
+          <ScalarProperty Name="EmpBalance" ColumnName="EmpBalance" />
+          <ScalarProperty Name="EmpWithdrawnInPeriod" ColumnName="EmpWithdrawnInPeriod" />
+          <ScalarProperty Name="EmpProftInPeriod" ColumnName="EmpProftInPeriod" />
+          <ScalarProperty Name="EmpContributionInPeriod" ColumnName="EmpContributionInPeriod" />
+          <ScalarProperty Name="EmpOpening" ColumnName="EmpOpening" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="MembershipLengthInYear" ColumnName="MembershipLengthInYear" />
+          <ScalarProperty Name="OutgoingProfitRate" ColumnName="OutgoingProfitRate" />
+          <ScalarProperty Name="SettlementDate" ColumnName="SettlementDate" />
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="MembershipId" ColumnName="MembershipId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPF_Withdraw">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_Withdraw">
+        <MappingFragment StoreEntitySet="CPF_Withdraw">
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="AlreadyWithdrawnAmount" ColumnName="AlreadyWithdrawnAmount" />
+          <ScalarProperty Name="WithdrawAmount" ColumnName="WithdrawAmount" />
+          <ScalarProperty Name="EmpPortionBalance" ColumnName="EmpPortionBalance" />
+          <ScalarProperty Name="WithdrawNo" ColumnName="WithdrawNo" />
+          <ScalarProperty Name="WithdrawDate" ColumnName="WithdrawDate" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="MembershipId" ColumnName="MembershipId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CPF_procProfitDistribution" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_procProfitDistribution" />
+    <FunctionImportMapping FunctionImportName="CPF_procProfitDistributionRollback" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_procProfitDistributionRollback" />
+    <FunctionImportMapping FunctionImportName="CPF_SP_RptMonthlyPFStatementMaster" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_SP_RptMonthlyPFStatementMaster">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptMonthlyPFStatementMaster_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="SortingOrder" ColumnName="SortingOrder" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="ZoneSortingOrder" ColumnName="ZoneSortingOrder" />
+          <ScalarProperty Name="EmpOpening" ColumnName="EmpOpening" />
+          <ScalarProperty Name="EmpProfitOpening" ColumnName="EmpProfitOpening" />
+          <ScalarProperty Name="EmpContribution" ColumnName="EmpContribution" />
+          <ScalarProperty Name="EmpProfit" ColumnName="EmpProfit" />
+          <ScalarProperty Name="EmpFinalPayment" ColumnName="EmpFinalPayment" />
+          <ScalarProperty Name="EmpWithdrawnInPeriod" ColumnName="EmpWithdrawnInPeriod" />
+          <ScalarProperty Name="EmpClosingBalance" ColumnName="EmpClosingBalance" />
+          <ScalarProperty Name="EmpClosingBalanceProfit" ColumnName="EmpClosingBalanceProfit" />
+          <ScalarProperty Name="ComOpening" ColumnName="ComOpening" />
+          <ScalarProperty Name="ComProfitOpening" ColumnName="ComProfitOpening" />
+          <ScalarProperty Name="ComContribution" ColumnName="ComContribution" />
+          <ScalarProperty Name="ComProfit" ColumnName="ComProfit" />
+          <ScalarProperty Name="ComFinalPayment" ColumnName="ComFinalPayment" />
+          <ScalarProperty Name="ComWithdrawnInPeriod" ColumnName="ComWithdrawnInPeriod" />
+          <ScalarProperty Name="ComClosingBalance" ColumnName="ComClosingBalance" />
+          <ScalarProperty Name="ComClosingBalanceProfit" ColumnName="ComClosingBalanceProfit" />
+          <ScalarProperty Name="TotalBalance" ColumnName="TotalBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_SP_RptIndividualMonthlyPFStatement" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_SP_RptIndividualMonthlyPFStatement">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptIndividualMonthlyPFStatement_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="MonthYear" ColumnName="MonthYear" />
+          <ScalarProperty Name="ProfitRate" ColumnName="ProfitRate" />
+          <ScalarProperty Name="EmpOpening" ColumnName="EmpOpening" />
+          <ScalarProperty Name="EmpProfitOpening" ColumnName="EmpProfitOpening" />
+          <ScalarProperty Name="EmpContribution" ColumnName="EmpContribution" />
+          <ScalarProperty Name="EmpProfit" ColumnName="EmpProfit" />
+          <ScalarProperty Name="EmpFinalPayment" ColumnName="EmpFinalPayment" />
+          <ScalarProperty Name="EmpWithdrawnInPeriod" ColumnName="EmpWithdrawnInPeriod" />
+          <ScalarProperty Name="EmpClosingBalance" ColumnName="EmpClosingBalance" />
+          <ScalarProperty Name="EmpClosingBalanceProfit" ColumnName="EmpClosingBalanceProfit" />
+          <ScalarProperty Name="ComOpening" ColumnName="ComOpening" />
+          <ScalarProperty Name="ComProfitOpening" ColumnName="ComProfitOpening" />
+          <ScalarProperty Name="ComContribution" ColumnName="ComContribution" />
+          <ScalarProperty Name="ComProfit" ColumnName="ComProfit" />
+          <ScalarProperty Name="ComFinalPayment" ColumnName="ComFinalPayment" />
+          <ScalarProperty Name="ComWithdrawnInPeriod" ColumnName="ComWithdrawnInPeriod" />
+          <ScalarProperty Name="ComClosingBalance" ColumnName="ComClosingBalance" />
+          <ScalarProperty Name="ComClosingBalanceProfit" ColumnName="ComClosingBalanceProfit" />
+          <ScalarProperty Name="TotalBalance" ColumnName="TotalBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_SP_RptNewJoinInMembership" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_SP_RptNewJoinInMembership">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptNewJoinInMembership_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="SortingOrder" ColumnName="SortingOrder" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="MembershipActiveDate" ColumnName="MembershipActiveDate" />
+          <ScalarProperty Name="InactiveDate" ColumnName="InactiveDate" />
+          <ScalarProperty Name="IsInactive" ColumnName="IsInactive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_SP_RptPFStatementHistory" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_SP_RptPFStatementHistory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptPFStatementHistory_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="MonthYear" ColumnName="MonthYear" />
+          <ScalarProperty Name="ProfitRate" ColumnName="ProfitRate" />
+          <ScalarProperty Name="EmpOpening" ColumnName="EmpOpening" />
+          <ScalarProperty Name="EmpProfitOpening" ColumnName="EmpProfitOpening" />
+          <ScalarProperty Name="EmpContribution" ColumnName="EmpContribution" />
+          <ScalarProperty Name="EmpProfit" ColumnName="EmpProfit" />
+          <ScalarProperty Name="EmpFinalPayment" ColumnName="EmpFinalPayment" />
+          <ScalarProperty Name="EmpWithdrawnInPeriod" ColumnName="EmpWithdrawnInPeriod" />
+          <ScalarProperty Name="EmpClosingBalance" ColumnName="EmpClosingBalance" />
+          <ScalarProperty Name="EmpClosingBalanceProfit" ColumnName="EmpClosingBalanceProfit" />
+          <ScalarProperty Name="ComOpening" ColumnName="ComOpening" />
+          <ScalarProperty Name="ComProfitOpening" ColumnName="ComProfitOpening" />
+          <ScalarProperty Name="ComContribution" ColumnName="ComContribution" />
+          <ScalarProperty Name="ComProfit" ColumnName="ComProfit" />
+          <ScalarProperty Name="ComFinalPayment" ColumnName="ComFinalPayment" />
+          <ScalarProperty Name="ComWithdrawnInPeriod" ColumnName="ComWithdrawnInPeriod" />
+          <ScalarProperty Name="ComClosingBalance" ColumnName="ComClosingBalance" />
+          <ScalarProperty Name="ComClosingBalanceProfit" ColumnName="ComClosingBalanceProfit" />
+          <ScalarProperty Name="TotalBalance" ColumnName="TotalBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_SP_RptIndividualYearlyPFStatement" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_SP_RptIndividualYearlyPFStatement">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptIndividualYearlyPFStatement_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="MonthYear" ColumnName="MonthYear" />
+          <ScalarProperty Name="ProfitRate" ColumnName="ProfitRate" />
+          <ScalarProperty Name="EmpOpening" ColumnName="EmpOpening" />
+          <ScalarProperty Name="EmpProfitOpening" ColumnName="EmpProfitOpening" />
+          <ScalarProperty Name="EmpContribution" ColumnName="EmpContribution" />
+          <ScalarProperty Name="EmpProfit" ColumnName="EmpProfit" />
+          <ScalarProperty Name="EmpFinalPayment" ColumnName="EmpFinalPayment" />
+          <ScalarProperty Name="EmpWithdrawnInPeriod" ColumnName="EmpWithdrawnInPeriod" />
+          <ScalarProperty Name="EmpClosingBalance" ColumnName="EmpClosingBalance" />
+          <ScalarProperty Name="EmpClosingBalanceProfit" ColumnName="EmpClosingBalanceProfit" />
+          <ScalarProperty Name="ComOpening" ColumnName="ComOpening" />
+          <ScalarProperty Name="ComProfitOpening" ColumnName="ComProfitOpening" />
+          <ScalarProperty Name="ComContribution" ColumnName="ComContribution" />
+          <ScalarProperty Name="ComProfit" ColumnName="ComProfit" />
+          <ScalarProperty Name="ComFinalPayment" ColumnName="ComFinalPayment" />
+          <ScalarProperty Name="ComWithdrawnInPeriod" ColumnName="ComWithdrawnInPeriod" />
+          <ScalarProperty Name="ComClosingBalance" ColumnName="ComClosingBalance" />
+          <ScalarProperty Name="ComClosingBalanceProfit" ColumnName="ComClosingBalanceProfit" />
+          <ScalarProperty Name="TotalBalance" ColumnName="TotalBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_SP_RptYearlyPFStatement" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_SP_RptYearlyPFStatement">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptYearlyPFStatement_Result">
+          <ScalarProperty Name="MonthYear" ColumnName="MonthYear" />
+          <ScalarProperty Name="ProfitRate" ColumnName="ProfitRate" />
+          <ScalarProperty Name="EmpClosingBalance" ColumnName="EmpClosingBalance" />
+          <ScalarProperty Name="EmpClosingBalanceProfit" ColumnName="EmpClosingBalanceProfit" />
+          <ScalarProperty Name="ComClosingBalance" ColumnName="ComClosingBalance" />
+          <ScalarProperty Name="ComClosingBalanceProfit" ColumnName="ComClosingBalanceProfit" />
+          <ScalarProperty Name="TotalBalance" ColumnName="TotalBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_RptCpfMemberInformation" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_RptCpfMemberInformation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_RptCpfMemberInformation_Result">
+          <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="NationalID" ColumnName="NationalID" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="SalaryScaleName" ColumnName="SalaryScaleName" />
+          <ScalarProperty Name="BasicAmount" ColumnName="BasicAmount" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="EmploymentType" ColumnName="EmploymentType" />
+          <ScalarProperty Name="JoiningDate" ColumnName="JoiningDate" />
+          <ScalarProperty Name="MembershipDate" ColumnName="MembershipDate" />
+          <ScalarProperty Name="PresentAddress" ColumnName="PresentAddress" />
+          <ScalarProperty Name="PermanentAddress" ColumnName="PermanentAddress" />
+          <ScalarProperty Name="ApplicationDate" ColumnName="ApplicationDate" />
+          <ScalarProperty Name="ApplicationReceiptDate" ColumnName="ApplicationReceiptDate" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="WitnessName" ColumnName="WitnessName" />
+          <ScalarProperty Name="WitnessMembershipID" ColumnName="WitnessMembershipID" />
+          <ScalarProperty Name="MemberPhoto" ColumnName="MemberPhoto" />
+          <ScalarProperty Name="Signature" ColumnName="Signature" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CPF_SP_RptNomineeFormInformation" FunctionName="BEPZA_MEDICAL.DAL.CPF.Store.CPF_SP_RptNomineeFormInformation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptNomineeFormInformation_Result">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="NomineeName" ColumnName="NomineeName" />
+          <ScalarProperty Name="NomineeAddress" ColumnName="NomineeAddress" />
+          <ScalarProperty Name="Relation" ColumnName="Relation" />
+          <ScalarProperty Name="IsImmatureOrDisable" ColumnName="IsImmatureOrDisable" />
+          <ScalarProperty Name="NomineeBirthDate" ColumnName="NomineeBirthDate" />
+          <ScalarProperty Name="NomineeParcentOfShare" ColumnName="NomineeParcentOfShare" />
+          <ScalarProperty Name="AgeOfNominee" ColumnName="AgeOfNominee" />
+          <ScalarProperty Name="PersonOnBehalfName" ColumnName="PersonOnBehalfName" />
+          <ScalarProperty Name="PersonOnBehalfAddress" ColumnName="PersonOnBehalfAddress" />
+          <ScalarProperty Name="PersonOnBehalfShare" ColumnName="PersonOnBehalfShare" />
+          <ScalarProperty Name="PersonOnBehalfSex" ColumnName="PersonOnBehalfSex" />
+          <ScalarProperty Name="NomineePhoto" ColumnName="NomineePhoto" />
+          <ScalarProperty Name="Witness1Name" ColumnName="Witness1Name" />
+          <ScalarProperty Name="Witness1MembershipID" ColumnName="Witness1MembershipID" />
+          <ScalarProperty Name="Witness1Designation" ColumnName="Witness1Designation" />
+          <ScalarProperty Name="Witness1Address" ColumnName="Witness1Address" />
+          <ScalarProperty Name="Witness1Signature" ColumnName="Witness1Signature" />
+          <ScalarProperty Name="Witness2Name" ColumnName="Witness2Name" />
+          <ScalarProperty Name="Witness2MembershipID" ColumnName="Witness2MembershipID" />
+          <ScalarProperty Name="Witness2Designation" ColumnName="Witness2Designation" />
+          <ScalarProperty Name="Witness2Address" ColumnName="Witness2Address" />
+          <ScalarProperty Name="SignatureofMember" ColumnName="SignatureofMember" />
+          <ScalarProperty Name="SignatureofSecretary" ColumnName="SignatureofSecretary" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

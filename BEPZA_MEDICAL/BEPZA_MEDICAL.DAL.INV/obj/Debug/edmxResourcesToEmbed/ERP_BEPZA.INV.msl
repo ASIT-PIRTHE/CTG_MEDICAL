@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERP_BEPZADALINVStoreContainer" CdmEntityContainer="ERP_BEPZAINVEntities">
+    <EntitySetMapping Name="CommonConfigTypes">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.CommonConfigType">
+        <MappingFragment StoreEntitySet="CommonConfigType">
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_Category">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_Category">
+        <MappingFragment StoreEntitySet="INV_Category">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_Color">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_Color">
+        <MappingFragment StoreEntitySet="INV_Color">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_ItemStatus">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_ItemStatus">
+        <MappingFragment StoreEntitySet="INV_ItemStatus">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_Manufacturer">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_Manufacturer">
+        <MappingFragment StoreEntitySet="INV_Manufacturer">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_Model">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_Model">
+        <MappingFragment StoreEntitySet="INV_Model">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_PurchaseType">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_PurchaseType">
+        <MappingFragment StoreEntitySet="INV_PurchaseType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_Unit">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_Unit">
+        <MappingFragment StoreEntitySet="INV_Unit">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_ItemInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo">
+        <MappingFragment StoreEntitySet="INV_ItemInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="AssetGroupId" ColumnName="AssetGroupId" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="ModelId" ColumnName="ModelId" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="HasQuota" ColumnName="HasQuota" />
+          <ScalarProperty Name="IsCondemnableAsset" ColumnName="IsCondemnableAsset" />
+          <ScalarProperty Name="IsPeriodicAsset" ColumnName="IsPeriodicAsset" />
+          <ScalarProperty Name="MaximumQuantity" ColumnName="MaximumQuantity" />
+          <ScalarProperty Name="ReOrderQuantity" ColumnName="ReOrderQuantity" />
+          <ScalarProperty Name="MinimumQuantity" ColumnName="MinimumQuantity" />
+          <ScalarProperty Name="ManufacturerId" ColumnName="ManufacturerId" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRM_ZoneInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo">
+        <MappingFragment StoreEntitySet="PRM_ZoneInfo">
+          <ScalarProperty Name="IsHeadOffice" ColumnName="IsHeadOffice" />
+          <ScalarProperty Name="ZoneAddressInBengali" ColumnName="ZoneAddressInBengali" />
+          <ScalarProperty Name="ZoneNameInBengali" ColumnName="ZoneNameInBengali" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="ZoneAddress" ColumnName="ZoneAddress" />
+          <ScalarProperty Name="OrganogramCategoryTypeId" ColumnName="OrganogramCategoryTypeId" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="ZoneCode" ColumnName="ZoneCode" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_TransferInInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_TransferInInfo">
+        <MappingFragment StoreEntitySet="INV_TransferInInfo">
+          <ScalarProperty Name="TransferOutId" ColumnName="TransferOutId" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ReceivedById" ColumnName="ReceivedById" />
+          <ScalarProperty Name="ReceivedFromId" ColumnName="ReceivedFromId" />
+          <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+          <ScalarProperty Name="ChallanDate" ColumnName="ChallanDate" />
+          <ScalarProperty Name="TransferNo" ColumnName="TransferNo" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_TransferOutInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_TransferOutInfo">
+        <MappingFragment StoreEntitySet="INV_TransferOutInfo">
+          <ScalarProperty Name="IsProcessed" ColumnName="IsProcessed" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="TransferredByEmpId" ColumnName="TransferredByEmpId" />
+          <ScalarProperty Name="TransferredToZoneId" ColumnName="TransferredToZoneId" />
+          <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+          <ScalarProperty Name="ChallanDate" ColumnName="ChallanDate" />
+          <ScalarProperty Name="TransferNo" ColumnName="TransferNo" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_TransferInItem">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_TransferInItem">
+        <MappingFragment StoreEntitySet="INV_TransferInItem">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="PurchaseId" ColumnName="PurchaseId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="TransferInId" ColumnName="TransferInId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_IssueItem">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_IssueItem">
+        <MappingFragment StoreEntitySet="INV_IssueItem">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="DemandQuantity" ColumnName="DemandQuantity" />
+          <ScalarProperty Name="IssueQuantity" ColumnName="IssueQuantity" />
+          <ScalarProperty Name="PurchaseId" ColumnName="PurchaseId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_PurchaseItem">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_PurchaseItem">
+        <MappingFragment StoreEntitySet="INV_PurchaseItem">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="PurchaseId" ColumnName="PurchaseId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_TransferOutItem">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_TransferOutItem">
+        <MappingFragment StoreEntitySet="INV_TransferOutItem">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="PurchaseId" ColumnName="PurchaseId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="TransferOutId" ColumnName="TransferOutId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_IssueReturnInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnInfo">
+        <MappingFragment StoreEntitySet="INV_IssueReturnInfo">
+          <ScalarProperty Name="ScrapId" ColumnName="ScrapId" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ReceivedByEmpId" ColumnName="ReceivedByEmpId" />
+          <ScalarProperty Name="ReceivedFromEmpId" ColumnName="ReceivedFromEmpId" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="ReturnNo" ColumnName="ReturnNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_AdjustmentInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentInfo">
+        <MappingFragment StoreEntitySet="INV_AdjustmentInfo">
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ApprovedByEmpId" ColumnName="ApprovedByEmpId" />
+          <ScalarProperty Name="AdjustedByEmpId" ColumnName="AdjustedByEmpId" />
+          <ScalarProperty Name="AdjustmentDate" ColumnName="AdjustmentDate" />
+          <ScalarProperty Name="AdjustmentNo" ColumnName="AdjustmentNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_AdjustmentItem">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentItem">
+        <MappingFragment StoreEntitySet="INV_AdjustmentItem">
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="ItemStatusId" ColumnName="ItemStatusId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="AdjustmentId" ColumnName="AdjustmentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_IssueReturnItem">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnItem">
+        <MappingFragment StoreEntitySet="INV_IssueReturnItem">
+          <ScalarProperty Name="ItemStatusId" ColumnName="ItemStatusId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="IssueReturnId" ColumnName="IssueReturnId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_AssetQuotaInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_AssetQuotaInfo">
+        <MappingFragment StoreEntitySet="INV_AssetQuotaInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="Quota" ColumnName="Quota" />
+          <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_PeriodicAssetDuration">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_PeriodicAssetDuration">
+        <MappingFragment StoreEntitySet="INV_PeriodicAssetDuration">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="DurationScale" ColumnName="DurationScale" />
+          <ScalarProperty Name="ReIssueAfter" ColumnName="ReIssueAfter" />
+          <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+          <ScalarProperty Name="ItemInfoId" ColumnName="ItemInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_SupplierInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_SupplierInfo">
+        <MappingFragment StoreEntitySet="INV_SupplierInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ContactPersonNo" ColumnName="ContactPersonNo" />
+          <ScalarProperty Name="ContactPersonName" ColumnName="ContactPersonName" />
+          <ScalarProperty Name="VATRegNo" ColumnName="VATRegNo" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="TradeLicenseNo" ColumnName="TradeLicenseNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_IssueInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_IssueInfo">
+        <MappingFragment StoreEntitySet="INV_IssueInfo">
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IssuedById" ColumnName="IssuedById" />
+          <ScalarProperty Name="IssuedToId" ColumnName="IssuedToId" />
+          <ScalarProperty Name="IndentDate" ColumnName="IndentDate" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="IndentId" ColumnName="IndentId" />
+          <ScalarProperty Name="IssueNo" ColumnName="IssueNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_DelegationApprovalInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_DelegationApprovalInfo">
+        <MappingFragment StoreEntitySet="INV_DelegationApprovalInfo">
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ApprovalLimit" ColumnName="ApprovalLimit" />
+          <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+          <ScalarProperty Name="ItemTypeId" ColumnName="ItemTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_RptPurchaseInfo" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_RptPurchaseInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_RptPurchaseInfo_Result">
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="MRR" ColumnName="MRR" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="Challan" ColumnName="Challan" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_RptTransferInInfo" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_RptTransferInInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_RptTransferInInfo_Result">
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_RptTransferOutInfo" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_RptTransferOutInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_RptTransferOutInfo_Result">
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_RptIssueInfo" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_RptIssueInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_RptIssueInfo_Result">
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="IssueQuantity" ColumnName="IssueQuantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Employee" ColumnName="Employee" />
+          <ScalarProperty Name="IndentNo" ColumnName="IndentNo" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_RptIssueReturn" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_RptIssueReturn">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_RptIssueReturn_Result">
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Employee" ColumnName="Employee" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="vwINVItemHistory">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.vwINVItemHistory">
+        <MappingFragment StoreEntitySet="vwINVItemHistory">
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="OutQuantity" ColumnName="OutQuantity" />
+          <ScalarProperty Name="InQuantity" ColumnName="InQuantity" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="Challan" ColumnName="Challan" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_RptItemLedger" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_RptItemLedger">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_RptItemLedger_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemDate" ColumnName="ItemDate" />
+          <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+          <ScalarProperty Name="TranssactionType" ColumnName="TranssactionType" />
+          <ScalarProperty Name="InQt" ColumnName="InQt" />
+          <ScalarProperty Name="OutQt" ColumnName="OutQt" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_RptEmployeeWiseItemLedger" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_RptEmployeeWiseItemLedger">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_RptEmployeeWiseItemLedger_Result">
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="fn_INV_GetItemBalanceByMRR" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.fn_INV_GetItemBalanceByMRR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.fn_INV_GetItemBalanceByMRR_Result">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="fn_INV_GetItemClosingBalance" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.fn_INV_GetItemClosingBalance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.fn_INV_GetItemClosingBalance_Result">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="fn_INV_GetItemOpeningBalance" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.fn_INV_GetItemOpeningBalance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.fn_INV_GetItemOpeningBalance_Result">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PRM_EmploymentInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo">
+        <MappingFragment StoreEntitySet="PRM_EmploymentInfo">
+          <ScalarProperty Name="IsRefreshmentEligible" ColumnName="IsRefreshmentEligible" />
+          <ScalarProperty Name="ETIN" ColumnName="ETIN" />
+          <ScalarProperty Name="SalaryWithdrawFromZoneId" ColumnName="SalaryWithdrawFromZoneId" />
+          <ScalarProperty Name="DateofRetirement" ColumnName="DateofRetirement" />
+          <ScalarProperty Name="HavingChildWithDisability" ColumnName="HavingChildWithDisability" />
+          <ScalarProperty Name="TaxAssesseeType" ColumnName="TaxAssesseeType" />
+          <ScalarProperty Name="TaxRegionId" ColumnName="TaxRegionId" />
+          <ScalarProperty Name="IsEligibleForCpf" ColumnName="IsEligibleForCpf" />
+          <ScalarProperty Name="HonoraryDegree" ColumnName="HonoraryDegree" />
+          <ScalarProperty Name="Intercom" ColumnName="Intercom" />
+          <ScalarProperty Name="TelephoneOffice" ColumnName="TelephoneOffice" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="IsGeneralShifted" ColumnName="IsGeneralShifted" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="AttendanceStatus" ColumnName="AttendanceStatus" />
+          <ScalarProperty Name="AttendanceEffectiveDate" ColumnName="AttendanceEffectiveDate" />
+          <ScalarProperty Name="FingerPrintIdentiyNo" ColumnName="FingerPrintIdentiyNo" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="IsLeverageEligible" ColumnName="IsLeverageEligible" />
+          <ScalarProperty Name="IsPensionEligible" ColumnName="IsPensionEligible" />
+          <ScalarProperty Name="PRLDate" ColumnName="PRLDate" />
+          <ScalarProperty Name="DateofSeniority" ColumnName="DateofSeniority" />
+          <ScalarProperty Name="SeniorityPosition" ColumnName="SeniorityPosition" />
+          <ScalarProperty Name="EmploymentProcessId" ColumnName="EmploymentProcessId" />
+          <ScalarProperty Name="EmployeeClassId" ColumnName="EmployeeClassId" />
+          <ScalarProperty Name="QuotaId" ColumnName="QuotaId" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="DateofAppointment" ColumnName="DateofAppointment" />
+          <ScalarProperty Name="OrganogramLevelId" ColumnName="OrganogramLevelId" />
+          <ScalarProperty Name="ContractType" ColumnName="ContractType" />
+          <ScalarProperty Name="ContractDuration" ColumnName="ContractDuration" />
+          <ScalarProperty Name="DateofBirth" ColumnName="DateofBirth" />
+          <ScalarProperty Name="ContractExpireDate" ColumnName="ContractExpireDate" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="JobGradeId" ColumnName="JobGradeId" />
+          <ScalarProperty Name="SalaryScaleId" ColumnName="SalaryScaleId" />
+          <ScalarProperty Name="IsBonusEligible" ColumnName="IsBonusEligible" />
+          <ScalarProperty Name="DateofInactive" ColumnName="DateofInactive" />
+          <ScalarProperty Name="EmploymentStatusId" ColumnName="EmploymentStatusId" />
+          <ScalarProperty Name="BankAccountNo" ColumnName="BankAccountNo" />
+          <ScalarProperty Name="BankBranchId" ColumnName="BankBranchId" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="EmialAddress" ColumnName="EmialAddress" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="OvertimeRate" ColumnName="OvertimeRate" />
+          <ScalarProperty Name="IsOvertimeEligible" ColumnName="IsOvertimeEligible" />
+          <ScalarProperty Name="IsConsultant" ColumnName="IsConsultant" />
+          <ScalarProperty Name="IsContractual" ColumnName="IsContractual" />
+          <ScalarProperty Name="ReligionId" ColumnName="ReligionId" />
+          <ScalarProperty Name="EmploymentTypeId" ColumnName="EmploymentTypeId" />
+          <ScalarProperty Name="StaffCategoryId" ColumnName="StaffCategoryId" />
+          <ScalarProperty Name="ResourceLevelId" ColumnName="ResourceLevelId" />
+          <ScalarProperty Name="JobLocationId" ColumnName="JobLocationId" />
+          <ScalarProperty Name="SubSectionId" ColumnName="SubSectionId" />
+          <ScalarProperty Name="SectionId" ColumnName="SectionId" />
+          <ScalarProperty Name="DivisionId" ColumnName="DivisionId" />
+          <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
+          <ScalarProperty Name="StatusDesignationId" ColumnName="StatusDesignationId" />
+          <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+          <ScalarProperty Name="DateofPosition" ColumnName="DateofPosition" />
+          <ScalarProperty Name="DateofConfirmation" ColumnName="DateofConfirmation" />
+          <ScalarProperty Name="ProvisionMonth" ColumnName="ProvisionMonth" />
+          <ScalarProperty Name="DateofJoining" ColumnName="DateofJoining" />
+          <ScalarProperty Name="FullNameBangla" ColumnName="FullNameBangla" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="TitleId" ColumnName="TitleId" />
+          <ScalarProperty Name="EmployeeInitial" ColumnName="EmployeeInitial" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_PendingRequisitionList" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_PendingRequisitionList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_PendingRequisitionList_Result">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="IndentId" ColumnName="IndentId" />
+          <ScalarProperty Name="IndentNo" ColumnName="IndentNo" />
+          <ScalarProperty Name="IndentDate" ColumnName="IndentDate" />
+          <ScalarProperty Name="IssuedToEmpId" ColumnName="IssuedToEmpId" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_PendingTransferList" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_PendingTransferList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_PendingTransferList_Result">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="TransferOutId" ColumnName="TransferOutId" />
+          <ScalarProperty Name="TransferNo" ColumnName="TransferNo" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="INV_ScrapItem">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_ScrapItem">
+        <MappingFragment StoreEntitySet="INV_ScrapItem">
+          <ScalarProperty Name="ApproveQuantity" ColumnName="ApproveQuantity" />
+          <ScalarProperty Name="ItemStatusId" ColumnName="ItemStatusId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ScrapId" ColumnName="ScrapId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_PendingScrapList" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_PendingScrapList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_PendingScrapList_Result">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ScrapId" ColumnName="ScrapId" />
+          <ScalarProperty Name="ScrapNo" ColumnName="ScrapNo" />
+          <ScalarProperty Name="ScrapDate" ColumnName="ScrapDate" />
+          <ScalarProperty Name="IssuedToEmpId" ColumnName="IssuedToEmpId" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="INV_ItemType">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_ItemType">
+        <MappingFragment StoreEntitySet="INV_ItemType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="BudgetHeadId" ColumnName="BudgetHeadId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="ItemTypeName" ColumnName="ItemTypeName" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="CodeCount" ColumnName="CodeCount" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="IsGroup" ColumnName="IsGroup" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_RequisitionInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_RequisitionInfo">
+        <MappingFragment StoreEntitySet="INV_RequisitionInfo">
+          <ScalarProperty Name="ApprovalStatusId" ColumnName="ApprovalStatusId" />
+          <ScalarProperty Name="ForwardToEmpId" ColumnName="ForwardToEmpId" />
+          <ScalarProperty Name="IsProcessed" ColumnName="IsProcessed" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsOnline" ColumnName="IsOnline" />
+          <ScalarProperty Name="TotalQuantity" ColumnName="TotalQuantity" />
+          <ScalarProperty Name="IssuedToEmpId" ColumnName="IssuedToEmpId" />
+          <ScalarProperty Name="IssuedByEmpId" ColumnName="IssuedByEmpId" />
+          <ScalarProperty Name="IndentNo" ColumnName="IndentNo" />
+          <ScalarProperty Name="IndentDate" ColumnName="IndentDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_ScrapInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_ScrapInfo">
+        <MappingFragment StoreEntitySet="INV_ScrapInfo">
+          <ScalarProperty Name="ApprovalStatusId" ColumnName="ApprovalStatusId" />
+          <ScalarProperty Name="ApproverId" ColumnName="ApproverId" />
+          <ScalarProperty Name="IsProcessed" ColumnName="IsProcessed" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsOnline" ColumnName="IsOnline" />
+          <ScalarProperty Name="TotalQuantity" ColumnName="TotalQuantity" />
+          <ScalarProperty Name="IssuedToEmpId" ColumnName="IssuedToEmpId" />
+          <ScalarProperty Name="IssuedByEmpId" ColumnName="IssuedByEmpId" />
+          <ScalarProperty Name="ScrapNo" ColumnName="ScrapNo" />
+          <ScalarProperty Name="ScrapDate" ColumnName="ScrapDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_ScrapItemHistory">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_ScrapItemHistory">
+        <MappingFragment StoreEntitySet="INV_ScrapItemHistory">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ItemStatusId" ColumnName="ItemStatusId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ScrapItemId" ColumnName="ScrapItemId" />
+          <ScalarProperty Name="ScrapId" ColumnName="ScrapId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwINVBudgetHead">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.vwINVBudgetHead">
+        <MappingFragment StoreEntitySet="vwINVBudgetHead">
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_RequisitionItem">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_RequisitionItem">
+        <MappingFragment StoreEntitySet="INV_RequisitionItem">
+          <ScalarProperty Name="ApproveQuantity" ColumnName="ApproveQuantity" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INV_PurchaseInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_PurchaseInfo">
+        <MappingFragment StoreEntitySet="INV_PurchaseInfo">
+          <ScalarProperty Name="MRRDate" ColumnName="MRRDate" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="PurchaseTypeId" ColumnName="PurchaseTypeId" />
+          <ScalarProperty Name="ChallanDate" ColumnName="ChallanDate" />
+          <ScalarProperty Name="PODate" ColumnName="PODate" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Challan" ColumnName="Challan" />
+          <ScalarProperty Name="PO" ColumnName="PO" />
+          <ScalarProperty Name="MRR" ColumnName="MRR" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_INV_RptStockBalance" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.sp_INV_RptStockBalance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.sp_INV_RptStockBalance_Result">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="ClosingBalance" ColumnName="ClosingBalance" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="IsPeriodicAsset" ColumnName="IsPeriodicAsset" />
+          <ScalarProperty Name="IsCondemnableAsset" ColumnName="IsCondemnableAsset" />
+          <ScalarProperty Name="AssetGroupId" ColumnName="AssetGroupId" />
+          <ScalarProperty Name="HasQuota" ColumnName="HasQuota" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="INV_uspAdjustmentVoucherPosting" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.INV_uspAdjustmentVoucherPosting">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_uspAdjustmentVoucherPosting_Result">
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="VouchrTypeId" ColumnName="VouchrTypeId" />
+          <ScalarProperty Name="FundControlId" ColumnName="FundControlId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="INV_uspPurchaseVoucherPosting" FunctionName="BEPZA_MEDICAL.DAL.INV.Store.INV_uspPurchaseVoucherPosting">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.INV.INV_uspPurchaseVoucherPosting_Result">
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="VouchrTypeId" ColumnName="VouchrTypeId" />
+          <ScalarProperty Name="FundControlId" ColumnName="FundControlId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

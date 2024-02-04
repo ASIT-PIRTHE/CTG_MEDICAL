@@ -1,0 +1,20 @@
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Utility\bin\Debug\Utility.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Utility\bin\Debug\Utility.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Utility\obj\Debug\Utility.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Utility\obj\Debug\Utility.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Utility\bin\Debug\Utility.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Utility\bin\Debug\Utility.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Utility\obj\Debug\Utility.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Utility\obj\Debug\Utility.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Utility\bin\Debug\Utility.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Utility\bin\Debug\Utility.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Utility\obj\Debug\Utility.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Utility\obj\Debug\Utility.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Utility\bin\Debug\Utility.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Utility\bin\Debug\Utility.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Utility\obj\Debug\Utility.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Utility\obj\Debug\Utility.pdb

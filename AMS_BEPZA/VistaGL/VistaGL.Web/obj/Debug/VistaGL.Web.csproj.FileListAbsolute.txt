@@ -1,0 +1,928 @@
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\msvcr100.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\SqlServerSpatial120.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\msvcr100.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\SqlServerSpatial120.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeIssueInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeReeceiveInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccount.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GroupBalanceSheet.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\IncomeExpenditure.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPayment.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementDetailsInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetVariance.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetApproval.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptCashInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptGroupLedger.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptNotes.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalance.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\VoucherPreview.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedBudget.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\JournalVoucher.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\PaymentVoucher.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptVoucher.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedProposedBudget.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalanceDetails.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\MoneyReceipt.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPayment.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateTrialBalance.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\CostCenterSchedule.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidatedBudgetEstimate.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubLedgerInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeRegister.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliation.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInformation.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankAdviceLetter.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoJV.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherNo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead_WithoutParentGroup.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliationOption2.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledger.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledgerParent.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoCV.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_SubledgerWiseTotal.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithCOATree.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails_AccHeadWise.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GratuityStatement.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledgerAndNarration.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledger.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithNarration.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccountTreeView.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoa.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\BudgetGroup.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister2.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorHistory.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSchedule.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSummary.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note17.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note16.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note8.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note12.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note13.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note9.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note10.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note11.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note06.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note4.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note5.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetails.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithCOATree.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledger.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledgerParent.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithChequeInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithCOA.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherAndChequeInfo.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubledgersWithUnallocatedParent.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptVoucherInconsistancy.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptDataMigrationMappedCostCenters.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated_groupbyCOA.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCostCenter.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoaAndCostCenter.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptZoneApproverList.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByPayto.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet_M1.rdlc
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll.config
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\VistaGL.Web.pdb
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\CsQuery.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Dapper.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\EPPlus.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\FluentMigrator.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Flurl.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.Common.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Microsoft.SqlServer.Types.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Mono.Cecil.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\MoreLinq.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\MsieJavaScriptEngine.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\NUglify.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Serenity.Core.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Serenity.Data.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Serenity.Services.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Serenity.Web.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Data.Linq.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.Helpers.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.Mvc.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.Razor.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.WebPages.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\CsQuery.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Dapper.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\EPPlus.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\FluentMigrator.pdb
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\FluentMigrator.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.pdb
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Flurl.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\MoreLinq.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\NUglify.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Serenity.Core.pdb
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Serenity.Data.pdb
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.pdb
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Serenity.Services.pdb
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\Serenity.Web.pdb
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.Helpers.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.Mvc.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.Razor.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.WebPages.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.xml
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\obj\Debug\RdlCompile.cache
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\obj\Debug\RdlCompile.compiled
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.dll
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.pdb
+D:\Nazrul\Projects\VistaGL\VistaGL\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\msvcr100.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\SqlServerSpatial120.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\msvcr100.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\SqlServerSpatial120.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeIssueInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeReeceiveInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccount.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GroupBalanceSheet.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\IncomeExpenditure.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPayment.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementDetailsInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetVariance.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetApproval.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptCashInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptGroupLedger.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptNotes.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalance.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\VoucherPreview.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedBudget.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\JournalVoucher.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\PaymentVoucher.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptVoucher.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedProposedBudget.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalanceDetails.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\MoneyReceipt.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPayment.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateTrialBalance.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\CostCenterSchedule.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidatedBudgetEstimate.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubLedgerInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeRegister.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliation.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInformation.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankAdviceLetter.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoJV.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherNo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead_WithoutParentGroup.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliationOption2.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledger.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledgerParent.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoCV.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_SubledgerWiseTotal.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithCOATree.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails_AccHeadWise.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GratuityStatement.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledgerAndNarration.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledger.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithNarration.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccountTreeView.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoa.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\BudgetGroup.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister2.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorHistory.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSchedule.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSummary.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note17.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note16.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note8.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note12.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note13.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note9.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note10.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note11.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note06.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note4.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note5.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetails.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithCOATree.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledger.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledgerParent.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithChequeInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithCOA.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherAndChequeInfo.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubledgersWithUnallocatedParent.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptVoucherInconsistancy.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptDataMigrationMappedCostCenters.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated_groupbyCOA.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCostCenter.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoaAndCostCenter.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptZoneApproverList.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByPayto.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet_M1.rdlc
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll.config
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.pdb
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\CsQuery.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Dapper.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\EPPlus.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Flurl.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.Common.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.WebForms.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.SqlServer.Types.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Mono.Cecil.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MoreLinq.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MsieJavaScriptEngine.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\NUglify.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Core.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Services.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Web.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Data.Linq.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Helpers.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Mvc.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\CsQuery.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Dapper.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\EPPlus.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.pdb
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.pdb
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Flurl.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MoreLinq.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\NUglify.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Core.pdb
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.pdb
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.pdb
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Services.pdb
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Web.pdb
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Helpers.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Mvc.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\RdlCompile.cache
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\RdlCompile.compiled
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.dll
+E:\BEPZA\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\msvcr100.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\SqlServerSpatial120.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\msvcr100.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\SqlServerSpatial120.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeIssueInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeReeceiveInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccount.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GroupBalanceSheet.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\IncomeExpenditure.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPayment.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementDetailsInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetVariance.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetApproval.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptCashInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptGroupLedger.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptNotes.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalance.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\VoucherPreview.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedBudget.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\JournalVoucher.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\PaymentVoucher.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptVoucher.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedProposedBudget.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalanceDetails.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\MoneyReceipt.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPayment.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateTrialBalance.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\CostCenterSchedule.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidatedBudgetEstimate.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubLedgerInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeRegister.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliation.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInformation.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankAdviceLetter.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoJV.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherNo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead_WithoutParentGroup.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliationOption2.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledger.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledgerParent.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoCV.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_SubledgerWiseTotal.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithCOATree.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails_AccHeadWise.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GratuityStatement.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledgerAndNarration.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledger.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithNarration.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccountTreeView.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoa.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\BudgetGroup.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister2.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorHistory.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSchedule.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSummary.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note17.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note16.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note8.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note12.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note13.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note9.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note10.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note11.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note06.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note4.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note5.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetails.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithCOATree.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledger.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledgerParent.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithChequeInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithCOA.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherAndChequeInfo.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubledgersWithUnallocatedParent.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptVoucherInconsistancy.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptDataMigrationMappedCostCenters.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated_groupbyCOA.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCostCenter.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoaAndCostCenter.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptZoneApproverList.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByPayto.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet_M1.rdlc
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll.config
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\CsQuery.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Dapper.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\EPPlus.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Flurl.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.Common.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.SqlServer.Types.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Mono.Cecil.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MoreLinq.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MsieJavaScriptEngine.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\NUglify.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Core.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Services.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Web.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Data.Linq.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Helpers.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Mvc.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Razor.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\CsQuery.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Dapper.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\EPPlus.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Flurl.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MoreLinq.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\NUglify.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Core.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Services.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Web.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Helpers.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Mvc.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Razor.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.xml
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.csprojResolveAssemblyReference.cache
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\msvcr100.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\SqlServerSpatial120.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\msvcr100.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\SqlServerSpatial120.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeIssueInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeReeceiveInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccount.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GroupBalanceSheet.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\IncomeExpenditure.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPayment.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementDetailsInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetVariance.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetApproval.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptCashInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptGroupLedger.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptNotes.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalance.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\VoucherPreview.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedBudget.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\JournalVoucher.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\PaymentVoucher.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptVoucher.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedProposedBudget.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalanceDetails.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\MoneyReceipt.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPayment.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateTrialBalance.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\CostCenterSchedule.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidatedBudgetEstimate.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubLedgerInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeRegister.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliation.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInformation.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankAdviceLetter.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoJV.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherNo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead_WithoutParentGroup.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliationOption2.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledger.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledgerParent.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoCV.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_SubledgerWiseTotal.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithCOATree.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails_AccHeadWise.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GratuityStatement.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledgerAndNarration.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledger.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithNarration.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccountTreeView.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoa.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\BudgetGroup.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister2.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorHistory.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSchedule.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSummary.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note17.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note16.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note8.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note12.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note13.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note9.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note10.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note11.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note06.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note4.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note5.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetails.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithCOATree.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledger.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledgerParent.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithChequeInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithCOA.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherAndChequeInfo.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubledgersWithUnallocatedParent.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptVoucherInconsistancy.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptDataMigrationMappedCostCenters.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated_groupbyCOA.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCostCenter.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoaAndCostCenter.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptZoneApproverList.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByPayto.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet_M1.rdlc
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\CsQuery.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Dapper.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\EPPlus.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Flurl.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.Common.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.WebForms.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.SqlServer.Types.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Mono.Cecil.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MoreLinq.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MsieJavaScriptEngine.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\NUglify.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Core.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Services.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Web.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Data.Linq.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Helpers.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\CsQuery.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Dapper.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\EPPlus.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Flurl.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MoreLinq.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\NUglify.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Core.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Services.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Web.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Helpers.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Mvc.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\RdlCompile.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\RdlCompile.compiled
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.csprojResolveAssemblyReference.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\msvcr100.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\SqlServerSpatial120.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\msvcr100.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\SqlServerSpatial120.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeIssueInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeReeceiveInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccount.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GroupBalanceSheet.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\IncomeExpenditure.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPayment.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementDetailsInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetVariance.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetApproval.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptCashInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptGroupLedger.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptNotes.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalance.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\VoucherPreview.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedBudget.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\JournalVoucher.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\PaymentVoucher.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptVoucher.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedProposedBudget.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalanceDetails.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\MoneyReceipt.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPayment.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateTrialBalance.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\CostCenterSchedule.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidatedBudgetEstimate.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubLedgerInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeRegister.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliation.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInformation.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankAdviceLetter.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoJV.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherNo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead_WithoutParentGroup.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliationOption2.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledger.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledgerParent.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoCV.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_SubledgerWiseTotal.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithCOATree.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails_AccHeadWise.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GratuityStatement.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledgerAndNarration.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledger.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithNarration.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccountTreeView.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoa.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\BudgetGroup.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister2.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorHistory.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSchedule.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSummary.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note17.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note16.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note8.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note12.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note13.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note9.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note10.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note11.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note06.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note4.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note5.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetails.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithCOATree.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledger.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledgerParent.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithChequeInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithCOA.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherAndChequeInfo.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubledgersWithUnallocatedParent.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptVoucherInconsistancy.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptDataMigrationMappedCostCenters.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated_groupbyCOA.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCostCenter.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoaAndCostCenter.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptZoneApproverList.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByPayto.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet_M1.rdlc
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll.config
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\CsQuery.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Dapper.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\EPPlus.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Flurl.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.Common.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.SqlServer.Types.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Mono.Cecil.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MoreLinq.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MsieJavaScriptEngine.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\NUglify.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Core.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Services.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Web.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Data.Linq.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Helpers.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Mvc.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Razor.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\CsQuery.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Dapper.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\EPPlus.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Flurl.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MoreLinq.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\NUglify.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Core.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Services.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Web.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Helpers.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Mvc.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Razor.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\RdlCompile.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\RdlCompile.compiled
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.csproj.CopyComplete
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\msvcr100.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x64\SqlServerSpatial120.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\msvcr100.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\SqlServerTypes\x86\SqlServerSpatial120.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeIssueInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\_ReportHeader.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeReeceiveInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccount.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GroupBalanceSheet.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\IncomeExpenditure.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPayment.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetRequirementDetailsInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetVariance.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBudgetApproval.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptCashInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptGroupLedger.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptNotes.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalance.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\VoucherPreview.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedBudget.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\JournalVoucher.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\PaymentVoucher.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptVoucher.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptConsolidatedProposedBudget.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\TrialBalanceDetails.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\MoneyReceipt.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPayment.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateTrialBalance.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\CostCenterSchedule.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidatedBudgetEstimate.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubLedgerInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptChequeRegister.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliation.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankBookInformation.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBankAdviceLetter.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoJV.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherNo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoWithAccountHead_WithoutParentGroup.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\rptBankReconciliationOption2.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledger.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithSubledgerParent.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAllVoucherInfoCV.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_SubledgerWiseTotal.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetailsWithCOATree.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ReceiptPaymentDetails_AccHeadWise.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\GratuityStatement.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledgerAndNarration.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithSubledger.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptJournalInfoWithNarration.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ChartofAccountTreeView.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoa.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\BudgetGroup.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorBillRegister2.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptContractorHistory.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSchedule.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\FixedAssetDepreciationSummary.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note17.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note16.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note8.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note12.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note13.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note9.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note10.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note11.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note06.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note4.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\Note5.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetails.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithCOATree.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledger.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\ConsolidateReceiptPaymentDetailsWithSubledgerParent.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithChequeInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithCOA.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptAccHeadTypeMapping_WithVoucherAndChequeInfo.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptSubledgersWithUnallocatedParent.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptVoucherInconsistancy.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptDataMigrationMappedCostCenters.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerScheduleConsolidated_groupbyCOA.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCostCenter.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByCoaAndCostCenter.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptZoneApproverList.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptLedgerInfoByPayto.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Modules\Reports\Rdlc\RptBalanceSheet_M1.rdlc
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll.config
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\VistaGL.Web.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\CsQuery.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Dapper.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\EPPlus.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Flurl.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.Common.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.SqlServer.Types.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Mono.Cecil.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MoreLinq.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MsieJavaScriptEngine.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\NUglify.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Core.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Services.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Web.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Data.Linq.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Helpers.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Mvc.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Razor.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\CsQuery.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Dapper.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\EPPlus.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\FluentMigrator.Runner.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Flurl.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\MoreLinq.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Newtonsoft.Json.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\NUglify.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Core.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Data.Entity.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Services.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\Serenity.Web.pdb
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\StackExchange.Exceptional.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Helpers.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Mvc.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.Razor.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\System.Web.WebPages.Razor.xml
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.csprojResolveAssemblyReference.cache
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\RdlCompile.cache
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\RdlCompile.compiled
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.dll
+D:\Source Code\Source_Code\CUMILLA_MEDICAL\BEPZA_MEDICAL\AMS_BEPZA\VistaGL\VistaGL.Web\obj\Debug\VistaGL.Web.pdb

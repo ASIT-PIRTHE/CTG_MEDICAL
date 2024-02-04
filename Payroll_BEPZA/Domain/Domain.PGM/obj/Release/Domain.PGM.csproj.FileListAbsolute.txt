@@ -1,0 +1,110 @@
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.dll.config
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.Infrastructure.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.PGM.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Helpers.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Mvc.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Razor.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\Utility.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\EntityFramework.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\LinqKit.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.Infrastructure.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.PGM.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\Utility.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Helpers.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Mvc.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Razor.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\EntityFramework.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\LinqKit.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.PGM.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Helpers.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Utility.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\EntityFramework.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\LinqKit.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.Deployment.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.Infrastructure.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.PGM.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Utility.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Helpers.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Mvc.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\EntityFramework.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\LinqKit.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.Deployment.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.dll.config
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.PGM.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Helpers.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Mvc.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Utility.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\EntityFramework.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\LinqKit.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.Deployment.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.PGM.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.PGM.dll.config
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.Infrastructure.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Utility.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Helpers.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Mvc.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\EntityFramework.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\LinqKit.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.Deployment.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.csproj.CopyComplete
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.dll.config
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Domain.PGM.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.Infrastructure.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.PGM.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Helpers.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Mvc.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Razor.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Utility.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\EntityFramework.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\LinqKit.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.Deployment.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.Infrastructure.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.PGM.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\DAL.PGM.dll.config
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\Utility.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Helpers.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Mvc.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.Razor.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\EntityFramework.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\LinqKit.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\bin\Release\System.Web.WebPages.Deployment.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\Domain\Domain.PGM\obj\Release\Domain.PGM.csproj.CopyComplete

@@ -1,0 +1,111 @@
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.csprojResolveAssemblyReference.cache
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.pdb
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.pdb
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.csproj.CoreCompileInputs.cache
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.csproj.CopyComplete
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\PrimaryBaseLibrary.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Helpers.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Mvc.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.csproj.CopyComplete
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\PrimaryBaseLibrary\obj\Debug\PrimaryBaseLibrary.pdb

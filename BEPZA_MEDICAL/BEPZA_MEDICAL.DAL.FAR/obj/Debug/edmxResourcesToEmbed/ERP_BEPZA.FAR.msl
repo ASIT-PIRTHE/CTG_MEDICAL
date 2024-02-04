@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERP_BEPZADALFARStoreContainer" CdmEntityContainer="ERP_BEPZAFAREntities">
+    <EntitySetMapping Name="FAR_AccidentInformation">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_AccidentInformation">
+        <MappingFragment StoreEntitySet="FAR_AccidentInformation">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Driver" ColumnName="Driver" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="FIxedAssetId" ColumnName="FIxedAssetId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_AdditionalInfoofVehicle">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_AdditionalInfoofVehicle">
+        <MappingFragment StoreEntitySet="FAR_AdditionalInfoofVehicle">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Seats" ColumnName="Seats" />
+          <ScalarProperty Name="CC" ColumnName="CC" />
+          <ScalarProperty Name="Engine" ColumnName="Engine" />
+          <ScalarProperty Name="Chassis" ColumnName="Chassis" />
+          <ScalarProperty Name="Registration" ColumnName="Registration" />
+          <ScalarProperty Name="SourceOfFundId" ColumnName="SourceOfFundId" />
+          <ScalarProperty Name="FIxedAssetId" ColumnName="FIxedAssetId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_AdditionalInfoofVehicleDetail">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_AdditionalInfoofVehicleDetail">
+        <MappingFragment StoreEntitySet="FAR_AdditionalInfoofVehicleDetail">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SparePartInfoId" ColumnName="SparePartInfoId" />
+          <ScalarProperty Name="AdditionalInfoofVehicleId" ColumnName="AdditionalInfoofVehicleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_AssetCondition">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_AssetCondition">
+        <MappingFragment StoreEntitySet="FAR_AssetCondition">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="AssetStatusId" ColumnName="AssetStatusId" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_AssetMaintenanceInformation">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_AssetMaintenanceInformation">
+        <MappingFragment StoreEntitySet="FAR_AssetMaintenanceInformation">
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="MaintenanceTypeInfoId" ColumnName="MaintenanceTypeInfoId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="FIxedAssetId" ColumnName="FIxedAssetId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_AssetMaintenanceInformationDetail">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_AssetMaintenanceInformationDetail">
+        <MappingFragment StoreEntitySet="FAR_AssetMaintenanceInformationDetail">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SparePartInfoId" ColumnName="SparePartInfoId" />
+          <ScalarProperty Name="AssetMaintenanceInfoId" ColumnName="AssetMaintenanceInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_AssetStatus">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_AssetStatus">
+        <MappingFragment StoreEntitySet="FAR_AssetStatus">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_DepreciationMethod">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_DepreciationMethod">
+        <MappingFragment StoreEntitySet="FAR_DepreciationMethod">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_Location">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_Location">
+        <MappingFragment StoreEntitySet="FAR_Location">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_MaintenanceTypeInformation">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_MaintenanceTypeInformation">
+        <MappingFragment StoreEntitySet="FAR_MaintenanceTypeInformation">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RedoType" ColumnName="RedoType" />
+          <ScalarProperty Name="RedoAfter" ColumnName="RedoAfter" />
+          <ScalarProperty Name="IsPeriodicallyRepeating" ColumnName="IsPeriodicallyRepeating" />
+          <ScalarProperty Name="MaintenanceType" ColumnName="MaintenanceType" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_SparePartInformation">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_SparePartInformation">
+        <MappingFragment StoreEntitySet="FAR_SparePartInformation">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="SparePart" ColumnName="SparePart" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_Supplier">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_Supplier">
+        <MappingFragment StoreEntitySet="FAR_Supplier">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_Catagory">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_Catagory">
+        <MappingFragment StoreEntitySet="FAR_Catagory">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ReservedIDTo" ColumnName="ReservedIDTo" />
+          <ScalarProperty Name="ReservedIDFrom" ColumnName="ReservedIDFrom" />
+          <ScalarProperty Name="DepreciationMethodId" ColumnName="DepreciationMethodId" />
+          <ScalarProperty Name="MinimumCost" ColumnName="MinimumCost" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_SubCategory">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_SubCategory">
+        <MappingFragment StoreEntitySet="FAR_SubCategory">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="DepreciationRate" ColumnName="DepreciationRate" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="SubCategoryCode" ColumnName="SubCategoryCode" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_AssetTransfer">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_AssetTransfer">
+        <MappingFragment StoreEntitySet="FAR_AssetTransfer">
+          <ScalarProperty Name="ToOrganogramLevelId" ColumnName="ToOrganogramLevelId" />
+          <ScalarProperty Name="ToZoneInfoId" ColumnName="ToZoneInfoId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ReturnBy" ColumnName="ReturnBy" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="IssuedBy" ColumnName="IssuedBy" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="ExpectedDateOfReturn" ColumnName="ExpectedDateOfReturn" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Accessories" ColumnName="Accessories" />
+          <ScalarProperty Name="ToBeneficiaryEmployeeId" ColumnName="ToBeneficiaryEmployeeId" />
+          <ScalarProperty Name="FromBeneficiaryEmployeeId" ColumnName="FromBeneficiaryEmployeeId" />
+          <ScalarProperty Name="ToLocationId" ColumnName="ToLocationId" />
+          <ScalarProperty Name="FromLocationId" ColumnName="FromLocationId" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="AssetStatusId" ColumnName="AssetStatusId" />
+          <ScalarProperty Name="FixedAssetId" ColumnName="FixedAssetId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_Repair">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_Repair">
+        <MappingFragment StoreEntitySet="FAR_Repair">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="UpdatedBookValue" ColumnName="UpdatedBookValue" />
+          <ScalarProperty Name="AppreciatedCost" ColumnName="AppreciatedCost" />
+          <ScalarProperty Name="RepairCost" ColumnName="RepairCost" />
+          <ScalarProperty Name="IsImpactWithDep" ColumnName="IsImpactWithDep" />
+          <ScalarProperty Name="CurrentBookValue" ColumnName="CurrentBookValue" />
+          <ScalarProperty Name="AssetConditionId" ColumnName="AssetConditionId" />
+          <ScalarProperty Name="AssetStatusId" ColumnName="AssetStatusId" />
+          <ScalarProperty Name="DepreciationRate" ColumnName="DepreciationRate" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="FixedAssetId" ColumnName="FixedAssetId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_SaleDisposal">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_SaleDisposal">
+        <MappingFragment StoreEntitySet="FAR_SaleDisposal">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="CapitalGain" ColumnName="CapitalGain" />
+          <ScalarProperty Name="SalValue" ColumnName="SalValue" />
+          <ScalarProperty Name="AccumulatedDep" ColumnName="AccumulatedDep" />
+          <ScalarProperty Name="CurrentBookValue" ColumnName="CurrentBookValue" />
+          <ScalarProperty Name="AssetCost" ColumnName="AssetCost" />
+          <ScalarProperty Name="AssetConditionId" ColumnName="AssetConditionId" />
+          <ScalarProperty Name="AssetStatusId" ColumnName="AssetStatusId" />
+          <ScalarProperty Name="PreviousConditionId" ColumnName="PreviousConditionId" />
+          <ScalarProperty Name="PreviousStatusId" ColumnName="PreviousStatusId" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="FixedAssetId" ColumnName="FixedAssetId" />
+          <ScalarProperty Name="strType" ColumnName="strType" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_FixedAsset">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_FixedAsset">
+        <MappingFragment StoreEntitySet="FAR_FixedAsset">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="PurchaseId" ColumnName="PurchaseId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="OrganogramLevelId" ColumnName="OrganogramLevelId" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="IsAllowDepreciationCal" ColumnName="IsAllowDepreciationCal" />
+          <ScalarProperty Name="BeneficiaryEmployeeId" ColumnName="BeneficiaryEmployeeId" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="OBBookValue" ColumnName="OBBookValue" />
+          <ScalarProperty Name="OBDepreciation" ColumnName="OBDepreciation" />
+          <ScalarProperty Name="AssetCost" ColumnName="AssetCost" />
+          <ScalarProperty Name="DepreciationEffectiveDate" ColumnName="DepreciationEffectiveDate" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="AssetConditionId" ColumnName="AssetConditionId" />
+          <ScalarProperty Name="AssetStatusId" ColumnName="AssetStatusId" />
+          <ScalarProperty Name="DepreciationRate" ColumnName="DepreciationRate" />
+          <ScalarProperty Name="AssetName" ColumnName="AssetName" />
+          <ScalarProperty Name="AssetCode" ColumnName="AssetCode" />
+          <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="IsCalculateDepreciation" ColumnName="IsCalculateDepreciation" />
+          <ScalarProperty Name="IsRefurbishment" ColumnName="IsRefurbishment" />
+          <ScalarProperty Name="AssetType" ColumnName="AssetType" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ItemTypeId" ColumnName="ItemTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="acc_Accounting_Period_Information">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.acc_Accounting_Period_Information">
+        <MappingFragment StoreEntitySet="acc_Accounting_Period_Information">
+          <ScalarProperty Name="fundControlInformation_id" ColumnName="fundControlInformation_id" />
+          <ScalarProperty Name="yearName" ColumnName="yearName" />
+          <ScalarProperty Name="periodStartDate" ColumnName="periodStartDate" />
+          <ScalarProperty Name="periodEndDate" ColumnName="periodEndDate" />
+          <ScalarProperty Name="isClosed" ColumnName="isClosed" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="updatedUserId" ColumnName="updatedUserId" />
+          <ScalarProperty Name="updatedUserDate" ColumnName="updatedUserDate" />
+          <ScalarProperty Name="createdUserId" ColumnName="createdUserId" />
+          <ScalarProperty Name="createdUserDate" ColumnName="createdUserDate" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_Depreciation">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_Depreciation">
+        <MappingFragment StoreEntitySet="FAR_Depreciation">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="ProcessDate" ColumnName="ProcessDate" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="FinYearEndDate" ColumnName="FinYearEndDate" />
+          <ScalarProperty Name="FinYearStartDate" ColumnName="FinYearStartDate" />
+          <ScalarProperty Name="FinYearName" ColumnName="FinYearName" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAR_DepreciationDetail">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_DepreciationDetail">
+        <MappingFragment StoreEntitySet="FAR_DepreciationDetail">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="CBBookValue" ColumnName="CBBookValue" />
+          <ScalarProperty Name="CBDepreciation" ColumnName="CBDepreciation" />
+          <ScalarProperty Name="Depreciation" ColumnName="Depreciation" />
+          <ScalarProperty Name="OBDepreciation" ColumnName="OBDepreciation" />
+          <ScalarProperty Name="OBBookValue" ColumnName="OBBookValue" />
+          <ScalarProperty Name="AssetCost" ColumnName="AssetCost" />
+          <ScalarProperty Name="DepreciationRate" ColumnName="DepreciationRate" />
+          <ScalarProperty Name="AssetConditionId" ColumnName="AssetConditionId" />
+          <ScalarProperty Name="AssetStatusId" ColumnName="AssetStatusId" />
+          <ScalarProperty Name="FixedAssetId" ColumnName="FixedAssetId" />
+          <ScalarProperty Name="DepreciationId" ColumnName="DepreciationId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="FAR_uspVoucherPosting" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.FAR_uspVoucherPosting">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.FAR_uspVoucherPosting_Result">
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="VouchrTypeId" ColumnName="VouchrTypeId" />
+          <ScalarProperty Name="FundControlId" ColumnName="FundControlId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FAR_AssetRegisterWithDepreciationCalRpt" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_AssetRegisterWithDepreciationCalRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.SP_FAR_AssetRegisterWithDepreciationCalRpt_Result">
+          <ScalarProperty Name="AssetCode" ColumnName="AssetCode" />
+          <ScalarProperty Name="AssetName" ColumnName="AssetName" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="AssetCost" ColumnName="AssetCost" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="AssetCostUptoPreYr" ColumnName="AssetCostUptoPreYr" />
+          <ScalarProperty Name="AdditionDuringFY" ColumnName="AdditionDuringFY" />
+          <ScalarProperty Name="DisposalAdjFY" ColumnName="DisposalAdjFY" />
+          <ScalarProperty Name="TotalCostUptoCurrentYear" ColumnName="TotalCostUptoCurrentYear" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="FY" ColumnName="FY" />
+          <ScalarProperty Name="DepreciationUptoPreYr" ColumnName="DepreciationUptoPreYr" />
+          <ScalarProperty Name="WrittenDownValueUptoPreYr" ColumnName="WrittenDownValueUptoPreYr" />
+          <ScalarProperty Name="DepreciationDuringFY" ColumnName="DepreciationDuringFY" />
+          <ScalarProperty Name="DepreciationAdjDuringFY" ColumnName="DepreciationAdjDuringFY" />
+          <ScalarProperty Name="DepreciationCumulativeUptoCurYr" ColumnName="DepreciationCumulativeUptoCurYr" />
+          <ScalarProperty Name="WrittenDownValueUptoCurYr" ColumnName="WrittenDownValueUptoCurYr" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FAR_AssetTransferHistoryRpt" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_AssetTransferHistoryRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.SP_FAR_AssetTransferHistoryRpt_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AssetCode" ColumnName="AssetCode" />
+          <ScalarProperty Name="AssetName" ColumnName="AssetName" />
+          <ScalarProperty Name="SubCategoryId" ColumnName="SubCategoryId" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="FromAssetConditionId" ColumnName="FromAssetConditionId" />
+          <ScalarProperty Name="AssetStatusId" ColumnName="AssetStatusId" />
+          <ScalarProperty Name="FromLocationId" ColumnName="FromLocationId" />
+          <ScalarProperty Name="ToLocationId" ColumnName="ToLocationId" />
+          <ScalarProperty Name="FromBeneficiaryEmployeeId" ColumnName="FromBeneficiaryEmployeeId" />
+          <ScalarProperty Name="FromBeneficiaryEmployee" ColumnName="FromBeneficiaryEmployee" />
+          <ScalarProperty Name="FromBeneficiaryEmpID" ColumnName="FromBeneficiaryEmpID" />
+          <ScalarProperty Name="ToBeneficiaryEmployeeId" ColumnName="ToBeneficiaryEmployeeId" />
+          <ScalarProperty Name="ToBeneficiaryEmployee" ColumnName="ToBeneficiaryEmployee" />
+          <ScalarProperty Name="ToBeneficiaryEmpID" ColumnName="ToBeneficiaryEmpID" />
+          <ScalarProperty Name="AssetCondition" ColumnName="AssetCondition" />
+          <ScalarProperty Name="AssetStatus" ColumnName="AssetStatus" />
+          <ScalarProperty Name="FromLocation" ColumnName="FromLocation" />
+          <ScalarProperty Name="ToLocation" ColumnName="ToLocation" />
+          <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="DiffDate" ColumnName="DiffDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FAR_FixedAssetRegisterRpt" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_FixedAssetRegisterRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.SP_FAR_FixedAssetRegisterRpt_Result">
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="AssetCode" ColumnName="AssetCode" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="AssetName" ColumnName="AssetName" />
+          <ScalarProperty Name="Supplier" ColumnName="Supplier" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="CostAddition" ColumnName="CostAddition" />
+          <ScalarProperty Name="CostAdjustment" ColumnName="CostAdjustment" />
+          <ScalarProperty Name="DepreciationRate" ColumnName="DepreciationRate" />
+          <ScalarProperty Name="DepreciationUptoFromDate" ColumnName="DepreciationUptoFromDate" />
+          <ScalarProperty Name="DepreciationInPeriod" ColumnName="DepreciationInPeriod" />
+          <ScalarProperty Name="DepreciationAdjustment" ColumnName="DepreciationAdjustment" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FAR_FixedAssetScheduleRpt" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_FixedAssetScheduleRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.SP_FAR_FixedAssetScheduleRpt_Result">
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="ItemTypeName" ColumnName="ItemTypeName" />
+          <ScalarProperty Name="ItemParentId" ColumnName="ItemParentId" />
+          <ScalarProperty Name="ItemTypeParentName" ColumnName="ItemTypeParentName" />
+          <ScalarProperty Name="ItemParentsParentId" ColumnName="ItemParentsParentId" />
+          <ScalarProperty Name="ItemParentsParentName" ColumnName="ItemParentsParentName" />
+          <ScalarProperty Name="AssetCode" ColumnName="AssetCode" />
+          <ScalarProperty Name="AssetName" ColumnName="AssetName" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="CostAddition" ColumnName="CostAddition" />
+          <ScalarProperty Name="CostAdjustment" ColumnName="CostAdjustment" />
+          <ScalarProperty Name="DepreciationRate" ColumnName="DepreciationRate" />
+          <ScalarProperty Name="DepreciationUptoFromDate" ColumnName="DepreciationUptoFromDate" />
+          <ScalarProperty Name="DepreciationInPeriod" ColumnName="DepreciationInPeriod" />
+          <ScalarProperty Name="DepreciationAdjustment" ColumnName="DepreciationAdjustment" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FAR_GetDepreciationByFixedAssetId" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_GetDepreciationByFixedAssetId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.SP_FAR_GetDepreciationByFixedAssetId_Result">
+          <ScalarProperty Name="Depreciation" ColumnName="Depreciation" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FAR_GetDepreciationStatus" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_GetDepreciationStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.SP_FAR_GetDepreciationStatus_Result">
+          <ScalarProperty Name="DepreciationId" ColumnName="DepreciationId" />
+          <ScalarProperty Name="FixedAssetId" ColumnName="FixedAssetId" />
+          <ScalarProperty Name="ProcessDate" ColumnName="ProcessDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FAR_GetNextFinancialYear" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_GetNextFinancialYear">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.SP_FAR_GetNextFinancialYear_Result">
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="FinancialYearName" ColumnName="FinancialYearName" />
+          <ScalarProperty Name="periodStartDate" ColumnName="periodStartDate" />
+          <ScalarProperty Name="periodEndDate" ColumnName="periodEndDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FAR_GetUniqueMRRList" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_GetUniqueMRRList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.SP_FAR_GetUniqueMRRList_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MRR" ColumnName="MRR" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FAR_LocationWiseAssetListRpt" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_LocationWiseAssetListRpt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FAR.SP_FAR_LocationWiseAssetListRpt_Result">
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="ZoneName" ColumnName="ZoneName" />
+          <ScalarProperty Name="ItemTypeName" ColumnName="ItemTypeName" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="SubCategoryName" ColumnName="SubCategoryName" />
+          <ScalarProperty Name="AssetCode" ColumnName="AssetCode" />
+          <ScalarProperty Name="AssetName" ColumnName="AssetName" />
+          <ScalarProperty Name="AssetNameWithCode" ColumnName="AssetNameWithCode" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="AssetLocation" ColumnName="AssetLocation" />
+          <ScalarProperty Name="AssetCondition" ColumnName="AssetCondition" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FAR_ProcDepreciationCal" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_ProcDepreciationCal" />
+    <FunctionImportMapping FunctionImportName="SP_FAR_ProcDepreciationCalRollback" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_ProcDepreciationCalRollback" />
+    <FunctionImportMapping FunctionImportName="SP_FAR_ProcDepreciationCalRollbackIndividual" FunctionName="BEPZA_MEDICAL.DAL.FAR.Store.SP_FAR_ProcDepreciationCalRollbackIndividual" />
+  </EntityContainerMapping>
+</Mapping>

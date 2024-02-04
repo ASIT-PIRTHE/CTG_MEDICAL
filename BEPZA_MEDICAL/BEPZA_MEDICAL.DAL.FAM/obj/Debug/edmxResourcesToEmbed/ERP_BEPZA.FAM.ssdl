@@ -1,0 +1,1394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IWM_MFSFAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.CommonConfigType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CommonConfigType">
+    <Key>
+      <PropertyRef Name="TableName" />
+    </Key>
+    <Property Name="TableName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FAM_ApprovalComments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VoucherId" Type="int" Nullable="false" />
+    <Property Name="RecommenderApproverId" Type="int" />
+    <Property Name="ApprovalPathId" Type="int" Nullable="false" />
+    <Property Name="ApprovalComment" Type="varchar" MaxLength="500" />
+    <Property Name="CommentDate" Type="datetime" />
+    <Property Name="ApprovalFor" Type="int" />
+  </EntityType>
+  <EntityType Name="FAM_ApprovalFlow">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DocumentType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DocumentId" Type="int" Nullable="false" />
+    <Property Name="CreatorId" Type="int" Nullable="false" />
+    <Property Name="ArrivalDate" Type="datetime" />
+    <Property Name="DocumentPreStatus" Type="varchar" MaxLength="50" />
+    <Property Name="DestinationId" Type="int" Nullable="false" />
+    <Property Name="DocumentStatus" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Comments" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_ApprovalPath">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="PathId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PathName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_ApprovalPathNodeInfo">
+    <Key>
+      <PropertyRef Name="NodeId" />
+    </Key>
+    <Property Name="NodeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PathId" Type="int" Nullable="false" />
+    <Property Name="ApprovalType" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RoleDesignationId" Type="int" Nullable="false" />
+    <Property Name="NodeEmpId" Type="int" Nullable="false" />
+    <Property Name="NodeOrder" Type="int" Nullable="false" />
+    <Property Name="ParentNodeEmpId" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_ApproverType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_BankBranchAccountNo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankBranchMapId" Type="int" Nullable="false" />
+    <Property Name="BankAccountNo" Type="varchar" MaxLength="100" />
+    <Property Name="AccountHeadId" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_BankBranchMap">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankId" Type="int" Nullable="false" />
+    <Property Name="BranchId" Type="int" Nullable="false" />
+    <Property Name="SWIFTCode" Type="varchar" MaxLength="30" />
+    <Property Name="Address" Type="varchar" MaxLength="200" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_BSPLReportHeadMapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReportId" Type="int" Nullable="false" />
+    <Property Name="BSPLReportHeadId" Type="int" Nullable="false" />
+    <Property Name="ReportHeadSerial" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_BSPLReportHeadMappingDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BSPLReportHeadMappingId" Type="int" Nullable="false" />
+    <Property Name="AccountHeadId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_BSPLReportHeadName">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_CentralBudgetAllocation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="ApprovalPathId" Type="int" Nullable="false" />
+    <Property Name="CurrentApprovalNodeId" Type="int" />
+    <Property Name="ApprovalStatus" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_CentralBudgetAllocationDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CentralBudgetId" Type="int" Nullable="false" />
+    <Property Name="AccountHeadId" Type="int" Nullable="false" />
+    <Property Name="OriginalAmount" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="RevisedAmount" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_CentralBudgetRevision">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="RevisionNo" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="ApprovalPathId" Type="int" Nullable="false" />
+    <Property Name="CurrentApprovalNodeId" Type="int" />
+    <Property Name="ApprovalStatus" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_CentralBudgetRevisionDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CentralBudgetRevisionId" Type="int" Nullable="false" />
+    <Property Name="RevisionAccountHeadId" Type="int" Nullable="false" />
+    <Property Name="PreviousBudget" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="RevisedBudget" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_ChartOfAccount">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountHeadCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AccountHeadName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="AccountHeadType" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="IsPostingAccount" Type="bit" />
+    <Property Name="ParentHeadCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="OpeningBalance" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BSPLName" Type="varchar" MaxLength="500" />
+    <Property Name="BSPLSerial" Type="int" />
+    <Property Name="IsBudgetHead" Type="bit" />
+    <Property Name="CashBankType" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IsBank" Type="bit" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="CompanyId" Type="int" />
+  </EntityType>
+  <EntityType Name="FAM_ChequeBookInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankAccountId" Type="int" Nullable="false" />
+    <Property Name="ChequeBookNumber" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ChequeInitialPart" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="ChequeStartingNumber" Type="int" Nullable="false" />
+    <Property Name="NumberOfLeaf" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_ChequeInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ChequeBookId" Type="int" Nullable="false" />
+    <Property Name="ChequeNumber" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ChequeStatus" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ChequeAmount" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_DivisionUnitBudgetAllocation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="DivisionUnitId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_DivisionUnitBudgetAllocationDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DivisionUnitBudgetId" Type="int" Nullable="false" />
+    <Property Name="AccountHeadId" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="RevisedAmount" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_DivisionUnitBudgetHead">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DivisionUnitId" Type="int" Nullable="false" />
+    <Property Name="AccountHeadId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_DivisionUnitBudgetRevision">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="DivisionUnitId" Type="int" Nullable="false" />
+    <Property Name="RevisionNo" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_DivisionUnitBudgetRevisionDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DivisionUnitBudgetRevisionId" Type="int" Nullable="false" />
+    <Property Name="RevisionAccountHeadId" Type="int" Nullable="false" />
+    <Property Name="PreviousBudget" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="RevisedBudget" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_FacilityAccountHeadMapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FacilityId" Type="int" Nullable="false" />
+    <Property Name="ProjectTypeId" Type="int" Nullable="false" />
+    <Property Name="AccountHeadId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_FinancialYearInformation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FinancialYearName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FinancialYearStartDate" Type="datetime" Nullable="false" />
+    <Property Name="FinancialYearEndDate" Type="datetime" Nullable="false" />
+    <Property Name="FinancialYearVoucherFormat" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="IsClose" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="CompanyId" Type="int" />
+  </EntityType>
+  <EntityType Name="FAM_PaymentType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_PeriodicBalance">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="AccountHeadId" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="money" Nullable="false" />
+    <Property Name="ClosingAmount" Type="money" Nullable="false" />
+    <Property Name="AccountHeadCode" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="FAM_Purpose">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_PurposeAccountHeadMapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PurposeId" Type="int" Nullable="false" />
+    <Property Name="AccountHeadId" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_ReportName">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_TemptblBalanceSheetbyControlHeadComparision">
+    <Key>
+      <PropertyRef Name="intControlAccount" />
+    </Key>
+    <Property Name="intControlAccount" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="strControlCode" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AccountHeadName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="strCompanyId" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="bitISgrossProfit" Type="bit" Nullable="false" />
+    <Property Name="mnyOB" Type="money" Nullable="false" />
+    <Property Name="mnyAmount" Type="money" Nullable="false" />
+    <Property Name="mnyAmountprev" Type="money" Nullable="false" />
+    <Property Name="LeafNode" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="FAM_TemptblIncomeAndExpenditureDetailReport">
+    <Key>
+      <PropertyRef Name="intControlAccount" />
+    </Key>
+    <Property Name="intControlAccount" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="strControlCode" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AccountHeadName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="strCompanyId" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="bitISgrossProfit" Type="bit" Nullable="false" />
+    <Property Name="mnyOB" Type="money" Nullable="false" />
+    <Property Name="mnyAmount" Type="money" Nullable="false" />
+    <Property Name="mnyAmountprev" Type="money" Nullable="false" />
+    <Property Name="LeafNode" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="FAM_TemptblIncomeAndExpenditureReport">
+    <Key>
+      <PropertyRef Name="intControlAccount" />
+    </Key>
+    <Property Name="intControlAccount" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="strControlCode" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AccountHeadName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="strCompanyId" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="bitISgrossProfit" Type="bit" Nullable="false" />
+    <Property Name="mnyOB" Type="money" Nullable="false" />
+    <Property Name="mnyAmount" Type="money" Nullable="false" />
+    <Property Name="mnyAmountprev" Type="money" Nullable="false" />
+    <Property Name="LeafNode" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="FAM_TemptblReceiptAndPaymentStatement">
+    <Key>
+      <PropertyRef Name="intControlAccount" />
+    </Key>
+    <Property Name="intControlAccount" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="strControlCode" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AccountHeadName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="strCompanyId" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="LeafNode" Type="char" MaxLength="10" />
+    <Property Name="strReportHeadType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="mnyAmount" Type="money" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.FAM_TempTrialBalanceDetailChartofAccount' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FAM_TempTrialBalanceDetailChartofAccount">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AccountHeadCode" />
+    </Key>
+    <Property Name="Id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountHeadCode" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AccountHeadName" Type="varchar" MaxLength="500" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="DebitAmt" Type="money" />
+    <Property Name="CreditAmt" Type="money" />
+    <Property Name="IsPostingAccount" Type="bit" />
+    <Property Name="AccountHeadType" Type="char" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="FAM_VendorInformation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendorName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ContactPerson" Type="varchar" MaxLength="50" />
+    <Property Name="ContactNumber" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="250" />
+    <Property Name="EMail" Type="varchar" MaxLength="100" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_VoucherInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VoucherNumber" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="VoucherDate" Type="datetime" Nullable="false" />
+    <Property Name="VoucherTypeId" Type="int" Nullable="false" />
+    <Property Name="IsCashOrBank" Type="bit" Nullable="false" />
+    <Property Name="ApplicableFor" Type="int" Nullable="false" />
+    <Property Name="PayeeStaffId" Type="int" />
+    <Property Name="PayeeClientId" Type="int" />
+    <Property Name="PayeeVendorId" Type="int" />
+    <Property Name="ReceivedBy" Type="varchar" MaxLength="100" />
+    <Property Name="ReceiveFromStaffId" Type="int" />
+    <Property Name="ReceiveFromClientId" Type="int" />
+    <Property Name="ReceiveFromVendorId" Type="int" />
+    <Property Name="ReferenceType" Type="varchar" MaxLength="20" />
+    <Property Name="ReferenceNumber" Type="varchar" MaxLength="50" />
+    <Property Name="PaymentTypeId" Type="int" />
+    <Property Name="PaymentTypeReferenceNumber" Type="varchar" MaxLength="50" />
+    <Property Name="BankAccountId" Type="int" />
+    <Property Name="VoucherStatus" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ApproveDate" Type="datetime" />
+    <Property Name="FinalApproverId" Type="int" />
+    <Property Name="BankId" Type="int" />
+    <Property Name="ChequeDate" Type="datetime" />
+    <Property Name="Narration" Type="varchar" MaxLength="500" />
+    <Property Name="CurrentApprovalNodeId" Type="int" />
+    <Property Name="ApprovalPathId" Type="int" Nullable="false" />
+    <Property Name="FinancialYearId" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ApprovalComment" Type="varchar" MaxLength="500" />
+    <Property Name="BankAccountNoReceive" Type="varchar" MaxLength="100" />
+    <Property Name="InvoiceVoucherReferenceId" Type="int" />
+    <Property Name="IsRealized" Type="bit" />
+  </EntityType>
+  <EntityType Name="FAM_VoucherInfoDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VoucherId" Type="int" Nullable="false" />
+    <Property Name="AccountHeadId" Type="int" Nullable="false" />
+    <Property Name="Debit" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Credit" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="ProjectId" Type="int" Nullable="false" />
+    <Property Name="ChequeNumber" Type="varchar" MaxLength="20" />
+    <Property Name="ChequeDate" Type="datetime" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IsReconciled" Type="bit" />
+    <Property Name="ReconcileDate" Type="datetime" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FAM_VoucherType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwCompanyInformation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwCompanyInformation">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="IUser" />
+      <PropertyRef Name="IDate" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="100" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="Phone1" Type="varchar" MaxLength="50" />
+    <Property Name="Phone2" Type="varchar" MaxLength="50" />
+    <Property Name="FaxNo" Type="varchar" MaxLength="50" />
+    <Property Name="EmailAddress" Type="varchar" MaxLength="100" />
+    <Property Name="WebURL" Type="varchar" MaxLength="100" />
+    <Property Name="CompanyLogo" Type="varbinary(max)" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="ApplicationId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwFAMAdvanceToStaffForProject' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwFAMAdvanceToStaffForProjectAdjustment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwFAMIndentAdjustmentVoucherReport' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwFAMProjectMonitoringSheet' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwFAMProjectPLPS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwFAMProjectWiseIncomeExpenditure' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwFAMReportHeadMapping' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwFAMReportWiseHeadName' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwFAMSearchInvoiceInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'POMS_MPA.dbo.vwIncomeExpenditureSummary' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <Association Name="FK_FAM_ApprovalPathNodeInfo_FAM_ApprovalPath">
+    <End Role="FAM_ApprovalPath" Type="Self.FAM_ApprovalPath" Multiplicity="1" />
+    <End Role="FAM_ApprovalPathNodeInfo" Type="Self.FAM_ApprovalPathNodeInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ApprovalPath">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="FAM_ApprovalPathNodeInfo">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_BankBranchAccountNo_FAM_BankBranchMap">
+    <End Role="FAM_BankBranchMap" Type="Self.FAM_BankBranchMap" Multiplicity="1" />
+    <End Role="FAM_BankBranchAccountNo" Type="Self.FAM_BankBranchAccountNo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_BankBranchMap">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_BankBranchAccountNo">
+        <PropertyRef Name="BankBranchMapId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_BankBranchAccountNo_FAM_ChartOfAccount">
+    <End Role="FAM_ChartOfAccount" Type="Self.FAM_ChartOfAccount" Multiplicity="0..1" />
+    <End Role="FAM_BankBranchAccountNo" Type="Self.FAM_BankBranchAccountNo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ChartOfAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_BankBranchAccountNo">
+        <PropertyRef Name="AccountHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_BSPLReportHeadMapping_FAM_BSPLReportHeadName">
+    <End Role="FAM_BSPLReportHeadName" Type="Self.FAM_BSPLReportHeadName" Multiplicity="1" />
+    <End Role="FAM_BSPLReportHeadMapping" Type="Self.FAM_BSPLReportHeadMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_BSPLReportHeadName">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_BSPLReportHeadMapping">
+        <PropertyRef Name="BSPLReportHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_BSPLReportHeadMapping_FAM_ReportName">
+    <End Role="FAM_ReportName" Type="Self.FAM_ReportName" Multiplicity="1" />
+    <End Role="FAM_BSPLReportHeadMapping" Type="Self.FAM_BSPLReportHeadMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ReportName">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_BSPLReportHeadMapping">
+        <PropertyRef Name="ReportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_BSPLReportHeadMappingDetails_FAM_BSPLReportHeadMapping">
+    <End Role="FAM_BSPLReportHeadMapping" Type="Self.FAM_BSPLReportHeadMapping" Multiplicity="1" />
+    <End Role="FAM_BSPLReportHeadMappingDetails" Type="Self.FAM_BSPLReportHeadMappingDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_BSPLReportHeadMapping">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_BSPLReportHeadMappingDetails">
+        <PropertyRef Name="BSPLReportHeadMappingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_BSPLReportHeadMappingDetails_FAM_ChartOfAccount">
+    <End Role="FAM_ChartOfAccount" Type="Self.FAM_ChartOfAccount" Multiplicity="1" />
+    <End Role="FAM_BSPLReportHeadMappingDetails" Type="Self.FAM_BSPLReportHeadMappingDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ChartOfAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_BSPLReportHeadMappingDetails">
+        <PropertyRef Name="AccountHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_CentralBudgetAllocation_FAM_ApprovalPath">
+    <End Role="FAM_ApprovalPath" Type="Self.FAM_ApprovalPath" Multiplicity="1" />
+    <End Role="FAM_CentralBudgetAllocation" Type="Self.FAM_CentralBudgetAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ApprovalPath">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="FAM_CentralBudgetAllocation">
+        <PropertyRef Name="ApprovalPathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_CentralBudgetAllocation_FAM_FinancialYearInformation">
+    <End Role="FAM_FinancialYearInformation" Type="Self.FAM_FinancialYearInformation" Multiplicity="1" />
+    <End Role="FAM_CentralBudgetAllocation" Type="Self.FAM_CentralBudgetAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_FinancialYearInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_CentralBudgetAllocation">
+        <PropertyRef Name="FinancialYearId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_CentralBudgetAllocationDetails_FAM_CentralBudgetAllocationDetails">
+    <End Role="FAM_CentralBudgetAllocation" Type="Self.FAM_CentralBudgetAllocation" Multiplicity="1" />
+    <End Role="FAM_CentralBudgetAllocationDetails" Type="Self.FAM_CentralBudgetAllocationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_CentralBudgetAllocation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_CentralBudgetAllocationDetails">
+        <PropertyRef Name="CentralBudgetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_CentralBudgetAllocationDetails_FAM_ChartOfAccount">
+    <End Role="FAM_ChartOfAccount" Type="Self.FAM_ChartOfAccount" Multiplicity="1" />
+    <End Role="FAM_CentralBudgetAllocationDetails" Type="Self.FAM_CentralBudgetAllocationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ChartOfAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_CentralBudgetAllocationDetails">
+        <PropertyRef Name="AccountHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_CentralBudgetRevision_FAM_ApprovalPath">
+    <End Role="FAM_ApprovalPath" Type="Self.FAM_ApprovalPath" Multiplicity="1" />
+    <End Role="FAM_CentralBudgetRevision" Type="Self.FAM_CentralBudgetRevision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ApprovalPath">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="FAM_CentralBudgetRevision">
+        <PropertyRef Name="ApprovalPathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_CentralBudgetRevision_FAM_FinancialYearInformation">
+    <End Role="FAM_FinancialYearInformation" Type="Self.FAM_FinancialYearInformation" Multiplicity="1" />
+    <End Role="FAM_CentralBudgetRevision" Type="Self.FAM_CentralBudgetRevision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_FinancialYearInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_CentralBudgetRevision">
+        <PropertyRef Name="FinancialYearId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_CentralBudgetRevisionDetails_FAM_CentralBudgetRevision">
+    <End Role="FAM_CentralBudgetRevision" Type="Self.FAM_CentralBudgetRevision" Multiplicity="1" />
+    <End Role="FAM_CentralBudgetRevisionDetails" Type="Self.FAM_CentralBudgetRevisionDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_CentralBudgetRevision">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_CentralBudgetRevisionDetails">
+        <PropertyRef Name="CentralBudgetRevisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_CentralBudgetRevisionDetails_FAM_ChartOfAccount">
+    <End Role="FAM_ChartOfAccount" Type="Self.FAM_ChartOfAccount" Multiplicity="1" />
+    <End Role="FAM_CentralBudgetRevisionDetails" Type="Self.FAM_CentralBudgetRevisionDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ChartOfAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_CentralBudgetRevisionDetails">
+        <PropertyRef Name="RevisionAccountHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_ChequeBookInfo_FAM_BankBranchAccountNo">
+    <End Role="FAM_BankBranchAccountNo" Type="Self.FAM_BankBranchAccountNo" Multiplicity="1" />
+    <End Role="FAM_ChequeBookInfo" Type="Self.FAM_ChequeBookInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_BankBranchAccountNo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_ChequeBookInfo">
+        <PropertyRef Name="BankAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_ChequeInfo_FAM_ChequeBookInfo">
+    <End Role="FAM_ChequeBookInfo" Type="Self.FAM_ChequeBookInfo" Multiplicity="1" />
+    <End Role="FAM_ChequeInfo" Type="Self.FAM_ChequeInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ChequeBookInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_ChequeInfo">
+        <PropertyRef Name="ChequeBookId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_DivisionUnitBudgetAllocation_FAM_FinancialYearInformation">
+    <End Role="FAM_FinancialYearInformation" Type="Self.FAM_FinancialYearInformation" Multiplicity="1" />
+    <End Role="FAM_DivisionUnitBudgetAllocation" Type="Self.FAM_DivisionUnitBudgetAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_FinancialYearInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_DivisionUnitBudgetAllocation">
+        <PropertyRef Name="FinancialYearId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_DivisionUnitBudgetAllocationDetails_FAM_DivisionUnitBudgetAllocation">
+    <End Role="FAM_DivisionUnitBudgetAllocation" Type="Self.FAM_DivisionUnitBudgetAllocation" Multiplicity="1" />
+    <End Role="FAM_DivisionUnitBudgetAllocationDetails" Type="Self.FAM_DivisionUnitBudgetAllocationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_DivisionUnitBudgetAllocation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_DivisionUnitBudgetAllocationDetails">
+        <PropertyRef Name="DivisionUnitBudgetId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_DivisionUnitBudgetAllocationDetails_FAM_DivisionUnitBudgetAllocationDetails">
+    <End Role="FAM_ChartOfAccount" Type="Self.FAM_ChartOfAccount" Multiplicity="1" />
+    <End Role="FAM_DivisionUnitBudgetAllocationDetails" Type="Self.FAM_DivisionUnitBudgetAllocationDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ChartOfAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_DivisionUnitBudgetAllocationDetails">
+        <PropertyRef Name="AccountHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_DivisionUnitBudgetHead_FAM_ChartOfAccount">
+    <End Role="FAM_ChartOfAccount" Type="Self.FAM_ChartOfAccount" Multiplicity="1" />
+    <End Role="FAM_DivisionUnitBudgetHead" Type="Self.FAM_DivisionUnitBudgetHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ChartOfAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_DivisionUnitBudgetHead">
+        <PropertyRef Name="AccountHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_DivisionUnitBudgetRevision_FAM_FinancialYearInformation">
+    <End Role="FAM_FinancialYearInformation" Type="Self.FAM_FinancialYearInformation" Multiplicity="1" />
+    <End Role="FAM_DivisionUnitBudgetRevision" Type="Self.FAM_DivisionUnitBudgetRevision" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_FinancialYearInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_DivisionUnitBudgetRevision">
+        <PropertyRef Name="FinancialYearId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_DivisionUnitBudgetRevisionDetails_FAM_ChartOfAccount">
+    <End Role="FAM_ChartOfAccount" Type="Self.FAM_ChartOfAccount" Multiplicity="1" />
+    <End Role="FAM_DivisionUnitBudgetRevisionDetails" Type="Self.FAM_DivisionUnitBudgetRevisionDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ChartOfAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_DivisionUnitBudgetRevisionDetails">
+        <PropertyRef Name="RevisionAccountHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_DivisionUnitBudgetRevisionDetails_FAM_DivisionUnitBudgetRevision">
+    <End Role="FAM_DivisionUnitBudgetRevision" Type="Self.FAM_DivisionUnitBudgetRevision" Multiplicity="1" />
+    <End Role="FAM_DivisionUnitBudgetRevisionDetails" Type="Self.FAM_DivisionUnitBudgetRevisionDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_DivisionUnitBudgetRevision">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_DivisionUnitBudgetRevisionDetails">
+        <PropertyRef Name="DivisionUnitBudgetRevisionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_FinancialYearInformation_FAM_FinancialYearInformation">
+    <End Role="FAM_FinancialYearInformation" Type="Self.FAM_FinancialYearInformation" Multiplicity="1" />
+    <End Role="FAM_FinancialYearInformation1" Type="Self.FAM_FinancialYearInformation" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_FinancialYearInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_FinancialYearInformation1">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_PurposeAccountHeadMapping_FAM_ChartOfAccount">
+    <End Role="FAM_ChartOfAccount" Type="Self.FAM_ChartOfAccount" Multiplicity="1" />
+    <End Role="FAM_PurposeAccountHeadMapping" Type="Self.FAM_PurposeAccountHeadMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ChartOfAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_PurposeAccountHeadMapping">
+        <PropertyRef Name="AccountHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_PurposeAccountHeadMapping_FAM_Purpose">
+    <End Role="FAM_Purpose" Type="Self.FAM_Purpose" Multiplicity="1" />
+    <End Role="FAM_PurposeAccountHeadMapping" Type="Self.FAM_PurposeAccountHeadMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_Purpose">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_PurposeAccountHeadMapping">
+        <PropertyRef Name="PurposeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_VoucherInfo_FAM_ApprovalPath">
+    <End Role="FAM_ApprovalPath" Type="Self.FAM_ApprovalPath" Multiplicity="1" />
+    <End Role="FAM_VoucherInfo" Type="Self.FAM_VoucherInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ApprovalPath">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="FAM_VoucherInfo">
+        <PropertyRef Name="ApprovalPathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_VoucherInfo_FAM_BankBranchAccountNo">
+    <End Role="FAM_BankBranchAccountNo" Type="Self.FAM_BankBranchAccountNo" Multiplicity="0..1" />
+    <End Role="FAM_VoucherInfo" Type="Self.FAM_VoucherInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_BankBranchAccountNo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_VoucherInfo">
+        <PropertyRef Name="BankAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_VoucherInfo_FAM_FinancialYearInformation">
+    <End Role="FAM_FinancialYearInformation" Type="Self.FAM_FinancialYearInformation" Multiplicity="1" />
+    <End Role="FAM_VoucherInfo" Type="Self.FAM_VoucherInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_FinancialYearInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_VoucherInfo">
+        <PropertyRef Name="FinancialYearId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_VoucherInfo_FAM_PaymentType">
+    <End Role="FAM_PaymentType" Type="Self.FAM_PaymentType" Multiplicity="0..1" />
+    <End Role="FAM_VoucherInfo" Type="Self.FAM_VoucherInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_PaymentType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_VoucherInfo">
+        <PropertyRef Name="PaymentTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_VoucherInfo_FAM_VendorInformation1">
+    <End Role="FAM_VendorInformation" Type="Self.FAM_VendorInformation" Multiplicity="0..1" />
+    <End Role="FAM_VoucherInfo" Type="Self.FAM_VoucherInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_VendorInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_VoucherInfo">
+        <PropertyRef Name="PayeeVendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_VoucherInfo_FAM_VendorInformation3">
+    <End Role="FAM_VendorInformation" Type="Self.FAM_VendorInformation" Multiplicity="0..1" />
+    <End Role="FAM_VoucherInfo" Type="Self.FAM_VoucherInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_VendorInformation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_VoucherInfo">
+        <PropertyRef Name="ReceiveFromVendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_VoucherInfo_FAM_VoucherInfo">
+    <End Role="FAM_VoucherInfo" Type="Self.FAM_VoucherInfo" Multiplicity="1" />
+    <End Role="FAM_VoucherInfo1" Type="Self.FAM_VoucherInfo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_VoucherInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_VoucherInfo1">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_VoucherInfo_FAM_VoucherType">
+    <End Role="FAM_VoucherType" Type="Self.FAM_VoucherType" Multiplicity="1" />
+    <End Role="FAM_VoucherInfo" Type="Self.FAM_VoucherInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_VoucherType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_VoucherInfo">
+        <PropertyRef Name="VoucherTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_VoucherInfoDetails_FAM_ChartOfAccount">
+    <End Role="FAM_ChartOfAccount" Type="Self.FAM_ChartOfAccount" Multiplicity="1" />
+    <End Role="FAM_VoucherInfoDetails" Type="Self.FAM_VoucherInfoDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_ChartOfAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_VoucherInfoDetails">
+        <PropertyRef Name="AccountHeadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FAM_VoucherInfoDetails_FAM_VoucherInfo">
+    <End Role="FAM_VoucherInfo" Type="Self.FAM_VoucherInfo" Multiplicity="1" />
+    <End Role="FAM_VoucherInfoDetails" Type="Self.FAM_VoucherInfoDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FAM_VoucherInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FAM_VoucherInfoDetails">
+        <PropertyRef Name="VoucherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="CommonConfigGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="strDisplayName" Type="varchar" Mode="In" />
+    <Parameter Name="intID" Type="int" Mode="In" />
+    <Parameter Name="strName" Type="varchar" Mode="In" />
+    <Parameter Name="strSortBy" Type="varchar" Mode="In" />
+    <Parameter Name="strSortType" Type="varchar" Mode="In" />
+    <Parameter Name="startRowIndex" Type="int" Mode="In" />
+    <Parameter Name="maximumRows" Type="int" Mode="In" />
+    <Parameter Name="numTotalRows" Type="int" Mode="InOut" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="CommonConfigTypeDML" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="strDisplayName" Type="varchar" Mode="In" />
+    <Parameter Name="intID" Type="int" Mode="In" />
+    <Parameter Name="strName" Type="varchar" Mode="In" />
+    <Parameter Name="intSortOrder" Type="int" Mode="In" />
+    <Parameter Name="strRemarks" Type="varchar" Mode="In" />
+    <Parameter Name="strUser" Type="varchar" Mode="In" />
+    <Parameter Name="strMode" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="uspFAMBalanceSheetbyControlHeadComparision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="paramPeriodCode" Type="varchar" Mode="In" />
+    <Parameter Name="MyJournalDate" Type="datetime" Mode="In" />
+    <Parameter Name="DisplayMode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uspFAMCashFlowStatement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="MyJournalDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="MyJournalDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="DisplayMode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uspFAMCurrentBalanceOfAccountHead" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="MyAccountHeadId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uspFAMDivWiseEarningExpenditureSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="MyJournalDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uspFAMIncomeAndExpenditureDetailReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="paramPeriodCode" Type="varchar" Mode="In" />
+    <Parameter Name="MyJournalDate" Type="datetime" Mode="In" />
+    <Parameter Name="DisplayMode" Type="varchar" Mode="In" />
+    <Parameter Name="ReportHeadParticular" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uspFAMIncomeAndExpenditureReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="paramPeriodCode" Type="int" Mode="In" />
+    <Parameter Name="MyJournalDate" Type="datetime" Mode="In" />
+    <Parameter Name="DisplayMode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uspFAMIndividualAdvance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="paramPeriodCode" Type="varchar" Mode="In" />
+    <Parameter Name="EmpRowId" Type="int" Mode="In" />
+    <Parameter Name="DateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="DateTo" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="uspFAMOpeningBalanceForAccountHeadIDWise" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="MyControlCode" Type="int" Mode="In" />
+    <Parameter Name="BalanceDate" Type="datetime" Mode="In" />
+    <Parameter Name="OpeningBalance" Type="money" Mode="InOut" />
+  </Function>
+  <Function Name="uspFAMOpeningBalanceMonthForAccountHead" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="MyControlCode" Type="varchar" Mode="In" />
+    <Parameter Name="BalanceDate" Type="datetime" Mode="In" />
+    <Parameter Name="OpeningBalance" Type="money" Mode="InOut" />
+  </Function>
+  <Function Name="uspFAMOpeningClosingBalanceForAccountHead" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="MyControlCode" Type="varchar" Mode="In" />
+    <Parameter Name="BalanceDate" Type="datetime" Mode="In" />
+    <Parameter Name="OpeningBalance" Type="money" Mode="InOut" />
+    <Parameter Name="ClosingBalance" Type="money" Mode="InOut" />
+  </Function>
+  <Function Name="uspFAMReceiptAndPaymentStatement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="MyJournalDateFrom" Type="datetime" Mode="In" />
+    <Parameter Name="MyJournalDateTo" Type="datetime" Mode="In" />
+    <Parameter Name="DisplayMode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uspFAMTrialBalanceDetailedALLChartOfAccount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MyJournalDate" Type="datetime" Mode="In" />
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="DisplayLevel" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="IWM_MFSFAMModelStoreContainer">
+    <EntitySet Name="FAM_ApprovalComments" EntityType="Self.FAM_ApprovalComments" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_ApprovalFlow" EntityType="Self.FAM_ApprovalFlow" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_ApprovalPath" EntityType="Self.FAM_ApprovalPath" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_ApprovalPathNodeInfo" EntityType="Self.FAM_ApprovalPathNodeInfo" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_ApproverType" EntityType="Self.FAM_ApproverType" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_BankBranchAccountNo" EntityType="Self.FAM_BankBranchAccountNo" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_BankBranchMap" EntityType="Self.FAM_BankBranchMap" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_BSPLReportHeadMapping" EntityType="Self.FAM_BSPLReportHeadMapping" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_BSPLReportHeadMappingDetails" EntityType="Self.FAM_BSPLReportHeadMappingDetails" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_BSPLReportHeadName" EntityType="Self.FAM_BSPLReportHeadName" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_CentralBudgetAllocation" EntityType="Self.FAM_CentralBudgetAllocation" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_CentralBudgetAllocationDetails" EntityType="Self.FAM_CentralBudgetAllocationDetails" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_CentralBudgetRevision" EntityType="Self.FAM_CentralBudgetRevision" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_CentralBudgetRevisionDetails" EntityType="Self.FAM_CentralBudgetRevisionDetails" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_ChartOfAccount" EntityType="Self.FAM_ChartOfAccount" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_ChequeBookInfo" EntityType="Self.FAM_ChequeBookInfo" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_ChequeInfo" EntityType="Self.FAM_ChequeInfo" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_DivisionUnitBudgetAllocation" EntityType="Self.FAM_DivisionUnitBudgetAllocation" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_DivisionUnitBudgetAllocationDetails" EntityType="Self.FAM_DivisionUnitBudgetAllocationDetails" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_DivisionUnitBudgetHead" EntityType="Self.FAM_DivisionUnitBudgetHead" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_DivisionUnitBudgetRevision" EntityType="Self.FAM_DivisionUnitBudgetRevision" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_DivisionUnitBudgetRevisionDetails" EntityType="Self.FAM_DivisionUnitBudgetRevisionDetails" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_FacilityAccountHeadMapping" EntityType="Self.FAM_FacilityAccountHeadMapping" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_FinancialYearInformation" EntityType="Self.FAM_FinancialYearInformation" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_PaymentType" EntityType="Self.FAM_PaymentType" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_PeriodicBalance" EntityType="Self.FAM_PeriodicBalance" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_Purpose" EntityType="Self.FAM_Purpose" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_PurposeAccountHeadMapping" EntityType="Self.FAM_PurposeAccountHeadMapping" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_ReportName" EntityType="Self.FAM_ReportName" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_TemptblBalanceSheetbyControlHeadComparision" EntityType="Self.FAM_TemptblBalanceSheetbyControlHeadComparision" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_TemptblIncomeAndExpenditureDetailReport" EntityType="Self.FAM_TemptblIncomeAndExpenditureDetailReport" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_TemptblIncomeAndExpenditureReport" EntityType="Self.FAM_TemptblIncomeAndExpenditureReport" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_TemptblReceiptAndPaymentStatement" EntityType="Self.FAM_TemptblReceiptAndPaymentStatement" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_VendorInformation" EntityType="Self.FAM_VendorInformation" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_VoucherInfo" EntityType="Self.FAM_VoucherInfo" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_VoucherInfoDetails" EntityType="Self.FAM_VoucherInfoDetails" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="FAM_VoucherType" EntityType="Self.FAM_VoucherType" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="CommonConfigType" EntityType="Self.CommonConfigType" store:Type="Tables" store:Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+      <DefiningQuery>SELECT 
+[CommonConfigType].[TableName] AS [TableName], 
+[CommonConfigType].[DisplayName] AS [DisplayName], 
+[CommonConfigType].[SortOrder] AS [SortOrder], 
+[CommonConfigType].[ModuleId] AS [ModuleId]
+FROM [dbo].[CommonConfigType] AS [CommonConfigType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FAM_TempTrialBalanceDetailChartofAccount" EntityType="Self.FAM_TempTrialBalanceDetailChartofAccount" store:Type="Tables" store:Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+      <DefiningQuery>SELECT 
+[FAM_TempTrialBalanceDetailChartofAccount].[Id] AS [Id], 
+[FAM_TempTrialBalanceDetailChartofAccount].[AccountHeadCode] AS [AccountHeadCode], 
+[FAM_TempTrialBalanceDetailChartofAccount].[AccountHeadName] AS [AccountHeadName], 
+[FAM_TempTrialBalanceDetailChartofAccount].[CompanyId] AS [CompanyId], 
+[FAM_TempTrialBalanceDetailChartofAccount].[DebitAmt] AS [DebitAmt], 
+[FAM_TempTrialBalanceDetailChartofAccount].[CreditAmt] AS [CreditAmt], 
+[FAM_TempTrialBalanceDetailChartofAccount].[IsPostingAccount] AS [IsPostingAccount], 
+[FAM_TempTrialBalanceDetailChartofAccount].[AccountHeadType] AS [AccountHeadType]
+FROM [dbo].[FAM_TempTrialBalanceDetailChartofAccount] AS [FAM_TempTrialBalanceDetailChartofAccount]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwCompanyInformation" EntityType="Self.vwCompanyInformation" store:Type="Views" store:Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
+      <DefiningQuery>SELECT 
+[vwCompanyInformation].[Id] AS [Id], 
+[vwCompanyInformation].[CompanyName] AS [CompanyName], 
+[vwCompanyInformation].[Address] AS [Address], 
+[vwCompanyInformation].[City] AS [City], 
+[vwCompanyInformation].[Country] AS [Country], 
+[vwCompanyInformation].[Phone1] AS [Phone1], 
+[vwCompanyInformation].[Phone2] AS [Phone2], 
+[vwCompanyInformation].[FaxNo] AS [FaxNo], 
+[vwCompanyInformation].[EmailAddress] AS [EmailAddress], 
+[vwCompanyInformation].[WebURL] AS [WebURL], 
+[vwCompanyInformation].[CompanyLogo] AS [CompanyLogo], 
+[vwCompanyInformation].[IUser] AS [IUser], 
+[vwCompanyInformation].[EUser] AS [EUser], 
+[vwCompanyInformation].[IDate] AS [IDate], 
+[vwCompanyInformation].[EDate] AS [EDate], 
+[vwCompanyInformation].[ApplicationId] AS [ApplicationId]
+FROM [dbo].[vwCompanyInformation] AS [vwCompanyInformation]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_FAM_ApprovalPathNodeInfo_FAM_ApprovalPath" Association="Self.FK_FAM_ApprovalPathNodeInfo_FAM_ApprovalPath">
+      <End Role="FAM_ApprovalPath" EntitySet="FAM_ApprovalPath" />
+      <End Role="FAM_ApprovalPathNodeInfo" EntitySet="FAM_ApprovalPathNodeInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_BankBranchAccountNo_FAM_BankBranchMap" Association="Self.FK_FAM_BankBranchAccountNo_FAM_BankBranchMap">
+      <End Role="FAM_BankBranchMap" EntitySet="FAM_BankBranchMap" />
+      <End Role="FAM_BankBranchAccountNo" EntitySet="FAM_BankBranchAccountNo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_BankBranchAccountNo_FAM_ChartOfAccount" Association="Self.FK_FAM_BankBranchAccountNo_FAM_ChartOfAccount">
+      <End Role="FAM_ChartOfAccount" EntitySet="FAM_ChartOfAccount" />
+      <End Role="FAM_BankBranchAccountNo" EntitySet="FAM_BankBranchAccountNo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_BSPLReportHeadMapping_FAM_BSPLReportHeadName" Association="Self.FK_FAM_BSPLReportHeadMapping_FAM_BSPLReportHeadName">
+      <End Role="FAM_BSPLReportHeadName" EntitySet="FAM_BSPLReportHeadName" />
+      <End Role="FAM_BSPLReportHeadMapping" EntitySet="FAM_BSPLReportHeadMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_BSPLReportHeadMapping_FAM_ReportName" Association="Self.FK_FAM_BSPLReportHeadMapping_FAM_ReportName">
+      <End Role="FAM_ReportName" EntitySet="FAM_ReportName" />
+      <End Role="FAM_BSPLReportHeadMapping" EntitySet="FAM_BSPLReportHeadMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_BSPLReportHeadMappingDetails_FAM_BSPLReportHeadMapping" Association="Self.FK_FAM_BSPLReportHeadMappingDetails_FAM_BSPLReportHeadMapping">
+      <End Role="FAM_BSPLReportHeadMapping" EntitySet="FAM_BSPLReportHeadMapping" />
+      <End Role="FAM_BSPLReportHeadMappingDetails" EntitySet="FAM_BSPLReportHeadMappingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_BSPLReportHeadMappingDetails_FAM_ChartOfAccount" Association="Self.FK_FAM_BSPLReportHeadMappingDetails_FAM_ChartOfAccount">
+      <End Role="FAM_ChartOfAccount" EntitySet="FAM_ChartOfAccount" />
+      <End Role="FAM_BSPLReportHeadMappingDetails" EntitySet="FAM_BSPLReportHeadMappingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_CentralBudgetAllocation_FAM_ApprovalPath" Association="Self.FK_FAM_CentralBudgetAllocation_FAM_ApprovalPath">
+      <End Role="FAM_ApprovalPath" EntitySet="FAM_ApprovalPath" />
+      <End Role="FAM_CentralBudgetAllocation" EntitySet="FAM_CentralBudgetAllocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_CentralBudgetAllocation_FAM_FinancialYearInformation" Association="Self.FK_FAM_CentralBudgetAllocation_FAM_FinancialYearInformation">
+      <End Role="FAM_FinancialYearInformation" EntitySet="FAM_FinancialYearInformation" />
+      <End Role="FAM_CentralBudgetAllocation" EntitySet="FAM_CentralBudgetAllocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_CentralBudgetAllocationDetails_FAM_CentralBudgetAllocationDetails" Association="Self.FK_FAM_CentralBudgetAllocationDetails_FAM_CentralBudgetAllocationDetails">
+      <End Role="FAM_CentralBudgetAllocation" EntitySet="FAM_CentralBudgetAllocation" />
+      <End Role="FAM_CentralBudgetAllocationDetails" EntitySet="FAM_CentralBudgetAllocationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_CentralBudgetAllocationDetails_FAM_ChartOfAccount" Association="Self.FK_FAM_CentralBudgetAllocationDetails_FAM_ChartOfAccount">
+      <End Role="FAM_ChartOfAccount" EntitySet="FAM_ChartOfAccount" />
+      <End Role="FAM_CentralBudgetAllocationDetails" EntitySet="FAM_CentralBudgetAllocationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_CentralBudgetRevision_FAM_ApprovalPath" Association="Self.FK_FAM_CentralBudgetRevision_FAM_ApprovalPath">
+      <End Role="FAM_ApprovalPath" EntitySet="FAM_ApprovalPath" />
+      <End Role="FAM_CentralBudgetRevision" EntitySet="FAM_CentralBudgetRevision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_CentralBudgetRevision_FAM_FinancialYearInformation" Association="Self.FK_FAM_CentralBudgetRevision_FAM_FinancialYearInformation">
+      <End Role="FAM_FinancialYearInformation" EntitySet="FAM_FinancialYearInformation" />
+      <End Role="FAM_CentralBudgetRevision" EntitySet="FAM_CentralBudgetRevision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_CentralBudgetRevisionDetails_FAM_CentralBudgetRevision" Association="Self.FK_FAM_CentralBudgetRevisionDetails_FAM_CentralBudgetRevision">
+      <End Role="FAM_CentralBudgetRevision" EntitySet="FAM_CentralBudgetRevision" />
+      <End Role="FAM_CentralBudgetRevisionDetails" EntitySet="FAM_CentralBudgetRevisionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_CentralBudgetRevisionDetails_FAM_ChartOfAccount" Association="Self.FK_FAM_CentralBudgetRevisionDetails_FAM_ChartOfAccount">
+      <End Role="FAM_ChartOfAccount" EntitySet="FAM_ChartOfAccount" />
+      <End Role="FAM_CentralBudgetRevisionDetails" EntitySet="FAM_CentralBudgetRevisionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_ChequeBookInfo_FAM_BankBranchAccountNo" Association="Self.FK_FAM_ChequeBookInfo_FAM_BankBranchAccountNo">
+      <End Role="FAM_BankBranchAccountNo" EntitySet="FAM_BankBranchAccountNo" />
+      <End Role="FAM_ChequeBookInfo" EntitySet="FAM_ChequeBookInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_ChequeInfo_FAM_ChequeBookInfo" Association="Self.FK_FAM_ChequeInfo_FAM_ChequeBookInfo">
+      <End Role="FAM_ChequeBookInfo" EntitySet="FAM_ChequeBookInfo" />
+      <End Role="FAM_ChequeInfo" EntitySet="FAM_ChequeInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_DivisionUnitBudgetAllocation_FAM_FinancialYearInformation" Association="Self.FK_FAM_DivisionUnitBudgetAllocation_FAM_FinancialYearInformation">
+      <End Role="FAM_FinancialYearInformation" EntitySet="FAM_FinancialYearInformation" />
+      <End Role="FAM_DivisionUnitBudgetAllocation" EntitySet="FAM_DivisionUnitBudgetAllocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_DivisionUnitBudgetAllocationDetails_FAM_DivisionUnitBudgetAllocation" Association="Self.FK_FAM_DivisionUnitBudgetAllocationDetails_FAM_DivisionUnitBudgetAllocation">
+      <End Role="FAM_DivisionUnitBudgetAllocation" EntitySet="FAM_DivisionUnitBudgetAllocation" />
+      <End Role="FAM_DivisionUnitBudgetAllocationDetails" EntitySet="FAM_DivisionUnitBudgetAllocationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_DivisionUnitBudgetAllocationDetails_FAM_DivisionUnitBudgetAllocationDetails" Association="Self.FK_FAM_DivisionUnitBudgetAllocationDetails_FAM_DivisionUnitBudgetAllocationDetails">
+      <End Role="FAM_ChartOfAccount" EntitySet="FAM_ChartOfAccount" />
+      <End Role="FAM_DivisionUnitBudgetAllocationDetails" EntitySet="FAM_DivisionUnitBudgetAllocationDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_DivisionUnitBudgetHead_FAM_ChartOfAccount" Association="Self.FK_FAM_DivisionUnitBudgetHead_FAM_ChartOfAccount">
+      <End Role="FAM_ChartOfAccount" EntitySet="FAM_ChartOfAccount" />
+      <End Role="FAM_DivisionUnitBudgetHead" EntitySet="FAM_DivisionUnitBudgetHead" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_DivisionUnitBudgetRevision_FAM_FinancialYearInformation" Association="Self.FK_FAM_DivisionUnitBudgetRevision_FAM_FinancialYearInformation">
+      <End Role="FAM_FinancialYearInformation" EntitySet="FAM_FinancialYearInformation" />
+      <End Role="FAM_DivisionUnitBudgetRevision" EntitySet="FAM_DivisionUnitBudgetRevision" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_DivisionUnitBudgetRevisionDetails_FAM_ChartOfAccount" Association="Self.FK_FAM_DivisionUnitBudgetRevisionDetails_FAM_ChartOfAccount">
+      <End Role="FAM_ChartOfAccount" EntitySet="FAM_ChartOfAccount" />
+      <End Role="FAM_DivisionUnitBudgetRevisionDetails" EntitySet="FAM_DivisionUnitBudgetRevisionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_DivisionUnitBudgetRevisionDetails_FAM_DivisionUnitBudgetRevision" Association="Self.FK_FAM_DivisionUnitBudgetRevisionDetails_FAM_DivisionUnitBudgetRevision">
+      <End Role="FAM_DivisionUnitBudgetRevision" EntitySet="FAM_DivisionUnitBudgetRevision" />
+      <End Role="FAM_DivisionUnitBudgetRevisionDetails" EntitySet="FAM_DivisionUnitBudgetRevisionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_FinancialYearInformation_FAM_FinancialYearInformation" Association="Self.FK_FAM_FinancialYearInformation_FAM_FinancialYearInformation">
+      <End Role="FAM_FinancialYearInformation" EntitySet="FAM_FinancialYearInformation" />
+      <End Role="FAM_FinancialYearInformation1" EntitySet="FAM_FinancialYearInformation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_PurposeAccountHeadMapping_FAM_ChartOfAccount" Association="Self.FK_FAM_PurposeAccountHeadMapping_FAM_ChartOfAccount">
+      <End Role="FAM_ChartOfAccount" EntitySet="FAM_ChartOfAccount" />
+      <End Role="FAM_PurposeAccountHeadMapping" EntitySet="FAM_PurposeAccountHeadMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_PurposeAccountHeadMapping_FAM_Purpose" Association="Self.FK_FAM_PurposeAccountHeadMapping_FAM_Purpose">
+      <End Role="FAM_Purpose" EntitySet="FAM_Purpose" />
+      <End Role="FAM_PurposeAccountHeadMapping" EntitySet="FAM_PurposeAccountHeadMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_VoucherInfo_FAM_ApprovalPath" Association="Self.FK_FAM_VoucherInfo_FAM_ApprovalPath">
+      <End Role="FAM_ApprovalPath" EntitySet="FAM_ApprovalPath" />
+      <End Role="FAM_VoucherInfo" EntitySet="FAM_VoucherInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_VoucherInfo_FAM_BankBranchAccountNo" Association="Self.FK_FAM_VoucherInfo_FAM_BankBranchAccountNo">
+      <End Role="FAM_BankBranchAccountNo" EntitySet="FAM_BankBranchAccountNo" />
+      <End Role="FAM_VoucherInfo" EntitySet="FAM_VoucherInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_VoucherInfo_FAM_FinancialYearInformation" Association="Self.FK_FAM_VoucherInfo_FAM_FinancialYearInformation">
+      <End Role="FAM_FinancialYearInformation" EntitySet="FAM_FinancialYearInformation" />
+      <End Role="FAM_VoucherInfo" EntitySet="FAM_VoucherInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_VoucherInfo_FAM_PaymentType" Association="Self.FK_FAM_VoucherInfo_FAM_PaymentType">
+      <End Role="FAM_PaymentType" EntitySet="FAM_PaymentType" />
+      <End Role="FAM_VoucherInfo" EntitySet="FAM_VoucherInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_VoucherInfo_FAM_VendorInformation1" Association="Self.FK_FAM_VoucherInfo_FAM_VendorInformation1">
+      <End Role="FAM_VendorInformation" EntitySet="FAM_VendorInformation" />
+      <End Role="FAM_VoucherInfo" EntitySet="FAM_VoucherInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_VoucherInfo_FAM_VendorInformation3" Association="Self.FK_FAM_VoucherInfo_FAM_VendorInformation3">
+      <End Role="FAM_VendorInformation" EntitySet="FAM_VendorInformation" />
+      <End Role="FAM_VoucherInfo" EntitySet="FAM_VoucherInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_VoucherInfo_FAM_VoucherInfo" Association="Self.FK_FAM_VoucherInfo_FAM_VoucherInfo">
+      <End Role="FAM_VoucherInfo" EntitySet="FAM_VoucherInfo" />
+      <End Role="FAM_VoucherInfo1" EntitySet="FAM_VoucherInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_VoucherInfo_FAM_VoucherType" Association="Self.FK_FAM_VoucherInfo_FAM_VoucherType">
+      <End Role="FAM_VoucherType" EntitySet="FAM_VoucherType" />
+      <End Role="FAM_VoucherInfo" EntitySet="FAM_VoucherInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_VoucherInfoDetails_FAM_ChartOfAccount" Association="Self.FK_FAM_VoucherInfoDetails_FAM_ChartOfAccount">
+      <End Role="FAM_ChartOfAccount" EntitySet="FAM_ChartOfAccount" />
+      <End Role="FAM_VoucherInfoDetails" EntitySet="FAM_VoucherInfoDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FAM_VoucherInfoDetails_FAM_VoucherInfo" Association="Self.FK_FAM_VoucherInfoDetails_FAM_VoucherInfo">
+      <End Role="FAM_VoucherInfo" EntitySet="FAM_VoucherInfo" />
+      <End Role="FAM_VoucherInfoDetails" EntitySet="FAM_VoucherInfoDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

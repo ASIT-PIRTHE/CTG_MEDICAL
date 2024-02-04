@@ -1,0 +1,1540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BEPZA_MEDICAL.DAL.CPF" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CPF_AccountHeadCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="ERP_BEPZACPFEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CPF_AccountHeadCategory" EntityType="Self.CPF_AccountHeadCategory" />
+    <EntitySet Name="CPF_BankAccountInfo" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_BankAccountInfo" />
+    <EntitySet Name="CPF_ContributionRateSetup" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_ContributionRateSetup" />
+    <EntitySet Name="CPF_DocumentType" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_DocumentType" />
+    <EntitySet Name="CPF_ForfeitedRule" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_ForfeitedRule" />
+    <EntitySet Name="CPF_GratuityInterestRate" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_GratuityInterestRate" />
+    <EntitySet Name="CPF_LoanPolicy" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_LoanPolicy" />
+    <EntitySet Name="CPF_MemberNominee" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_MemberNominee" />
+    <EntitySet Name="CPF_PaymentType" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_PaymentType" />
+    <EntitySet Name="CPF_ProfitDistributionDetail" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_ProfitDistributionDetail" />
+    <EntitySet Name="CPF_SpecialParameter" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_SpecialParameter" />
+    <EntitySet Name="CommonConfigTypes" EntityType="BEPZA_MEDICAL.DAL.CPF.CommonConfigType" />
+    <FunctionImport Name="CommonConfigTypeDML">
+      <Parameter Name="strDisplayName" Mode="In" Type="String" />
+      <Parameter Name="intID" Mode="In" Type="Int32" />
+      <Parameter Name="strName" Mode="In" Type="String" />
+      <Parameter Name="intSortOrder" Mode="In" Type="Int32" />
+      <Parameter Name="strRemarks" Mode="In" Type="String" />
+      <Parameter Name="strUser" Mode="In" Type="String" />
+      <Parameter Name="strMode" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_GetMyLoanStatus" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.GetMyLoanStatusResult)">
+      <Parameter Name="employeeId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_procGetBalanceScheet">
+      <Parameter Name="intPeriodId" Mode="In" Type="Int32" />
+      <Parameter Name="SelectedLavel" Mode="In" Type="Int32" />
+      <Parameter Name="BalanceDate" Mode="In" Type="DateTime" />
+      <Parameter Name="IsIncludeZero" Mode="In" Type="Int32" />
+      <Parameter Name="IsIncludePostingAcc" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_procGetIncomeExpenditure">
+      <Parameter Name="intPeriodId" Mode="In" Type="Int32" />
+      <Parameter Name="SelectedLavel" Mode="In" Type="Int32" />
+      <Parameter Name="BalanceDate" Mode="In" Type="DateTime" />
+      <Parameter Name="IsIncludeZero" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_procGetTrialBalance">
+      <Parameter Name="intPeriodId" Mode="In" Type="Int32" />
+      <Parameter Name="SelectedLavel" Mode="In" Type="Int32" />
+      <Parameter Name="BalanceDate" Mode="In" Type="DateTime" />
+      <Parameter Name="IsIncludeZero" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_procProfitDistributionRollbackIndividual">
+      <Parameter Name="PeriodId" Mode="In" Type="Int32" />
+      <Parameter Name="DetailId" Mode="In" Type="Int32" />
+      <Parameter Name="strUser" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_AdvanceRefundRealized">
+      <Parameter Name="RefundType" Mode="In" Type="String" />
+      <Parameter Name="StartPeriod" Mode="In" Type="DateTime" />
+      <Parameter Name="EndPeriod" Mode="In" Type="DateTime" />
+      <Parameter Name="DivisionId" Mode="In" Type="Int32" />
+      <Parameter Name="GradId" Mode="In" Type="Int32" />
+      <Parameter Name="DesignationId" Mode="In" Type="Int32" />
+      <Parameter Name="MembershipId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_AvailableInvAccrualStepNo" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_AvailableInvAccrualStepNo_Result)">
+      <Parameter Name="InvestmentId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_BalanceSheetByLevel">
+      <Parameter Name="SelectedLavel" Mode="In" Type="Int32" />
+      <Parameter Name="PeriodId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_DeleteApprovalFlowByDocumentID">
+      <Parameter Name="DocumentId" Mode="In" Type="Int32" />
+      <Parameter Name="DocumentTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_EmployeeCPF_WF_FundStatus" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_EmployeeCPF_WF_FundStatus_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="ApplicationDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_GetApprovalStatusList" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetApprovalStatusList_Result)" />
+    <FunctionImport Name="CPF_GetChartOfAccount" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetChartOfAccount_Result)">
+      <Parameter Name="IsPostingHead" Mode="In" Type="Boolean" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_GetDebitCreditBankReconciliation" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.GetDebitOrCredit)">
+      <Parameter Name="BankAccountId" Mode="In" Type="Int32" />
+      <Parameter Name="TransactionType" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_GetDesignationList" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetDesignationList_Result)" />
+    <FunctionImport Name="CPF_GetDivisionUnit" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetDivisionUnit_Result)" />
+    <FunctionImport Name="CPF_GetJobGradeList" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetJobGradeList_Result)" />
+    <FunctionImport Name="CPF_GetLevelOfCOA" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetLevelOfCOA_Result)" />
+    <FunctionImport Name="CPF_GetLoanPolicy" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetLoanPolicy_Result)">
+      <Parameter Name="ApplicationDate" Mode="In" Type="DateTime" />
+      <Parameter Name="IsEligibleForCpf" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_GetPFYearList" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetPFYearList_Result)" />
+    <FunctionImport Name="CPF_GetTestName" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetTestName_Result)">
+      <Parameter Name="Initial" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_GetVoucherTypeList" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetVoucherTypeList_Result)" />
+    <FunctionImport Name="CPF_IncomeExpenceStatementByLevel">
+      <Parameter Name="SelectedLavel" Mode="In" Type="Int32" />
+      <Parameter Name="PeriodId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_MemberSchedule" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_MemberSchedule_Result)">
+      <Parameter Name="PeriodId" Mode="In" Type="Int32" />
+      <Parameter Name="DivisionId" Mode="In" Type="Int32" />
+      <Parameter Name="GradId" Mode="In" Type="Int32" />
+      <Parameter Name="DesignationId" Mode="In" Type="Int32" />
+      <Parameter Name="MembershipId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_MonthlyContribution" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_MonthlyContribution_Result)">
+      <Parameter Name="AmountTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="StartPeriod" Mode="In" Type="DateTime" />
+      <Parameter Name="EndPeriod" Mode="In" Type="DateTime" />
+      <Parameter Name="DivisionId" Mode="In" Type="Int32" />
+      <Parameter Name="GradId" Mode="In" Type="Int32" />
+      <Parameter Name="DesignationId" Mode="In" Type="Int32" />
+      <Parameter Name="MembershipId" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_ProvidentFundSatementProvisioin" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_ProvidentFundSatementProvisioin_Result)">
+      <Parameter Name="PeriodId" Mode="In" Type="Int32" />
+      <Parameter Name="DivisionId" Mode="In" Type="Int32" />
+      <Parameter Name="GradId" Mode="In" Type="Int32" />
+      <Parameter Name="DesignationId" Mode="In" Type="Int32" />
+      <Parameter Name="MembershipId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_RptGenerateScheduleofInvestment" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_RptGenerateScheduleofInvestment_Result)">
+      <Parameter Name="InvestmentTypeId" Mode="In" Type="String" />
+      <Parameter Name="dtFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="dtTo" Mode="In" Type="DateTime" />
+      <Parameter Name="InvestmentID" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_RptInvestmentAccrualReport">
+      <Parameter Name="InvestmentTypeId" Mode="In" Type="String" />
+      <Parameter Name="InvestmentID" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_ScheduleOfAdvanceLoan">
+      <Parameter Name="PeriodId" Mode="In" Type="Int32" />
+      <Parameter Name="DivisionId" Mode="In" Type="Int32" />
+      <Parameter Name="GradId" Mode="In" Type="Int32" />
+      <Parameter Name="DesignationId" Mode="In" Type="Int32" />
+      <Parameter Name="MembershipId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_TrialBalanceByLevel">
+      <Parameter Name="PFYear" Mode="In" Type="String" />
+      <Parameter Name="SelectedLavel" Mode="In" Type="Int32" />
+      <Parameter Name="BalanceDate" Mode="In" Type="DateTime" />
+      <Parameter Name="IsInclude" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_VoucherGenerate">
+      <Parameter Name="VoucherTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="VoucherStatusId" Mode="In" Type="Int32" />
+      <Parameter Name="PeriodId" Mode="In" Type="Int32" />
+      <Parameter Name="VoucherNumber" Mode="In" Type="String" />
+      <Parameter Name="StartPeriod" Mode="In" Type="String" />
+      <Parameter Name="EndPeriod" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_VoucherGenerateDetail" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_VoucherGenerateDetail_Result)">
+      <Parameter Name="VoucherId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CommonConfigGet" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CommonConfigGetResult)">
+      <Parameter Name="strDisplayName" Mode="In" Type="String" />
+      <Parameter Name="intID" Mode="In" Type="Int32" />
+      <Parameter Name="strName" Mode="In" Type="String" />
+      <Parameter Name="strSortBy" Mode="In" Type="String" />
+      <Parameter Name="strSortType" Mode="In" Type="String" />
+      <Parameter Name="startRowIndex" Mode="In" Type="Int32" />
+      <Parameter Name="maximumRows" Mode="In" Type="Int32" />
+      <Parameter Name="numTotalRows" Mode="InOut" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="CPF_DefaultMapping" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_DefaultMapping" />
+    <EntitySet Name="vwCPFNominees" EntityType="BEPZA_MEDICAL.DAL.CPF.vwCPFNominee" />
+    <FunctionImport Name="CPF_FinalResultOfCpf_EmployeeWise" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_FinalResultOfCpf_EmployeeWise_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_GetContributionDuringtheYear" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetContributionDuringtheYear_Result)">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="IsOwnContribution" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_RptCpfLoanInfo" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_RptCpfLoanInfo_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_RptMonthlyProvidentFundRegister" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_RptMonthlyProvidentFundRegister_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_RptProvidentFundLoanInstallment" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_RptProvidentFundLoanInstallment_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_RptProvidentFundWorksheet" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_RptProvidentFundWorksheet_Result)">
+      <Parameter Name="PfPeriodId" Mode="In" Type="Int32" />
+      <Parameter Name="EmployeeId" Mode="In" Type="String" />
+      <Parameter Name="DepartmentId" Mode="In" Type="Int32" />
+      <Parameter Name="DesignationId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_GetMyLoanSummary" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetMyLoanSummary_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_SP_PFListOfLoan" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_SP_PFListOfLoan_Result)">
+      <Parameter Name="SalaryYear" Mode="In" Type="String" />
+      <Parameter Name="SalaryMonth" Mode="In" Type="String" />
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="IsRefundable" Mode="In" Type="Boolean" />
+      <Parameter Name="LoanStatus" Mode="In" Type="Boolean" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="CPF_MembershipInfo" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_MembershipInfo" />
+    <AssociationSet Name="FK_CPF_MemberNominee_CPF_MembershipInfo" Association="BEPZA_MEDICAL.DAL.CPF.FK_CPF_MemberNominee_CPF_MembershipInfo">
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+      <End Role="CPF_MemberNominee" EntitySet="CPF_MemberNominee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CPF_ProfitDistributionDetail_CPF_MembershipInfo" Association="BEPZA_MEDICAL.DAL.CPF.FK_CPF_ProfitDistributionDetail_CPF_MembershipInfo">
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+      <End Role="CPF_ProfitDistributionDetail" EntitySet="CPF_ProfitDistributionDetail" />
+    </AssociationSet>
+    <EntitySet Name="APV_ApprovalStatus" EntityType="BEPZA_MEDICAL.DAL.CPF.APV_ApprovalStatus" />
+    <AssociationSet Name="FK_CPF_MembershipInfo_APV_ApprovalStatus" Association="BEPZA_MEDICAL.DAL.CPF.FK_CPF_MembershipInfo_APV_ApprovalStatus">
+      <End Role="APV_ApprovalStatus" EntitySet="APV_ApprovalStatus" />
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+    </AssociationSet>
+    <FunctionImport Name="CPF_SP_RptMonthlyPFStatement" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptMonthlyPFStatement_Result)">
+      <Parameter Name="SalaryYear" Mode="In" Type="String" />
+      <Parameter Name="SalaryMonth" Mode="In" Type="String" />
+      <Parameter Name="pEmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_DeleteMembership">
+      <Parameter Name="applicationId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_uspVoucherPostingForPFProfit" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_uspVoucherPostingForProfit_Result)">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_uspVoucherPostingForFinalSettlement" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_uspVoucherPostingForProfit_Result)">
+      <Parameter Name="MembershipId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="CustomPropertyAttributes" EntityType="BEPZA_MEDICAL.DAL.CPF.CustomPropertyAttribute" />
+    <FunctionImport Name="CPF_GetContributionOfPF" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetContributionOfPF_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="IsOwnContribution" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_GetMyCPFSummary" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetMyCPFSummary_Result)">
+      <Parameter Name="EmpID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_FN_GetEmployeeTotalContribution" IsComposable="true" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_FN_GetEmployeeTotalContribution_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="SalaryHeadId" Mode="In" Type="Int32" />
+      <Parameter Name="DateUpto" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_GetMyCPFLoanApplication" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_GetMyCPFLoanApplication_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="CPF_ProfitInterestRate" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_ProfitInterestRate" />
+    <EntitySet Name="CPF_OpeningBalance" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_OpeningBalance" />
+    <AssociationSet Name="FK_CPF_OpeningBalance_CPF_MembershipInfo" Association="BEPZA_MEDICAL.DAL.CPF.FK_CPF_OpeningBalance_CPF_MembershipInfo">
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+      <End Role="CPF_OpeningBalance" EntitySet="CPF_OpeningBalance" />
+    </AssociationSet>
+    <EntitySet Name="CPF_ProfitDistribution" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_ProfitDistribution" />
+    <AssociationSet Name="FK_CPF_ProfitDistributionDetail_CPF_ProfitDistribution" Association="BEPZA_MEDICAL.DAL.CPF.FK_CPF_ProfitDistributionDetail_CPF_ProfitDistribution">
+      <End Role="CPF_ProfitDistribution" EntitySet="CPF_ProfitDistribution" />
+      <End Role="CPF_ProfitDistributionDetail" EntitySet="CPF_ProfitDistributionDetail" />
+    </AssociationSet>
+    <EntitySet Name="CPF_Settlement" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_Settlement" />
+    <EntitySet Name="CPF_Withdraw" EntityType="BEPZA_MEDICAL.DAL.CPF.CPF_Withdraw" />
+    <AssociationSet Name="FK_CPF_Settlement_CPF_MembershipInfo" Association="BEPZA_MEDICAL.DAL.CPF.FK_CPF_Settlement_CPF_MembershipInfo">
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+      <End Role="CPF_Settlement" EntitySet="CPF_Settlement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CPF_Withdraw_CPF_MembershipInfo" Association="BEPZA_MEDICAL.DAL.CPF.FK_CPF_Withdraw_CPF_MembershipInfo">
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+      <End Role="CPF_Withdraw" EntitySet="CPF_Withdraw" />
+    </AssociationSet>
+    <FunctionImport Name="CPF_procProfitDistribution">
+      <Parameter Name="PeriodYear" Mode="In" Type="String" />
+      <Parameter Name="PeriodMonth" Mode="In" Type="String" />
+      <Parameter Name="InterestRate" Mode="In" Type="Decimal" />
+      <Parameter Name="Remarks" Mode="In" Type="String" />
+      <Parameter Name="strUser" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_procProfitDistributionRollback">
+      <Parameter Name="PeriodDurationId" Mode="In" Type="Int32" />
+      <Parameter Name="strUser" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_SP_RptMonthlyPFStatementMaster" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptMonthlyPFStatementMaster_Result)">
+      <Parameter Name="SalaryYear" Mode="In" Type="String" />
+      <Parameter Name="SalaryMonth" Mode="In" Type="String" />
+      <Parameter Name="pEmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_SP_RptIndividualMonthlyPFStatement" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptIndividualMonthlyPFStatement_Result)">
+      <Parameter Name="SalaryYear" Mode="In" Type="String" />
+      <Parameter Name="SalaryMonth" Mode="In" Type="String" />
+      <Parameter Name="pEmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_SP_RptNewJoinInMembership" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptNewJoinInMembership_Result)">
+      <Parameter Name="Year" Mode="In" Type="String" />
+      <Parameter Name="Month" Mode="In" Type="String" />
+      <Parameter Name="IsInactive" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_SP_RptPFStatementHistory" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptPFStatementHistory_Result)">
+      <Parameter Name="SalaryYear" Mode="In" Type="String" />
+      <Parameter Name="SalaryMonth" Mode="In" Type="String" />
+      <Parameter Name="pEmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_SP_RptIndividualYearlyPFStatement" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptIndividualYearlyPFStatement_Result)">
+      <Parameter Name="pEmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="pFinancialYearId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_SP_RptYearlyPFStatement" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptYearlyPFStatement_Result)">
+      <Parameter Name="pFinancialYearId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_RptCpfMemberInformation" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_RptCpfMemberInformation_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="CPF_SP_RptNomineeFormInformation" ReturnType="Collection(BEPZA_MEDICAL.DAL.CPF.CPF_SP_RptNomineeFormInformation_Result)">
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="CPF_BankAccountInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BankId" Type="Int32" Nullable="false" />
+    <Property Name="BranchId" Type="Int32" Nullable="false" />
+    <Property Name="AccountNo" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OpeningBalance" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CPF_ContributionRateSetup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OwnContributionRate" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="OfficeContributionRate" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CPF_DocumentType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="DocumentType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TableName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PrimaryKeyColumnName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CPF_ForfeitedRule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FromServiceLength" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="ToServiceLength" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="ForfeitedRate" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CPF_GratuityInterestRate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PeriodId" Type="Int32" Nullable="false" />
+    <Property Name="InterestRate" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CPF_LoanPolicy">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LoanPolicyFor" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NRfLoanPercentage" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="NRfApplicableFor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NRfMinimumAge" Type="Int32" />
+    <Property Name="RfLoanPercentage" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="RfApplicableFor" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IsRfDeductFromBalance" Type="Boolean" Nullable="false" />
+    <Property Name="IsRfInstallmentAddedWithBalance" Type="Boolean" Nullable="false" />
+    <Property Name="RfMaxConcurrentLoan" Type="Int32" Nullable="false" />
+    <Property Name="RfMinServiceYear" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CPF_MemberNominee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MembershipId" Type="Int32" Nullable="false" />
+    <Property Name="NomineeName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NomineeAddress" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Relationship" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="PercentOfShare" Type="Decimal" Nullable="false" Precision="8" Scale="2" />
+    <Property Name="GuardianName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GuardianAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="FileName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Photograph" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FileExtension" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CPF_MembershipInfo" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_MemberNominee_CPF_MembershipInfo" FromRole="CPF_MemberNominee" ToRole="CPF_MembershipInfo" />
+  </EntityType>
+  <EntityType Name="CPF_PaymentType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CPF_ProfitDistributionDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProfitDistributionId" Type="Int32" Nullable="false" />
+    <Property Name="MembershipId" Type="Int32" Nullable="false" />
+    <Property Name="EmpOpening" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="EmpContributionInPeriod" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="EmpProfitInPeriod" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="EmpWithdrawnInPeriod" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="EmpFinalPayment" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="EmpClosingBalance" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComOpening" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComContributionInPeriod" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComProfitInPeriod" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComWithdrawnInPeriod" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComFinalPayment" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComForfeitedAmount" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComClosingBalance" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="TotalBalance" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CPF_MembershipInfo" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_ProfitDistributionDetail_CPF_MembershipInfo" FromRole="CPF_ProfitDistributionDetail" ToRole="CPF_MembershipInfo" />
+    <NavigationProperty Name="CPF_ProfitDistribution" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_ProfitDistributionDetail_CPF_ProfitDistribution" FromRole="CPF_ProfitDistributionDetail" ToRole="CPF_ProfitDistribution" />
+    <Property Name="EmpProfitOpening" Type="Decimal" Precision="18" Scale="6" />
+    <Property Name="EmpClosingBalanceProfit" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComProfitOpening" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComClosingBalanceProfit" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+  </EntityType>
+  <EntityType Name="CPF_SpecialParameter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpCoreContDRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="EmpCoreContCRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="ComCoreContDRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="ComCoreContCRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="EmpProfitDRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="EmpProfitCRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="ComProfitDRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="ComProfitCRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="OutgoingMemIntDRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="OutgoingMemIntCRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="WithdrawalDRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="WithdrawalCRHeadId" Type="Int32" Nullable="false" />
+    <Property Name="OutgoingMemProfitRate" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="LoanInterestRate" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CommonConfigType">
+    <Key>
+      <PropertyRef Name="TableName" />
+      <PropertyRef Name="DisplayName" />
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="TableName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="ModuleId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="CPF_GetMyLoanStatus_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="DateTime" Name="BalanceOn" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="MembershipLength" Nullable="true" Precision="12" Scale="6" />
+    <Property Type="String" Name="EmployeeInitial" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="LoanNo" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="LoanDate" Nullable="false" />
+    <Property Type="Decimal" Name="LoanAmount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="InterestAmount" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="InterestRate" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="NoOfInstallmentPrincipal" Nullable="false" />
+    <Property Type="Int32" Name="NoOfInstallmentInterest" Nullable="false" />
+    <Property Type="Int32" Name="TotalNoOfInstallment" Nullable="true" />
+    <Property Type="Decimal" Name="TotalRepayment" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="RepaymentDate" Nullable="false" />
+    <Property Type="Decimal" Name="PrincipalInstallment" Nullable="true" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="InterestInstallment" Nullable="true" Precision="8" Scale="2" />
+    <Property Type="DateTime" Name="RepaymentEndDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="LoanIDMaster" Nullable="false" />
+    <Property Type="Decimal" Name="PaidInstallmentAmount" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Int32" Name="NoOfPaidInstallment" Nullable="true" />
+    <Property Type="Int32" Name="LoanId" Nullable="false" />
+    <Property Type="Decimal" Name="UnpaidInstallmentAmount" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Int32" Name="NoOfUnPaidInstallment" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="CPF_AvailableInvAccrualStepNo_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="StepNo" Nullable="false" />
+    <Property Type="Int32" Name="InvestmentDetailId" Nullable="false" />
+    <Property Type="Int32" Name="InvestmentId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetApprovalStatusList_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetChartOfAccount_Result">
+    <Property Type="Int32" Name="Id" Nullable="true" />
+    <Property Type="String" Name="AccountHeadCode" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="AccountHeadName" Nullable="true" MaxLength="8000" />
+    <Property Type="String" Name="AccountHeadType" Nullable="true" MaxLength="1" />
+    <Property Type="Decimal" Name="OpeningBalance" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="Boolean" Name="IsPostingAccount" Nullable="true" />
+    <Property Type="Int32" Name="strLevel" Nullable="true" />
+    <Property Type="Binary" Name="strPath" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetDesignationList_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetDivisionUnit_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetJobGradeList_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="GradeName" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetLevelOfCOA_Result">
+    <Property Type="Int32" Name="LevelNo" Nullable="true" />
+    <Property Type="String" Name="LevelName" Nullable="true" MaxLength="35" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetLoanPolicy_Result">
+    <Property Type="String" Name="LoanPolicyFor" Nullable="false" MaxLength="10" />
+    <Property Type="Decimal" Name="NRfLoanPercentage" Nullable="true" Precision="19" />
+    <Property Type="String" Name="NRfApplicableFor" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="NRfMinimumAge" Nullable="true" />
+    <Property Type="Decimal" Name="RfLoanPercentage" Nullable="false" Precision="19" />
+    <Property Type="String" Name="RfApplicableFor" Nullable="false" MaxLength="20" />
+    <Property Type="Boolean" Name="IsRfDeductFromBalance" Nullable="false" />
+    <Property Type="Boolean" Name="IsRfInstallmentAddedWithBalance" Nullable="false" />
+    <Property Type="Int32" Name="RfMaxConcurrentLoan" Nullable="false" />
+    <Property Type="Int32" Name="RfMinServiceYear" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetPFYearList_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="CPFPeriod" Nullable="false" MaxLength="9" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="EndDate" Nullable="false" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetTestName_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="EmployeeInitial" Nullable="true" MaxLength="15" />
+    <Property Type="Int32" Name="TitleId" Nullable="true" />
+    <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MiddleName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="FullNameBangla" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="DateofJoining" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="ProvisionMonth" Nullable="false" />
+    <Property Type="DateTime" Name="DateofConfirmation" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="DateofPosition" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="DesignationId" Nullable="false" />
+    <Property Type="Int32" Name="StatusDesignationId" Nullable="true" />
+    <Property Type="Int32" Name="DisciplineId" Nullable="true" />
+    <Property Type="Int32" Name="DivisionId" Nullable="true" />
+    <Property Type="Int32" Name="SectionId" Nullable="true" />
+    <Property Type="Int32" Name="SubSectionId" Nullable="true" />
+    <Property Type="Int32" Name="JobLocationId" Nullable="false" />
+    <Property Type="Int32" Name="ResourceLevelId" Nullable="true" />
+    <Property Type="Int32" Name="StaffCategoryId" Nullable="false" />
+    <Property Type="Int32" Name="EmploymentTypeId" Nullable="false" />
+    <Property Type="Int32" Name="ReligionId" Nullable="false" />
+    <Property Type="Boolean" Name="IsContractual" Nullable="false" />
+    <Property Type="Boolean" Name="IsConsultant" Nullable="false" />
+    <Property Type="Boolean" Name="IsOvertimeEligible" Nullable="false" />
+    <Property Type="Decimal" Name="OvertimeRate" Nullable="true" Precision="5" Scale="2" />
+    <Property Type="String" Name="MobileNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmialAddress" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="BankId" Nullable="true" />
+    <Property Type="Int32" Name="BankBranchId" Nullable="true" />
+    <Property Type="String" Name="BankAccountNo" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="EmploymentStatusId" Nullable="false" />
+    <Property Type="DateTime" Name="DateofInactive" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsBonusEligible" Nullable="false" />
+    <Property Type="Int32" Name="SalaryScaleId" Nullable="false" />
+    <Property Type="Int32" Name="JobGradeId" Nullable="false" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="ContractExpireDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="DateofBirth" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="ContractDuration" Nullable="true" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="ContractType" Nullable="true" />
+    <Property Type="Int32" Name="OrganogramLevelId" Nullable="false" />
+    <Property Type="DateTime" Name="DateofAppointment" Nullable="false" Precision="23" />
+    <Property Type="String" Name="OrderNo" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="QuotaId" Nullable="true" />
+    <Property Type="Int32" Name="EmployeeClassId" Nullable="true" />
+    <Property Type="Int32" Name="EmploymentProcessId" Nullable="true" />
+    <Property Type="String" Name="SeniorityPosition" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="DateofSeniority" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="PRLDate" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsPensionEligible" Nullable="false" />
+    <Property Type="Boolean" Name="IsLeverageEligible" Nullable="false" />
+    <Property Type="String" Name="CardNo" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="FingerPrintIdentiyNo" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="AttendanceEffectiveDate" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="AttendanceStatus" Nullable="false" />
+    <Property Type="String" Name="IUser" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="IDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="EUser" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="EDate" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsGeneralShifted" Nullable="false" />
+    <Property Type="Int32" Name="RegionId" Nullable="false" />
+    <Property Type="Int32" Name="ZoneInfoId" Nullable="false" />
+    <Property Type="String" Name="TelephoneOffice" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Intercom" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="HonoraryDegree" Nullable="true" MaxLength="150" />
+    <Property Type="Boolean" Name="IsEligibleForCpf" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetVoucherTypeList_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="CPF_MemberSchedule_Result">
+    <Property Type="String" Name="MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="MemberName" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="EmployeeCode" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="EmpOpening" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="EmpContributionInPeriod" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="EmpProfitInPeriod" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="EmpWithdrawnInPeriod" Nullable="false" Precision="12" Scale="0" />
+    <Property Type="Decimal" Name="EmpFinalPayment" Nullable="false" Precision="12" Scale="0" />
+    <Property Type="Decimal" Name="EmpBalance" Nullable="true" Precision="16" Scale="2" />
+    <Property Type="Decimal" Name="ComOpening" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="ComContributionInPeriod" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="ComProfitInPeriod" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="ComWithdrawnInPeriod" Nullable="false" Precision="12" Scale="0" />
+    <Property Type="Decimal" Name="ComForfeitedAmount" Nullable="false" Precision="12" Scale="0" />
+    <Property Type="Decimal" Name="ComFinalPayment" Nullable="false" Precision="12" Scale="0" />
+    <Property Type="Decimal" Name="ComBalance" Nullable="true" Precision="17" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="CPF_MonthlyContribution_Result">
+    <Property Type="String" Name="MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="EmployeeName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Division" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="Month_Year" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="ContributionAmount" Nullable="true" Precision="12" Scale="2" />
+    <Property Type="DateTime" Name="SalaryDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="CPF_ProvidentFundSatementProvisioin_Result">
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="EmployeeInitial" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="EmployeeName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="Decimal" Name="EmployeeOpeningBalance" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="EmployerOpeningBalance" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="EmpContribution" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="ComContribution" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="EmpShareOfProfit" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="ComShareOfProfit" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="EmpWithdrawalAmount" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="ComWithdrawalAmount" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="ComSettlementAmt" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="EmpSettlementAmt" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="ComForfeitedAmount" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="EmpForfeitedAmount" Nullable="false" Precision="2" Scale="2" />
+    <Property Type="Decimal" Name="LoanAmount" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="LoanRefund" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="CPF_RptGenerateScheduleofInvestment_Result">
+    <Property Type="String" Name="InvestmentNo" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="InvestmentTypeId" Nullable="false" />
+    <Property Type="String" Name="InvestmentType" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="DateOfPurchase" Nullable="false" />
+    <Property Type="DateTime" Name="DateOfMaturity" Nullable="false" />
+    <Property Type="String" Name="BankName" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="DurationInYear" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="FaceValue" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="PurchaseValue" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="TaxRate" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="SlabNo" Nullable="false" />
+    <Property Type="DateTime" Name="PeriodFromDate" Nullable="false" />
+    <Property Type="DateTime" Name="PeriodToDate" Nullable="false" />
+    <Property Type="Int32" Name="NoOfDays" Nullable="false" />
+    <Property Type="Decimal" Name="InterestAmount" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="TaxAmount" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="13" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="CPF_VoucherGenerateDetail_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="AccountCode" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="AccountName" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="DebitAmount" Nullable="true" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="CreditAmount" Nullable="true" Precision="12" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="CommonConfigGetResult" />
+  <ComplexType Name="GetDebitOrCredit">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="VoucherNo" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Payee" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ChequeNo" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="ChequeDate" Nullable="true" />
+    <Property Type="Decimal" Name="Amount" Nullable="true" Precision="38" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="GetMyLoanStatusResult">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="DateTime" Name="BalanceOn" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="MembershipLength" Nullable="true" Precision="12" Scale="6" />
+    <Property Type="String" Name="EmployeeInitial" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="LoanNo" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="LoanDate" Nullable="false" />
+    <Property Type="Decimal" Name="LoanAmount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="InterestAmount" Nullable="false" Precision="12" Scale="2" />
+    <Property Type="Decimal" Name="InterestRate" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="NoOfInstallmentPrincipal" Nullable="false" />
+    <Property Type="Int32" Name="NoOfInstallmentInterest" Nullable="false" />
+    <Property Type="Int32" Name="TotalNoOfInstallment" Nullable="true" />
+    <Property Type="Decimal" Name="TotalRepayment" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="RepaymentDate" Nullable="false" />
+    <Property Type="Decimal" Name="PrincipalInstallment" Nullable="true" Precision="8" Scale="2" />
+    <Property Type="Decimal" Name="InterestInstallment" Nullable="true" Precision="8" Scale="2" />
+    <Property Type="DateTime" Name="RepaymentEndDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="LoanIDMaster" Nullable="false" />
+    <Property Type="Decimal" Name="PaidInstallmentAmount" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Int32" Name="NoOfPaidInstallment" Nullable="true" />
+    <Property Type="Int32" Name="LoanId" Nullable="false" />
+    <Property Type="Decimal" Name="UnpaidInstallmentAmount" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Int32" Name="NoOfUnPaidInstallment" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="CPF_DefaultMapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TableName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MappingId" Type="Int32" Nullable="false" />
+    <Property Name="MappingColumn" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CssClassName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vwCPFNominee">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="NomineeForId" />
+      <PropertyRef Name="NomineeFor" />
+      <PropertyRef Name="PercentOfShare" />
+      <PropertyRef Name="FamilyMemberId" />
+      <PropertyRef Name="RelationId" />
+      <PropertyRef Name="RelationName" />
+      <PropertyRef Name="FullName" />
+      <PropertyRef Name="DateofBirth" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="isAddPhoto" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+    <Property Name="NomineeForId" Type="Int32" Nullable="false" />
+    <Property Name="NomineeFor" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PercentOfShare" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="FamilyMemberId" Type="Int32" Nullable="false" />
+    <Property Name="RelationId" Type="Int32" Nullable="false" />
+    <Property Name="RelationName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FullName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="NomineeAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DateofBirth" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="isAddPhoto" Type="Boolean" Nullable="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <ComplexType Name="CPF_GetContributionDuringtheYear_Result">
+    <Property Type="String" Name="SalaryMonth" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SalaryYear" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="HeadName" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="HeadAmount" Nullable="false" Precision="10" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="CPF_RptCpfLoanInfo_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Int32" Name="LoanId" Nullable="false" />
+    <Property Type="String" Name="LoanNo" Nullable="false" MaxLength="25" />
+    <Property Type="DateTime" Name="LoanDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="LoanAmount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Installment" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="Interest" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Balance" Nullable="true" Precision="38" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="CPF_RptMonthlyProvidentFundRegister_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+    <Property Type="Int32" Name="PeriodId" Nullable="true" />
+    <Property Type="Int32" Name="PfMonthId" Nullable="true" />
+    <Property Type="String" Name="PfMonthName" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="PeriodName" Nullable="true" MaxLength="20" />
+    <Property Type="Decimal" Name="OwnContrib" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="EmpTotalContrib" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="ComTotalContirb" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="Profit" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="false" Precision="19" />
+    <Property Type="Int32" Name="SequenceNo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="CPF_RptProvidentFundLoanInstallment_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+    <Property Type="Int32" Name="PeriodId" Nullable="true" />
+    <Property Type="String" Name="PeriodName" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="PfMonthName" Nullable="true" MaxLength="20" />
+    <Property Type="Decimal" Name="Contribution" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="LoanDues" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="SequenceNo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="CPF_RptProvidentFundWorksheet_Result">
+    <Property Type="String" Name="ICNo" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="EmployeeName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Department" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="OpeningBalance" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="Profit" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="OwnContribution" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="FianlSettlement" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="PFBalance" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="OpeningLoanBalance" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="CurrentLoan" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="LoanFromSalary" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="LoanFromCash" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="LoanFromSettlement" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="InterestFromSalary" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="InterestFromCash" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="InterestFromSettlement" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="ClosingLoanBalance" Nullable="false" Precision="19" />
+    <Property Type="String" Name="PeriodName" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="CPF_FinalResultOfCpf_EmployeeWise_Result">
+    <Property Type="Int32" Name="AutoId" Nullable="false" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+    <Property Type="String" Name="PeriodName" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="PfPeriodId" Nullable="true" />
+    <Property Type="String" Name="PfMonthName" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="PfMonthId" Nullable="true" />
+    <Property Type="Decimal" Name="PrevYearContribution" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="CurrentYearContribution" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalContribution" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ProfitPercentage" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalProfit" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ProfitBalance" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="TotalOwnContribution" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="TotalProfitAmount" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="Loan" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="Interest" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="TotalDeduction" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="TotalPayableAmount" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="String" Name="EmployeeName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Department" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Section" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ICNumber" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="NomineeName" Nullable="false" MaxLength="1" />
+    <Property Type="DateTime" Name="FromDate" Nullable="true" />
+    <Property Type="DateTime" Name="ToDate" Nullable="true" />
+    <Property Type="String" Name="CalculationMethod" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="CPF_EmployeeCPF_WF_FundStatus_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+    <Property Type="Decimal" Name="PFOwnContribution" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="PFOfficeContribution" Nullable="false" Precision="19" />
+    <Property Type="Decimal" Name="GrantedLoanAmount" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="TotalInstallment" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="TotalOwnContributionBalance" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="TotalOfficeContributionBalance" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="DateTime" Name="DateUpTo" Nullable="true" />
+    <Property Type="String" Name="MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="PfMembershipDate" Nullable="true" />
+    <Property Type="String" Name="WfMembershipId" Nullable="true" MaxLength="14" />
+    <Property Type="DateTime" Name="DateOfMembership" Nullable="true" />
+    <Property Type="DateTime" Name="DepositUpTo" Nullable="true" />
+    <Property Type="Decimal" Name="WfBalance" Nullable="false" Precision="2" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetMyLoanSummary_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Int32" Name="LoanId" Nullable="false" />
+    <Property Type="String" Name="LoanNo" Nullable="false" MaxLength="25" />
+    <Property Type="DateTime" Name="LoanDate" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="LoanAmount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="GrantedPrincipalInstallmentNo" Nullable="false" />
+    <Property Type="Int32" Name="GrantedInterestInstallmentNo" Nullable="false" />
+    <Property Type="Decimal" Name="Installment" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="Interest" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Balance" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Int32" Name="NoOfPrincipalPaid" Nullable="false" />
+    <Property Type="Int32" Name="NoOfInterestPaid" Nullable="false" />
+    <Property Type="Decimal" Name="InterestRate" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="MembershipID" Nullable="false" MaxLength="20" />
+    <Property Type="Decimal" Name="MembershipLength" Nullable="true" Precision="17" Scale="6" />
+  </ComplexType>
+  <ComplexType Name="CPF_SP_PFListOfLoan_Result">
+    <Property Type="String" Name="Month" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Year" Nullable="true" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="Int32" Name="LoanId" Nullable="false" />
+    <Property Type="DateTime" Name="SanctionDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ApplyDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="EffectiveDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="LoanAmount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Installment" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="Interest" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Balance" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="MembershipID" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="LoanStatus" Nullable="false" />
+    <Property Type="Boolean" Name="IsRefundablePfLoan" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="CPF_MembershipInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeeName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="JoiningDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="MembershipID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PresentAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="PermanentAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="WitnessName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="WitnessDesignation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="WitnessAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="WitnessMembershipID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Witness2Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Witness2Designation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Witness2Address" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Witness2MembershipID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MembershipStatus" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApprovalStatusId" Type="Int32" Nullable="false" />
+    <Property Name="ApproveDate" Type="DateTime" Precision="0" />
+    <Property Name="ApprovedById" Type="Int32" />
+    <Property Name="ApprovalPathId" Type="Int32" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="OfficeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DepartmentName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DesignationName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SectionName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PresentPayScale" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PresentBasicPay" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Nationality" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DateofBirth" Type="DateTime" Precision="0" />
+    <Property Name="ApplicationDate" Type="DateTime" Precision="0" />
+    <Property Name="ApplicationReceiptDate" Type="DateTime" Precision="0" />
+    <Property Name="BankId" Type="Int32" />
+    <Property Name="BankBranchId" Type="Int32" />
+    <Property Name="AccountNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PermanentDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="CPF_MemberNominee" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_MemberNominee_CPF_MembershipInfo" FromRole="CPF_MembershipInfo" ToRole="CPF_MemberNominee" />
+    <NavigationProperty Name="CPF_ProfitDistributionDetail" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_ProfitDistributionDetail_CPF_MembershipInfo" FromRole="CPF_MembershipInfo" ToRole="CPF_ProfitDistributionDetail" />
+    <NavigationProperty Name="APV_ApprovalStatus" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_MembershipInfo_APV_ApprovalStatus" FromRole="CPF_MembershipInfo" ToRole="APV_ApprovalStatus" />
+    <NavigationProperty Name="CPF_OpeningBalance" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_OpeningBalance_CPF_MembershipInfo" FromRole="CPF_MembershipInfo" ToRole="CPF_OpeningBalance" />
+    <NavigationProperty Name="CPF_Settlement" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_Settlement_CPF_MembershipInfo" FromRole="CPF_MembershipInfo" ToRole="CPF_Settlement" />
+    <NavigationProperty Name="CPF_Withdraw" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_Withdraw_CPF_MembershipInfo" FromRole="CPF_MembershipInfo" ToRole="CPF_Withdraw" />
+    <Property Name="InactiveDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <Association Name="FK_CPF_MemberNominee_CPF_MembershipInfo">
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_MembershipInfo" Role="CPF_MembershipInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_MemberNominee" Role="CPF_MemberNominee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_MembershipInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_MemberNominee">
+        <PropertyRef Name="MembershipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CPF_ProfitDistributionDetail_CPF_MembershipInfo">
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_MembershipInfo" Role="CPF_MembershipInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_ProfitDistributionDetail" Role="CPF_ProfitDistributionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_MembershipInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_ProfitDistributionDetail">
+        <PropertyRef Name="MembershipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="APV_ApprovalStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatusName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ActionType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CPF_MembershipInfo" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_MembershipInfo_APV_ApprovalStatus" FromRole="APV_ApprovalStatus" ToRole="CPF_MembershipInfo" />
+  </EntityType>
+  <Association Name="FK_CPF_MembershipInfo_APV_ApprovalStatus">
+    <End Type="BEPZA_MEDICAL.DAL.CPF.APV_ApprovalStatus" Role="APV_ApprovalStatus" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_MembershipInfo" Role="CPF_MembershipInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APV_ApprovalStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_MembershipInfo">
+        <PropertyRef Name="ApprovalStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="CPF_SP_RptMonthlyPFStatement_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+    <Property Type="String" Name="EmpID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="SortingOrder" Nullable="true" />
+    <Property Type="DateTime" Name="DateofJoining" Nullable="true" Precision="23" />
+    <Property Type="String" Name="StaffCategory" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="pMembershipId" Nullable="true" />
+    <Property Type="String" Name="MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="SalaryYear" Nullable="true" MaxLength="4" />
+    <Property Type="String" Name="SalaryMonth" Nullable="true" MaxLength="20" />
+    <Property Type="Decimal" Name="PFOwn" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="PFCompany" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ProfitRate" Nullable="true" Precision="5" Scale="3" />
+    <Property Type="Decimal" Name="ProfitOwn" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ProfitCompany" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="ZoneInfoId" Nullable="true" />
+    <Property Type="String" Name="ZoneName" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="CPF_uspVoucherPostingForProfit_Result">
+    <Property Type="Int64" Name="VoucherId" Nullable="true" />
+    <Property Type="Int32" Name="VouchrTypeId" Nullable="true" />
+    <Property Type="Int32" Name="FundControlId" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="CustomPropertyAttribute">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModelName" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="PropertyName" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayText" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="IsRequired" Type="Boolean" />
+  </EntityType>
+  <ComplexType Name="CPF_GetContributionOfPF_Result">
+    <Property Type="String" Name="SalaryMonth" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SalaryYear" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="HeadName" Nullable="false" MaxLength="50" />
+    <Property Type="Decimal" Name="HeadAmount" Nullable="false" Precision="10" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetMyCPFSummary_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="EmployeeName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="Decimal" Name="MembershipLength" Nullable="true" Precision="17" Scale="6" />
+    <Property Type="Decimal" Name="OwnContribution" Nullable="false" Precision="38" Scale="4" />
+    <Property Type="Decimal" Name="CompanyContribution" Nullable="false" Precision="38" Scale="4" />
+    <Property Type="Decimal" Name="EmpProfitInPeriod" Nullable="false" Precision="38" Scale="4" />
+    <Property Type="Decimal" Name="ComProfitInPeriod" Nullable="false" Precision="38" Scale="4" />
+    <Property Type="Decimal" Name="LoanAmount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Interest" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="PaidLoan" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="LoanDues" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="TotalContribution" Nullable="true" Precision="38" Scale="4" />
+    <Property Type="Decimal" Name="ForfeitedAmount" Nullable="false" Precision="38" Scale="4" />
+    <Property Type="Decimal" Name="NetBalance" Nullable="false" Precision="38" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="CPF_FN_GetEmployeeTotalContribution_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="true" />
+    <Property Type="Int32" Name="SalaryHeadId" Nullable="true" />
+    <Property Type="DateTime" Name="DateUpTo" Nullable="true" Precision="10" />
+    <Property Type="Decimal" Name="TotalCont" Nullable="true" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="TotalInst" Nullable="true" Precision="19" Scale="4" />
+  </ComplexType>
+  <ComplexType Name="CPF_GetMyCPFLoanApplication_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Department" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ApplyDate" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="ApplyLoanAmount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="Purpose" Nullable="true" />
+    <Property Type="Int32" Name="ApplyPrincipalInstallmentNo" Nullable="false" />
+    <Property Type="Decimal" Name="OwnContribution" Nullable="true" Precision="38" Scale="4" />
+    <Property Type="Decimal" Name="CompanyContribution" Nullable="true" Precision="38" Scale="4" />
+    <Property Type="Decimal" Name="GrantedLoanAmount" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="IssuedAmount" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Int32" Name="GrantedPrincipalInstallmentNo" Nullable="false" />
+    <Property Type="String" Name="Section" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="NationalID" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <EntityType Name="CPF_ProfitInterestRate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PfPeriodDuration" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Year" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="Month" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="InterestRate" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CPF_OpeningBalance">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MembershipId" Type="Int32" Nullable="false" />
+    <Property Name="DateOfOpening" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EmpTotal" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComTotal" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="EmpCoreContribution" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="EmpProfit" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComCoreContribution" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="ComProfit" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="PrevYearEmpCoreContribution" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="PrevYearEmpProfit" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="PrevYearComCoreContribution" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="PrevYearComProfit" Type="Decimal" Nullable="false" Precision="18" Scale="6" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CPF_MembershipInfo" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_OpeningBalance_CPF_MembershipInfo" FromRole="CPF_OpeningBalance" ToRole="CPF_MembershipInfo" />
+  </EntityType>
+  <Association Name="FK_CPF_OpeningBalance_CPF_MembershipInfo">
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_MembershipInfo" Role="CPF_MembershipInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_OpeningBalance" Role="CPF_OpeningBalance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_MembershipInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_OpeningBalance">
+        <PropertyRef Name="MembershipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CPF_ProfitDistribution">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PeriodMonth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PeriodYear" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="ProfitRate" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CPF_ProfitDistributionDetail" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_ProfitDistributionDetail_CPF_ProfitDistribution" FromRole="CPF_ProfitDistribution" ToRole="CPF_ProfitDistributionDetail" />
+  </EntityType>
+  <Association Name="FK_CPF_ProfitDistributionDetail_CPF_ProfitDistribution">
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_ProfitDistribution" Role="CPF_ProfitDistribution" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_ProfitDistributionDetail" Role="CPF_ProfitDistributionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_ProfitDistribution">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_ProfitDistributionDetail">
+        <PropertyRef Name="ProfitDistributionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CPF_Settlement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MembershipId" Type="Int32" Nullable="false" />
+    <Property Name="InactiveDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SettlementDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="OutgoingProfitRate" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="MembershipLengthInYear" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="EmpOpening" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="EmpContributionInPeriod" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="EmpProftInPeriod" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="EmpWithdrawnInPeriod" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="EmpBalance" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="ComOpening" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="ComContributionInPeriod" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="ComProftInPeriod" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="ForfeitedAmount" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="ComBalance" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="GrandTotal" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="LoanId" Type="Int32" />
+    <Property Name="LoanAmount" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="LoanRefund" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="DueLoan" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="OtherDeduction" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="NetPayable" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CPF_MembershipInfo" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_Settlement_CPF_MembershipInfo" FromRole="CPF_Settlement" ToRole="CPF_MembershipInfo" />
+    <Property Name="PeriodId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CPF_Withdraw">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MembershipId" Type="Int32" Nullable="false" />
+    <Property Name="RequestDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="WithdrawDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="WithdrawNo" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EmpPortionBalance" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="WithdrawAmount" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="AlreadyWithdrawnAmount" Type="Decimal" Nullable="false" Precision="12" Scale="2" />
+    <Property Name="Reason" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CPF_MembershipInfo" Relationship="BEPZA_MEDICAL.DAL.CPF.FK_CPF_Withdraw_CPF_MembershipInfo" FromRole="CPF_Withdraw" ToRole="CPF_MembershipInfo" />
+    <Property Name="PeriodId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CPF_Settlement_CPF_MembershipInfo">
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_MembershipInfo" Role="CPF_MembershipInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_Settlement" Role="CPF_Settlement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_MembershipInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_Settlement">
+        <PropertyRef Name="MembershipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CPF_Withdraw_CPF_MembershipInfo">
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_MembershipInfo" Role="CPF_MembershipInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.CPF.CPF_Withdraw" Role="CPF_Withdraw" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_MembershipInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_Withdraw">
+        <PropertyRef Name="MembershipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="CPF_SP_RptMonthlyPFStatementMaster_Result">
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SortingOrder" Nullable="true" />
+    <Property Type="String" Name="ZoneName" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="ZoneSortingOrder" Nullable="true" />
+    <Property Type="Decimal" Name="EmpOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpProfitOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpContribution" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpProfit" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpFinalPayment" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpWithdrawnInPeriod" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpClosingBalance" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpClosingBalanceProfit" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComProfitOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComContribution" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComProfit" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComFinalPayment" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComWithdrawnInPeriod" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComClosingBalance" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComClosingBalanceProfit" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="TotalBalance" Nullable="false" Precision="18" Scale="6" />
+  </ComplexType>
+  <ComplexType Name="CPF_SP_RptIndividualMonthlyPFStatement_Result">
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ZoneName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="MonthYear" Nullable="true" MaxLength="55" />
+    <Property Type="Decimal" Name="ProfitRate" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="EmpOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpProfitOpening" Nullable="true" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpContribution" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpProfit" Nullable="true" Precision="28" Scale="12" />
+    <Property Type="Decimal" Name="EmpFinalPayment" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpWithdrawnInPeriod" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpClosingBalance" Nullable="true" Precision="19" Scale="6" />
+    <Property Type="Decimal" Name="EmpClosingBalanceProfit" Nullable="true" Precision="19" Scale="6" />
+    <Property Type="Decimal" Name="ComOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComProfitOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComContribution" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComProfit" Nullable="true" Precision="28" Scale="12" />
+    <Property Type="Decimal" Name="ComFinalPayment" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComWithdrawnInPeriod" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComClosingBalance" Nullable="true" Precision="19" Scale="6" />
+    <Property Type="Decimal" Name="ComClosingBalanceProfit" Nullable="true" Precision="19" Scale="6" />
+    <Property Type="Decimal" Name="TotalBalance" Nullable="true" Precision="19" Scale="6" />
+  </ComplexType>
+  <ComplexType Name="CPF_SP_RptNewJoinInMembership_Result">
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="DateTime" Name="DateofJoining" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="SortingOrder" Nullable="true" />
+    <Property Type="String" Name="Department" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ZoneName" Nullable="true" MaxLength="150" />
+    <Property Type="DateTime" Name="MembershipActiveDate" Nullable="false" />
+    <Property Type="DateTime" Name="InactiveDate" Nullable="true" />
+    <Property Type="Boolean" Name="IsInactive" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="CPF_SP_RptPFStatementHistory_Result">
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ZoneName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="MonthYear" Nullable="true" MaxLength="55" />
+    <Property Type="Decimal" Name="ProfitRate" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpProfitOpening" Nullable="true" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpContribution" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpProfit" Nullable="true" Precision="28" Scale="12" />
+    <Property Type="Decimal" Name="EmpFinalPayment" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpWithdrawnInPeriod" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpClosingBalance" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpClosingBalanceProfit" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComProfitOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComContribution" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComProfit" Nullable="true" Precision="28" Scale="12" />
+    <Property Type="Decimal" Name="ComFinalPayment" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComWithdrawnInPeriod" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComClosingBalance" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComClosingBalanceProfit" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="TotalBalance" Nullable="true" Precision="21" Scale="6" />
+  </ComplexType>
+  <ComplexType Name="CPF_SP_RptIndividualYearlyPFStatement_Result">
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ZoneName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="MonthYear" Nullable="true" MaxLength="55" />
+    <Property Type="Decimal" Name="ProfitRate" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="EmpOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpProfitOpening" Nullable="true" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpContribution" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpProfit" Nullable="true" Precision="28" Scale="12" />
+    <Property Type="Decimal" Name="EmpFinalPayment" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpWithdrawnInPeriod" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpClosingBalance" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="EmpClosingBalanceProfit" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComProfitOpening" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComContribution" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComProfit" Nullable="true" Precision="28" Scale="12" />
+    <Property Type="Decimal" Name="ComFinalPayment" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComWithdrawnInPeriod" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComClosingBalance" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="ComClosingBalanceProfit" Nullable="false" Precision="18" Scale="6" />
+    <Property Type="Decimal" Name="TotalBalance" Nullable="false" Precision="18" Scale="6" />
+  </ComplexType>
+  <ComplexType Name="CPF_SP_RptYearlyPFStatement_Result">
+    <Property Type="String" Name="MonthYear" Nullable="true" MaxLength="55" />
+    <Property Type="Decimal" Name="ProfitRate" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Decimal" Name="EmpClosingBalance" Nullable="true" Precision="38" Scale="6" />
+    <Property Type="Decimal" Name="EmpClosingBalanceProfit" Nullable="true" Precision="38" Scale="6" />
+    <Property Type="Decimal" Name="ComClosingBalance" Nullable="true" Precision="38" Scale="6" />
+    <Property Type="Decimal" Name="ComClosingBalanceProfit" Nullable="true" Precision="38" Scale="6" />
+    <Property Type="Decimal" Name="TotalBalance" Nullable="true" Precision="38" Scale="6" />
+  </ComplexType>
+  <ComplexType Name="CPF_RptCpfMemberInformation_Result">
+    <Property Type="String" Name="MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="EmployeeName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="NationalID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="FatherName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Department" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Section" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SalaryScaleName" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="BasicAmount" Nullable="true" Precision="19" />
+    <Property Type="String" Name="Nationality" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="DateofBirth" Nullable="false" Precision="23" />
+    <Property Type="String" Name="EmploymentType" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="JoiningDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="MembershipDate" Nullable="true" />
+    <Property Type="String" Name="PresentAddress" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="PermanentAddress" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="ApplicationDate" Nullable="true" />
+    <Property Type="DateTime" Name="ApplicationReceiptDate" Nullable="true" />
+    <Property Type="String" Name="AccountNumber" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="WitnessName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="WitnessMembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="Binary" Name="MemberPhoto" Nullable="true" />
+    <Property Type="Binary" Name="Signature" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="CPF_SP_RptNomineeFormInformation_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="NomineeName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="NomineeAddress" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Relation" Nullable="false" MaxLength="100" />
+    <Property Type="Boolean" Name="IsImmatureOrDisable" Nullable="true" />
+    <Property Type="DateTime" Name="NomineeBirthDate" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="NomineeParcentOfShare" Nullable="false" Precision="5" Scale="2" />
+    <Property Type="Int32" Name="AgeOfNominee" Nullable="true" />
+    <Property Type="String" Name="PersonOnBehalfName" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="PersonOnBehalfAddress" Nullable="true" MaxLength="200" />
+    <Property Type="Decimal" Name="PersonOnBehalfShare" Nullable="true" Precision="5" Scale="2" />
+    <Property Type="String" Name="PersonOnBehalfSex" Nullable="true" MaxLength="10" />
+    <Property Type="Binary" Name="NomineePhoto" Nullable="true" />
+    <Property Type="String" Name="Witness1Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Witness1MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Witness1Designation" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Witness1Address" Nullable="true" MaxLength="500" />
+    <Property Type="Binary" Name="Witness1Signature" Nullable="true" />
+    <Property Type="String" Name="Witness2Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Witness2MembershipID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Witness2Designation" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Witness2Address" Nullable="true" MaxLength="500" />
+    <Property Type="Binary" Name="SignatureofMember" Nullable="true" />
+    <Property Type="Binary" Name="SignatureofSecretary" Nullable="true" />
+  </ComplexType>
+</Schema>

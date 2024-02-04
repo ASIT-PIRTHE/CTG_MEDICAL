@@ -1,0 +1,25 @@
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\bin\Debug\DB.dll.config
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\bin\Debug\DB.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\bin\Debug\DB.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\obj\Debug\DB.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\obj\Debug\DB.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DB\obj\Debug\DB.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\bin\Debug\DB.dll.config
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\bin\Debug\DB.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\bin\Debug\DB.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\obj\Debug\DB.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\obj\Debug\DB.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\obj\Debug\DB.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\bin\Debug\DB.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\bin\Debug\DB.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\bin\Debug\DB.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\obj\Debug\DB.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\obj\Debug\DB.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DB\obj\Debug\DB.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\bin\Debug\DB.dll.config
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\bin\Debug\DB.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\bin\Debug\DB.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\obj\Debug\DB.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\obj\Debug\DB.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\obj\Debug\DB.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DB\obj\Debug\DB.pdb

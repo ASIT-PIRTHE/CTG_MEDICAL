@@ -1,0 +1,2139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BEPZA_MEDICAL.DAL.INV" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ERP_BEPZAINVEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CommonConfigTypes" EntityType="BEPZA_MEDICAL.DAL.INV.CommonConfigType" />
+    <EntitySet Name="INV_Category" EntityType="BEPZA_MEDICAL.DAL.INV.INV_Category" />
+    <EntitySet Name="INV_Color" EntityType="BEPZA_MEDICAL.DAL.INV.INV_Color" />
+    <EntitySet Name="INV_ItemStatus" EntityType="BEPZA_MEDICAL.DAL.INV.INV_ItemStatus" />
+    <EntitySet Name="INV_Manufacturer" EntityType="BEPZA_MEDICAL.DAL.INV.INV_Manufacturer" />
+    <EntitySet Name="INV_Model" EntityType="BEPZA_MEDICAL.DAL.INV.INV_Model" />
+    <EntitySet Name="INV_PurchaseType" EntityType="BEPZA_MEDICAL.DAL.INV.INV_PurchaseType" />
+    <EntitySet Name="INV_Unit" EntityType="BEPZA_MEDICAL.DAL.INV.INV_Unit" />
+    <EntitySet Name="INV_ItemInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" />
+    <AssociationSet Name="FK_INV_ItemInfo_INV_Category" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Category">
+      <End Role="INV_Category" EntitySet="INV_Category" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_Color" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Color">
+      <End Role="INV_Color" EntitySet="INV_Color" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_Manufacturer" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Manufacturer">
+      <End Role="INV_Manufacturer" EntitySet="INV_Manufacturer" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_Model" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Model">
+      <End Role="INV_Model" EntitySet="INV_Model" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_Unit" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Unit">
+      <End Role="INV_Unit" EntitySet="INV_Unit" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <EntitySet Name="PRM_ZoneInfo" EntityType="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" />
+    <EntitySet Name="INV_TransferInInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_TransferInInfo" />
+    <EntitySet Name="INV_TransferOutInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_TransferOutInfo" />
+    <AssociationSet Name="FK_INV_TransferInInfo_PRM_ZoneInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_TransferInInfo" EntitySet="INV_TransferInInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInInfo_PRM_ZoneInfo1" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_PRM_ZoneInfo1">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_TransferInInfo" EntitySet="INV_TransferInInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutInfo_PRM_ZoneInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_TransferOutInfo" EntitySet="INV_TransferOutInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutInfo_PRM_ZoneInfo1" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutInfo_PRM_ZoneInfo1">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_TransferOutInfo" EntitySet="INV_TransferOutInfo" />
+    </AssociationSet>
+    <EntitySet Name="INV_TransferInItem" EntityType="BEPZA_MEDICAL.DAL.INV.INV_TransferInItem" />
+    <AssociationSet Name="FK_INV_TransferInItem_INV_ItemInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_TransferInItem" EntitySet="INV_TransferInItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInItem_INV_TransferInInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInItem_INV_TransferInInfo">
+      <End Role="INV_TransferInInfo" EntitySet="INV_TransferInInfo" />
+      <End Role="INV_TransferInItem" EntitySet="INV_TransferInItem" />
+    </AssociationSet>
+    <EntitySet Name="INV_IssueItem" EntityType="BEPZA_MEDICAL.DAL.INV.INV_IssueItem" />
+    <EntitySet Name="INV_PurchaseItem" EntityType="BEPZA_MEDICAL.DAL.INV.INV_PurchaseItem" />
+    <AssociationSet Name="FK_INV_IssueItem_INV_ItemInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_IssueItem" EntitySet="INV_IssueItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseItem_INV_ItemInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_PurchaseItem" EntitySet="INV_PurchaseItem" />
+    </AssociationSet>
+    <EntitySet Name="INV_TransferOutItem" EntityType="BEPZA_MEDICAL.DAL.INV.INV_TransferOutItem" />
+    <AssociationSet Name="FK_INV_TransferOutItem_INV_ItemInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_TransferOutItem" EntitySet="INV_TransferOutItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutItem_INV_TransferOutInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutItem_INV_TransferOutInfo">
+      <End Role="INV_TransferOutInfo" EntitySet="INV_TransferOutInfo" />
+      <End Role="INV_TransferOutItem" EntitySet="INV_TransferOutItem" />
+    </AssociationSet>
+    <EntitySet Name="INV_IssueReturnInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnInfo" />
+    <AssociationSet Name="FK_INV_IssueReturnInfo_PRM_ZoneInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_IssueReturnInfo" EntitySet="INV_IssueReturnInfo" />
+    </AssociationSet>
+    <EntitySet Name="INV_AdjustmentInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentInfo" />
+    <EntitySet Name="INV_AdjustmentItem" EntityType="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentItem" />
+    <EntitySet Name="INV_IssueReturnItem" EntityType="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnItem" />
+    <AssociationSet Name="FK_INV_AdjustmentInfo_PRM_ZoneInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_AdjustmentInfo" EntitySet="INV_AdjustmentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AdjustmentItem_INV_AdjustmentInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentItem_INV_AdjustmentInfo">
+      <End Role="INV_AdjustmentInfo" EntitySet="INV_AdjustmentInfo" />
+      <End Role="INV_AdjustmentItem" EntitySet="INV_AdjustmentItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AdjustmentItem_INV_ItemInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_AdjustmentItem" EntitySet="INV_AdjustmentItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AdjustmentItem_INV_ItemStatus" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentItem_INV_ItemStatus">
+      <End Role="INV_ItemStatus" EntitySet="INV_ItemStatus" />
+      <End Role="INV_AdjustmentItem" EntitySet="INV_AdjustmentItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnItem_INV_IssueReturnInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnItem_INV_IssueReturnInfo">
+      <End Role="INV_IssueReturnInfo" EntitySet="INV_IssueReturnInfo" />
+      <End Role="INV_IssueReturnItem" EntitySet="INV_IssueReturnItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnItem_INV_ItemInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_IssueReturnItem" EntitySet="INV_IssueReturnItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnItem_INV_ItemStatus" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnItem_INV_ItemStatus">
+      <End Role="INV_ItemStatus" EntitySet="INV_ItemStatus" />
+      <End Role="INV_IssueReturnItem" EntitySet="INV_IssueReturnItem" />
+    </AssociationSet>
+    <EntitySet Name="INV_AssetQuotaInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_AssetQuotaInfo" />
+    <EntitySet Name="INV_PeriodicAssetDuration" EntityType="BEPZA_MEDICAL.DAL.INV.INV_PeriodicAssetDuration" />
+    <EntitySet Name="INV_SupplierInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_SupplierInfo" />
+    <AssociationSet Name="FK_INV_AssetQuotaInfo_INV_ItemInfo1" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_AssetQuotaInfo_INV_ItemInfo1">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_AssetQuotaInfo" EntitySet="INV_AssetQuotaInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AssetQuotaInfo_INV_Unit1" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_AssetQuotaInfo_INV_Unit1">
+      <End Role="INV_Unit" EntitySet="INV_Unit" />
+      <End Role="INV_AssetQuotaInfo" EntitySet="INV_AssetQuotaInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AssetQuotaInfo_PRM_ZoneInfo1" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_AssetQuotaInfo_PRM_ZoneInfo1">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_AssetQuotaInfo" EntitySet="INV_AssetQuotaInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PeriodicAssetDuration_INV_ItemInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_PeriodicAssetDuration_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_PeriodicAssetDuration" EntitySet="INV_PeriodicAssetDuration" />
+    </AssociationSet>
+    <EntitySet Name="INV_IssueInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_IssueInfo" />
+    <AssociationSet Name="FK_INV_IssueInfo_PRM_ZoneInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_IssueInfo" EntitySet="INV_IssueInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueItem_INV_IssueInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueItem_INV_IssueInfo">
+      <End Role="INV_IssueInfo" EntitySet="INV_IssueInfo" />
+      <End Role="INV_IssueItem" EntitySet="INV_IssueItem" />
+    </AssociationSet>
+    <EntitySet Name="INV_DelegationApprovalInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_DelegationApprovalInfo" />
+    <AssociationSet Name="FK_INV_DelegationApprovalInfo_PRM_ZoneInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_DelegationApprovalInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_DelegationApprovalInfo" EntitySet="INV_DelegationApprovalInfo" />
+    </AssociationSet>
+    <FunctionImport Name="sp_INV_RptPurchaseInfo" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_RptPurchaseInfo_Result)">
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="PurchaseDateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="PurchaseDateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="PODateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="PODateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="ChallanDateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="ChallanDateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="PurchaseTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="SupplierId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryId" Mode="In" Type="Int32" />
+      <Parameter Name="ModelId" Mode="In" Type="Int32" />
+      <Parameter Name="ColorId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_INV_RptTransferInInfo" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_RptTransferInInfo_Result)">
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="challanFromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="challanToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="receivedFromId" Mode="In" Type="Int32" />
+      <Parameter Name="itemId" Mode="In" Type="Int32" />
+      <Parameter Name="categoryId" Mode="In" Type="Int32" />
+      <Parameter Name="typeId" Mode="In" Type="Int32" />
+      <Parameter Name="colorId" Mode="In" Type="Int32" />
+      <Parameter Name="modelId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_INV_RptTransferOutInfo" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_RptTransferOutInfo_Result)">
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="challanFromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="challanToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="transferredTo" Mode="In" Type="Int32" />
+      <Parameter Name="itemId" Mode="In" Type="Int32" />
+      <Parameter Name="categoryId" Mode="In" Type="Int32" />
+      <Parameter Name="typeId" Mode="In" Type="Int32" />
+      <Parameter Name="colorId" Mode="In" Type="Int32" />
+      <Parameter Name="modelId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_INV_RptIssueInfo" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_RptIssueInfo_Result)">
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="IssueDateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="IssueDateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="IndentDateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="IndentDateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="IssuedToId" Mode="In" Type="Int32" />
+      <Parameter Name="IssueNo" Mode="In" Type="String" />
+      <Parameter Name="IndentId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryId" Mode="In" Type="Int32" />
+      <Parameter Name="ModelId" Mode="In" Type="Int32" />
+      <Parameter Name="ColorId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_INV_RptIssueReturn" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_RptIssueReturn_Result)">
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="ReturnDateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="ReturnDateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="ReceivedFromId" Mode="In" Type="Int32" />
+      <Parameter Name="ReturnNo" Mode="In" Type="String" />
+      <Parameter Name="ItemTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryId" Mode="In" Type="Int32" />
+      <Parameter Name="ModelId" Mode="In" Type="Int32" />
+      <Parameter Name="ColorId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="vwINVItemHistory" EntityType="BEPZA_MEDICAL.DAL.INV.vwINVItemHistory" />
+    <FunctionImport Name="sp_INV_RptItemLedger" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_RptItemLedger_Result)">
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="ItemTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryId" Mode="In" Type="Int32" />
+      <Parameter Name="ModelId" Mode="In" Type="Int32" />
+      <Parameter Name="ColorId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemId" Mode="In" Type="Int32" />
+      <Parameter Name="AssetGroupId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_INV_RptEmployeeWiseItemLedger" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_RptEmployeeWiseItemLedger_Result)">
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="EmployeeId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryId" Mode="In" Type="Int32" />
+      <Parameter Name="ModelId" Mode="In" Type="Int32" />
+      <Parameter Name="ColorId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemId" Mode="In" Type="Int32" />
+      <Parameter Name="AssetGroupId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="fn_INV_GetItemBalanceByMRR" IsComposable="true" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.fn_INV_GetItemBalanceByMRR_Result)">
+      <Parameter Name="DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="ItemId" Mode="In" Type="Int32" />
+      <Parameter Name="PurchaseId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="fn_INV_GetItemClosingBalance" IsComposable="true" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.fn_INV_GetItemClosingBalance_Result)">
+      <Parameter Name="DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="ItemId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="fn_INV_GetItemOpeningBalance" IsComposable="true" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.fn_INV_GetItemOpeningBalance_Result)">
+      <Parameter Name="DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="ItemId" Mode="In" Type="Int32" />
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="PRM_EmploymentInfo" EntityType="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" />
+    <AssociationSet Name="FK_INV_AdjustmentInfo_PRM_EmploymentInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_AdjustmentInfo" EntitySet="INV_AdjustmentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_AdjustmentInfo_PRM_EmploymentInfo1" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentInfo_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_AdjustmentInfo" EntitySet="INV_AdjustmentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueInfo_PRM_EmploymentInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_IssueInfo" EntitySet="INV_IssueInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueInfo_PRM_EmploymentInfo1" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_IssueInfo" EntitySet="INV_IssueInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnInfo_PRM_EmploymentInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_IssueReturnInfo" EntitySet="INV_IssueReturnInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_IssueReturnInfo_PRM_EmploymentInfo1" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_IssueReturnInfo" EntitySet="INV_IssueReturnInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInInfo_PRM_EmploymentInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_TransferInInfo" EntitySet="INV_TransferInInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutInfo_PRM_EmploymentInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_TransferOutInfo" EntitySet="INV_TransferOutInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRM_EmploymentInfo_PRM_ZoneInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_PRM_EmploymentInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+    </AssociationSet>
+    <FunctionImport Name="sp_INV_PendingRequisitionList" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_PendingRequisitionList_Result)">
+      <Parameter Name="ZoneInfoId" Mode="In" Type="Int32" />
+      <Parameter Name="IndentId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <AssociationSet Name="FK_INV_TransferInInfo_INV_TransferOutInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_INV_TransferOutInfo">
+      <End Role="INV_TransferOutInfo" EntitySet="INV_TransferOutInfo" />
+      <End Role="INV_TransferInInfo" EntitySet="INV_TransferInInfo" />
+    </AssociationSet>
+    <FunctionImport Name="sp_INV_PendingTransferList" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_PendingTransferList_Result)">
+      <Parameter Name="ZoneInfoId" Mode="In" Type="Int32" />
+      <Parameter Name="TransferOutId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="INV_ScrapItem" EntityType="BEPZA_MEDICAL.DAL.INV.INV_ScrapItem" />
+    <AssociationSet Name="FK_INV_ScrapItem_INV_ItemInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_ScrapItem" EntitySet="INV_ScrapItem" />
+    </AssociationSet>
+    <FunctionImport Name="sp_INV_PendingScrapList" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_PendingScrapList_Result)">
+      <Parameter Name="ZoneInfoId" Mode="In" Type="Int32" />
+      <Parameter Name="ScrapId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <AssociationSet Name="FK_INV_ScrapItem_INV_ItemStatus" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapItem_INV_ItemStatus">
+      <End Role="INV_ItemStatus" EntitySet="INV_ItemStatus" />
+      <End Role="INV_ScrapItem" EntitySet="INV_ScrapItem" />
+    </AssociationSet>
+    <EntitySet Name="INV_ItemType" EntityType="BEPZA_MEDICAL.DAL.INV.INV_ItemType" />
+    <AssociationSet Name="FK_INV_DelegationApprovalInfo_INV_ItemType" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_DelegationApprovalInfo_INV_ItemType">
+      <End Role="INV_ItemType" EntitySet="INV_ItemType" />
+      <End Role="INV_DelegationApprovalInfo" EntitySet="INV_DelegationApprovalInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemInfo_INV_ItemType" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_ItemType">
+      <End Role="INV_ItemType" EntitySet="INV_ItemType" />
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ItemType_INV_ItemType" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemType_INV_ItemType">
+      <End Role="INV_ItemType" EntitySet="INV_ItemType" />
+      <End Role="INV_ItemType1" EntitySet="INV_ItemType" />
+    </AssociationSet>
+    <EntitySet Name="INV_RequisitionInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_RequisitionInfo" />
+    <AssociationSet Name="FK_INV_IssueInfo_INV_RequisitionInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_INV_RequisitionInfo">
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+      <End Role="INV_IssueInfo" EntitySet="INV_IssueInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_RequisitionInfo_PRM_EmploymentInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_RequisitionInfo_PRM_EmploymentInfo1" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionInfo_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_RequisitionInfo_PRM_ZoneInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+    </AssociationSet>
+    <AssociationSet Name="PRM_AcceptanceLetterInfo_PRM_EmploymentInfo" Association="BEPZA_MEDICAL.DAL.INV.PRM_AcceptanceLetterInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+    </AssociationSet>
+    <EntitySet Name="INV_ScrapInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_ScrapInfo" />
+    <EntitySet Name="INV_ScrapItemHistory" EntityType="BEPZA_MEDICAL.DAL.INV.INV_ScrapItemHistory" />
+    <AssociationSet Name="FK_INV_IssueReturnInfo_INV_ScrapInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_INV_ScrapInfo">
+      <End Role="INV_ScrapInfo" EntitySet="INV_ScrapInfo" />
+      <End Role="INV_IssueReturnInfo" EntitySet="INV_IssueReturnInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ScrapInfo_PRM_EmploymentInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_ScrapInfo" EntitySet="INV_ScrapInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ScrapInfo_PRM_EmploymentInfo1" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapInfo_PRM_EmploymentInfo1">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_ScrapInfo" EntitySet="INV_ScrapInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ScrapInfo_PRM_ZoneInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_ScrapInfo" EntitySet="INV_ScrapInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_ScrapItem_INV_ScrapInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapItem_INV_ScrapInfo">
+      <End Role="INV_ScrapInfo" EntitySet="INV_ScrapInfo" />
+      <End Role="INV_ScrapItem" EntitySet="INV_ScrapItem" />
+    </AssociationSet>
+    <FunctionImport Name="APV_GetINVRequisitionApplication" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.APV_GetINVRequisitionApplication_Result)">
+      <Parameter Name="ApproverId" Mode="In" Type="String" />
+      <Parameter Name="ApprovalProcessId" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ApprovalStatusId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="vwINVBudgetHead" EntityType="BEPZA_MEDICAL.DAL.INV.vwINVBudgetHead" />
+    <EntitySet Name="INV_RequisitionItem" EntityType="BEPZA_MEDICAL.DAL.INV.INV_RequisitionItem" />
+    <AssociationSet Name="FK_INV_RequisitionItem_INV_ItemInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionItem_INV_ItemInfo">
+      <End Role="INV_ItemInfo" EntitySet="INV_ItemInfo" />
+      <End Role="INV_RequisitionItem" EntitySet="INV_RequisitionItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_RequisitionItem_INV_RequisitionInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionItem_INV_RequisitionInfo">
+      <End Role="INV_RequisitionInfo" EntitySet="INV_RequisitionInfo" />
+      <End Role="INV_RequisitionItem" EntitySet="INV_RequisitionItem" />
+    </AssociationSet>
+    <EntitySet Name="INV_PurchaseInfo" EntityType="BEPZA_MEDICAL.DAL.INV.INV_PurchaseInfo" />
+    <AssociationSet Name="FK_INV_IssueItem_INV_PurchaseInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueItem_INV_PurchaseInfo">
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+      <End Role="INV_IssueItem" EntitySet="INV_IssueItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseInfo_INV_PurchaseType" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_INV_PurchaseType">
+      <End Role="INV_PurchaseType" EntitySet="INV_PurchaseType" />
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseInfo_INV_SupplierInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_INV_SupplierInfo">
+      <End Role="INV_SupplierInfo" EntitySet="INV_SupplierInfo" />
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseInfo_PRM_EmploymentInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_PRM_EmploymentInfo">
+      <End Role="PRM_EmploymentInfo" EntitySet="PRM_EmploymentInfo" />
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseInfo_PRM_ZoneInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_PRM_ZoneInfo">
+      <End Role="PRM_ZoneInfo" EntitySet="PRM_ZoneInfo" />
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_PurchaseItem_INV_PurchaseInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseItem_INV_PurchaseInfo">
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+      <End Role="INV_PurchaseItem" EntitySet="INV_PurchaseItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferInItem_INV_PurchaseInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInItem_INV_PurchaseInfo">
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+      <End Role="INV_TransferInItem" EntitySet="INV_TransferInItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INV_TransferOutItem_INV_PurchaseInfo" Association="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutItem_INV_PurchaseInfo">
+      <End Role="INV_PurchaseInfo" EntitySet="INV_PurchaseInfo" />
+      <End Role="INV_TransferOutItem" EntitySet="INV_TransferOutItem" />
+    </AssociationSet>
+    <FunctionImport Name="sp_INV_RptStockBalance" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.sp_INV_RptStockBalance_Result)">
+      <Parameter Name="zoneList" Mode="In" Type="String" />
+      <Parameter Name="DateFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="DateTo" Mode="In" Type="DateTime" />
+      <Parameter Name="ItemTypeId" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryId" Mode="In" Type="Int32" />
+      <Parameter Name="ModelId" Mode="In" Type="Int32" />
+      <Parameter Name="ColorId" Mode="In" Type="Int32" />
+      <Parameter Name="ItemId" Mode="In" Type="Int32" />
+      <Parameter Name="numErrorCode" Mode="InOut" Type="Int32" />
+      <Parameter Name="strErrorMsg" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INV_uspAdjustmentVoucherPosting" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.INV_uspAdjustmentVoucherPosting_Result)">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="INV_uspPurchaseVoucherPosting" ReturnType="Collection(BEPZA_MEDICAL.DAL.INV.INV_uspPurchaseVoucherPosting_Result)">
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="CommonConfigType">
+    <Key>
+      <PropertyRef Name="TableName" />
+      <PropertyRef Name="DisplayName" />
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="TableName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DisplayName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="ModuleId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INV_Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Category" FromRole="INV_Category" ToRole="INV_ItemInfo" />
+  </EntityType>
+  <EntityType Name="INV_Color">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Color" FromRole="INV_Color" ToRole="INV_ItemInfo" />
+  </EntityType>
+  <EntityType Name="INV_ItemStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_AdjustmentItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentItem_INV_ItemStatus" FromRole="INV_ItemStatus" ToRole="INV_AdjustmentItem" />
+    <NavigationProperty Name="INV_IssueReturnItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnItem_INV_ItemStatus" FromRole="INV_ItemStatus" ToRole="INV_IssueReturnItem" />
+    <NavigationProperty Name="INV_ScrapItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapItem_INV_ItemStatus" FromRole="INV_ItemStatus" ToRole="INV_ScrapItem" />
+  </EntityType>
+  <EntityType Name="INV_Manufacturer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Manufacturer" FromRole="INV_Manufacturer" ToRole="INV_ItemInfo" />
+  </EntityType>
+  <EntityType Name="INV_Model">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Model" FromRole="INV_Model" ToRole="INV_ItemInfo" />
+  </EntityType>
+  <EntityType Name="INV_PurchaseType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_PurchaseInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_INV_PurchaseType" FromRole="INV_PurchaseType" ToRole="INV_PurchaseInfo" />
+  </EntityType>
+  <EntityType Name="INV_Unit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Unit" FromRole="INV_Unit" ToRole="INV_ItemInfo" />
+    <NavigationProperty Name="INV_AssetQuotaInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AssetQuotaInfo_INV_Unit1" FromRole="INV_Unit" ToRole="INV_AssetQuotaInfo" />
+  </EntityType>
+  <EntityType Name="INV_ItemInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CategoryId" Type="Int32" />
+    <Property Name="ColorId" Type="Int32" />
+    <Property Name="ManufacturerId" Type="Int32" />
+    <Property Name="MinimumQuantity" Type="Int32" />
+    <Property Name="ReOrderQuantity" Type="Int32" />
+    <Property Name="MaximumQuantity" Type="Int32" />
+    <Property Name="IsPeriodicAsset" Type="Boolean" />
+    <Property Name="IsCondemnableAsset" Type="Boolean" />
+    <Property Name="HasQuota" Type="Boolean" />
+    <Property Name="TypeId" Type="Int32" />
+    <Property Name="ModelId" Type="Int32" />
+    <Property Name="UnitId" Type="Int32" />
+    <Property Name="Size" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="AssetGroupId" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_Category" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Category" FromRole="INV_ItemInfo" ToRole="INV_Category" />
+    <NavigationProperty Name="INV_Color" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Color" FromRole="INV_ItemInfo" ToRole="INV_Color" />
+    <NavigationProperty Name="INV_Manufacturer" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Manufacturer" FromRole="INV_ItemInfo" ToRole="INV_Manufacturer" />
+    <NavigationProperty Name="INV_Model" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Model" FromRole="INV_ItemInfo" ToRole="INV_Model" />
+    <NavigationProperty Name="INV_Unit" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_Unit" FromRole="INV_ItemInfo" ToRole="INV_Unit" />
+    <NavigationProperty Name="INV_TransferInItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInItem_INV_ItemInfo" FromRole="INV_ItemInfo" ToRole="INV_TransferInItem" />
+    <NavigationProperty Name="INV_IssueItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueItem_INV_ItemInfo" FromRole="INV_ItemInfo" ToRole="INV_IssueItem" />
+    <NavigationProperty Name="INV_PurchaseItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseItem_INV_ItemInfo" FromRole="INV_ItemInfo" ToRole="INV_PurchaseItem" />
+    <NavigationProperty Name="INV_TransferOutItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutItem_INV_ItemInfo" FromRole="INV_ItemInfo" ToRole="INV_TransferOutItem" />
+    <NavigationProperty Name="INV_AdjustmentItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentItem_INV_ItemInfo" FromRole="INV_ItemInfo" ToRole="INV_AdjustmentItem" />
+    <NavigationProperty Name="INV_IssueReturnItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnItem_INV_ItemInfo" FromRole="INV_ItemInfo" ToRole="INV_IssueReturnItem" />
+    <NavigationProperty Name="INV_AssetQuotaInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AssetQuotaInfo_INV_ItemInfo1" FromRole="INV_ItemInfo" ToRole="INV_AssetQuotaInfo" />
+    <NavigationProperty Name="INV_PeriodicAssetDuration" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PeriodicAssetDuration_INV_ItemInfo" FromRole="INV_ItemInfo" ToRole="INV_PeriodicAssetDuration" />
+    <NavigationProperty Name="INV_ScrapItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapItem_INV_ItemInfo" FromRole="INV_ItemInfo" ToRole="INV_ScrapItem" />
+    <NavigationProperty Name="INV_ItemType" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_ItemType" FromRole="INV_ItemInfo" ToRole="INV_ItemType" />
+    <NavigationProperty Name="INV_RequisitionItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionItem_INV_ItemInfo" FromRole="INV_ItemInfo" ToRole="INV_RequisitionItem" />
+  </EntityType>
+  <Association Name="FK_INV_ItemInfo_INV_Category">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_Category" Role="INV_Category" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_Color">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_Color" Role="INV_Color" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Color">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="ColorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_Manufacturer">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_Manufacturer" Role="INV_Manufacturer" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Manufacturer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="ManufacturerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_Model">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_Model" Role="INV_Model" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Model">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_Unit">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_Unit" Role="INV_Unit" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Unit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PRM_ZoneInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ZoneName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ZoneCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SortOrder" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="INV_TransferInInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_PRM_ZoneInfo" FromRole="PRM_ZoneInfo" ToRole="INV_TransferInInfo" />
+    <NavigationProperty Name="INV_TransferInInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_PRM_ZoneInfo1" FromRole="PRM_ZoneInfo" ToRole="INV_TransferInInfo" />
+    <NavigationProperty Name="INV_TransferOutInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutInfo_PRM_ZoneInfo" FromRole="PRM_ZoneInfo" ToRole="INV_TransferOutInfo" />
+    <NavigationProperty Name="INV_TransferOutInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutInfo_PRM_ZoneInfo1" FromRole="PRM_ZoneInfo" ToRole="INV_TransferOutInfo" />
+    <NavigationProperty Name="INV_IssueReturnInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_PRM_ZoneInfo" FromRole="PRM_ZoneInfo" ToRole="INV_IssueReturnInfo" />
+    <NavigationProperty Name="INV_AdjustmentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentInfo_PRM_ZoneInfo" FromRole="PRM_ZoneInfo" ToRole="INV_AdjustmentInfo" />
+    <Property Name="OrganogramCategoryTypeId" Type="Int32" Nullable="false" />
+    <Property Name="ZoneAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Prefix" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="INV_AssetQuotaInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AssetQuotaInfo_PRM_ZoneInfo1" FromRole="PRM_ZoneInfo" ToRole="INV_AssetQuotaInfo" />
+    <NavigationProperty Name="INV_IssueInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_PRM_ZoneInfo" FromRole="PRM_ZoneInfo" ToRole="INV_IssueInfo" />
+    <NavigationProperty Name="INV_DelegationApprovalInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_DelegationApprovalInfo_PRM_ZoneInfo" FromRole="PRM_ZoneInfo" ToRole="INV_DelegationApprovalInfo" />
+    <NavigationProperty Name="PRM_EmploymentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_PRM_EmploymentInfo_PRM_ZoneInfo" FromRole="PRM_ZoneInfo" ToRole="PRM_EmploymentInfo" />
+    <Property Name="ZoneNameInBengali" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ZoneAddressInBengali" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsHeadOffice" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="INV_RequisitionInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionInfo_PRM_ZoneInfo" FromRole="PRM_ZoneInfo" ToRole="INV_RequisitionInfo" />
+    <NavigationProperty Name="INV_ScrapInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapInfo_PRM_ZoneInfo" FromRole="PRM_ZoneInfo" ToRole="INV_ScrapInfo" />
+    <NavigationProperty Name="INV_PurchaseInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_PRM_ZoneInfo" FromRole="PRM_ZoneInfo" ToRole="INV_PurchaseInfo" />
+  </EntityType>
+  <EntityType Name="INV_TransferInInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <Property Name="TransferDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="TransferNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ChallanDate" Type="DateTime" Precision="7" />
+    <Property Name="ChallanNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ReceivedFromId" Type="Int32" Nullable="false" />
+    <Property Name="ReceivedById" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_PRM_ZoneInfo" FromRole="INV_TransferInInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="PRM_ZoneInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_PRM_ZoneInfo1" FromRole="INV_TransferInInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="INV_TransferInItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInItem_INV_TransferInInfo" FromRole="INV_TransferInInfo" ToRole="INV_TransferInItem" />
+    <NavigationProperty Name="PRM_EmploymentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_PRM_EmploymentInfo" FromRole="INV_TransferInInfo" ToRole="PRM_EmploymentInfo" />
+    <Property Name="Attachment" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FileName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TransferOutId" Type="Int32" />
+    <NavigationProperty Name="INV_TransferOutInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_INV_TransferOutInfo" FromRole="INV_TransferInInfo" ToRole="INV_TransferOutInfo" />
+  </EntityType>
+  <EntityType Name="INV_TransferOutInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <Property Name="TransferDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="TransferNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ChallanDate" Type="DateTime" Precision="7" />
+    <Property Name="ChallanNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TransferredToZoneId" Type="Int32" Nullable="false" />
+    <Property Name="TransferredByEmpId" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutInfo_PRM_ZoneInfo" FromRole="INV_TransferOutInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="PRM_ZoneInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutInfo_PRM_ZoneInfo1" FromRole="INV_TransferOutInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="INV_TransferOutItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutItem_INV_TransferOutInfo" FromRole="INV_TransferOutInfo" ToRole="INV_TransferOutItem" />
+    <NavigationProperty Name="PRM_EmploymentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutInfo_PRM_EmploymentInfo" FromRole="INV_TransferOutInfo" ToRole="PRM_EmploymentInfo" />
+    <Property Name="Attachment" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FileName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsProcessed" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="INV_TransferInInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_INV_TransferOutInfo" FromRole="INV_TransferOutInfo" ToRole="INV_TransferInInfo" />
+  </EntityType>
+  <Association Name="FK_INV_TransferInInfo_PRM_ZoneInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferInInfo" Role="INV_TransferInInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInInfo">
+        <PropertyRef Name="ReceivedFromId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInInfo_PRM_ZoneInfo1">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferInInfo" Role="INV_TransferInInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutInfo_PRM_ZoneInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferOutInfo" Role="INV_TransferOutInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutInfo_PRM_ZoneInfo1">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferOutInfo" Role="INV_TransferOutInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutInfo">
+        <PropertyRef Name="TransferredToZoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_TransferInItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TransferInId" Type="Int32" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="PurchaseId" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInItem_INV_ItemInfo" FromRole="INV_TransferInItem" ToRole="INV_ItemInfo" />
+    <NavigationProperty Name="INV_TransferInInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInItem_INV_TransferInInfo" FromRole="INV_TransferInItem" ToRole="INV_TransferInInfo" />
+    <NavigationProperty Name="INV_PurchaseInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInItem_INV_PurchaseInfo" FromRole="INV_TransferInItem" ToRole="INV_PurchaseInfo" />
+  </EntityType>
+  <Association Name="FK_INV_TransferInItem_INV_ItemInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferInItem" Role="INV_TransferInItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInItem_INV_TransferInInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferInInfo" Role="INV_TransferInInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferInItem" Role="INV_TransferInItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_TransferInInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInItem">
+        <PropertyRef Name="TransferInId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_IssueItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IssueId" Type="Int32" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="PurchaseId" Type="Int32" />
+    <Property Name="IssueQuantity" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="DemandQuantity" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueItem_INV_ItemInfo" FromRole="INV_IssueItem" ToRole="INV_ItemInfo" />
+    <NavigationProperty Name="INV_IssueInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueItem_INV_IssueInfo" FromRole="INV_IssueItem" ToRole="INV_IssueInfo" />
+    <NavigationProperty Name="INV_PurchaseInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueItem_INV_PurchaseInfo" FromRole="INV_IssueItem" ToRole="INV_PurchaseInfo" />
+  </EntityType>
+  <EntityType Name="INV_PurchaseItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseId" Type="Int32" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Rate" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="TotalCost" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseItem_INV_ItemInfo" FromRole="INV_PurchaseItem" ToRole="INV_ItemInfo" />
+    <NavigationProperty Name="INV_PurchaseInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseItem_INV_PurchaseInfo" FromRole="INV_PurchaseItem" ToRole="INV_PurchaseInfo" />
+  </EntityType>
+  <Association Name="FK_INV_IssueItem_INV_ItemInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueItem" Role="INV_IssueItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseItem_INV_ItemInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseItem" Role="INV_PurchaseItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_TransferOutItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TransferOutId" Type="Int32" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="PurchaseId" Type="Int32" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutItem_INV_ItemInfo" FromRole="INV_TransferOutItem" ToRole="INV_ItemInfo" />
+    <NavigationProperty Name="INV_TransferOutInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutItem_INV_TransferOutInfo" FromRole="INV_TransferOutItem" ToRole="INV_TransferOutInfo" />
+    <NavigationProperty Name="INV_PurchaseInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutItem_INV_PurchaseInfo" FromRole="INV_TransferOutItem" ToRole="INV_PurchaseInfo" />
+  </EntityType>
+  <Association Name="FK_INV_TransferOutItem_INV_ItemInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferOutItem" Role="INV_TransferOutItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutItem_INV_TransferOutInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferOutInfo" Role="INV_TransferOutInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferOutItem" Role="INV_TransferOutItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_TransferOutInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutItem">
+        <PropertyRef Name="TransferOutId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_IssueReturnInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReturnNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ReturnDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ReceivedFromEmpId" Type="Int32" Nullable="false" />
+    <Property Name="ReceivedByEmpId" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_PRM_ZoneInfo" FromRole="INV_IssueReturnInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="INV_IssueReturnItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnItem_INV_IssueReturnInfo" FromRole="INV_IssueReturnInfo" ToRole="INV_IssueReturnItem" />
+    <NavigationProperty Name="PRM_EmploymentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_PRM_EmploymentInfo" FromRole="INV_IssueReturnInfo" ToRole="PRM_EmploymentInfo" />
+    <NavigationProperty Name="PRM_EmploymentInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_PRM_EmploymentInfo1" FromRole="INV_IssueReturnInfo" ToRole="PRM_EmploymentInfo" />
+    <Property Name="ScrapId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="INV_ScrapInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_INV_ScrapInfo" FromRole="INV_IssueReturnInfo" ToRole="INV_ScrapInfo" />
+  </EntityType>
+  <Association Name="FK_INV_IssueReturnInfo_PRM_ZoneInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnInfo" Role="INV_IssueReturnInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_AdjustmentInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdjustmentNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AdjustmentDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="AdjustedByEmpId" Type="Int32" Nullable="false" />
+    <Property Name="ApprovedByEmpId" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentInfo_PRM_ZoneInfo" FromRole="INV_AdjustmentInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="INV_AdjustmentItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentItem_INV_AdjustmentInfo" FromRole="INV_AdjustmentInfo" ToRole="INV_AdjustmentItem" />
+    <NavigationProperty Name="PRM_EmploymentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentInfo_PRM_EmploymentInfo" FromRole="INV_AdjustmentInfo" ToRole="PRM_EmploymentInfo" />
+    <NavigationProperty Name="PRM_EmploymentInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentInfo_PRM_EmploymentInfo1" FromRole="INV_AdjustmentInfo" ToRole="PRM_EmploymentInfo" />
+    <Property Name="Attachment" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="FileName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="INV_AdjustmentItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdjustmentId" Type="Int32" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ItemStatusId" Type="Int32" Nullable="false" />
+    <Property Name="Rate" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="TotalCost" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="INV_AdjustmentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentItem_INV_AdjustmentInfo" FromRole="INV_AdjustmentItem" ToRole="INV_AdjustmentInfo" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentItem_INV_ItemInfo" FromRole="INV_AdjustmentItem" ToRole="INV_ItemInfo" />
+    <NavigationProperty Name="INV_ItemStatus" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentItem_INV_ItemStatus" FromRole="INV_AdjustmentItem" ToRole="INV_ItemStatus" />
+  </EntityType>
+  <EntityType Name="INV_IssueReturnItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IssueReturnId" Type="Int32" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ItemStatusId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="INV_IssueReturnInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnItem_INV_IssueReturnInfo" FromRole="INV_IssueReturnItem" ToRole="INV_IssueReturnInfo" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnItem_INV_ItemInfo" FromRole="INV_IssueReturnItem" ToRole="INV_ItemInfo" />
+    <NavigationProperty Name="INV_ItemStatus" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnItem_INV_ItemStatus" FromRole="INV_IssueReturnItem" ToRole="INV_ItemStatus" />
+  </EntityType>
+  <Association Name="FK_INV_AdjustmentInfo_PRM_ZoneInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentInfo" Role="INV_AdjustmentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AdjustmentItem_INV_AdjustmentInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentInfo" Role="INV_AdjustmentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentItem" Role="INV_AdjustmentItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_AdjustmentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentItem">
+        <PropertyRef Name="AdjustmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AdjustmentItem_INV_ItemInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentItem" Role="INV_AdjustmentItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AdjustmentItem_INV_ItemStatus">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemStatus" Role="INV_ItemStatus" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentItem" Role="INV_AdjustmentItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentItem">
+        <PropertyRef Name="ItemStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnItem_INV_IssueReturnInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnInfo" Role="INV_IssueReturnInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnItem" Role="INV_IssueReturnItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_IssueReturnInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnItem">
+        <PropertyRef Name="IssueReturnId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnItem_INV_ItemInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnItem" Role="INV_IssueReturnItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnItem_INV_ItemStatus">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemStatus" Role="INV_ItemStatus" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnItem" Role="INV_IssueReturnItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnItem">
+        <PropertyRef Name="ItemStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_AssetQuotaInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="ZoneId" Type="Int32" Nullable="false" />
+    <Property Name="Quota" Type="Int32" Nullable="false" />
+    <Property Name="UnitId" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AssetQuotaInfo_INV_ItemInfo1" FromRole="INV_AssetQuotaInfo" ToRole="INV_ItemInfo" />
+    <NavigationProperty Name="INV_Unit" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AssetQuotaInfo_INV_Unit1" FromRole="INV_AssetQuotaInfo" ToRole="INV_Unit" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AssetQuotaInfo_PRM_ZoneInfo1" FromRole="INV_AssetQuotaInfo" ToRole="PRM_ZoneInfo" />
+  </EntityType>
+  <EntityType Name="INV_PeriodicAssetDuration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemInfoId" Type="Int32" Nullable="false" />
+    <Property Name="DesignationId" Type="Int32" Nullable="false" />
+    <Property Name="ReIssueAfter" Type="Int32" Nullable="false" />
+    <Property Name="DurationScale" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PeriodicAssetDuration_INV_ItemInfo" FromRole="INV_PeriodicAssetDuration" ToRole="INV_ItemInfo" />
+  </EntityType>
+  <EntityType Name="INV_SupplierInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FaxNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TradeLicenseNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VATRegNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContactPersonName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContactPersonNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_PurchaseInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_INV_SupplierInfo" FromRole="INV_SupplierInfo" ToRole="INV_PurchaseInfo" />
+  </EntityType>
+  <Association Name="FK_INV_AssetQuotaInfo_INV_ItemInfo1">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_AssetQuotaInfo" Role="INV_AssetQuotaInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AssetQuotaInfo">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AssetQuotaInfo_INV_Unit1">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_Unit" Role="INV_Unit" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_AssetQuotaInfo" Role="INV_AssetQuotaInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_Unit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AssetQuotaInfo">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AssetQuotaInfo_PRM_ZoneInfo1">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_AssetQuotaInfo" Role="INV_AssetQuotaInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AssetQuotaInfo">
+        <PropertyRef Name="ZoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PeriodicAssetDuration_INV_ItemInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PeriodicAssetDuration" Role="INV_PeriodicAssetDuration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PeriodicAssetDuration">
+        <PropertyRef Name="ItemInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_IssueInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IssueNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IndentId" Type="Int32" Nullable="false" />
+    <Property Name="IssueDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IndentDate" Type="DateTime" Precision="3" />
+    <Property Name="IssuedToId" Type="Int32" Nullable="false" />
+    <Property Name="IssuedById" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_PRM_ZoneInfo" FromRole="INV_IssueInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="INV_IssueItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueItem_INV_IssueInfo" FromRole="INV_IssueInfo" ToRole="INV_IssueItem" />
+    <NavigationProperty Name="PRM_EmploymentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_PRM_EmploymentInfo" FromRole="INV_IssueInfo" ToRole="PRM_EmploymentInfo" />
+    <NavigationProperty Name="PRM_EmploymentInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_PRM_EmploymentInfo1" FromRole="INV_IssueInfo" ToRole="PRM_EmploymentInfo" />
+    <NavigationProperty Name="INV_RequisitionInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_INV_RequisitionInfo" FromRole="INV_IssueInfo" ToRole="INV_RequisitionInfo" />
+  </EntityType>
+  <Association Name="FK_INV_IssueInfo_PRM_ZoneInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueInfo" Role="INV_IssueInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueItem_INV_IssueInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueInfo" Role="INV_IssueInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueItem" Role="INV_IssueItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_IssueInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueItem">
+        <PropertyRef Name="IssueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_DelegationApprovalInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemTypeId" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+    <Property Name="DesignationId" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalLimit" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Remarks" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_DelegationApprovalInfo_PRM_ZoneInfo" FromRole="INV_DelegationApprovalInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="INV_ItemType" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_DelegationApprovalInfo_INV_ItemType" FromRole="INV_DelegationApprovalInfo" ToRole="INV_ItemType" />
+  </EntityType>
+  <Association Name="FK_INV_DelegationApprovalInfo_PRM_ZoneInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_DelegationApprovalInfo" Role="INV_DelegationApprovalInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_DelegationApprovalInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_INV_RptPurchaseInfo_Result">
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="PurchaseDate" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="Quantity" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="String" Name="Unit" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="Rate" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="MRR" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SupplierName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Challan" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_INV_RptTransferInInfo_Result">
+    <Property Type="String" Name="Item" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="TransferDate" Nullable="false" />
+    <Property Type="Decimal" Name="Quantity" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="String" Name="Unit" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Zone" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="ChallanNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_INV_RptTransferOutInfo_Result">
+    <Property Type="String" Name="Item" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="TransferDate" Nullable="false" />
+    <Property Type="Decimal" Name="Quantity" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="String" Name="Unit" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Zone" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="ChallanNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_INV_RptIssueInfo_Result">
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="IssueDate" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="IssueQuantity" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="String" Name="Unit" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Employee" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="IndentNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_INV_RptIssueReturn_Result">
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="ReturnDate" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="Quantity" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="String" Name="Unit" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Employee" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <EntityType Name="vwINVItemHistory">
+    <Key>
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="ItemName" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="Challan" />
+      <PropertyRef Name="TransactionType" />
+      <PropertyRef Name="InQuantity" />
+      <PropertyRef Name="OutQuantity" />
+      <PropertyRef Name="ZoneInfoId" />
+      <PropertyRef Name="IDate" />
+    </Key>
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="ItemName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Challan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TransactionType" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="InQuantity" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="OutQuantity" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <ComplexType Name="sp_INV_RptItemLedger_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="ItemId" Nullable="true" />
+    <Property Type="String" Name="ItemName" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ItemDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ChallanNo" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="TranssactionType" Nullable="true" MaxLength="20" />
+    <Property Type="Decimal" Name="InQt" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="OutQt" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="ZoneInfoId" Nullable="true" />
+    <Property Type="Decimal" Name="Balance" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="OpeningBalance" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="IDate" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_INV_RptEmployeeWiseItemLedger_Result">
+    <Property Type="String" Name="EmployeeName" Nullable="false" MaxLength="200" />
+    <Property Type="Int32" Name="ItemId" Nullable="false" />
+    <Property Type="String" Name="ItemName" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="Date" Nullable="false" Precision="23" />
+    <Property Type="String" Name="TransactionType" Nullable="false" MaxLength="6" />
+    <Property Type="Decimal" Name="Quantity" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="String" Name="Unit" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="fn_INV_GetItemBalanceByMRR_Result">
+    <Property Type="Int32" Name="ItemId" Nullable="false" />
+    <Property Type="Decimal" Name="Balance" Nullable="false" Precision="10" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="fn_INV_GetItemClosingBalance_Result">
+    <Property Type="Int32" Name="ItemId" Nullable="false" />
+    <Property Type="Decimal" Name="Balance" Nullable="false" Precision="10" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="fn_INV_GetItemOpeningBalance_Result">
+    <Property Type="Int32" Name="ItemId" Nullable="false" />
+    <Property Type="Decimal" Name="Balance" Nullable="false" Precision="10" Scale="2" />
+  </ComplexType>
+  <EntityType Name="PRM_EmploymentInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeeInitial" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TitleId" Type="Int32" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FullName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FullNameBangla" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DateofJoining" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ProvisionMonth" Type="Int32" Nullable="false" />
+    <Property Name="DateofConfirmation" Type="DateTime" Precision="3" />
+    <Property Name="DateofPosition" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DesignationId" Type="Int32" Nullable="false" />
+    <Property Name="StatusDesignationId" Type="Int32" />
+    <Property Name="DisciplineId" Type="Int32" />
+    <Property Name="DivisionId" Type="Int32" />
+    <Property Name="SectionId" Type="Int32" />
+    <Property Name="SubSectionId" Type="Int32" />
+    <Property Name="JobLocationId" Type="Int32" Nullable="false" />
+    <Property Name="ResourceLevelId" Type="Int32" />
+    <Property Name="StaffCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="EmploymentTypeId" Type="Int32" Nullable="false" />
+    <Property Name="ReligionId" Type="Int32" Nullable="false" />
+    <Property Name="IsContractual" Type="Boolean" Nullable="false" />
+    <Property Name="IsConsultant" Type="Boolean" Nullable="false" />
+    <Property Name="IsOvertimeEligible" Type="Boolean" Nullable="false" />
+    <Property Name="OvertimeRate" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="MobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmialAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BankId" Type="Int32" />
+    <Property Name="BankBranchId" Type="Int32" />
+    <Property Name="BankAccountNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmploymentStatusId" Type="Int32" Nullable="false" />
+    <Property Name="DateofInactive" Type="DateTime" Precision="3" />
+    <Property Name="IsBonusEligible" Type="Boolean" Nullable="false" />
+    <Property Name="SalaryScaleId" Type="Int32" Nullable="false" />
+    <Property Name="JobGradeId" Type="Int32" Nullable="false" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ContractExpireDate" Type="DateTime" Precision="3" />
+    <Property Name="DateofBirth" Type="DateTime" Precision="3" Nullable="false" />
+    <Property Name="ContractDuration" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="ContractType" Type="Int32" />
+    <Property Name="OrganogramLevelId" Type="Int32" Nullable="false" />
+    <Property Name="DateofAppointment" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="OrderNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="QuotaId" Type="Int32" />
+    <Property Name="EmployeeClassId" Type="Int32" />
+    <Property Name="EmploymentProcessId" Type="Int32" />
+    <Property Name="SeniorityPosition" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateofSeniority" Type="DateTime" Precision="3" />
+    <Property Name="PRLDate" Type="DateTime" Precision="3" />
+    <Property Name="IsPensionEligible" Type="Boolean" Nullable="false" />
+    <Property Name="IsLeverageEligible" Type="Boolean" Nullable="false" />
+    <Property Name="CardNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FingerPrintIdentiyNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AttendanceEffectiveDate" Type="DateTime" Precision="3" />
+    <Property Name="AttendanceStatus" Type="Boolean" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="IsGeneralShifted" Type="Boolean" Nullable="false" />
+    <Property Name="RegionId" Type="Int32" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <Property Name="TelephoneOffice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Intercom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="INV_AdjustmentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentInfo_PRM_EmploymentInfo" FromRole="PRM_EmploymentInfo" ToRole="INV_AdjustmentInfo" />
+    <NavigationProperty Name="INV_AdjustmentInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_AdjustmentInfo_PRM_EmploymentInfo1" FromRole="PRM_EmploymentInfo" ToRole="INV_AdjustmentInfo" />
+    <NavigationProperty Name="INV_IssueInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_PRM_EmploymentInfo" FromRole="PRM_EmploymentInfo" ToRole="INV_IssueInfo" />
+    <NavigationProperty Name="INV_IssueInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_PRM_EmploymentInfo1" FromRole="PRM_EmploymentInfo" ToRole="INV_IssueInfo" />
+    <NavigationProperty Name="INV_IssueReturnInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_PRM_EmploymentInfo" FromRole="PRM_EmploymentInfo" ToRole="INV_IssueReturnInfo" />
+    <NavigationProperty Name="INV_IssueReturnInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_PRM_EmploymentInfo1" FromRole="PRM_EmploymentInfo" ToRole="INV_IssueReturnInfo" />
+    <NavigationProperty Name="INV_TransferInInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInInfo_PRM_EmploymentInfo" FromRole="PRM_EmploymentInfo" ToRole="INV_TransferInInfo" />
+    <NavigationProperty Name="INV_TransferOutInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutInfo_PRM_EmploymentInfo" FromRole="PRM_EmploymentInfo" ToRole="INV_TransferOutInfo" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_PRM_EmploymentInfo_PRM_ZoneInfo" FromRole="PRM_EmploymentInfo" ToRole="PRM_ZoneInfo" />
+    <Property Name="HonoraryDegree" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="IsEligibleForCpf" Type="Boolean" />
+    <Property Name="TaxRegionId" Type="Int32" />
+    <Property Name="TaxAssesseeType" Type="Byte" />
+    <Property Name="HavingChildWithDisability" Type="Boolean" />
+    <Property Name="DateofRetirement" Type="DateTime" Precision="3" />
+    <Property Name="SalaryWithdrawFromZoneId" Type="Int32" />
+    <NavigationProperty Name="INV_RequisitionInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionInfo_PRM_EmploymentInfo" FromRole="PRM_EmploymentInfo" ToRole="INV_RequisitionInfo" />
+    <NavigationProperty Name="INV_RequisitionInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionInfo_PRM_EmploymentInfo1" FromRole="PRM_EmploymentInfo" ToRole="INV_RequisitionInfo" />
+    <NavigationProperty Name="INV_RequisitionInfo2" Relationship="BEPZA_MEDICAL.DAL.INV.PRM_AcceptanceLetterInfo_PRM_EmploymentInfo" FromRole="PRM_EmploymentInfo" ToRole="INV_RequisitionInfo" />
+    <NavigationProperty Name="INV_ScrapInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapInfo_PRM_EmploymentInfo" FromRole="PRM_EmploymentInfo" ToRole="INV_ScrapInfo" />
+    <NavigationProperty Name="INV_ScrapInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapInfo_PRM_EmploymentInfo1" FromRole="PRM_EmploymentInfo" ToRole="INV_ScrapInfo" />
+    <NavigationProperty Name="INV_PurchaseInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_PRM_EmploymentInfo" FromRole="PRM_EmploymentInfo" ToRole="INV_PurchaseInfo" />
+    <Property Name="ETIN" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IsRefreshmentEligible" Type="Boolean" />
+  </EntityType>
+  <Association Name="FK_INV_AdjustmentInfo_PRM_EmploymentInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentInfo" Role="INV_AdjustmentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentInfo">
+        <PropertyRef Name="AdjustedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_AdjustmentInfo_PRM_EmploymentInfo1">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_AdjustmentInfo" Role="INV_AdjustmentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_AdjustmentInfo">
+        <PropertyRef Name="ApprovedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueInfo_PRM_EmploymentInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueInfo" Role="INV_IssueInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueInfo">
+        <PropertyRef Name="IssuedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueInfo_PRM_EmploymentInfo1">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueInfo" Role="INV_IssueInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueInfo">
+        <PropertyRef Name="IssuedToId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnInfo_PRM_EmploymentInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnInfo" Role="INV_IssueReturnInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnInfo">
+        <PropertyRef Name="ReceivedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_IssueReturnInfo_PRM_EmploymentInfo1">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnInfo" Role="INV_IssueReturnInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnInfo">
+        <PropertyRef Name="ReceivedFromEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInInfo_PRM_EmploymentInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferInInfo" Role="INV_TransferInInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInInfo">
+        <PropertyRef Name="ReceivedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutInfo_PRM_EmploymentInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferOutInfo" Role="INV_TransferOutInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutInfo">
+        <PropertyRef Name="TransferredByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRM_EmploymentInfo_PRM_ZoneInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PRM_EmploymentInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_INV_PendingRequisitionList_Result">
+    <Property Type="Int32" Name="ItemId" Nullable="false" />
+    <Property Type="Decimal" Name="Quantity" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Int32" Name="ZoneInfoId" Nullable="false" />
+    <Property Type="Int32" Name="IndentId" Nullable="false" />
+    <Property Type="String" Name="IndentNo" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="IndentDate" Nullable="false" />
+    <Property Type="Int32" Name="IssuedToEmpId" Nullable="false" />
+    <Property Type="String" Name="EmpID" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <Association Name="FK_INV_TransferInInfo_INV_TransferOutInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferOutInfo" Role="INV_TransferOutInfo" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferInInfo" Role="INV_TransferInInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_TransferOutInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInInfo">
+        <PropertyRef Name="TransferOutId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_INV_PendingTransferList_Result">
+    <Property Type="Int32" Name="ItemId" Nullable="false" />
+    <Property Type="Decimal" Name="Quantity" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Int32" Name="TransferOutId" Nullable="false" />
+    <Property Type="String" Name="TransferNo" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="TransferDate" Nullable="false" />
+    <Property Type="String" Name="ZoneName" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="ZoneInfoId" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="INV_ScrapItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScrapId" Type="Int32" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapItem_INV_ItemInfo" FromRole="INV_ScrapItem" ToRole="INV_ItemInfo" />
+    <Property Name="ItemStatusId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="INV_ItemStatus" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapItem_INV_ItemStatus" FromRole="INV_ScrapItem" ToRole="INV_ItemStatus" />
+    <NavigationProperty Name="INV_ScrapInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapItem_INV_ScrapInfo" FromRole="INV_ScrapItem" ToRole="INV_ScrapInfo" />
+    <Property Name="ApproveQuantity" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <Association Name="FK_INV_ScrapItem_INV_ItemInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ScrapItem" Role="INV_ScrapItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_INV_PendingScrapList_Result">
+    <Property Type="Int32" Name="ItemId" Nullable="false" />
+    <Property Type="Decimal" Name="Quantity" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Int32" Name="ZoneInfoId" Nullable="false" />
+    <Property Type="Int32" Name="ScrapId" Nullable="false" />
+    <Property Type="String" Name="ScrapNo" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="ScrapDate" Nullable="false" />
+    <Property Type="Int32" Name="IssuedToEmpId" Nullable="false" />
+    <Property Type="String" Name="EmpID" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <Association Name="FK_INV_ScrapItem_INV_ItemStatus">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemStatus" Role="INV_ItemStatus" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ScrapItem" Role="INV_ScrapItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapItem">
+        <PropertyRef Name="ItemStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_ItemType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IsGroup" Type="Boolean" Nullable="false" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CodeCount" Type="Int32" Nullable="false" />
+    <Property Name="Level" Type="Int32" Nullable="false" />
+    <Property Name="ItemTypeName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="BudgetHeadId" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="INV_DelegationApprovalInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_DelegationApprovalInfo_INV_ItemType" FromRole="INV_ItemType" ToRole="INV_DelegationApprovalInfo" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemInfo_INV_ItemType" FromRole="INV_ItemType" ToRole="INV_ItemInfo" />
+    <NavigationProperty Name="INV_ItemType1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemType_INV_ItemType" FromRole="INV_ItemType" ToRole="INV_ItemType1" />
+    <NavigationProperty Name="INV_ItemType2" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ItemType_INV_ItemType" FromRole="INV_ItemType1" ToRole="INV_ItemType" />
+  </EntityType>
+  <Association Name="FK_INV_DelegationApprovalInfo_INV_ItemType">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemType" Role="INV_ItemType" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_DelegationApprovalInfo" Role="INV_DelegationApprovalInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_DelegationApprovalInfo">
+        <PropertyRef Name="ItemTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemInfo_INV_ItemType">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemType" Role="INV_ItemType" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemInfo">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ItemType_INV_ItemType">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemType" Role="INV_ItemType" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemType" Role="INV_ItemType1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ItemType1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_RequisitionInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <Property Name="IndentDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="IndentNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IssuedByEmpId" Type="Int32" />
+    <Property Name="IssuedToEmpId" Type="Int32" Nullable="false" />
+    <Property Name="TotalQuantity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IsOnline" Type="Boolean" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="IsProcessed" Type="Boolean" Nullable="false" />
+    <Property Name="ForwardToEmpId" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalStatusId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="INV_IssueInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueInfo_INV_RequisitionInfo" FromRole="INV_RequisitionInfo" ToRole="INV_IssueInfo" />
+    <NavigationProperty Name="PRM_EmploymentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionInfo_PRM_EmploymentInfo" FromRole="INV_RequisitionInfo" ToRole="PRM_EmploymentInfo" />
+    <NavigationProperty Name="PRM_EmploymentInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionInfo_PRM_EmploymentInfo1" FromRole="INV_RequisitionInfo" ToRole="PRM_EmploymentInfo" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionInfo_PRM_ZoneInfo" FromRole="INV_RequisitionInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="PRM_EmploymentInfo2" Relationship="BEPZA_MEDICAL.DAL.INV.PRM_AcceptanceLetterInfo_PRM_EmploymentInfo" FromRole="INV_RequisitionInfo" ToRole="PRM_EmploymentInfo" />
+    <NavigationProperty Name="INV_RequisitionItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionItem_INV_RequisitionInfo" FromRole="INV_RequisitionInfo" ToRole="INV_RequisitionItem" />
+  </EntityType>
+  <Association Name="FK_INV_IssueInfo_INV_RequisitionInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_RequisitionInfo" Role="INV_RequisitionInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueInfo" Role="INV_IssueInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_RequisitionInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueInfo">
+        <PropertyRef Name="IndentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_RequisitionInfo_PRM_EmploymentInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_RequisitionInfo" Role="INV_RequisitionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionInfo">
+        <PropertyRef Name="IssuedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_RequisitionInfo_PRM_EmploymentInfo1">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_RequisitionInfo" Role="INV_RequisitionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionInfo">
+        <PropertyRef Name="IssuedToEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_RequisitionInfo_PRM_ZoneInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_RequisitionInfo" Role="INV_RequisitionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PRM_AcceptanceLetterInfo_PRM_EmploymentInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_RequisitionInfo" Role="INV_RequisitionInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionInfo">
+        <PropertyRef Name="ForwardToEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_ScrapInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <Property Name="ScrapDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="ScrapNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IssuedByEmpId" Type="Int32" />
+    <Property Name="IssuedToEmpId" Type="Int32" Nullable="false" />
+    <Property Name="TotalQuantity" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IsOnline" Type="Boolean" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="IsProcessed" Type="Boolean" Nullable="false" />
+    <Property Name="ApproverId" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalStatusId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="INV_IssueReturnInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueReturnInfo_INV_ScrapInfo" FromRole="INV_ScrapInfo" ToRole="INV_IssueReturnInfo" />
+    <NavigationProperty Name="PRM_EmploymentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapInfo_PRM_EmploymentInfo" FromRole="INV_ScrapInfo" ToRole="PRM_EmploymentInfo" />
+    <NavigationProperty Name="PRM_EmploymentInfo1" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapInfo_PRM_EmploymentInfo1" FromRole="INV_ScrapInfo" ToRole="PRM_EmploymentInfo" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapInfo_PRM_ZoneInfo" FromRole="INV_ScrapInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="INV_ScrapItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_ScrapItem_INV_ScrapInfo" FromRole="INV_ScrapInfo" ToRole="INV_ScrapItem" />
+  </EntityType>
+  <EntityType Name="INV_ScrapItemHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ScrapId" />
+      <PropertyRef Name="ScrapItemId" />
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="ItemStatusId" />
+      <PropertyRef Name="IUser" />
+      <PropertyRef Name="IDate" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScrapId" Type="Int32" Nullable="false" />
+    <Property Name="ScrapItemId" Type="Int32" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ItemStatusId" Type="Int32" Nullable="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_INV_IssueReturnInfo_INV_ScrapInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ScrapInfo" Role="INV_ScrapInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueReturnInfo" Role="INV_IssueReturnInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ScrapInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueReturnInfo">
+        <PropertyRef Name="ScrapId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ScrapInfo_PRM_EmploymentInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ScrapInfo" Role="INV_ScrapInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapInfo">
+        <PropertyRef Name="IssuedByEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ScrapInfo_PRM_EmploymentInfo1">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ScrapInfo" Role="INV_ScrapInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapInfo">
+        <PropertyRef Name="IssuedToEmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ScrapInfo_PRM_ZoneInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ScrapInfo" Role="INV_ScrapInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_ScrapItem_INV_ScrapInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ScrapInfo" Role="INV_ScrapInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ScrapItem" Role="INV_ScrapItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ScrapInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_ScrapItem">
+        <PropertyRef Name="ScrapId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="APV_GetINVRequisitionApplication_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="IssuedToEmpId" Nullable="false" />
+    <Property Type="String" Name="EmpID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="DesignationName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="DepartmentName" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="IndentDate" Nullable="false" />
+    <Property Type="String" Name="ZoneName" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="ZoneCode" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ApprovalStatusName" Nullable="false" MaxLength="11" />
+    <Property Type="String" Name="ApproverEmpId" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="ApproverName" Nullable="false" MaxLength="200" />
+  </ComplexType>
+  <EntityType Name="vwINVBudgetHead">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AccountName" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="INV_RequisitionItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RequisitionId" Type="Int32" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ApproveQuantity" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="INV_ItemInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionItem_INV_ItemInfo" FromRole="INV_RequisitionItem" ToRole="INV_ItemInfo" />
+    <NavigationProperty Name="INV_RequisitionInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_RequisitionItem_INV_RequisitionInfo" FromRole="INV_RequisitionItem" ToRole="INV_RequisitionInfo" />
+  </EntityType>
+  <Association Name="FK_INV_RequisitionItem_INV_ItemInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_ItemInfo" Role="INV_ItemInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_RequisitionItem" Role="INV_RequisitionItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_ItemInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionItem">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_RequisitionItem_INV_RequisitionInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_RequisitionInfo" Role="INV_RequisitionInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_RequisitionItem" Role="INV_RequisitionItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_RequisitionInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_RequisitionItem">
+        <PropertyRef Name="RequisitionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="INV_PurchaseInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MRR" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Challan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Reference" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PurchaseDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PODate" Type="DateTime" Precision="3" />
+    <Property Name="ChallanDate" Type="DateTime" Precision="3" />
+    <Property Name="PurchaseTypeId" Type="Int32" Nullable="false" />
+    <Property Name="SupplierId" Type="Int32" Nullable="false" />
+    <Property Name="ReceivedBy" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="FileName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Attachment" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ZoneInfoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="INV_IssueItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_IssueItem_INV_PurchaseInfo" FromRole="INV_PurchaseInfo" ToRole="INV_IssueItem" />
+    <NavigationProperty Name="INV_PurchaseType" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_INV_PurchaseType" FromRole="INV_PurchaseInfo" ToRole="INV_PurchaseType" />
+    <NavigationProperty Name="INV_SupplierInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_INV_SupplierInfo" FromRole="INV_PurchaseInfo" ToRole="INV_SupplierInfo" />
+    <NavigationProperty Name="PRM_EmploymentInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_PRM_EmploymentInfo" FromRole="INV_PurchaseInfo" ToRole="PRM_EmploymentInfo" />
+    <NavigationProperty Name="PRM_ZoneInfo" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseInfo_PRM_ZoneInfo" FromRole="INV_PurchaseInfo" ToRole="PRM_ZoneInfo" />
+    <NavigationProperty Name="INV_PurchaseItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_PurchaseItem_INV_PurchaseInfo" FromRole="INV_PurchaseInfo" ToRole="INV_PurchaseItem" />
+    <NavigationProperty Name="INV_TransferInItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferInItem_INV_PurchaseInfo" FromRole="INV_PurchaseInfo" ToRole="INV_TransferInItem" />
+    <NavigationProperty Name="INV_TransferOutItem" Relationship="BEPZA_MEDICAL.DAL.INV.FK_INV_TransferOutItem_INV_PurchaseInfo" FromRole="INV_PurchaseInfo" ToRole="INV_TransferOutItem" />
+    <Property Name="MRRDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_INV_IssueItem_INV_PurchaseInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseInfo" Role="INV_PurchaseInfo" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_IssueItem" Role="INV_IssueItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_PurchaseInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_IssueItem">
+        <PropertyRef Name="PurchaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseInfo_INV_PurchaseType">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseType" Role="INV_PurchaseType" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseInfo" Role="INV_PurchaseInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_PurchaseType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseInfo">
+        <PropertyRef Name="PurchaseTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseInfo_INV_SupplierInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_SupplierInfo" Role="INV_SupplierInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseInfo" Role="INV_PurchaseInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_SupplierInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseInfo">
+        <PropertyRef Name="SupplierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseInfo_PRM_EmploymentInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_EmploymentInfo" Role="PRM_EmploymentInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseInfo" Role="INV_PurchaseInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_EmploymentInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseInfo">
+        <PropertyRef Name="ReceivedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseInfo_PRM_ZoneInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.PRM_ZoneInfo" Role="PRM_ZoneInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseInfo" Role="INV_PurchaseInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRM_ZoneInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseInfo">
+        <PropertyRef Name="ZoneInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_PurchaseItem_INV_PurchaseInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseInfo" Role="INV_PurchaseInfo" Multiplicity="1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseItem" Role="INV_PurchaseItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_PurchaseInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_PurchaseItem">
+        <PropertyRef Name="PurchaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferInItem_INV_PurchaseInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseInfo" Role="INV_PurchaseInfo" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferInItem" Role="INV_TransferInItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_PurchaseInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferInItem">
+        <PropertyRef Name="PurchaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INV_TransferOutItem_INV_PurchaseInfo">
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_PurchaseInfo" Role="INV_PurchaseInfo" Multiplicity="0..1" />
+    <End Type="BEPZA_MEDICAL.DAL.INV.INV_TransferOutItem" Role="INV_TransferOutItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INV_PurchaseInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="INV_TransferOutItem">
+        <PropertyRef Name="PurchaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_INV_RptStockBalance_Result">
+    <Property Type="Int32" Name="ItemId" Nullable="false" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TransactionType" Nullable="false" MaxLength="12" />
+    <Property Type="Decimal" Name="Quantity" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="String" Name="UnitName" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="OpeningBalance" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="Decimal" Name="ClosingBalance" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="Int32" Name="SortOrder" Nullable="false" />
+    <Property Type="Boolean" Name="IsPeriodicAsset" Nullable="true" />
+    <Property Type="Boolean" Name="IsCondemnableAsset" Nullable="true" />
+    <Property Type="Int32" Name="AssetGroupId" Nullable="true" />
+    <Property Type="Boolean" Name="HasQuota" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="INV_uspAdjustmentVoucherPosting_Result">
+    <Property Type="Int64" Name="VoucherId" Nullable="true" />
+    <Property Type="Int32" Name="VouchrTypeId" Nullable="true" />
+    <Property Type="Int32" Name="FundControlId" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="INV_uspPurchaseVoucherPosting_Result">
+    <Property Type="Int64" Name="VoucherId" Nullable="true" />
+    <Property Type="Int32" Name="VouchrTypeId" Nullable="true" />
+    <Property Type="Int32" Name="FundControlId" Nullable="true" />
+  </ComplexType>
+</Schema>

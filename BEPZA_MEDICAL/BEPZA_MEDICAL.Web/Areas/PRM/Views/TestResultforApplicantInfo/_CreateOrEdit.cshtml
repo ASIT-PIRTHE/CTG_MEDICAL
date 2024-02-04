@@ -1,0 +1,327 @@
+﻿@model BEPZA_MEDICAL.Web.Areas.PRM.ViewModel.TestResultforApplicantInfoViewModel
+@using BEPZA_MEDICAL.Web.Helpers
+
+@{
+    Layout = null;
+}
+<fieldset>
+    <div class="row">
+        <span class="label">
+            @Html.HiddenFor(model => model.Id)
+            @Html.HiddenFor(model => model.strMode)
+            @Html.LabelFor(model => model.JobAdvertisementInfoId)
+            <label class="required-field">
+                *
+            </label>
+        </span><span class="field">
+            @Html.DropDownListFor(model => model.JobAdvertisementInfoId, Model.AdvertisementCodeList, @String.Format("{0}", Content.DDLOptionalLabel()), new { @class = "required", @onchange = "JobPostType();" })
+        </span>
+    </div>
+  </fieldset>
+    <fieldset>
+        <legend>Test Result Details Information</legend>
+        <div class="row" align="center">
+            <div style="width: 90%">
+                <table id="grid" class="contenttable" width="50%">
+                    <thead>
+                        <tr>
+                            <th width="40%" align="center">
+                                Job Post Name
+                            </th>
+                            <th width="20%" align="center">
+                                Exam. Type
+                            </th>
+                            <th width="20%" align="center">
+                                Department Name
+                            </th>
+                            <th width="10%" align="center">
+                                Section Name
+                            </th>
+                            <th width="10%" align="center">
+                                No. of Post
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: left">
+                                @Html.DropDownListFor(model => model.DesignationId, Model.DesignationNameList, @String.Format("{0}", Content.DDLOptionalLabel()), new { @onchange = "LoadExamType();", @style = "width:100%" })
+                            </td>
+                            <td style="text-align: left">
+                                @Html.DropDownListFor(model => model.SelectionCriteriaOrExamTypeId, Model.SelectionCriteriaList, @String.Format("{0}", Content.DDLOptionalLabel()), new { @style = "width:100%"})
+                            </td>
+                            <td style="text-align: left;">
+                                @Html.TextBoxFor(model => model.DepartmentName, new { @class = "read-only", @readonly = true })
+                            </td>
+                            <td style="text-align: left;">
+                                @Html.TextBoxFor(model => model.SectionName, new { @class = "read-only", @readonly = true })
+                            </td>
+                            <td style="text-align: right;">
+                                @Html.TextBoxFor(model => model.NoOfPost, new { @class = "read-only", @readonly = true })
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="button-crude fixedAddButton" style="text-align: right;">
+            <input id="addItem" type="button" value="Add" />
+        </div>
+
+        <div class="clear">
+        </div>
+        <fieldset>
+            <legend>List of Applicant</legend>
+            <div class="row" align="center">
+                <div style="width: 100%">
+                    <table class="tblOrderList contenttable custom-grid">
+                        <thead>
+                            <tr>
+                                <th width="10%" align="center">
+                                    <input type="checkbox" class="chkAll" name="chk" /> Check All
+                                </th>
+                                <th width="5%" align="center">
+                                    Roll No.
+                                </th>
+                                <th width="20%" align="center">
+                                    Applicant Name
+                                </th>
+                                <th width="10%" align="center">
+                                    Date of Birth
+                                </th>
+                                <th width="10%" align="center">
+                                    Full Mark
+                                </th>
+
+                                <th width="10%" align="center">
+                                    Pass Mark
+                                </th>
+                                <th width="10%" align="center">
+                                    Obtained Marks
+                                    <label class="required-field">
+                                        *
+                                    </label>
+                                </th>
+                                <th width="10%" align="center">
+                                    Notes
+                                </th>
+                                <th width="3%" align="center">
+                                    Remove
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{ if (Model.strMode == "Edit") { Html.RenderPartial("_Details", Model); }}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+<script type="text/javascript">
+    $(function () {
+        var mode = $("#strMode").val();
+        if (mode == 'Edit') {
+            $("#btnSave").attr('value', 'Update');
+                $("#btnClear").hide();
+        }
+    });
+
+
+    function JobPostType() {
+        var jobAdInfoId = $('#JobAdvertisementInfoId').val();
+        var designationId = $('#DesignationId');
+
+        designationId.empty();
+        designationId.append($('<option/>', {
+            value: '', text: '@Content.DDLOptionalLabel()'
+        }));
+
+        if (jobAdInfoId != null && jobAdInfoId != '') {
+            $.getJSON('@Url.Action("SelectJobPostType")', { jobAdInfoId: jobAdInfoId }, function (thanas) {
+                $.each(thanas, function (index, thana) {
+                    designationId.append($('<option />', {
+                        value: thana.Id,
+                        text: thana.Name
+                    }));
+                });
+            });
+        }
+    }
+
+    function LoadExamType() {
+
+        var jobAdInfoId = $('#JobAdvertisementInfoId').val();
+        var designationId = $('#DesignationId').val();
+        var SelectionCriteriaOrExamType = $('#SelectionCriteriaOrExamTypeId');
+        getExamType(jobAdInfoId, designationId, SelectionCriteriaOrExamType);
+
+        getJobPost(designationId, jobAdInfoId);
+    }
+    function getExamType(jobAdInfoId, designationId, SelectionCriteriaOrExamType) {
+        SelectionCriteriaOrExamType.empty();
+        SelectionCriteriaOrExamType.append($('<option/>', {
+            value: '', text: '@Content.DDLOptionalLabel()'
+        }));
+
+        if (designationId != null && designationId != '' && jobAdInfoId != null && jobAdInfoId != '') {
+            $.getJSON('@Url.Action("SelectionCriteriaOrExam")', { designationId: designationId, jobAdInfoId: jobAdInfoId }, function (thanas) {
+                $.each(thanas, function (index, thana) {
+                    SelectionCriteriaOrExamType.append($('<option />', {
+                        value: thana.Id,
+                        text: thana.Name
+                    }));
+                });
+            });
+        }
+
+    }
+
+        function getJobPost(designationId, jobAdInfoId) {
+
+        var loadJobUrl = "@Url.Action("GetRequsionInfo", "ApplicantInterviewCardIssue")";
+        if (designationId != "" && designationId != undefined) {
+            $.ajax({
+                type: "POST",
+                url: loadJobUrl,
+                data: { designationId: designationId, jobAdInfoId: jobAdInfoId },
+                success: (function (obj) {
+                    $("#DepartmentName").val(obj.department);
+                    $("#SectionName").val(obj.section);
+                    $("#NoOfPost").val(obj.noOfPost);
+                })
+            })
+        }
+
+
+    }
+    </script>
+
+<script type="text/javascript">
+        $(function () {
+            var mode = $("#strMode").val();
+            if (mode == 'Edit') {
+                $("#btnSave").attr('value', 'Update');
+            }
+
+            //All Check Option
+            $(".chkAll").live('click', function () {
+                if ($(this).attr('checked')) {
+                    $(".rchkFinal2").attr('checked', $(this).attr('checked'));
+                }
+                else {
+                    $(".rchkFinal2").attr('checked', false);
+                }
+            });
+            // End All Check
+
+            var addRequisitionInfo = "@Url.Action("AddedApplicantInfo")";
+
+            $('#addItem').live('click', function (e) {
+                e.preventDefault();
+                $("#message").empty();
+                var designationId = $("#DesignationId").val();
+                var jobAdInfoId = $("#JobAdvertisementInfoId").val();
+                if (jobAdInfoId == null || jobAdInfoId == "") {
+                    $("#message").html("<div class=\"validation-summary-errors\" data-valmsg-summary=\"true\"> <span> Please fill up the red marked field(s)</span>  </div> ");
+                    return;
+                }
+                var mode = $("#strMode").val();
+                var exapTypeId = $("#SelectionCriteriaOrExamTypeId").val();
+
+                if (designationId > 0 && exapTypeId > 0) {
+                    $.ajax({
+                        type: "POST",
+                        url: addRequisitionInfo,
+                        cache: false,
+                        data: {
+                            'designationId': designationId,
+                            'strMode': mode,
+                            'exapTypeId': exapTypeId,
+                            'jobAdInfoId': jobAdInfoId
+                        },
+                        success: (function (result) {
+                            $(".tblOrderList tbody").html(result);
+                        })
+                    });
+                }
+            });
+
+        });
+
+        function RemoveDb(el, id, url) {
+            if (id == 0 || id == undefined) {
+                $(el).parent().parent().remove();
+            }
+            else {
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    dataType: 'json',
+                    data: JSON.stringify({ Id: id }),
+                    contentType: "application/json; charset=utf-8",
+                    error: function () {
+                        $("#message").html("<div class=\"validation-summary-errors\" data-valmsg-summary=\"true\"> <span> System Error!</span>  </div> ");
+                    },
+                    success: function (result) {
+                        $(el).parent().parent().remove();
+                    }
+                });
+            }
+        }
+    </script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("form").submit(function () {
+            var requisitionNo = $('#JobAdvertisementInfoId').val();
+
+            if (requisitionNo == null || requisitionNo == 0) {
+                $("#message").html("<div class=\"validation-summary-errors\" data-valmsg-summary=\"true\"> <span> Please fill up the red marked field(s)</span>  </div> ");
+                return false;
+            }
+
+            var rows = $('.tblOrderList').find('tr').length
+            if (rows == 1 || rows < 1) {
+                $("#message").html("<div class=\"validation-summary-errors\" data-valmsg-summary=\"true\"> <span>Sorry! Row is not available.</span> </div> ");
+                return false;
+            }
+
+            var selectedAppCount = $('.tblOrderList').find('input[type="checkbox"]:checked').length;
+            if (selectedAppCount == 0 || selectedAppCount < 0) {
+                $("#message").html("<div class=\"validation-summary-errors\" data-valmsg-summary=\"true\"> <span>Please, select at least one Applicant.</span> </div> ");
+                return false;
+            }
+
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        showErrMsg();
+    });
+
+    function showErrMsg() {
+        if ('@Model.errClass' == "success" && '@Model.IsError' == "0") {
+            $('#btnSave').hide();
+        }
+    }
+    $(function () {
+        var Url = window.location.href;
+        $("#btnClear").live("click", function (event) {
+            event.preventDefault();
+            window.location.href = Url;
+        });
+    });
+
+    $('#btnClear').live('click', function () {
+        document.getElementById('frm').reset();
+        $('#btnAdd').show();
+    })
+
+</script>
+

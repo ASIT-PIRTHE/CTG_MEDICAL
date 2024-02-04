@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\ERP_Puslish\PUBLISH_SOFT\UMS_BEPZA</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/DataAccess.dll">
+      <publishTime>12/27/2020 01:32:48</publishTime>
+    </File>
+    <File Include="bin/DBClient.dll">
+      <publishTime>12/27/2020 01:32:48</publishTime>
+    </File>
+    <File Include="bin/Entity.dll">
+      <publishTime>12/27/2020 01:32:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/PrimaryBaseLibrary.dll">
+      <publishTime>12/27/2020 01:32:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/UserManagement.Business.dll">
+      <publishTime>12/27/2020 01:32:49</publishTime>
+    </File>
+    <File Include="bin/UserManagementService.dll">
+      <publishTime>12/27/2020 01:32:49</publishTime>
+    </File>
+    <File Include="UserManagementService.svc">
+      <publishTime>12/10/2017 12:07:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/27/2020 01:41:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

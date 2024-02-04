@@ -1,0 +1,39 @@
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.PGM.dll.config
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.PGM.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.PGM.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.Infrastructure.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Release\System.Web.Mvc.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Release\EntityFramework.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Release\LinqKit.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.Infrastructure.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Release\EntityFramework.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Release\LinqKit.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.PGM.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.PGM.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.PGM.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\EntityFramework.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\LinqKit.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.Infrastructure.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\EntityFramework.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\LinqKit.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.PGM.dll.config
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.PGM.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.PGM.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.Infrastructure.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\EntityFramework.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\LinqKit.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\DAL.Infrastructure.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\EntityFramework.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\bin\Release\LinqKit.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.csproj.CopyComplete
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Payroll_BEPZA\DAL\DAL.PGM\obj\Release\DAL.PGM.pdb

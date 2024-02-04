@@ -1,0 +1,23 @@
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS.Util\bin\Release\LMS.Util.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS.Util\bin\Release\LMS.Util.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS.Util\bin\Release\System.Web.Mvc.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS.Util\bin\Release\LMS.Util.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS.Util\bin\Release\LMS.Util.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.csprojResolveAssemblyReference.cache
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS.Util\bin\Release\LMS.Util.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS.Util\bin\Release\LMS.Util.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS.Util\bin\Release\LMS.Util.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS.Util\bin\Release\LMS.Util.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.csproj.CopyComplete
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\Leave_BEPZA\LMS.Util\obj\Release\LMS.Util.pdb

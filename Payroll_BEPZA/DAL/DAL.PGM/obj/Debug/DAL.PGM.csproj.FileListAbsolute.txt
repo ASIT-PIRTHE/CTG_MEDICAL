@@ -1,0 +1,38 @@
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\obj\Debug\DAL.PGM.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.PGM.dll.config
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.PGM.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.PGM.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.Infrastructure.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Debug\System.Web.Mvc.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Debug\EntityFramework.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Debug\LinqKit.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.Infrastructure.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Debug\EntityFramework.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\bin\Debug\LinqKit.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\obj\Debug\DAL.PGM.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.PGM\obj\Debug\DAL.PGM.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.PGM.dll.config
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.PGM.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.PGM.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.Infrastructure.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\System.Web.Mvc.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\EntityFramework.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\LinqKit.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.Infrastructure.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\EntityFramework.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\LinqKit.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\obj\Debug\DAL.PGM.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\obj\Debug\DAL.PGM.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\obj\Debug\DAL.PGM.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.PGM.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.PGM.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.PGM.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\EntityFramework.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\LinqKit.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\DAL.Infrastructure.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\EntityFramework.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\bin\Debug\LinqKit.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\obj\Debug\DAL.PGM.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\obj\Debug\DAL.PGM.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.PGM\obj\Debug\DAL.PGM.pdb

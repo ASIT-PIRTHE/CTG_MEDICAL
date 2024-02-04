@@ -1,0 +1,25 @@
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+D:\Nazrul\Projects\VistaPayroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.exe.config
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.exe
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Service\EmailNotificationService\bin\Debug\EmailNotificationService.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.exe
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\Service\EmailNotificationService\obj\x86\Debug\EmailNotificationService.pdb

@@ -1,0 +1,195 @@
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\UserManagementService.dll.config
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\UserManagementService.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\UserManagementService.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\Entity.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\UserManagement.Business.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\System.Web.Mvc.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\DataAccess.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\System.Web.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\System.Web.WebPages.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\Microsoft.Web.Infrastructure.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\DBClient.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\Entity.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\UserManagement.Business.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\System.Web.Mvc.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\DataAccess.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\System.Web.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\System.Web.WebPages.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\DBClient.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.xml
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\obj\Debug\UserManagementService.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\obj\Debug\UserManagementService.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ASM_BEPZA\UserManagementService\obj\Debug\UserManagementService.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll.config
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Entity.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DataAccess.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Microsoft.Web.Infrastructure.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DBClient.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Entity.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DataAccess.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DBClient.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csprojResolveAssemblyReference.cache
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.pdb
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll.config
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.pdb
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Entity.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DataAccess.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Microsoft.Web.Infrastructure.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DBClient.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Entity.pdb
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.pdb
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.pdb
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DataAccess.pdb
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DBClient.pdb
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.xml
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.dll
+E:\BEPZA\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Entity.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DataAccess.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Microsoft.Web.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DBClient.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Entity.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DataAccess.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DBClient.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll.config
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagementService.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Entity.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DataAccess.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Microsoft.Web.Infrastructure.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DBClient.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\Entity.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DataAccess.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\DBClient.pdb
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.xml
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csproj.AssemblyReference.cache
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csproj.CoreCompileInputs.cache
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csproj.CopyComplete
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.dll
+E:\2021\bepza\BEPZA_Source_Code18may2021\BEPZA_Source_Code\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll.config
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\UserManagementService.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\Entity.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\DataAccess.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\Microsoft.Web.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\DBClient.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\Entity.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\DataAccess.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\DBClient.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csproj.CopyComplete
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll.config
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\UserManagementService.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\UserManagementService.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\Entity.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\DataAccess.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\Microsoft.Web.Infrastructure.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\DBClient.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\Entity.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\PrimaryBaseLibrary.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\UserManagement.Business.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\System.Web.Mvc.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\DataAccess.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\System.Web.Razor.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Razor.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\DBClient.pdb
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\bin\System.Web.WebPages.Deployment.xml
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.csproj.CopyComplete
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.dll
+D:\WORK-0\bepza-new\BEPZA_MEDICAL\UMS_BEPZA\UserManagementService\obj\Debug\UserManagementService.pdb

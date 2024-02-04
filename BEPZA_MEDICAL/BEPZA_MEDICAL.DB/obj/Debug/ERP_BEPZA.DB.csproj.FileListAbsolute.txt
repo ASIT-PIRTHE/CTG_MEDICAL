@@ -1,0 +1,44 @@
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll.config
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.pdb
+D:\Nazrul\Projects\ERP_BEPZA\04. Codes\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll.config
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.pdb
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.csprojResolveAssemblyReference.cache
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.dll
+D:\Nazrul\Projects\ERP_BEPZA_Git\Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll.config
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.pdb
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.csprojResolveAssemblyReference.cache
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.dll
+C:\BEPZA_ERP\ERP_Source_Code\1. Source Code (Version 2.3)\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll.config
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.pdb
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.csprojResolveAssemblyReference.cache
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.dll
+E:\2021\bepza\BEPZA_Source_Code\BEPZA_Source_Code\ERP_BEPZA\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.pdb
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll.config
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.pdb
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.csprojAssemblyReference.cache
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.csproj.CoreCompileInputs.cache
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.dll
+E:\2021\bepza\Test4\BEPZA_MEDICAL\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.pdb
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll.config
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.DB\bin\Debug\ERP_BEPZA.DB.pdb
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.csprojAssemblyReference.cache
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.csproj.CoreCompileInputs.cache
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.dll
+E:\2021\bepza\Test4\AgainNew\BEPZA_MEDICAL\ERP_BEPZA.DB\obj\Debug\ERP_BEPZA.DB.pdb

@@ -1,0 +1,76 @@
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\TVLSecurity.Business.dll.config
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\TVLSecurity.Business.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\TVLSecurity.Business.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\DataAccess.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\Entity.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\PrimaryBaseLibrary.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\DBClient.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Mvc.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Razor.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Razor.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\Microsoft.Web.Infrastructure.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Deployment.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\DataAccess.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\Entity.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\PrimaryBaseLibrary.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\DBClient.pdb
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Mvc.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Razor.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Razor.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Deployment.xml
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\obj\Release\TVLSecurity.Business.dll
+E:\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\obj\Release\TVLSecurity.Business.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\TVLSecurity.Business.dll.config
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\TVLSecurity.Business.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\TVLSecurity.Business.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\DataAccess.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\Entity.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\PrimaryBaseLibrary.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\DBClient.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Mvc.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Razor.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Deployment.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\DataAccess.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\Entity.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\PrimaryBaseLibrary.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\DBClient.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Mvc.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Razor.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Deployment.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\obj\Release\TVLSecurity.Business.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\obj\Release\TVLSecurity.Business.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\UMS_BEPZA\TVLSecurity.Business\obj\Release\TVLSecurity.Business.csprojResolveAssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\TVLSecurity.Business.dll.config
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\TVLSecurity.Business.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\TVLSecurity.Business.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\DataAccess.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\Entity.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\PrimaryBaseLibrary.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\DBClient.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Mvc.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Razor.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Deployment.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\DataAccess.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\Entity.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\PrimaryBaseLibrary.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\DBClient.pdb
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Mvc.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Razor.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\bin\Release\System.Web.WebPages.Deployment.xml
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\obj\Release\TVLSecurity.Business.csproj.AssemblyReference.cache
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\obj\Release\TVLSecurity.Business.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\obj\Release\TVLSecurity.Business.csproj.CopyComplete
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\obj\Release\TVLSecurity.Business.dll
+D:\WORK-0\bepza-past\bepza_medical\UMS_BEPZA\TVLSecurity.Business\obj\Release\TVLSecurity.Business.pdb

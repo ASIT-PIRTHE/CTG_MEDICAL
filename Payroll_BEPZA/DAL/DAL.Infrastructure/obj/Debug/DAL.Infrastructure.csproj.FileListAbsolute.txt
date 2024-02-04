@@ -1,0 +1,45 @@
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\DAL.Infrastructure.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\DAL.Infrastructure.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\LinqKit.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\LinqKit.xml
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.dll
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.pdb
+D:\Nazrul\Projects\VistaPayroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\DAL.Infrastructure.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\DAL.Infrastructure.pdb
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\LinqKit.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\LinqKit.xml
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.csprojResolveAssemblyReference.cache
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.dll
+E:\BEPZA\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\DAL.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\DAL.Infrastructure.pdb
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\LinqKit.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\LinqKit.xml
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.csprojResolveAssemblyReference.cache
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.dll
+C:\1. Source Code (Version 2.3)\BEPZA_Source_Code-configured hridoy\BEPZA_Source_Code\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\DAL.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\DAL.Infrastructure.pdb
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\LinqKit.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\bin\Debug\LinqKit.xml
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.csproj.CoreCompileInputs.cache
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.csproj.CopyComplete
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.dll
+D:\WORK-0\bepza-past\bepza_medical\Payroll_BEPZA\DAL\DAL.Infrastructure\obj\Debug\DAL.Infrastructure.pdb

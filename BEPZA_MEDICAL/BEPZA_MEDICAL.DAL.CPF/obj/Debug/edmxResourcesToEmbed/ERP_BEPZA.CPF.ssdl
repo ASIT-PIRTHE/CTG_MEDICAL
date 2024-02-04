@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BEPZA_MEDICAL.DAL.CPF.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="APV_ApprovalStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatusName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ActionType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.CommonConfigType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CommonConfigType">
+    <Key>
+      <PropertyRef Name="TableName" />
+      <PropertyRef Name="DisplayName" />
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="TableName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SortOrder" Type="int" />
+    <Property Name="ModuleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CPF_AccountHeadCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_BankAccountInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankId" Type="int" Nullable="false" />
+    <Property Name="BranchId" Type="int" Nullable="false" />
+    <Property Name="AccountNo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="OpeningBalance" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_ContributionRateSetup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OwnContributionRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="OfficeContributionRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_DefaultMapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TableName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MappingId" Type="int" Nullable="false" />
+    <Property Name="MappingColumn" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CssClassName" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CPF_DocumentType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="DocumentType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TableName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PrimaryKeyColumnName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CPF_ForfeitedRule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FromServiceLength" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="ToServiceLength" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="ForfeitedRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_GratuityInterestRate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PeriodId" Type="int" Nullable="false" />
+    <Property Name="InterestRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_LoanPolicy">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LoanPolicyFor" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="StartDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="NRfLoanPercentage" Type="money" />
+    <Property Name="NRfApplicableFor" Type="varchar" MaxLength="20" />
+    <Property Name="NRfMinimumAge" Type="int" />
+    <Property Name="RfLoanPercentage" Type="money" Nullable="false" />
+    <Property Name="RfApplicableFor" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IsRfDeductFromBalance" Type="bit" Nullable="false" />
+    <Property Name="IsRfInstallmentAddedWithBalance" Type="bit" Nullable="false" />
+    <Property Name="RfMaxConcurrentLoan" Type="int" Nullable="false" />
+    <Property Name="RfMinServiceYear" Type="int" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_MemberNominee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MembershipId" Type="int" Nullable="false" />
+    <Property Name="NomineeName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="NomineeAddress" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Relationship" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateOfBirth" Type="date" Nullable="false" />
+    <Property Name="PercentOfShare" Type="decimal" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="GuardianName" Type="varchar" MaxLength="100" />
+    <Property Name="GuardianAddress" Type="varchar" MaxLength="500" />
+    <Property Name="FileName" Type="varchar" MaxLength="100" />
+    <Property Name="Photograph" Type="varbinary(max)" />
+    <Property Name="FileExtension" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_MembershipInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="EmployeeCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmployeeName" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="JoiningDate" Type="date" Nullable="false" />
+    <Property Name="MembershipID" Type="varchar" MaxLength="20" />
+    <Property Name="PresentAddress" Type="varchar" MaxLength="500" />
+    <Property Name="PermanentAddress" Type="varchar" MaxLength="500" />
+    <Property Name="WitnessName" Type="varchar" MaxLength="100" />
+    <Property Name="WitnessDesignation" Type="varchar" MaxLength="100" />
+    <Property Name="WitnessAddress" Type="varchar" MaxLength="500" />
+    <Property Name="WitnessMembershipID" Type="varchar" MaxLength="20" />
+    <Property Name="Witness2Name" Type="varchar" MaxLength="100" />
+    <Property Name="Witness2Designation" Type="varchar" MaxLength="100" />
+    <Property Name="Witness2Address" Type="varchar" MaxLength="500" />
+    <Property Name="Witness2MembershipID" Type="varchar" MaxLength="20" />
+    <Property Name="MembershipStatus" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ApprovalStatusId" Type="int" Nullable="false" />
+    <Property Name="ApproveDate" Type="date" />
+    <Property Name="ApprovedById" Type="int" />
+    <Property Name="ApprovalPathId" Type="int" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="OfficeName" Type="varchar" MaxLength="100" />
+    <Property Name="DepartmentName" Type="varchar" MaxLength="100" />
+    <Property Name="DesignationName" Type="varchar" MaxLength="100" />
+    <Property Name="SectionName" Type="varchar" MaxLength="100" />
+    <Property Name="PresentPayScale" Type="varchar" MaxLength="100" />
+    <Property Name="PresentBasicPay" Type="money" />
+    <Property Name="Nationality" Type="varchar" MaxLength="100" />
+    <Property Name="DateofBirth" Type="date" />
+    <Property Name="ApplicationDate" Type="date" />
+    <Property Name="ApplicationReceiptDate" Type="date" />
+    <Property Name="BankId" Type="int" />
+    <Property Name="BankBranchId" Type="int" />
+    <Property Name="AccountNumber" Type="varchar" MaxLength="100" />
+    <Property Name="PermanentDate" Type="date" Nullable="false" />
+    <Property Name="InactiveDate" Type="date" />
+  </EntityType>
+  <EntityType Name="CPF_OpeningBalance">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MembershipId" Type="int" Nullable="false" />
+    <Property Name="DateOfOpening" Type="date" Nullable="false" />
+    <Property Name="EmpTotal" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComTotal" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="EmpCoreContribution" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="EmpProfit" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComCoreContribution" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComProfit" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="PrevYearEmpCoreContribution" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="PrevYearEmpProfit" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="PrevYearComCoreContribution" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="PrevYearComProfit" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_PaymentType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_ProfitDistribution">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PeriodMonth" Type="nvarchar" MaxLength="50" />
+    <Property Name="PeriodYear" Type="nvarchar" MaxLength="4" />
+    <Property Name="ProfitRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_ProfitDistributionDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProfitDistributionId" Type="int" Nullable="false" />
+    <Property Name="MembershipId" Type="int" Nullable="false" />
+    <Property Name="EmpOpening" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="EmpProfitOpening" Type="decimal" Precision="18" Scale="6" />
+    <Property Name="EmpContributionInPeriod" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="EmpProfitInPeriod" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="EmpWithdrawnInPeriod" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="EmpFinalPayment" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="EmpClosingBalance" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="EmpClosingBalanceProfit" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComOpening" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComProfitOpening" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComContributionInPeriod" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComProfitInPeriod" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComWithdrawnInPeriod" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComFinalPayment" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComForfeitedAmount" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComClosingBalance" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="ComClosingBalanceProfit" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="TotalBalance" Type="decimal" Precision="18" Scale="6" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_ProfitInterestRate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PfPeriodDuration" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Year" Type="nvarchar" MaxLength="4" />
+    <Property Name="Month" Type="nvarchar" MaxLength="50" />
+    <Property Name="InterestRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_Settlement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MembershipId" Type="int" Nullable="false" />
+    <Property Name="InactiveDate" Type="date" Nullable="false" />
+    <Property Name="SettlementDate" Type="date" Nullable="false" />
+    <Property Name="PeriodId" Type="int" Nullable="false" />
+    <Property Name="OutgoingProfitRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="MembershipLengthInYear" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="EmpOpening" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="EmpContributionInPeriod" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="EmpProftInPeriod" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="EmpWithdrawnInPeriod" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="EmpBalance" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="ComOpening" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="ComContributionInPeriod" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="ComProftInPeriod" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="ForfeitedAmount" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="ComBalance" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="GrandTotal" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="LoanId" Type="int" />
+    <Property Name="LoanAmount" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="LoanRefund" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="DueLoan" Type="decimal" Precision="12" Scale="2" />
+    <Property Name="OtherDeduction" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="NetPayable" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_SpecialParameter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpCoreContDRHeadId" Type="int" Nullable="false" />
+    <Property Name="EmpCoreContCRHeadId" Type="int" Nullable="false" />
+    <Property Name="ComCoreContDRHeadId" Type="int" Nullable="false" />
+    <Property Name="ComCoreContCRHeadId" Type="int" Nullable="false" />
+    <Property Name="EmpProfitDRHeadId" Type="int" Nullable="false" />
+    <Property Name="EmpProfitCRHeadId" Type="int" Nullable="false" />
+    <Property Name="ComProfitDRHeadId" Type="int" Nullable="false" />
+    <Property Name="ComProfitCRHeadId" Type="int" Nullable="false" />
+    <Property Name="OutgoingMemIntDRHeadId" Type="int" Nullable="false" />
+    <Property Name="OutgoingMemIntCRHeadId" Type="int" Nullable="false" />
+    <Property Name="WithdrawalDRHeadId" Type="int" Nullable="false" />
+    <Property Name="WithdrawalCRHeadId" Type="int" Nullable="false" />
+    <Property Name="OutgoingMemProfitRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="LoanInterestRate" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CPF_Withdraw">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MembershipId" Type="int" Nullable="false" />
+    <Property Name="RequestDate" Type="date" Nullable="false" />
+    <Property Name="WithdrawDate" Type="date" Nullable="false" />
+    <Property Name="PeriodId" Type="int" Nullable="false" />
+    <Property Name="WithdrawNo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EmpPortionBalance" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="WithdrawAmount" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="AlreadyWithdrawnAmount" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Reason" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="IUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EUser" Type="varchar" MaxLength="50" />
+    <Property Name="IDate" Type="datetime" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CustomPropertyAttribute">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ModelName" Type="varchar" MaxLength="1000" />
+    <Property Name="PropertyName" Type="varchar" MaxLength="1000" />
+    <Property Name="DisplayText" Type="varchar" MaxLength="1000" />
+    <Property Name="IsRequired" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERP_BEPZA.dbo.vwCPFNominee' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwCPFNominee">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="NomineeForId" />
+      <PropertyRef Name="NomineeFor" />
+      <PropertyRef Name="PercentOfShare" />
+      <PropertyRef Name="FamilyMemberId" />
+      <PropertyRef Name="RelationId" />
+      <PropertyRef Name="RelationName" />
+      <PropertyRef Name="FullName" />
+      <PropertyRef Name="DateofBirth" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="isAddPhoto" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+    <Property Name="NomineeForId" Type="int" Nullable="false" />
+    <Property Name="NomineeFor" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PercentOfShare" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="FamilyMemberId" Type="int" Nullable="false" />
+    <Property Name="RelationId" Type="int" Nullable="false" />
+    <Property Name="RelationName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FullName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="NomineeAddress" Type="varchar" MaxLength="200" />
+    <Property Name="DateofBirth" Type="datetime" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="isAddPhoto" Type="bit" Nullable="false" />
+    <Property Name="Photo" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_CPF_MemberNominee_CPF_MembershipInfo">
+    <End Role="CPF_MembershipInfo" Type="Self.CPF_MembershipInfo" Multiplicity="1" />
+    <End Role="CPF_MemberNominee" Type="Self.CPF_MemberNominee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_MembershipInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_MemberNominee">
+        <PropertyRef Name="MembershipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CPF_MembershipInfo_APV_ApprovalStatus">
+    <End Role="APV_ApprovalStatus" Type="Self.APV_ApprovalStatus" Multiplicity="1" />
+    <End Role="CPF_MembershipInfo" Type="Self.CPF_MembershipInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APV_ApprovalStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_MembershipInfo">
+        <PropertyRef Name="ApprovalStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CPF_OpeningBalance_CPF_MembershipInfo">
+    <End Role="CPF_MembershipInfo" Type="Self.CPF_MembershipInfo" Multiplicity="1" />
+    <End Role="CPF_OpeningBalance" Type="Self.CPF_OpeningBalance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_MembershipInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_OpeningBalance">
+        <PropertyRef Name="MembershipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CPF_ProfitDistributionDetail_CPF_MembershipInfo">
+    <End Role="CPF_MembershipInfo" Type="Self.CPF_MembershipInfo" Multiplicity="1" />
+    <End Role="CPF_ProfitDistributionDetail" Type="Self.CPF_ProfitDistributionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_MembershipInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_ProfitDistributionDetail">
+        <PropertyRef Name="MembershipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CPF_ProfitDistributionDetail_CPF_ProfitDistribution">
+    <End Role="CPF_ProfitDistribution" Type="Self.CPF_ProfitDistribution" Multiplicity="1" />
+    <End Role="CPF_ProfitDistributionDetail" Type="Self.CPF_ProfitDistributionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_ProfitDistribution">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_ProfitDistributionDetail">
+        <PropertyRef Name="ProfitDistributionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CPF_Settlement_CPF_MembershipInfo">
+    <End Role="CPF_MembershipInfo" Type="Self.CPF_MembershipInfo" Multiplicity="1" />
+    <End Role="CPF_Settlement" Type="Self.CPF_Settlement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_MembershipInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_Settlement">
+        <PropertyRef Name="MembershipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CPF_Withdraw_CPF_MembershipInfo">
+    <End Role="CPF_MembershipInfo" Type="Self.CPF_MembershipInfo" Multiplicity="1" />
+    <End Role="CPF_Withdraw" Type="Self.CPF_Withdraw" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CPF_MembershipInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CPF_Withdraw">
+        <PropertyRef Name="MembershipId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="CommonConfigGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="strDisplayName" Type="varchar" Mode="In" />
+    <Parameter Name="intID" Type="int" Mode="In" />
+    <Parameter Name="strName" Type="varchar" Mode="In" />
+    <Parameter Name="strSortBy" Type="varchar" Mode="In" />
+    <Parameter Name="strSortType" Type="varchar" Mode="In" />
+    <Parameter Name="startRowIndex" Type="int" Mode="In" />
+    <Parameter Name="maximumRows" Type="int" Mode="In" />
+    <Parameter Name="numTotalRows" Type="int" Mode="InOut" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="CommonConfigTypeDML" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="strDisplayName" Type="varchar" Mode="In" />
+    <Parameter Name="intID" Type="int" Mode="In" />
+    <Parameter Name="strName" Type="varchar" Mode="In" />
+    <Parameter Name="intSortOrder" Type="int" Mode="In" />
+    <Parameter Name="strRemarks" Type="varchar" Mode="In" />
+    <Parameter Name="strUser" Type="varchar" Mode="In" />
+    <Parameter Name="strMode" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_AdvanceRefundRealized" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RefundType" Type="char" Mode="In" />
+    <Parameter Name="StartPeriod" Type="datetime" Mode="In" />
+    <Parameter Name="EndPeriod" Type="datetime" Mode="In" />
+    <Parameter Name="DivisionId" Type="int" Mode="In" />
+    <Parameter Name="GradId" Type="int" Mode="In" />
+    <Parameter Name="DesignationId" Type="int" Mode="In" />
+    <Parameter Name="MembershipId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_AvailableInvAccrualStepNo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InvestmentId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_BalanceSheetByLevel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SelectedLavel" Type="int" Mode="In" />
+    <Parameter Name="PeriodId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_DeleteMembership" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="applicationId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_EmployeeCPF_WF_FundStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="ApplicationDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="CPF_FinalResultOfCpf_EmployeeWise" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="ToDate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="CPF_FN_GetEmployeeTotalContribution" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="SalaryHeadId" Type="int" Mode="In" />
+    <Parameter Name="DateUpto" Type="date" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="EmployeeId" Type="int" />
+          <Property Name="SalaryHeadId" Type="int" />
+          <Property Name="DateUpTo" Type="date" />
+          <Property Name="TotalCont" Type="money" />
+          <Property Name="TotalInst" Type="money" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="CPF_fnGetAccountOpeningBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="float">
+    <Parameter Name="intPeriodId" Type="int" Mode="In" />
+    <Parameter Name="intAccHeadId" Type="int" Mode="In" />
+    <Parameter Name="natureofAccHead" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="CPF_fnGetIncomeExpenditure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="float">
+    <Parameter Name="intPeriodId" Type="int" Mode="In" />
+    <Parameter Name="SelectedLavel" Type="int" Mode="In" />
+    <Parameter Name="BalanceDate" Type="datetime" Mode="In" />
+    <Parameter Name="IsIncludeZero" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_fnGetLoanOB" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+    <Parameter Name="loanId" Type="int" Mode="In" />
+    <Parameter Name="LoanAmt" Type="decimal" Mode="In" />
+    <Parameter Name="OBDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="CPF_fnGetLoanRefund" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+    <Parameter Name="loanId" Type="int" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="CPF_fnGetMaxLevelOfPath" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="intParentId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_fnGetPFLoanRefund" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+    <Parameter Name="loanId" Type="int" Mode="In" />
+    <Parameter Name="PFEndDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="CPF_fnGetProvidentFundContribution" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+    <Parameter Name="MembershipId" Type="int" Mode="In" />
+    <Parameter Name="FPStartDate" Type="datetime" Mode="In" />
+    <Parameter Name="PFEndDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="CPF_fnGetProvidentFundOBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+    <Parameter Name="MembershipId" Type="int" Mode="In" />
+    <Parameter Name="FPStartDate" Type="datetime" Mode="In" />
+    <Parameter Name="ContributionType" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="CPF_GetChartOfAccount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IsPostingHead" Type="bit" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_GetContributionDuringtheYear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="IsOwnContribution" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="CPF_GetContributionOfPF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="IsOwnContribution" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="CPF_GetDebitCreditBankReconciliation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BankAccountId" Type="int" Mode="In" />
+    <Parameter Name="TransactionType" Type="nvarchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_GetDesignationList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="CPF_GetDivisionUnit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="CPF_GetJobGradeList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="CPF_GetLevelOfCOA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="CPF_GetLoanPolicy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ApplicationDate" Type="date" Mode="In" />
+    <Parameter Name="IsEligibleForCpf" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="CPF_GetMyCPFLoanApplication" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_GetMyCPFSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmpID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="CPF_GetMyLoanStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="employeeId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_GetMyLoanSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_GetPFYearList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="CPF_GetTestName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Initial" Type="nvarchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_GetVoucherTypeList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="CPF_IncomeExpenceStatementByLevel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SelectedLavel" Type="int" Mode="In" />
+    <Parameter Name="PeriodId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_MemberSchedule" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PeriodId" Type="int" Mode="In" />
+    <Parameter Name="DivisionId" Type="int" Mode="In" />
+    <Parameter Name="GradId" Type="int" Mode="In" />
+    <Parameter Name="DesignationId" Type="int" Mode="In" />
+    <Parameter Name="MembershipId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_MonthlyContribution" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AmountTypeId" Type="int" Mode="In" />
+    <Parameter Name="StartPeriod" Type="datetime" Mode="In" />
+    <Parameter Name="EndPeriod" Type="datetime" Mode="In" />
+    <Parameter Name="DivisionId" Type="int" Mode="In" />
+    <Parameter Name="GradId" Type="int" Mode="In" />
+    <Parameter Name="DesignationId" Type="int" Mode="In" />
+    <Parameter Name="MembershipId" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_procGetBalanceScheet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="intPeriodId" Type="int" Mode="In" />
+    <Parameter Name="SelectedLavel" Type="int" Mode="In" />
+    <Parameter Name="BalanceDate" Type="datetime" Mode="In" />
+    <Parameter Name="IsIncludeZero" Type="int" Mode="In" />
+    <Parameter Name="IsIncludePostingAcc" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_procGetIncomeExpenditure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="intPeriodId" Type="int" Mode="In" />
+    <Parameter Name="SelectedLavel" Type="int" Mode="In" />
+    <Parameter Name="BalanceDate" Type="datetime" Mode="In" />
+    <Parameter Name="IsIncludeZero" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_procGetTrialBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="intPeriodId" Type="int" Mode="In" />
+    <Parameter Name="SelectedLavel" Type="int" Mode="In" />
+    <Parameter Name="BalanceDate" Type="datetime" Mode="In" />
+    <Parameter Name="IsIncludeZero" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_procProfitDistribution" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PeriodYear" Type="nvarchar" Mode="In" />
+    <Parameter Name="PeriodMonth" Type="nvarchar" Mode="In" />
+    <Parameter Name="InterestRate" Type="decimal" Mode="In" />
+    <Parameter Name="Remarks" Type="varchar" Mode="In" />
+    <Parameter Name="strUser" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_procProfitDistributionRollback" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PeriodDurationId" Type="int" Mode="In" />
+    <Parameter Name="strUser" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_procProfitDistributionRollbackIndividual" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PeriodId" Type="int" Mode="In" />
+    <Parameter Name="DetailId" Type="int" Mode="In" />
+    <Parameter Name="strUser" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_ProvidentFundSatementProvisioin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PeriodId" Type="int" Mode="In" />
+    <Parameter Name="DivisionId" Type="int" Mode="In" />
+    <Parameter Name="GradId" Type="int" Mode="In" />
+    <Parameter Name="DesignationId" Type="int" Mode="In" />
+    <Parameter Name="MembershipId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_RptCpfLoanInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_RptCpfMemberInformation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_RptGenerateScheduleofInvestment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InvestmentTypeId" Type="nvarchar" Mode="In" />
+    <Parameter Name="dtFrom" Type="date" Mode="In" />
+    <Parameter Name="dtTo" Type="date" Mode="In" />
+    <Parameter Name="InvestmentID" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_RptInvestmentAccrualReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InvestmentTypeId" Type="varchar" Mode="In" />
+    <Parameter Name="InvestmentID" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_RptMonthlyProvidentFundRegister" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_RptProvidentFundLoanInstallment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_RptProvidentFundWorksheet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PfPeriodId" Type="int" Mode="In" />
+    <Parameter Name="EmployeeId" Type="varchar" Mode="In" />
+    <Parameter Name="DepartmentId" Type="int" Mode="In" />
+    <Parameter Name="DesignationId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_ScheduleOfAdvanceLoan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PeriodId" Type="int" Mode="In" />
+    <Parameter Name="DivisionId" Type="int" Mode="In" />
+    <Parameter Name="GradId" Type="int" Mode="In" />
+    <Parameter Name="DesignationId" Type="int" Mode="In" />
+    <Parameter Name="MembershipId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_SP_PFListOfLoan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SalaryYear" Type="varchar" Mode="In" />
+    <Parameter Name="SalaryMonth" Type="varchar" Mode="In" />
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="IsRefundable" Type="bit" Mode="In" />
+    <Parameter Name="LoanStatus" Type="bit" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_SP_RptIndividualMonthlyPFStatement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SalaryYear" Type="varchar" Mode="In" />
+    <Parameter Name="SalaryMonth" Type="varchar" Mode="In" />
+    <Parameter Name="pEmployeeId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_SP_RptIndividualYearlyPFStatement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pEmployeeId" Type="int" Mode="In" />
+    <Parameter Name="pFinancialYearId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_SP_RptMonthlyPFStatement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SalaryYear" Type="varchar" Mode="In" />
+    <Parameter Name="SalaryMonth" Type="varchar" Mode="In" />
+    <Parameter Name="pEmployeeId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_SP_RptMonthlyPFStatementMaster" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SalaryYear" Type="varchar" Mode="In" />
+    <Parameter Name="SalaryMonth" Type="varchar" Mode="In" />
+    <Parameter Name="pEmployeeId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_SP_RptNewJoinInMembership" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Year" Type="varchar" Mode="In" />
+    <Parameter Name="Month" Type="varchar" Mode="In" />
+    <Parameter Name="IsInactive" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="CPF_SP_RptNomineeFormInformation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmployeeId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_SP_RptPFStatementHistory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SalaryYear" Type="varchar" Mode="In" />
+    <Parameter Name="SalaryMonth" Type="varchar" Mode="In" />
+    <Parameter Name="pEmployeeId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_SP_RptYearlyPFStatement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pFinancialYearId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_TrialBalanceByLevel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PFYear" Type="varchar" Mode="In" />
+    <Parameter Name="SelectedLavel" Type="int" Mode="In" />
+    <Parameter Name="BalanceDate" Type="datetime" Mode="In" />
+    <Parameter Name="IsInclude" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_uspVoucherPostingForFinalSettlement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MembershipId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_uspVoucherPostingForPFProfit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="CPF_VoucherGenerate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VoucherTypeId" Type="int" Mode="In" />
+    <Parameter Name="VoucherStatusId" Type="int" Mode="In" />
+    <Parameter Name="PeriodId" Type="int" Mode="In" />
+    <Parameter Name="VoucherNumber" Type="varchar" Mode="In" />
+    <Parameter Name="StartPeriod" Type="varchar" Mode="In" />
+    <Parameter Name="EndPeriod" Type="varchar" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="CPF_VoucherGenerateDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VoucherId" Type="int" Mode="In" />
+    <Parameter Name="numErrorCode" Type="int" Mode="InOut" />
+    <Parameter Name="strErrorMsg" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <EntityContainer Name="ERP_BEPZADALCPFStoreContainer">
+    <EntitySet Name="APV_ApprovalStatus" EntityType="Self.APV_ApprovalStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_AccountHeadCategory" EntityType="Self.CPF_AccountHeadCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_BankAccountInfo" EntityType="Self.CPF_BankAccountInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_ContributionRateSetup" EntityType="Self.CPF_ContributionRateSetup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_DefaultMapping" EntityType="Self.CPF_DefaultMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_DocumentType" EntityType="Self.CPF_DocumentType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_ForfeitedRule" EntityType="Self.CPF_ForfeitedRule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_GratuityInterestRate" EntityType="Self.CPF_GratuityInterestRate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_LoanPolicy" EntityType="Self.CPF_LoanPolicy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_MemberNominee" EntityType="Self.CPF_MemberNominee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_MembershipInfo" EntityType="Self.CPF_MembershipInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_OpeningBalance" EntityType="Self.CPF_OpeningBalance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_PaymentType" EntityType="Self.CPF_PaymentType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_ProfitDistribution" EntityType="Self.CPF_ProfitDistribution" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_ProfitDistributionDetail" EntityType="Self.CPF_ProfitDistributionDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_ProfitInterestRate" EntityType="Self.CPF_ProfitInterestRate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_Settlement" EntityType="Self.CPF_Settlement" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_SpecialParameter" EntityType="Self.CPF_SpecialParameter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CPF_Withdraw" EntityType="Self.CPF_Withdraw" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomPropertyAttribute" EntityType="Self.CustomPropertyAttribute" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CommonConfigType" EntityType="Self.CommonConfigType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CommonConfigType].[TableName] AS [TableName], 
+    [CommonConfigType].[DisplayName] AS [DisplayName], 
+    [CommonConfigType].[SortOrder] AS [SortOrder], 
+    [CommonConfigType].[ModuleId] AS [ModuleId]
+    FROM [dbo].[CommonConfigType] AS [CommonConfigType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwCPFNominee" EntityType="Self.vwCPFNominee" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwCPFNominee].[Id] AS [Id], 
+    [vwCPFNominee].[EmployeeId] AS [EmployeeId], 
+    [vwCPFNominee].[NomineeForId] AS [NomineeForId], 
+    [vwCPFNominee].[NomineeFor] AS [NomineeFor], 
+    [vwCPFNominee].[PercentOfShare] AS [PercentOfShare], 
+    [vwCPFNominee].[FamilyMemberId] AS [FamilyMemberId], 
+    [vwCPFNominee].[RelationId] AS [RelationId], 
+    [vwCPFNominee].[RelationName] AS [RelationName], 
+    [vwCPFNominee].[FullName] AS [FullName], 
+    [vwCPFNominee].[NomineeAddress] AS [NomineeAddress], 
+    [vwCPFNominee].[DateofBirth] AS [DateofBirth], 
+    [vwCPFNominee].[Gender] AS [Gender], 
+    [vwCPFNominee].[isAddPhoto] AS [isAddPhoto], 
+    [vwCPFNominee].[Photo] AS [Photo]
+    FROM [dbo].[vwCPFNominee] AS [vwCPFNominee]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_CPF_MemberNominee_CPF_MembershipInfo" Association="Self.FK_CPF_MemberNominee_CPF_MembershipInfo">
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+      <End Role="CPF_MemberNominee" EntitySet="CPF_MemberNominee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CPF_MembershipInfo_APV_ApprovalStatus" Association="Self.FK_CPF_MembershipInfo_APV_ApprovalStatus">
+      <End Role="APV_ApprovalStatus" EntitySet="APV_ApprovalStatus" />
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CPF_OpeningBalance_CPF_MembershipInfo" Association="Self.FK_CPF_OpeningBalance_CPF_MembershipInfo">
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+      <End Role="CPF_OpeningBalance" EntitySet="CPF_OpeningBalance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CPF_ProfitDistributionDetail_CPF_MembershipInfo" Association="Self.FK_CPF_ProfitDistributionDetail_CPF_MembershipInfo">
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+      <End Role="CPF_ProfitDistributionDetail" EntitySet="CPF_ProfitDistributionDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CPF_ProfitDistributionDetail_CPF_ProfitDistribution" Association="Self.FK_CPF_ProfitDistributionDetail_CPF_ProfitDistribution">
+      <End Role="CPF_ProfitDistribution" EntitySet="CPF_ProfitDistribution" />
+      <End Role="CPF_ProfitDistributionDetail" EntitySet="CPF_ProfitDistributionDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CPF_Settlement_CPF_MembershipInfo" Association="Self.FK_CPF_Settlement_CPF_MembershipInfo">
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+      <End Role="CPF_Settlement" EntitySet="CPF_Settlement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CPF_Withdraw_CPF_MembershipInfo" Association="Self.FK_CPF_Withdraw_CPF_MembershipInfo">
+      <End Role="CPF_MembershipInfo" EntitySet="CPF_MembershipInfo" />
+      <End Role="CPF_Withdraw" EntitySet="CPF_Withdraw" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

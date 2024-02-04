@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERP_BEPZADALFMSStoreContainer" CdmEntityContainer="ERP_BEPZAFMSEntities">
+    <EntitySetMapping Name="FMS_FixedDepositInfoInstallmentSchedule">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_FixedDepositInfoInstallmentSchedule">
+        <MappingFragment StoreEntitySet="FMS_FixedDepositInfoInstallmentSchedule">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Profit" ColumnName="Profit" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="InsAmount" ColumnName="InsAmount" />
+          <ScalarProperty Name="InsDate" ColumnName="InsDate" />
+          <ScalarProperty Name="FixedDepositInfoId" ColumnName="FixedDepositInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FMS_FixedDepositTypeInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_FixedDepositTypeInfo">
+        <MappingFragment StoreEntitySet="FMS_FixedDepositTypeInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="BankChargePerc" ColumnName="BankChargePerc" />
+          <ScalarProperty Name="BankChargeFix" ColumnName="BankChargeFix" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="InstallmentType" ColumnName="InstallmentType" />
+          <ScalarProperty Name="InstallmentIn" ColumnName="InstallmentIn" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="DurationType" ColumnName="DurationType" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="FixedDepositType" ColumnName="FixedDepositType" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRInterestReceivable" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRInterestReceivable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRInterestReceivable_Result">
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="FMS_FDRInstallmentInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_FDRInstallmentInfo">
+        <MappingFragment StoreEntitySet="FMS_FDRInstallmentInfo">
+          <ScalarProperty Name="InterestReceiveAmount" ColumnName="InterestReceiveAmount" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ChequeId" ColumnName="ChequeId" />
+          <ScalarProperty Name="Profit" ColumnName="Profit" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="TAXAmount" ColumnName="TAXAmount" />
+          <ScalarProperty Name="InstallmentAmount" ColumnName="InstallmentAmount" />
+          <ScalarProperty Name="ProfitRecvId" ColumnName="ProfitRecvId" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="FixedDepositInfoId" ColumnName="FixedDepositInfoId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRClosingInfo" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRClosingInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRClosingInfo_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="ClosingDate" ColumnName="ClosingDate" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="ProfitAmount" ColumnName="ProfitAmount" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="BankInfoId" ColumnName="BankInfoId" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BankInfoBranchDetailId" ColumnName="BankInfoBranchDetailId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="FMS_BankInfoBranchDetail">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_BankInfoBranchDetail">
+        <MappingFragment StoreEntitySet="FMS_BankInfoBranchDetail">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="BranchEmail" ColumnName="BranchEmail" />
+          <ScalarProperty Name="BranchContactNo" ColumnName="BranchContactNo" />
+          <ScalarProperty Name="SWIFTCode" ColumnName="SWIFTCode" />
+          <ScalarProperty Name="BranchAddress" ColumnName="BranchAddress" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BankInfoId" ColumnName="BankInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FMS_FDRType">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_FDRType">
+        <MappingFragment StoreEntitySet="FMS_FDRType">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FMS_SourceofFund">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_SourceofFund">
+        <MappingFragment StoreEntitySet="FMS_SourceofFund">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FMS_FixedDepositInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_FixedDepositInfo">
+        <MappingFragment StoreEntitySet="FMS_FixedDepositInfo">
+          <ScalarProperty Name="NetReceivableAmount" ColumnName="NetReceivableAmount" />
+          <ScalarProperty Name="AccBranchId" ColumnName="AccBranchId" />
+          <ScalarProperty Name="AccBankId" ColumnName="AccBankId" />
+          <ScalarProperty Name="SourceofFundId" ColumnName="SourceofFundId" />
+          <ScalarProperty Name="FDRTypeId" ColumnName="FDRTypeId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="TotalProfit" ColumnName="TotalProfit" />
+          <ScalarProperty Name="TotalTAXAmount" ColumnName="TotalTAXAmount" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+          <ScalarProperty Name="TotalReceivableAmount" ColumnName="TotalReceivableAmount" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="TotalBankCharge" ColumnName="TotalBankCharge" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="TAXAmount" ColumnName="TAXAmount" />
+          <ScalarProperty Name="TAXRate" ColumnName="TAXRate" />
+          <ScalarProperty Name="InstallmentDurationType" ColumnName="InstallmentDurationType" />
+          <ScalarProperty Name="InstallmentDuration" ColumnName="InstallmentDuration" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDurationInMonth" ColumnName="FDRDurationInMonth" />
+          <ScalarProperty Name="FDRDurationType" ColumnName="FDRDurationType" />
+          <ScalarProperty Name="FDRDuration" ColumnName="FDRDuration" />
+          <ScalarProperty Name="ChequeId" ColumnName="ChequeId" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRDescription" ColumnName="FDRDescription" />
+          <ScalarProperty Name="ProfitRecvId" ColumnName="ProfitRecvId" />
+          <ScalarProperty Name="BankAccountId" ColumnName="BankAccountId" />
+          <ScalarProperty Name="BankInfoBranchDetailId" ColumnName="BankInfoBranchDetailId" />
+          <ScalarProperty Name="BankInfoId" ColumnName="BankInfoId" />
+          <ScalarProperty Name="FixedDepositTypeInfoId" ColumnName="FixedDepositTypeInfoId" />
+          <ScalarProperty Name="FDRName" ColumnName="FDRName" />
+          <ScalarProperty Name="RenewalNo" ColumnName="RenewalNo" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FMS_FDRClosingInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_FDRClosingInfo">
+        <MappingFragment StoreEntitySet="FMS_FDRClosingInfo">
+          <ScalarProperty Name="IsFDRSaved" ColumnName="IsFDRSaved" />
+          <ScalarProperty Name="WithdrawalAmount" ColumnName="WithdrawalAmount" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="IsRenew" ColumnName="IsRenew" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ChequeId" ColumnName="ChequeId" />
+          <ScalarProperty Name="LossAmount" ColumnName="LossAmount" />
+          <ScalarProperty Name="ClosingAmount" ColumnName="ClosingAmount" />
+          <ScalarProperty Name="TotalReceivableAmount" ColumnName="TotalReceivableAmount" />
+          <ScalarProperty Name="ProfitAmount" ColumnName="ProfitAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="ProfitRecvId" ColumnName="ProfitRecvId" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="ClosingDate" ColumnName="ClosingDate" />
+          <ScalarProperty Name="FixedDepositInfoId" ColumnName="FixedDepositInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRInfoInstallmentSchedule" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRInfoInstallmentSchedule">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRInfoInstallmentSchedule_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FixedDepositInfoId" ColumnName="FixedDepositInfoId" />
+          <ScalarProperty Name="InsDate" ColumnName="InsDate" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="InsAmount" ColumnName="InsAmount" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Profit" ColumnName="Profit" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRBalance" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRBalance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRBalance_Result">
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="TAXAmount" ColumnName="TAXAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="Profit" ColumnName="Profit" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_getBankAccount" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_getBankAccount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_getBankAccount_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="accountName" ColumnName="accountName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="FMS_BankInfo">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_BankInfo">
+        <MappingFragment StoreEntitySet="FMS_BankInfo">
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BankCode" ColumnName="BankCode" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_MonthlyFDRInstallmentReceivable" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_MonthlyFDRInstallmentReceivable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_MonthlyFDRInstallmentReceivable_Result">
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="InsAmount" ColumnName="InsAmount" />
+          <ScalarProperty Name="InsDate" ColumnName="InsDate" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FMS_uspVoucherPosting" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.FMS_uspVoucherPosting">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_uspVoucherPosting_Result">
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="VouchrTypeId" ColumnName="VouchrTypeId" />
+          <ScalarProperty Name="FundControlId" ColumnName="FundControlId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRInfo" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRInfo_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="RenewalNo" ColumnName="RenewalNo" />
+          <ScalarProperty Name="FDRName" ColumnName="FDRName" />
+          <ScalarProperty Name="FDRType" ColumnName="FDRType" />
+          <ScalarProperty Name="BankInfoId" ColumnName="BankInfoId" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BankInfoBranchDetailId" ColumnName="BankInfoBranchDetailId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BankAccountId" ColumnName="BankAccountId" />
+          <ScalarProperty Name="ProfitRecvId" ColumnName="ProfitRecvId" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="FDRDuration" ColumnName="FDRDuration" />
+          <ScalarProperty Name="FDRDurationType" ColumnName="FDRDurationType" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="InstallmentDuration" ColumnName="InstallmentDuration" />
+          <ScalarProperty Name="InstallmentDurationType" ColumnName="InstallmentDurationType" />
+          <ScalarProperty Name="TAXRate" ColumnName="TAXRate" />
+          <ScalarProperty Name="TAXAmount" ColumnName="TAXAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="TotalBankCharge" ColumnName="TotalBankCharge" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="TotalReceivableAmount" ColumnName="TotalReceivableAmount" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+          <ScalarProperty Name="TotalTAXAmount" ColumnName="TotalTAXAmount" />
+          <ScalarProperty Name="TotalProfit" ColumnName="TotalProfit" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRInstallment" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRInstallment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRInstallment_Result">
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TAXAmount" ColumnName="TAXAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="Profit" ColumnName="Profit" />
+          <ScalarProperty Name="InterestReceiveAmount" ColumnName="InterestReceiveAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FMS_uspVoucherPostingForInterestReceive" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.FMS_uspVoucherPostingForInterestReceive">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_uspVoucherPostingForInterestReceive_Result">
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="VouchrTypeId" ColumnName="VouchrTypeId" />
+          <ScalarProperty Name="FundControlId" ColumnName="FundControlId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FMS_uspVoucherPostingForClosingRN" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.FMS_uspVoucherPostingForClosingRN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_uspVoucherPostingForClosingRN_Result">
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+          <ScalarProperty Name="VouchrTypeId" ColumnName="VouchrTypeId" />
+          <ScalarProperty Name="FundControlId" ColumnName="FundControlId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_InvestmentOnFDR" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_InvestmentOnFDR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_InvestmentOnFDR_Result">
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="InterestReceivable" ColumnName="InterestReceivable" />
+          <ScalarProperty Name="NetReceivableAmount" ColumnName="NetReceivableAmount" />
+          <ScalarProperty Name="InstallmentDuration" ColumnName="InstallmentDuration" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_InvestmentOnFDREncashment" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_InvestmentOnFDREncashment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_InvestmentOnFDREncashment_Result">
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="InterestReceivable" ColumnName="InterestReceivable" />
+          <ScalarProperty Name="NetReceivableAmount" ColumnName="NetReceivableAmount" />
+          <ScalarProperty Name="InstallmentDuration" ColumnName="InstallmentDuration" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_getBankChequeNo" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_getBankChequeNo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_getBankChequeNo_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="chequeNo" ColumnName="chequeNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRSchedule" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRSchedule">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRSchedule_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="RenewalNo" ColumnName="RenewalNo" />
+          <ScalarProperty Name="FDRName" ColumnName="FDRName" />
+          <ScalarProperty Name="FDRType" ColumnName="FDRType" />
+          <ScalarProperty Name="BankInfoId" ColumnName="BankInfoId" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BankInfoBranchDetailId" ColumnName="BankInfoBranchDetailId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BankAccountId" ColumnName="BankAccountId" />
+          <ScalarProperty Name="ProfitRecvId" ColumnName="ProfitRecvId" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="FDRDuration" ColumnName="FDRDuration" />
+          <ScalarProperty Name="FDRDurationType" ColumnName="FDRDurationType" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="InstallmentDuration" ColumnName="InstallmentDuration" />
+          <ScalarProperty Name="InstallmentDurationType" ColumnName="InstallmentDurationType" />
+          <ScalarProperty Name="TAXRate" ColumnName="TAXRate" />
+          <ScalarProperty Name="TAXAmount" ColumnName="TAXAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="TotalBankCharge" ColumnName="TotalBankCharge" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="TotalReceivableAmount" ColumnName="TotalReceivableAmount" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+          <ScalarProperty Name="TotalTAXAmount" ColumnName="TotalTAXAmount" />
+          <ScalarProperty Name="TotalProfit" ColumnName="TotalProfit" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="FMS_BankWiseOfferRate">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_BankWiseOfferRate">
+        <MappingFragment StoreEntitySet="FMS_BankWiseOfferRate">
+          <ScalarProperty Name="FDRTypeId" ColumnName="FDRTypeId" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="EUser" ColumnName="EUser" />
+          <ScalarProperty Name="IDate" ColumnName="IDate" />
+          <ScalarProperty Name="IUser" ColumnName="IUser" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="OfferRate" ColumnName="OfferRate" />
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRDailyreport" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRDailyreport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRDailyreport_Result">
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BranchAddress" ColumnName="BranchAddress" />
+          <ScalarProperty Name="OfferRate" ColumnName="OfferRate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRPercentage" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRPercentage">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRPercentage_Result">
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRSummary" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRSummary_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="PresentAmount" ColumnName="PresentAmount" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_RptAllInvestmentonFDR" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_RptAllInvestmentonFDR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_RptAllInvestmentonFDR_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="FundType" ColumnName="FundType" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PresentAmount" ColumnName="PresentAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ACC_getApproverListByZoneId" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.ACC_getApproverListByZoneId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.ACC_getApproverListByZoneId_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="ApproverTypeName" ColumnName="ApproverTypeName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRClosingHistory" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRClosingHistory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRClosingHistory_Result">
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="RenewalNo" ColumnName="RenewalNo" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="ProfitAmount" ColumnName="ProfitAmount" />
+          <ScalarProperty Name="ClosingAmount" ColumnName="ClosingAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRRegister" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRRegister">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRRegister_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Particulars" ColumnName="Particulars" />
+          <ScalarProperty Name="RenewalNo" ColumnName="RenewalNo" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="DeductionTotal" ColumnName="DeductionTotal" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BranchAddress" ColumnName="BranchAddress" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_NewFDRforCurrentYear" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_NewFDRforCurrentYear">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_NewFDRforCurrentYear_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="RenewalNo" ColumnName="RenewalNo" />
+          <ScalarProperty Name="FDRName" ColumnName="FDRName" />
+          <ScalarProperty Name="FDRType" ColumnName="FDRType" />
+          <ScalarProperty Name="BankInfoId" ColumnName="BankInfoId" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BankInfoBranchDetailId" ColumnName="BankInfoBranchDetailId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BankAccountId" ColumnName="BankAccountId" />
+          <ScalarProperty Name="ProfitRecvId" ColumnName="ProfitRecvId" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="FDRDuration" ColumnName="FDRDuration" />
+          <ScalarProperty Name="FDRDurationType" ColumnName="FDRDurationType" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="InstallmentDuration" ColumnName="InstallmentDuration" />
+          <ScalarProperty Name="InstallmentDurationType" ColumnName="InstallmentDurationType" />
+          <ScalarProperty Name="TAXRate" ColumnName="TAXRate" />
+          <ScalarProperty Name="TAXAmount" ColumnName="TAXAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="TotalBankCharge" ColumnName="TotalBankCharge" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="TotalReceivableAmount" ColumnName="TotalReceivableAmount" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+          <ScalarProperty Name="TotalTAXAmount" ColumnName="TotalTAXAmount" />
+          <ScalarProperty Name="TotalProfit" ColumnName="TotalProfit" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_FDRinterestRateinformation" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_FDRinterestRateinformation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_FDRinterestRateinformation_Result">
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="OfferRate" ColumnName="OfferRate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_StatementOfFRDInserestEncashmentMonthly" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_StatementOfFRDInserestEncashmentMonthly">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_StatementOfFRDInserestEncashmentMonthly_Result">
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+          <ScalarProperty Name="DistributedAmount" ColumnName="DistributedAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_StatementOfFRDInserestEncashmentYearly" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_StatementOfFRDInserestEncashmentYearly">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_StatementOfFRDInserestEncashmentYearly_Result">
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+          <ScalarProperty Name="DistributedAmount" ColumnName="DistributedAmount" />
+          <ScalarProperty Name="ApplicableMonth" ColumnName="ApplicableMonth" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_StatementOfFRDInserestReceivable" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_StatementOfFRDInserestReceivable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_StatementOfFRDInserestReceivable_Result">
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+          <ScalarProperty Name="DistributedAmount" ColumnName="DistributedAmount" />
+          <ScalarProperty Name="ApplicableMonth" ColumnName="ApplicableMonth" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_StatementOfFRDInserestReceivableMonthly" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_StatementOfFRDInserestReceivableMonthly">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_StatementOfFRDInserestReceivableMonthly_Result">
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+          <ScalarProperty Name="DistributedAmount" ColumnName="DistributedAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FMS_AutoRVforFDRCls" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.FMS_AutoRVforFDRCls" />
+    <FunctionImportMapping FunctionImportName="SP_FMS_EncashedFDRinCurrentYear" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_EncashedFDRinCurrentYear">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_EncashedFDRinCurrentYear_Result">
+          <ScalarProperty Name="Particulars" ColumnName="Particulars" />
+          <ScalarProperty Name="RenewalNo" ColumnName="RenewalNo" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="DeductionTotal" ColumnName="DeductionTotal" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BranchAddress" ColumnName="BranchAddress" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_SimulateFDRRegister" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_SimulateFDRRegister">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_SimulateFDRRegister_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Particulars" ColumnName="Particulars" />
+          <ScalarProperty Name="RenewalNo" ColumnName="RenewalNo" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestAmount" ColumnName="InterestAmount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="TaxAmount" ColumnName="TaxAmount" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="DeductionTotal" ColumnName="DeductionTotal" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BranchAddress" ColumnName="BranchAddress" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="acc_Cost_Centre_or_Institute_Information">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.acc_Cost_Centre_or_Institute_Information">
+        <MappingFragment StoreEntitySet="acc_Cost_Centre_or_Institute_Information">
+          <ScalarProperty Name="BudgetCode" ColumnName="BudgetCode" />
+          <ScalarProperty Name="updatedUserId" ColumnName="updatedUserId" />
+          <ScalarProperty Name="updatedUserDate" ColumnName="updatedUserDate" />
+          <ScalarProperty Name="createdUserId" ColumnName="createdUserId" />
+          <ScalarProperty Name="createdUserDate" ColumnName="createdUserDate" />
+          <ScalarProperty Name="DepreciationRate" ColumnName="DepreciationRate" />
+          <ScalarProperty Name="IsFixedAssetNonDevWork" ColumnName="IsFixedAssetNonDevWork" />
+          <ScalarProperty Name="IsFixedAssetDevWork" ColumnName="IsFixedAssetDevWork" />
+          <ScalarProperty Name="IsFixedAssetHead" ColumnName="IsFixedAssetHead" />
+          <ScalarProperty Name="BudgetGroupId" ColumnName="BudgetGroupId" />
+          <ScalarProperty Name="isBudgetHead" ColumnName="isBudgetHead" />
+          <ScalarProperty Name="ZoneInfoId" ColumnName="ZoneInfoId" />
+          <ScalarProperty Name="entityId" ColumnName="entityId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="empId" ColumnName="empId" />
+          <ScalarProperty Name="CostCenterTypeId" ColumnName="CostCenterTypeId" />
+          <ScalarProperty Name="parentId" ColumnName="parentId" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="paAmmount" ColumnName="paAmmount" />
+          <ScalarProperty Name="NameForBankAdviceLetter" ColumnName="NameForBankAdviceLetter" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="isInstitute" ColumnName="isInstitute" />
+          <ScalarProperty Name="userCode" ColumnName="userCode" />
+          <ScalarProperty Name="codeCount" ColumnName="codeCount" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_CPFInserestReceivable" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_CPFInserestReceivable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_CPFInserestReceivable_Result">
+          <ScalarProperty Name="FDRId" ColumnName="FDRId" />
+          <ScalarProperty Name="FDRNumber" ColumnName="FDRNumber" />
+          <ScalarProperty Name="InitialDeposit" ColumnName="InitialDeposit" />
+          <ScalarProperty Name="FDRAmount" ColumnName="FDRAmount" />
+          <ScalarProperty Name="InterestRate" ColumnName="InterestRate" />
+          <ScalarProperty Name="FDRDate2" ColumnName="FDRDate2" />
+          <ScalarProperty Name="FDRDate" ColumnName="FDRDate" />
+          <ScalarProperty Name="MaturityDate" ColumnName="MaturityDate" />
+          <ScalarProperty Name="TotalInterestAmount" ColumnName="TotalInterestAmount" />
+          <ScalarProperty Name="DistributedAmount" ColumnName="DistributedAmount" />
+          <ScalarProperty Name="ApplicableMonth" ColumnName="ApplicableMonth" />
+          <ScalarProperty Name="BankCharge" ColumnName="BankCharge" />
+          <ScalarProperty Name="ApproxInterestDuring" ColumnName="ApproxInterestDuring" />
+          <ScalarProperty Name="ApproxInterestEnd" ColumnName="ApproxInterestEnd" />
+          <ScalarProperty Name="InterestAsonRenewDate" ColumnName="InterestAsonRenewDate" />
+          <ScalarProperty Name="BalanceInterest" ColumnName="BalanceInterest" />
+          <ScalarProperty Name="NetInerestReceive" ColumnName="NetInerestReceive" />
+          <ScalarProperty Name="TotalNetInerestReceive" ColumnName="TotalNetInerestReceive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="FMS_CPFInterestReceivable">
+      <EntityTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.FMS_CPFInterestReceivable">
+        <MappingFragment StoreEntitySet="FMS_CPFInterestReceivable">
+          <ScalarProperty Name="ApproxInterestDuring" ColumnName="ApproxInterestDuring" />
+          <ScalarProperty Name="OtherExciseDuty" ColumnName="OtherExciseDuty" />
+          <ScalarProperty Name="ApplicableMonth" ColumnName="ApplicableMonth" />
+          <ScalarProperty Name="DistributedAmount" ColumnName="DistributedAmount" />
+          <ScalarProperty Name="FinancialYearId" ColumnName="FinancialYearId" />
+          <ScalarProperty Name="FixedDepositInfoId" ColumnName="FixedDepositInfoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_FMS_BankBranchInfo" FunctionName="BEPZA_MEDICAL.DAL.FMS.Store.SP_FMS_BankBranchInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BEPZA_MEDICAL.DAL.FMS.SP_FMS_BankBranchInfo_Result">
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankType" ColumnName="BankType" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BranchAddress" ColumnName="BranchAddress" />
+          <ScalarProperty Name="BranchContactNo" ColumnName="BranchContactNo" />
+          <ScalarProperty Name="BranchEmail" ColumnName="BranchEmail" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
